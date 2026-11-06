@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-example-ecg-examination"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation observation-example-ecg-examination</b></p><a name="observation-example-ecg-examination"> </a><a name="hcobservation-example-ecg-examination"> </a><p><b>identifier</b>: <code>http://example.org/fhir/sid/ecg-examination</code>/EX-2026-000123</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}">Procedure</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 11524-6}">EKG study</span></p><p><b>subject</b>: <a href="Patient-patient-example-ecg.html">Maria Rossi  Female, DoB: 1965-04-12 ( http://example.org/fhir/sid/patient-id#ECG-PAT-0001)</a></p><p><b>effective</b>: 2026-10-20 09:30:00+0100</p><p><b>performer</b>: <a href="Practitioner-practitioner-example-ecg.html">Luca Bianchi (http://example.org/fhir/sid/practitioner-id#CARD-0042)</a></p><p><b>value</b>: Normal ECG</p></div>
+  </text>
+  <identifier>
+    <system value="http://example.org/fhir/sid/ecg-examination"/>
+    <value value="EX-2026-000123"/>
+  </identifier>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="procedure"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11524-6"/>
+      <display value="EKG study"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example-ecg"/>
+  </subject>
+  <effectiveDateTime value="2026-10-20T09:30:00+01:00"/>
+  <performer>
+    <reference value="Practitioner/practitioner-example-ecg"/>
+  </performer>
+  <valueString value="Normal ECG"/>
+</Observation>

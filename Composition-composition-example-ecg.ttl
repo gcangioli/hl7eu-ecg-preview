@@ -1,0 +1,94 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ecg/Composition/composition-example-ecg> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "composition-example-ecg"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/composition-eu-ecg" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/composition-eu-ecg>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition composition-example-ecg</b></p><a name=\"composition-example-ecg\"> </a><a name=\"hccomposition-example-ecg\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-composition-eu-ecg.html\">Composition: ECG Report (EU)</a></p></div><p><b>Document DiagnosticReport Reference</b>: <a href=\"DiagnosticReport-diagnosticreport-example-ecg.html\">Diagnostic Report for 'EKG study' for '-&gt;Maria Rossi  Female, DoB: 1965-04-12 ( http://example.org/fhir/sid/patient-id#ECG-PAT-0001)'</a></p><p><b>identifier</b>: <code>http://example.org/fhir/sid/ecg-report</code>/RPT-2026-000123</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 11524-6}\">EKG study</span></p><p><b>date</b>: 2026-10-20 10:15:00+0100</p><p><b>author</b>: <a href=\"Practitioner-practitioner-example-ecg.html\">Luca Bianchi (http://example.org/fhir/sid/practitioner-id#CARD-0042)</a></p><p><b>title</b>: ECG Report</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Time</b></td><td><b>Party</b></td></tr><tr><td style=\"display: none\">*</td><td>Legal</td><td>2026-10-20 10:15:00+0100</td><td><a href=\"Practitioner-practitioner-example-ecg.html\">Luca Bianchi (http://example.org/fhir/sid/practitioner-id#CARD-0042)</a></td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.eu/fhir/extensions/StructureDefinition/composition-diagnosticReportReference" ] ;
+     fhir:Extension.valueReference [
+       fhir:link <http://hl7.eu/fhir/ecg/DiagnosticReport/diagnosticreport-example-ecg> ;
+       fhir:Reference.reference [ fhir:value "DiagnosticReport/diagnosticreport-example-ecg" ]
+     ]
+  ] ;
+  fhir:Composition.identifier [
+     fhir:Identifier.system [ fhir:value "http://example.org/fhir/sid/ecg-report" ] ;
+     fhir:Identifier.value [ fhir:value "RPT-2026-000123" ]
+  ] ;
+  fhir:Composition.status [ fhir:value "final"] ;
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:11524-6 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "11524-6" ] ;
+       fhir:Coding.display [ fhir:value "EKG study" ]
+     ]
+  ] ;
+  fhir:Composition.subject [
+     fhir:link <http://hl7.eu/fhir/ecg/Patient/patient-example-ecg> ;
+     fhir:Reference.reference [ fhir:value "Patient/patient-example-ecg" ]
+  ] ;
+  fhir:Composition.date [ fhir:value "2026-10-20T10:15:00+01:00"^^xsd:dateTime] ;
+  fhir:Composition.author [
+     fhir:index 0 ;
+     fhir:link <http://hl7.eu/fhir/ecg/Practitioner/practitioner-example-ecg> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/practitioner-example-ecg" ]
+  ] ;
+  fhir:Composition.title [ fhir:value "ECG Report"] ;
+  fhir:Composition.attester [
+     fhir:index 0 ;
+     fhir:Composition.attester.mode [ fhir:value "legal" ] ;
+     fhir:Composition.attester.time [ fhir:value "2026-10-20T10:15:00+01:00"^^xsd:dateTime ] ;
+     fhir:Composition.attester.party [
+       fhir:link <http://hl7.eu/fhir/ecg/Practitioner/practitioner-example-ecg> ;
+       fhir:Reference.reference [ fhir:value "Practitioner/practitioner-example-ecg" ]
+     ]
+  ] ;
+  fhir:Composition.section [
+     fhir:index 0 ;
+     fhir:Composition.section.title [ fhir:value "ECG Report" ] ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:11524-6 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "11524-6" ] ;
+         fhir:Coding.display [ fhir:value "EKG study" ]
+       ]
+     ] ;
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ] ;
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Normal sinus rhythm. Normal ECG.</p></div>"
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <http://hl7.eu/fhir/ecg/DiagnosticReport/diagnosticreport-example-ecg> ;
+       fhir:Reference.reference [ fhir:value "DiagnosticReport/diagnosticreport-example-ecg" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ecg/Composition/composition-example-ecg.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

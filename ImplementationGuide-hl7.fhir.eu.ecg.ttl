@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "Hl7EuEcgReportIg"] ;
   fhir:ImplementationGuide.title [ fhir:value "HL7 Europe Electrocardiogram (ECG) Report"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-11-06T23:02:43+01:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-11-06T23:27:14+01:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Europe"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;
@@ -463,9 +463,46 @@
        fhir:Element.id [ fhir:value "EuEcgReport" ] ;
        fhir:ImplementationGuide.definition.grouping.name [ fhir:value "European ECG Report" ] ;
        fhir:ImplementationGuide.definition.grouping.description [ fhir:value "European ECG Report profiles." ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.id [ fhir:value "EcgExtensions" ] ;
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Extensions" ] ;
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Extensions defined by this guide." ]
      ] ;
      fhir:ImplementationGuide.definition.resource [
        fhir:index 0 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/composition-eu-ecg> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/composition-eu-ecg" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Composition: ECG Report (EU)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Clinical document used to represent an Electrocardiogram (ECG) Report for the purpose of this guide. It realises the document header of the EHDSECGReport logical model." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "EuEcgReport" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Composition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ecg/Composition/composition-example-ecg> ;
+         fhir:Reference.reference [ fhir:value "Composition/composition-example-ecg" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Composition: ECG Report, normal sinus rhythm" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the Composition of a resting 12-lead ECG report." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/composition-eu-ecg" ;
+         fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/composition-eu-ecg>
+       ]
+     ], [
+       fhir:index 2 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -476,11 +513,11 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/diagnosticreport-eu-ecg" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DiagnosticReport: ECG Report (EU)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile defines how to represent an Electrocardiogram (ECG) Report in HL7 FHIR for the purpose of this guide." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile defines how to represent an Electrocardiogram (ECG) Report in HL7 FHIR for the purpose of this guide. It realises the EHDSECGReport logical model." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "EuEcgReport" ]
      ], [
-       fhir:index 1 ;
+       fhir:index 3 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -497,7 +534,7 @@
          fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/diagnosticreport-eu-ecg>
        ]
      ], [
-       fhir:index 2 ;
+       fhir:index 4 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -511,7 +548,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3 ;
+       fhir:index 5 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -526,7 +563,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "EcgLogicalModels" ]
      ], [
-       fhir:index 4 ;
+       fhir:index 6 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -540,7 +577,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5 ;
+       fhir:index 7 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -554,7 +591,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6 ;
+       fhir:index 8 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -569,7 +606,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "EcgLogicalModels" ]
      ], [
-       fhir:index 7 ;
+       fhir:index 9 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -583,7 +620,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8 ;
+       fhir:index 10 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -598,7 +635,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "EcgLogicalModels" ]
      ], [
-       fhir:index 9 ;
+       fhir:index 11 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -612,7 +649,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10 ;
+       fhir:index 12 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -626,7 +663,22 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11 ;
+       fhir:index 13 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/ecg-comparison-with-prior> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ecg-comparison-with-prior" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ECG Comparison with Prior" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Comparison of the reported ECG with a previous ECG examination. Realises EHDSECGReport.body.conclusion.comparisonWithPrior." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "EcgExtensions" ]
+     ], [
+       fhir:index 14 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -640,7 +692,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12 ;
+       fhir:index 15 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -654,7 +706,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13 ;
+       fhir:index 16 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -668,7 +720,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 14 ;
+       fhir:index 17 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -683,7 +735,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "EcgLogicalModels" ]
      ], [
-       fhir:index 15 ;
+       fhir:index 18 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -697,7 +749,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 16 ;
+       fhir:index 19 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -711,7 +763,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 17 ;
+       fhir:index 20 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -725,7 +777,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 18 ;
+       fhir:index 21 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -739,7 +791,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 19 ;
+       fhir:index 22 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -753,7 +805,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 20 ;
+       fhir:index 23 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -768,7 +820,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "EcgLogicalModels" ]
      ], [
-       fhir:index 21 ;
+       fhir:index 24 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -782,7 +834,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 22 ;
+       fhir:index 25 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -796,7 +848,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 23 ;
+       fhir:index 26 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -810,7 +862,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 24 ;
+       fhir:index 27 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -824,7 +876,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 25 ;
+       fhir:index 28 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -838,7 +890,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 26 ;
+       fhir:index 29 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -852,7 +904,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 27 ;
+       fhir:index 30 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -866,7 +918,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 28 ;
+       fhir:index 31 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -880,7 +932,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 29 ;
+       fhir:index 32 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -894,7 +946,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 30 ;
+       fhir:index 33 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -908,7 +960,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 31 ;
+       fhir:index 34 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -922,7 +974,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 32 ;
+       fhir:index 35 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -936,7 +988,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 33 ;
+       fhir:index 36 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -950,7 +1002,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 34 ;
+       fhir:index 37 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -964,7 +1016,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 35 ;
+       fhir:index 38 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -978,7 +1030,22 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 36 ;
+       fhir:index 39 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/ecg-recommendation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ecg-recommendation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ECG Recommendation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Recommendations of the reporting physician (further tests, follow-up). Realises EHDSECGReport.body.conclusion.recommendation." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "EcgExtensions" ]
+     ], [
+       fhir:index 40 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -992,7 +1059,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 37 ;
+       fhir:index 41 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1007,7 +1074,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "EcgLogicalModels" ]
      ], [
-       fhir:index 38 ;
+       fhir:index 42 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1022,7 +1089,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "EcgLogicalModels" ]
      ], [
-       fhir:index 39 ;
+       fhir:index 43 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1037,7 +1104,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "EcgLogicalModels" ]
      ], [
-       fhir:index 40 ;
+       fhir:index 44 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1052,7 +1119,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "EcgLogicalModels" ]
      ], [
-       fhir:index 41 ;
+       fhir:index 45 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1067,7 +1134,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "EcgLogicalModels" ]
      ], [
-       fhir:index 42 ;
+       fhir:index 46 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1081,7 +1148,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 43 ;
+       fhir:index 47 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1095,7 +1162,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 44 ;
+       fhir:index 48 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1109,7 +1176,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 45 ;
+       fhir:index 49 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1123,7 +1190,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 46 ;
+       fhir:index 50 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ecg/Observation/observation-example-ecg-examination> ;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-ecg-examination" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Resting 12-lead ECG examination" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of an ECG examination (placeholder, waiting for the ECG Examination Observation profile)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 51 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1135,6 +1216,20 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient: Example" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 52 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ecg/Practitioner/practitioner-example-ecg> ;
+         fhir:Reference.reference [ fhir:value "Practitioner/practitioner-example-ecg" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner: Cardiologist" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a cardiologist reading the ECG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ] ;
      fhir:ImplementationGuide.definition.page [

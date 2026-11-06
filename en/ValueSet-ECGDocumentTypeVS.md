@@ -6,6 +6,8 @@
 
 * [ECG report model](StructureDefinition-EHDSECGReport.md)
 * [ECG result document model](StructureDefinition-EHDSECGResultDocument.md)
+* [Composition: ECG Report (EU)](StructureDefinition-composition-eu-ecg.md)
+* [DiagnosticReport: ECG Report (EU)](StructureDefinition-diagnosticreport-eu-ecg.md)
 
 ### Logical Definition (CLD)
 
@@ -33,7 +35,7 @@ No formal definition provided for this value set
   "title" : "ECG Document Type (placeholder)",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-06T23:02:43+01:00",
+  "date" : "2026-11-06T23:27:14+01:00",
   "publisher" : "HL7 Europe",
   "contact" : [{
     "name" : "HL7 Europe",

@@ -130,8 +130,10 @@
     "description" : "TODO: placeholder value set, to be defined.",
     "uses" : {
     },
+    "StructureDefinition-EHDSECGReport.html" : "ECG report model",
     "StructureDefinition-EHDSECGResultDocument.html" : "ECG result document model",
-    "StructureDefinition-EHDSECGReport.html" : "ECG report model"
+    "StructureDefinition-diagnosticreport-eu-ecg.html" : "DiagnosticReport: ECG Report (EU)",
+    "StructureDefinition-composition-eu-ecg.html" : "Composition: ECG Report (EU)"
   },
   {
     "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGDurationUnitVS",
@@ -154,8 +156,9 @@
     "description" : "TODO: placeholder value set, to be defined.",
     "uses" : {
     },
+    "StructureDefinition-EHDSECGReport.html" : "ECG report model",
     "StructureDefinition-EHDSECGExamination.html" : "ECG examination model",
-    "StructureDefinition-EHDSECGReport.html" : "ECG report model"
+    "StructureDefinition-composition-eu-ecg.html" : "Composition: ECG Report (EU)"
   },
   {
     "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGExecutionContextVS",
@@ -199,7 +202,8 @@
     "description" : "TODO: placeholder value set, to be defined.",
     "uses" : {
     },
-    "StructureDefinition-EHDSECGReport.html" : "ECG report model"
+    "StructureDefinition-EHDSECGReport.html" : "ECG report model",
+    "StructureDefinition-diagnosticreport-eu-ecg.html" : "DiagnosticReport: ECG Report (EU)"
   },
   {
     "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGInputRoleVS",
@@ -249,10 +253,10 @@
     "uses" : {
     },
     "StructureDefinition-EHDSECGBiomarkerDefinition.html" : "ECG biomarker definition model",
+    "StructureDefinition-EHDSECGRecording.html" : "ECG recording model",
     "StructureDefinition-EHDSECGDerivedResult.html" : "ECG derived result model",
-    "StructureDefinition-EHDSECGAlgorithm.html" : "ECG algorithm model",
     "StructureDefinition-EHDSECGAnnotationSet.html" : "ECG annotation set model",
-    "StructureDefinition-EHDSECGRecording.html" : "ECG recording model"
+    "StructureDefinition-EHDSECGAlgorithm.html" : "ECG algorithm model"
   },
   {
     "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGLegacyReasonVS",
@@ -307,8 +311,9 @@
     "description" : "TODO: placeholder value set, to be defined.",
     "uses" : {
     },
+    "StructureDefinition-EHDSECGReport.html" : "ECG report model",
     "StructureDefinition-EHDSECGExamination.html" : "ECG examination model",
-    "StructureDefinition-EHDSECGReport.html" : "ECG report model"
+    "StructureDefinition-diagnosticreport-eu-ecg.html" : "DiagnosticReport: ECG Report (EU)"
   },
   {
     "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGPerformanceMetricVS",
@@ -375,8 +380,8 @@
     "description" : "TODO: placeholder value set, to be defined.",
     "uses" : {
     },
-    "StructureDefinition-EHDSECGResearchDataset.html" : "ECG research dataset model",
-    "StructureDefinition-EHDSECGResearchRecord.html" : "ECG research record model"
+    "StructureDefinition-EHDSECGResearchRecord.html" : "ECG research record model",
+    "StructureDefinition-EHDSECGResearchDataset.html" : "ECG research dataset model"
   },
   {
     "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGUseTierVS",

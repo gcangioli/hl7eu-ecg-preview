@@ -3,8 +3,81 @@
   "version": "0.1.0-ci-build",
   "fhirVersion": "4.0.1",
   "jurisdiction": "150",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://hl7.eu/fhir/ecg/StructureDefinition/ecg-comparison-with-prior",
+      "title": "ECG Comparison with Prior",
+      "types": [
+        "Identifier",
+        "string",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.eu/fhir/ecg/StructureDefinition/ecg-recommendation",
+      "title": "ECG Recommendation",
+      "types": [
+        "string"
+      ]
+    }
+  ],
   "profiles": {
+    "Composition": [
+      {
+        "url": "http://hl7.eu/fhir/ecg/StructureDefinition/composition-eu-ecg",
+        "title": "Composition: ECG Report (EU)"
+      }
+    ],
     "DiagnosticReport": [
       {
         "url": "http://hl7.eu/fhir/ecg/StructureDefinition/diagnosticreport-eu-ecg",
@@ -13,6 +86,30 @@
     ]
   },
   "usage": {
+    "http://hl7.eu/fhir/StructureDefinition/information-recipient": [
+      "Composition"
+    ],
+    "http://hl7.eu/fhir/ecg/StructureDefinition/ecg-comparison-with-prior": [
+      "DiagnosticReport"
+    ],
+    "http://hl7.eu/fhir/ecg/StructureDefinition/ecg-recommendation": [
+      "DiagnosticReport"
+    ],
+    "http://hl7.eu/fhir/extensions/StructureDefinition/composition-diagnosticReportReference": [
+      "Composition"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version": [
+      "Composition"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition": [
+      "DiagnosticReport"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note": [
+      "DiagnosticReport"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/annotationType": [
+      "DiagnosticReport.extension.value[x]"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -28,6 +125,9 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/StructureDefinition/note": [
+      "Composition.section"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
@@ -39,6 +139,13 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo": [
+      "DiagnosticReport"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/additional-binding": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -52,6 +159,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
       "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implied-type-slice": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"

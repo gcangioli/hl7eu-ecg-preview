@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "Hl7EuEcgReportIg"] ;
   fhir:ImplementationGuide.title [ fhir:value "HL7 Europe Electrocardiogram (ECG) Report"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-11-06T23:02:43+01:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-11-06T23:27:14+01:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Europe"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -463,8 +463,45 @@
        fhir:Element.id [ fhir:value "EuEcgReport" ] ;
        fhir:ImplementationGuide.definition.grouping.name [ fhir:value "European ECG Report" ] ;
        fhir:ImplementationGuide.definition.grouping.description [ fhir:value "European ECG Report profiles." ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EcgExtensions" ] ;
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Extensions" ] ;
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Extensions defined by this guide." ]
      ] ;
      fhir:ImplementationGuide.definition.resource [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/composition-eu-ecg> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/composition-eu-ecg" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Composition: ECG Report (EU)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Clinical document used to represent an Electrocardiogram (ECG) Report for the purpose of this guide. It realises the document header of the EHDSECGReport logical model." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "EuEcgReport" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Composition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ecg/Composition/composition-example-ecg> ;
+         fhir:Reference.reference [ fhir:value "Composition/composition-example-ecg" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Composition: ECG Report, normal sinus rhythm" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the Composition of a resting 12-lead ECG report." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/composition-eu-ecg" ;
+         fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/composition-eu-ecg>
+       ]
+     ], [
        fhir:index -1 ;
        fhir:Element.extension [
          fhir:index -1 ;
@@ -476,7 +513,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/diagnosticreport-eu-ecg" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DiagnosticReport: ECG Report (EU)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile defines how to represent an Electrocardiogram (ECG) Report in HL7 FHIR for the purpose of this guide." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile defines how to represent an Electrocardiogram (ECG) Report in HL7 FHIR for the purpose of this guide. It realises the EHDSECGReport logical model." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "EuEcgReport" ]
      ], [
@@ -625,6 +662,21 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ECG Comparability (placeholder)" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TODO: placeholder value set, to be defined." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/ecg-comparison-with-prior> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ecg-comparison-with-prior" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ECG Comparison with Prior" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Comparison of the reported ECG with a previous ECG examination. Realises EHDSECGReport.body.conclusion.comparisonWithPrior." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "EcgExtensions" ]
      ], [
        fhir:index -1 ;
        fhir:Element.extension [
@@ -982,6 +1034,21 @@
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/ecg-recommendation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ecg-recommendation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ECG Recommendation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Recommendations of the reporting physician (further tests, follow-up). Realises EHDSECGReport.body.conclusion.recommendation." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "EcgExtensions" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
@@ -1127,6 +1194,20 @@
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ecg/Observation/observation-example-ecg-examination> ;
+         fhir:Reference.reference [ fhir:value "Observation/observation-example-ecg-examination" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation: Resting 12-lead ECG examination" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of an ECG examination (placeholder, waiting for the ECG Examination Observation profile)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
@@ -1135,6 +1216,20 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient: Example" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.eu/fhir/ecg/Practitioner/practitioner-example-ecg> ;
+         fhir:Reference.reference [ fhir:value "Practitioner/practitioner-example-ecg" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner: Cardiologist" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a cardiologist reading the ECG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ] ;
      fhir:ImplementationGuide.definition.page [

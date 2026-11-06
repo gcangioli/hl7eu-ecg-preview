@@ -237,9 +237,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>a link to the detailed element-by-element mapping</li>
 </ul>
 
-<!-- TODO: add the mappings once the logical model(s) are agreed -->
-
 <h4 id="ecg-report">ECG Report</h4>
+
+<p>Following the pattern of the HL7 Europe Laboratory Report, the ECG report is realised by a Composition, which carries the document header, and a DiagnosticReport, which carries the structured content. The two resources reference each other.</p>
 
 <table class="grid">
   <thead>
@@ -251,9 +251,61 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td><em>To be defined</em></td>
+      <td><a href="StructureDefinition-EHDSECGReport.html">EHDSECGReport</a></td>
+      <td><a href="StructureDefinition-composition-eu-ecg.html">Composition: ECG Report (EU)</a></td>
+      <td><a href="StructureDefinition-composition-eu-ecg-mappings.html">Mapping</a></td>
+    </tr>
+    <tr>
+      <td> </td>
       <td><a href="StructureDefinition-diagnosticreport-eu-ecg.html">DiagnosticReport: ECG Report (EU)</a></td>
-      <td><em>To be defined</em></td>
+      <td><a href="StructureDefinition-diagnosticreport-eu-ecg-mappings.html">Mapping</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="models-not-yet-realised">Models not yet realised</h4>
+
+<p>The following models have no FHIR profile yet:</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th><strong>Logical Model</strong></th>
+      <th><strong>Expected FHIR resource(s)</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-EHDSECGExamination.html">EHDSECGExamination</a></td>
+      <td>Observation</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-EHDSECGRecording.html">EHDSECGRecording</a></td>
+      <td>Observation (SampledData), Binary / DocumentReference, ImagingStudy</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-EHDSECGDerivedResult.html">EHDSECGDerivedResult</a></td>
+      <td>Observation</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-EHDSECGAnnotationSet.html">EHDSECGAnnotationSet</a></td>
+      <td>To be defined</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-EHDSECGResultDocument.html">EHDSECGResultDocument</a></td>
+      <td>Composition, DiagnosticReport</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-EHDSECGAlgorithm.html">EHDSECGAlgorithm</a></td>
+      <td>Device</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-EHDSECGBiomarkerDefinition.html">EHDSECGBiomarkerDefinition</a></td>
+      <td>ObservationDefinition (R5)</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-EHDSECGResearchRecord.html">EHDSECGResearchRecord</a>, <a href="StructureDefinition-EHDSECGResearchDataset.html">EHDSECGResearchDataset</a></td>
+      <td>To be defined</td>
     </tr>
   </tbody>
 </table>
@@ -286,7 +338,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.eu">HL7 Europe</a>.  
           Package hl7.fhir.eu.ecg#0.1.0-ci-build based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-11-06 23:02:00 +0100">
+  <span title="2026-11-06 23:27:00 +0100">
     2026-11-06
   </span>
 

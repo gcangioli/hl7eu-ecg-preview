@@ -14,7 +14,7 @@
   "name" : "Hl7EuEcgReportIg",
   "title" : "HL7 Europe Electrocardiogram (ECG) Report",
   "status" : "draft",
-  "date" : "2026-11-06T23:02:43+01:00",
+  "date" : "2026-11-06T23:27:14+01:00",
   "publisher" : "HL7 Europe",
   "contact" : [{
     "name" : "HL7 Europe",
@@ -401,8 +401,46 @@
       "id" : "EuEcgReport",
       "name" : "European ECG Report",
       "description" : "European ECG Report profiles."
+    },
+    {
+      "id" : "EcgExtensions",
+      "name" : "Extensions",
+      "description" : "Extensions defined by this guide."
     }],
     "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-composition-eu-ecg.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/composition-eu-ecg"
+      },
+      "name" : "Composition: ECG Report (EU)",
+      "description" : "Clinical document used to represent an Electrocardiogram (ECG) Report for the purpose of this guide. It realises the document header of the EHDSECGReport logical model.",
+      "exampleBoolean" : false,
+      "groupingId" : "EuEcgReport"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Composition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Composition-composition-example-ecg.html"
+      }],
+      "reference" : {
+        "reference" : "Composition/composition-example-ecg"
+      },
+      "name" : "Composition: ECG Report, normal sinus rhythm",
+      "description" : "Example of the Composition of a resting 12-lead ECG report.",
+      "exampleCanonical" : "http://hl7.eu/fhir/ecg/StructureDefinition/composition-eu-ecg"
+    },
+    {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
@@ -415,7 +453,7 @@
         "reference" : "StructureDefinition/diagnosticreport-eu-ecg"
       },
       "name" : "DiagnosticReport: ECG Report (EU)",
-      "description" : "This profile defines how to represent an Electrocardiogram (ECG) Report in HL7 FHIR for the purpose of this guide.",
+      "description" : "This profile defines how to represent an Electrocardiogram (ECG) Report in HL7 FHIR for the purpose of this guide. It realises the EHDSECGReport logical model.",
       "exampleBoolean" : false,
       "groupingId" : "EuEcgReport"
     },
@@ -581,6 +619,23 @@
       "name" : "ECG Comparability (placeholder)",
       "description" : "TODO: placeholder value set, to be defined.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ecg-comparison-with-prior.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ecg-comparison-with-prior"
+      },
+      "name" : "ECG Comparison with Prior",
+      "description" : "Comparison of the reported ECG with a previous ECG examination. Realises EHDSECGReport.body.conclusion.comparisonWithPrior.",
+      "exampleBoolean" : false,
+      "groupingId" : "EcgExtensions"
     },
     {
       "extension" : [{
@@ -987,6 +1042,23 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ecg-recommendation.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ecg-recommendation"
+      },
+      "name" : "ECG Recommendation",
+      "description" : "Recommendations of the reporting physician (further tests, follow-up). Realises EHDSECGReport.body.conclusion.recommendation.",
+      "exampleBoolean" : false,
+      "groupingId" : "EcgExtensions"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       },
       {
@@ -1152,6 +1224,22 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-observation-example-ecg-examination.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/observation-example-ecg-examination"
+      },
+      "name" : "Observation: Resting 12-lead ECG examination",
+      "description" : "Example of an ECG examination (placeholder, waiting for the ECG Examination Observation profile).",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       },
       {
@@ -1163,6 +1251,22 @@
       },
       "name" : "Patient: Example",
       "description" : "Example of a patient.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Practitioner-practitioner-example-ecg.html"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/practitioner-example-ecg"
+      },
+      "name" : "Practitioner: Cardiologist",
+      "description" : "Example of a cardiologist reading the ECG.",
       "exampleBoolean" : true
     }],
     "page" : {

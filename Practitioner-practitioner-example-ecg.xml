@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="practitioner-example-ecg"/>
+  <meta>
+    <profile value="http://hl7.eu/fhir/base/StructureDefinition/practitioner-eu-core"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner practitioner-example-ecg</b></p><a name="practitioner-example-ecg"> </a><a name="hcpractitioner-example-ecg"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.eu/fhir/base/2.0.1/StructureDefinition-practitioner-eu-core.html">Practitioner (EU core)</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Luca Bianchi (http://example.org/fhir/sid/practitioner-id#CARD-0042)</p><hr/></div>
+  </text>
+  <identifier>
+    <system value="http://example.org/fhir/sid/practitioner-id"/>
+    <value value="CARD-0042"/>
+  </identifier>
+  <name>
+    <family value="Bianchi"/>
+    <given value="Luca"/>
+    <prefix value="Dr."/>
+  </name>
+</Practitioner>

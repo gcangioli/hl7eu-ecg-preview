@@ -76,11 +76,32 @@
   "name" : "EHDSECGResultDocument"
 },
 {
+  "id" : "composition-eu-ecg",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.eu/fhir/ecg/StructureDefinition/composition-eu-ecg",
+  "version" : "0.1.0-ci-build",
+  "name" : "CompositionEcgEu"
+},
+{
   "id" : "diagnosticreport-eu-ecg",
   "type" : "StructureDefinition",
   "url" : "http://hl7.eu/fhir/ecg/StructureDefinition/diagnosticreport-eu-ecg",
   "version" : "0.1.0-ci-build",
   "name" : "DiagnosticReportEcgEu"
+},
+{
+  "id" : "ecg-comparison-with-prior",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.eu/fhir/ecg/StructureDefinition/ecg-comparison-with-prior",
+  "version" : "0.1.0-ci-build",
+  "name" : "EcgComparisonWithPrior"
+},
+{
+  "id" : "ecg-recommendation",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.eu/fhir/ecg/StructureDefinition/ecg-recommendation",
+  "version" : "0.1.0-ci-build",
+  "name" : "EcgRecommendation"
 },
 {
   "id" : "ECGAgeUnitVS",

@@ -32,7 +32,7 @@ No formal definition provided for this value set
   "title" : "ECG Legacy Reason (placeholder)",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-06T23:02:43+01:00",
+  "date" : "2026-11-06T23:27:14+01:00",
   "publisher" : "HL7 Europe",
   "contact" : [{
     "name" : "HL7 Europe",

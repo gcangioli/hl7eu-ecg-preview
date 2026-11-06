@@ -20,6 +20,12 @@ This publication includes IP covered under the following statements.
 
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
 
-* [LOINC](http://terminology.hl7.org/6.3.0/CodeSystem-v3-loinc.html): [DiagnosticReport/diagnosticreport-example-ecg](DiagnosticReport-diagnosticreport-example-ecg.md), [DiagnosticReportEcgEu](StructureDefinition-diagnosticreport-eu-ecg.md) and [EHDSECGExamination](StructureDefinition-EHDSECGExamination.md)
+* [LOINC](http://terminology.hl7.org/6.3.0/CodeSystem-v3-loinc.html): [Composition/composition-example-ecg](Composition-composition-example-ecg.md), [DiagnosticReport/diagnosticreport-example-ecg](DiagnosticReport-diagnosticreport-example-ecg.md), [EHDSECGExamination](StructureDefinition-EHDSECGExamination.md) and [Observation/observation-example-ecg-examination](Observation-observation-example-ecg-examination.md)
+
+
+* This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
+
+* [Observation Category Codes](http://terminology.hl7.org/7.5.0/CodeSystem-observation-category.html): [Observation/observation-example-ecg-examination](Observation-observation-example-ecg-examination.md)
+* [diagnosticServiceSectionId](http://terminology.hl7.org/7.5.0/CodeSystem-v2-0074.html): [DiagnosticReport/diagnosticreport-example-ecg](DiagnosticReport-diagnosticreport-example-ecg.md) and [DiagnosticReportEcgEu](StructureDefinition-diagnosticreport-eu-ecg.md)
 
 

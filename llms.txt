@@ -70,7 +70,13 @@
 
 ### Resource Profiles
 
+* [Composition: ECG Report (EU)](en/StructureDefinition-composition-eu-ecg.md)
 * [DiagnosticReport: ECG Report (EU)](en/StructureDefinition-diagnosticreport-eu-ecg.md)
+
+### Extensions
+
+* [ECG Comparison with Prior](en/StructureDefinition-ecg-comparison-with-prior.md)
+* [ECG Recommendation](en/StructureDefinition-ecg-recommendation.md)
 
 ### ImplementationGuides
 
@@ -78,5 +84,8 @@
 
 ### Examples
 
+* [ECG Report (Composition)](en/Composition-composition-example-ecg.md)
 * [diagnosticreport-example-ecg (DiagnosticReport)](en/DiagnosticReport-diagnosticreport-example-ecg.md)
+* [observation-example-ecg-examination (Observation)](en/Observation-observation-example-ecg-examination.md)
 * [patient-example-ecg (Patient)](en/Patient-patient-example-ecg.md)
+* [practitioner-example-ecg (Practitioner)](en/Practitioner-practitioner-example-ecg.md)

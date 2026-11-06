@@ -33,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSECGResearchRe
   "name" : "EHDSECGResearchRecord",
   "title" : "ECG research record model",
   "status" : "draft",
-  "date" : "2026-11-06T23:02:43+01:00",
+  "date" : "2026-11-06T23:27:14+01:00",
   "publisher" : "HL7 Europe",
   "contact" : [{
     "name" : "HL7 Europe",
