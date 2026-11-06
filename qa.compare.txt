@@ -1,0 +1,252 @@
+Hl7EuEcgReportIg : Validation Results
+=========================================
+
+err = 1, warn = 34, info = 13, broken links = 0
+$--
+Generated $--. FHIR version $-- for hl7.fhir.eu.ecg#$-- (canonical = http://hl7.eu/fhir/ecg)
+ Build Errors : 1 / 0 / 0
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\DiagnosticReport-diagnosticreport-example-ecg : 0 / 0 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ImplementationGuide-hl7.fhir.eu.ecg : 0 / 1 / 2
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\Patient-patient-example-ecg : 0 / 0 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\StructureDefinition-EHDSECGAlgorithm : 0 / 0 / 2
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\StructureDefinition-EHDSECGAnnotationSet : 0 / 0 / 2
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\StructureDefinition-EHDSECGBiomarkerDefinition : 0 / 0 / 2
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\StructureDefinition-EHDSECGDerivedResult : 0 / 0 / 2
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\StructureDefinition-EHDSECGExamination : 0 / 0 / 2
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\StructureDefinition-EHDSECGRecording : 0 / 0 / 2
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\StructureDefinition-EHDSECGReport : 0 / 0 / 2
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\StructureDefinition-EHDSECGResearchDataset : 0 / 0 / 2
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\StructureDefinition-EHDSECGResearchRecord : 0 / 0 / 2
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\StructureDefinition-EHDSECGResultDocument : 0 / 0 / 2
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\StructureDefinition-diagnosticreport-eu-ecg : 0 / 0 / 3
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGAgeUnitVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGAmplitudeUnitVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGAnnotationVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGApplicabilityStatusVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGChannelStatusVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGComparabilityVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGDataAbsentReasonVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGDefinitionTierVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGDerivedResultCategoryVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGDerivedResultTypeVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGDisplayLayoutVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGDocumentTypeVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGDurationUnitVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGExaminationKindVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGExecutionContextVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGFileFormatVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGFilterTypeVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGFindingVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGInputRoleVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGLabelProvenanceVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGLeadSystemVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGLeadVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGLegacyReasonVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGLinkedDataTypeVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGMeasurementBasisVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGOutputKindVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGOverallConclusionVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGPerformanceMetricVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGQTcFormulaVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGRecordingKindVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGReviewStatusVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGSignalOriginVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGTransformationTypeVS : 0 / 1 / 1
+ C:\workspace\hl7eu-ecg\fsh-generated\resources\ValueSet-ECGUseTierVS : 0 / 1 / 1
+</table>
+
+== n/a ==
+ERROR: There is no jira specification file defined with the expected name of FHIR-eu-ecg in the xml folder of the  https://github.com/HL7/Jira-Spec-Artifacts project.  This must exist before ballot or publication.
+
+
+== fsh-generated\resources\DiagnosticReport-diagnosticreport-example-ecg.json ==
+
+
+== fsh-generated\resources\ImplementationGuide-hl7.fhir.eu.ecg.json ==
+INFORMATION: Resource: The resource ImplementationGuide/hl7.fhir.eu.ecg could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\Patient-patient-example-ecg.json ==
+
+
+== fsh-generated\resources\StructureDefinition-EHDSECGAlgorithm.json ==
+INFORMATION: Resource: The resource StructureDefinition/EHDSECGAlgorithm could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\StructureDefinition-EHDSECGAnnotationSet.json ==
+INFORMATION: Resource: The resource StructureDefinition/EHDSECGAnnotationSet could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\StructureDefinition-EHDSECGBiomarkerDefinition.json ==
+INFORMATION: Resource: The resource StructureDefinition/EHDSECGBiomarkerDefinition could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\StructureDefinition-EHDSECGDerivedResult.json ==
+INFORMATION: Resource: The resource StructureDefinition/EHDSECGDerivedResult could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\StructureDefinition-EHDSECGExamination.json ==
+INFORMATION: Resource: The resource StructureDefinition/EHDSECGExamination could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\StructureDefinition-EHDSECGRecording.json ==
+INFORMATION: Resource: The resource StructureDefinition/EHDSECGRecording could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\StructureDefinition-EHDSECGReport.json ==
+INFORMATION: Resource: The resource StructureDefinition/EHDSECGReport could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\StructureDefinition-EHDSECGResearchDataset.json ==
+INFORMATION: Resource: The resource StructureDefinition/EHDSECGResearchDataset could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\StructureDefinition-EHDSECGResearchRecord.json ==
+INFORMATION: Resource: The resource StructureDefinition/EHDSECGResearchRecord could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\StructureDefinition-EHDSECGResultDocument.json ==
+INFORMATION: Resource: The resource StructureDefinition/EHDSECGResultDocument could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\StructureDefinition-diagnosticreport-eu-ecg.json ==
+INFORMATION: StructureDefinition/diagnosticreport-eu-ecg: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.4.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
+INFORMATION: Resource: The resource StructureDefinition/diagnosticreport-eu-ecg could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGAgeUnitVS.json ==
+WARNING: Resource: The resource ValueSet/ECGAgeUnitVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGAmplitudeUnitVS.json ==
+WARNING: Resource: The resource ValueSet/ECGAmplitudeUnitVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGAnnotationVS.json ==
+WARNING: Resource: The resource ValueSet/ECGAnnotationVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGApplicabilityStatusVS.json ==
+WARNING: Resource: The resource ValueSet/ECGApplicabilityStatusVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGChannelStatusVS.json ==
+WARNING: Resource: The resource ValueSet/ECGChannelStatusVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGComparabilityVS.json ==
+WARNING: Resource: The resource ValueSet/ECGComparabilityVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGDataAbsentReasonVS.json ==
+WARNING: Resource: The resource ValueSet/ECGDataAbsentReasonVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGDefinitionTierVS.json ==
+WARNING: Resource: The resource ValueSet/ECGDefinitionTierVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGDerivedResultCategoryVS.json ==
+WARNING: Resource: The resource ValueSet/ECGDerivedResultCategoryVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGDerivedResultTypeVS.json ==
+WARNING: Resource: The resource ValueSet/ECGDerivedResultTypeVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGDisplayLayoutVS.json ==
+WARNING: Resource: The resource ValueSet/ECGDisplayLayoutVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGDocumentTypeVS.json ==
+WARNING: Resource: The resource ValueSet/ECGDocumentTypeVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGDurationUnitVS.json ==
+WARNING: Resource: The resource ValueSet/ECGDurationUnitVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGExaminationKindVS.json ==
+WARNING: Resource: The resource ValueSet/ECGExaminationKindVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGExecutionContextVS.json ==
+WARNING: Resource: The resource ValueSet/ECGExecutionContextVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGFileFormatVS.json ==
+WARNING: Resource: The resource ValueSet/ECGFileFormatVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGFilterTypeVS.json ==
+WARNING: Resource: The resource ValueSet/ECGFilterTypeVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGFindingVS.json ==
+WARNING: Resource: The resource ValueSet/ECGFindingVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGInputRoleVS.json ==
+WARNING: Resource: The resource ValueSet/ECGInputRoleVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGLabelProvenanceVS.json ==
+WARNING: Resource: The resource ValueSet/ECGLabelProvenanceVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGLeadSystemVS.json ==
+WARNING: Resource: The resource ValueSet/ECGLeadSystemVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGLeadVS.json ==
+WARNING: Resource: The resource ValueSet/ECGLeadVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGLegacyReasonVS.json ==
+WARNING: Resource: The resource ValueSet/ECGLegacyReasonVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGLinkedDataTypeVS.json ==
+WARNING: Resource: The resource ValueSet/ECGLinkedDataTypeVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGMeasurementBasisVS.json ==
+WARNING: Resource: The resource ValueSet/ECGMeasurementBasisVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGOutputKindVS.json ==
+WARNING: Resource: The resource ValueSet/ECGOutputKindVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGOverallConclusionVS.json ==
+WARNING: Resource: The resource ValueSet/ECGOverallConclusionVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGPerformanceMetricVS.json ==
+WARNING: Resource: The resource ValueSet/ECGPerformanceMetricVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGQTcFormulaVS.json ==
+WARNING: Resource: The resource ValueSet/ECGQTcFormulaVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGRecordingKindVS.json ==
+WARNING: Resource: The resource ValueSet/ECGRecordingKindVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGReviewStatusVS.json ==
+WARNING: Resource: The resource ValueSet/ECGReviewStatusVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGSignalOriginVS.json ==
+WARNING: Resource: The resource ValueSet/ECGSignalOriginVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGTransformationTypeVS.json ==
+WARNING: Resource: The resource ValueSet/ECGTransformationTypeVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated\resources\ValueSet-ECGUseTierVS.json ==
+WARNING: Resource: The resource ValueSet/ECGUseTierVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+

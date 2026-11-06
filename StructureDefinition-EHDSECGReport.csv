@@ -1,0 +1,100 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"EHDSECGReport","EHDSECGReport","","","",0,*,"","","","null {[]} {[]}
+","ECG report model","The exchangeable unit for the EHDS priority category medical test results (Regulation (EU) 2025/327, art. 14(1)(e)). Sibling of EHDSLaboratoryReport.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","ecg-rep-1:TODO: placeholder for invariant ecg-rep-1, to be defined. {true}
+ecg-rep-2:TODO: placeholder for invariant ecg-rep-2, to be defined. {true}ecg-rep-3:TODO: placeholder for invariant ecg-rep-3, to be defined. {true}ecg-rep-4:TODO: placeholder for invariant ecg-rep-4, to be defined. {true}","n/a"
+"EHDSECGReport.header","EHDSECGReport.header","","","",1,1,"","","","Base {[]} {[]}
+","Document header","Basic metadata for this information","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header",1,1,"",""
+"EHDSECGReport.header.subject","EHDSECGReport.header.subject","","","",1,1,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSPatient {[]} {[]}
+","Patient/subject information","Patient/subject information","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.subject",1,1,"",""
+"EHDSECGReport.header.identifier","EHDSECGReport.header.identifier","","","",1,*,"","","","Identifier {[]} {[]}
+","Unique identifier of the document","Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.identifier",0,*,"",""
+"EHDSECGReport.header.author[x]","EHDSECGReport.header.author[x]","","","",1,*,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
+http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Author(s) of the document","Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.author[x]",0,*,"",""
+"EHDSECGReport.header.date","EHDSECGReport.header.date","","","",1,1,"","","","dateTime {[]} {[]}
+","Date of finalising/issuing the document","Date and optionally time of authoring/issuing","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.date",0,1,"",""
+"EHDSECGReport.header.status","EHDSECGReport.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Status of the document","Status of the resource or document","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.status",1,1,"",""
+"EHDSECGReport.header.source","EHDSECGReport.header.source","","","",0,0,"","","","CodeableConcept {[]} {[]}
+","Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information.","Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.source",0,1,"",""
+"EHDSECGReport.header.language","EHDSECGReport.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Language in which the resource is written. Language is expressed by the IETF language tag.","Language in which the resource is written. Language is expressed by the IETF language tag.","","","","","","","","","",,"preferred","BCP 47","","",,,,"EHDSDataSet.header.language",0,1,"",""
+"EHDSECGReport.header.documentType","EHDSECGReport.header.documentType","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","[C] Type of ECG document. Preferred: LOINC 11524-6 EKG study; 98857-6 for stress tests. Final binding open","Type of document at hand, e.g. 60591-5 Patient summary document.","","","","","","","","","",,"preferred","","http://hl7.eu/fhir/ecg/ValueSet/ECGDocumentTypeVS","",,,,"EHDSDocument.header.documentType",1,1,"",""
+"EHDSECGReport.header.documentTitle","EHDSECGReport.header.documentTitle","","","",1,1,"","","","string {[]} {[]}
+","Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: 'Laboratory Result Report', 'Patient Summary of Jane Green 10.12.2024'","Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: 'Laboratory Result Report', 'Patient Summary of Jane Green 10.12.2024'","","","","","","","","","",,,,,"",,,,"EHDSDocument.header.documentTitle",1,1,"",""
+"EHDSECGReport.header.period","EHDSECGReport.header.period","","","",0,1,"","","","Period {[]} {[]}
+","Time of service that is being documented","Time of service that is being documented","","","","","","","","","",,,,,"",,,,"EHDSDocument.header.period",0,1,"",""
+"EHDSECGReport.header.version","EHDSECGReport.header.version","","","",0,1,"","","","string {[]} {[]}
+","Business version of the document. The exact algorithm for versioning is decided by the producer/custodian","Business version of the document. The exact algorithm for versioning is decided by the producer/custodian","","","","","","","","","",,,,,"",,,,"EHDSDocument.header.version",0,1,"",""
+"EHDSECGReport.header.attestation","EHDSECGReport.header.attestation","","","",0,*,"","","","Base {[]} {[]}
+","Document attestation details","Document attestation details","","","","","","","","","",,,,,"",,,,"EHDSDocument.header.attestation",0,*,"",""
+"EHDSECGReport.header.attestation.attester[x]","EHDSECGReport.header.attestation.attester[x]","","","",1,1,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
+http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Attester who validated the document","Attester who validated the document","","","","","","","","","",,,,,"",,,,"EHDSDocument.header.attestation.attester[x]",1,1,"",""
+"EHDSECGReport.header.attestation.datetime","EHDSECGReport.header.attestation.datetime","","","",1,1,"","","","dateTime {[]} {[]}
+","Date and time of the approval of the document by Attester","Date and time of the approval of the document by Attester","","","","","","","","","",,,,,"",,,,"EHDSDocument.header.attestation.datetime",1,1,"",""
+"EHDSECGReport.header.legalAuthentication","EHDSECGReport.header.legalAuthentication","","","",0,*,"","","","Base {[]} {[]}
+","Document legal authentication details","Document legal authentication details","","","","","","","","","",,,,,"",,,,"EHDSDocument.header.legalAuthentication",0,*,"",""
+"EHDSECGReport.header.legalAuthentication.legalAuthenticator[x]","EHDSECGReport.header.legalAuthentication.legalAuthenticator[x]","","","",1,1,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
+http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}","The person or organisation taking responsibility for the content of the document.","The person or organisation taking responsibility for the content of the document.","","","","","","","","","",,,,,"",,,,"EHDSDocument.header.legalAuthentication.legalAuthenticator[x]",1,1,"",""
+"EHDSECGReport.header.legalAuthentication.datetime","EHDSECGReport.header.legalAuthentication.datetime","","","",1,1,"","","","dateTime {[]} {[]}
+","Date and time when the document was authorised","Date and time when the document was authorised","","","","","","","","","",,,,,"",,,,"EHDSDocument.header.legalAuthentication.datetime",1,1,"",""
+"EHDSECGReport.header.eventType","EHDSECGReport.header.eventType","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","[C] Examination kind(s) covered, for search","Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGExaminationKindVS","",,,,"EHDSDocument.header.eventType",0,*,"",""
+"EHDSECGReport.header.serviceSpecialty","EHDSECGReport.header.serviceSpecialty","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Additional details about where the content was created (e.g. clinical specialty)","Additional details about where the content was created (e.g. clinical specialty)","","","","","","","","","",,"preferred","SNOMED CT","","",,,,"EHDSDocument.header.serviceSpecialty",0,*,"",""
+"EHDSECGReport.header.custodian","EHDSECGReport.header.custodian","","","",0,1,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}
+","Organisation that is in charge of maintaining the document/report.","Organisation that is in charge of maintaining the document/report.","","","","","","","","","",,,,,"",,,,"EHDSDocument.header.custodian",0,1,"",""
+"EHDSECGReport.presentedForm","EHDSECGReport.presentedForm","","","",1,*,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment {[]} {[]}
+","[C] Human-readable rendering of the full report including the tracing (PDF/A recommended). Each rendering carries its content, as data or a URL (ecg-rep-4)","A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document","","","","","","","","","",,,,,"",,,,"EHDSDocument.presentedForm",0,*,"",""
+"EHDSECGReport.body","EHDSECGReport.body","","","",1,1,"","","","Base {[]} {[]}
+","[C] Structured content","Structured content of the ECG report.","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body",1,1,"",""
+"EHDSECGReport.body.orderInformation","EHDSECGReport.body.orderInformation","","","",0,*,"","","","Base {[]} {[]}
+","[C] Order information","Same structure as EHDSLaboratoryReport.body.orderInformation.","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.orderInformation",0,*,"",""
+"EHDSECGReport.body.orderInformation.orderId","EHDSECGReport.body.orderInformation.orderId","","","",0,*,"","","","Identifier {[]} {[]}
+","Order identifier","Identifier of the order.","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.orderInformation.orderId",0,*,"",""
+"EHDSECGReport.body.orderInformation.orderDateAndTime","EHDSECGReport.body.orderInformation.orderDateAndTime","","","",0,1,"","","","dateTime {[]} {[]}
+","Order date and time","Date and time of the order.","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.orderInformation.orderDateAndTime",0,1,"",""
+"EHDSECGReport.body.orderInformation.orderPlacer[x]","EHDSECGReport.body.orderInformation.orderPlacer[x]","","","",0,1,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
+http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}","Order placer","Who placed the order.","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.orderInformation.orderPlacer[x]",0,1,"",""
+"EHDSECGReport.body.orderInformation.orderReason[x]","EHDSECGReport.body.orderInformation.orderReason[x]","","","",0,*,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSCondition {[]} {[]}
+CodeableConcept {[]} {[]}","Order reason","Reason for the order.","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.orderInformation.orderReason[x]",0,*,"",""
+"EHDSECGReport.body.orderInformation.clinicalQuestion","EHDSECGReport.body.orderInformation.clinicalQuestion","","","",0,1,"","","","string {[]} {[]}
+","Clinical question","Clinical question of the requester.","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.orderInformation.clinicalQuestion",0,1,"",""
+"EHDSECGReport.body.supportingInformation","EHDSECGReport.body.supportingInformation","","","",0,1,"","","","Base {[]} {[]}
+","[C] Clinical context relevant to interpretation","Clinical context relevant to the interpretation of the ECG.","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.supportingInformation",0,1,"",""
+"EHDSECGReport.body.supportingInformation.symptom[x]","EHDSECGReport.body.supportingInformation.symptom[x]","","","",0,*,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSObservation {[]} {[]}
+CodeableConcept {[]} {[]}","[C] Symptoms at the time of recording","Palpitations, chest pain, syncope...","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.supportingInformation.symptom[x]",0,*,"",""
+"EHDSECGReport.body.supportingInformation.condition","EHDSECGReport.body.supportingInformation.condition","","","",0,*,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSCondition {[]} {[]}
+","[C] Relevant conditions","Relevant conditions.","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.supportingInformation.condition",0,*,"",""
+"EHDSECGReport.body.supportingInformation.medication[x]","EHDSECGReport.body.supportingInformation.medication[x]","","","",0,*,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration {[]} {[]}
+CodeableConcept {[]} {[]}","[C] Medications affecting the ECG","Antiarrhythmics, QT-prolonging drugs, digoxin. ATC allowed.","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.supportingInformation.medication[x]",0,*,"",""
+"EHDSECGReport.body.supportingInformation.implantedDevice","EHDSECGReport.body.supportingInformation.implantedDevice","","","",0,*,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}
+","[C] Implanted cardiac device","Pacemaker, ICD, CRT, ILR.","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.supportingInformation.implantedDevice",0,*,"",""
+"EHDSECGReport.body.supportingInformation.pacingMode","EHDSECGReport.body.supportingInformation.pacingMode","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","[C] Programmed pacing mode","NBG/NASPE-BPEG code, e.g. DDD.","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.supportingInformation.pacingMode",0,1,"",""
+"EHDSECGReport.body.supportingInformation.vitalSign","EHDSECGReport.body.supportingInformation.vitalSign","","","",0,*,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSObservation {[]} {[]}
+","[C] Vital signs at the time of recording","Height, weight, blood pressure at the time of recording.","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.supportingInformation.vitalSign",0,*,"",""
+"EHDSECGReport.body.supportingInformation.sexForClinicalUse","EHDSECGReport.body.supportingInformation.sexForClinicalUse","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","[C] Sex for clinical use","As in EHDSLaboratoryReport (sex-specific reference ranges, e.g. QTc).","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.supportingInformation.sexForClinicalUse",0,1,"",""
+"EHDSECGReport.body.supportingInformation.other","EHDSECGReport.body.supportingInformation.other","","","",0,*,"","","","Resource {[]} {[]}
+","[A] Other supporting information","Any other supporting information.","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.supportingInformation.other",0,*,"",""
+"EHDSECGReport.body.examination","EHDSECGReport.body.examination","","","",1,*,"","","","http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination {[]} {[]}
+","[C] ECG examination(s) reported","The ECG examination(s) reported.","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.examination",1,*,"",""
+"EHDSECGReport.body.conclusion","EHDSECGReport.body.conclusion","","","",1,1,"","","","Base {[]} {[]}
+","[C] Report-level conclusion","Report-level conclusion.","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.conclusion",1,1,"",""
+"EHDSECGReport.body.conclusion.text","EHDSECGReport.body.conclusion.text","","","",1,1,"","","","string {[]} {[]}
+","[C] Narrative conclusion","Narrative conclusion as signed by the reporting physician (or as produced by the device if unconfirmed).","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.conclusion.text",1,1,"",""
+"EHDSECGReport.body.conclusion.overall","EHDSECGReport.body.conclusion.overall","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","[C] Overall conclusion","normal, otherwise normal, borderline, abnormal, non-diagnostic.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGOverallConclusionVS","",,,,"EHDSECGReport.body.conclusion.overall",0,1,"",""
+"EHDSECGReport.body.conclusion.finding","EHDSECGReport.body.conclusion.finding","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","[C] Coded diagnostic statements","Coded diagnostic statements.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGFindingVS","",,,,"EHDSECGReport.body.conclusion.finding",0,*,"",""
+"EHDSECGReport.body.conclusion.comparisonWithPrior","EHDSECGReport.body.conclusion.comparisonWithPrior","","","",0,1,"","","","Base {[]} {[]}
+","[C] Comparison with a previous ECG","Comparison with a previous ECG.","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.conclusion.comparisonWithPrior",0,1,"",""
+"EHDSECGReport.body.conclusion.comparisonWithPrior.prior","EHDSECGReport.body.conclusion.comparisonWithPrior.prior","","","",0,1,"","","","Identifier {[]} {[]}
+","[C] Previous examination (link)","Identifier of the previous examination. Always an external link.","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.conclusion.comparisonWithPrior.prior",0,1,"",""
+"EHDSECGReport.body.conclusion.comparisonWithPrior.change[x]","EHDSECGReport.body.conclusion.comparisonWithPrior.change[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
+string {[]} {[]}","[C] Change","unchanged, changed (+ description).","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.conclusion.comparisonWithPrior.change[x]",1,1,"",""
+"EHDSECGReport.body.conclusion.recommendation","EHDSECGReport.body.conclusion.recommendation","","","",0,1,"","","","string {[]} {[]}
+","[C] Recommendations","Recommendations (further tests, follow-up).","","","","","","","","","",,,,,"",,,,"EHDSECGReport.body.conclusion.recommendation",0,1,"",""
+"EHDSECGReport.attachments","EHDSECGReport.attachments","","","",0,*,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment {[]} {[]}
+","[C] Other attached documents","Other attached documents.","","","","","","","","","",,,,,"",,,,"EHDSECGReport.attachments",0,*,"",""

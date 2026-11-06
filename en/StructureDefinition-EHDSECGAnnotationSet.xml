@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="EHDSECGAnnotationSet"/>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition EHDSECGAnnotationSet</b></p><table border="0" cellpadding="0" cellspacing="0" class="xhtTableBorder0"><tr class="xhtRowBorder1"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet" title="Time-anchored annotations. One set = one author (algorithm or person) at one time, as in the HL7 aECG annotationSet, SCP-ECG section 18 and the DICOM Waveform Annotation SR.">EHDSECGAnnotationSet</a><a name="EHDSECGAnnotationSet"> </a></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( ecg-id-1, ecg-dr-13, ecg-dr-19, ecg-dr-20, ecg-dr-21, ecg-ann-1, ecg-ann-2, ecg-ann-3, ecg-ann-4, ecg-ann-5, ecg-ann-6 )" class="xhtConstraintStyle">C</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDataSet.html">EHDSDataSet</a></td><td style="" class="hierarchy xhtCellBorder0">ECG annotation set model<br/><br/>Elements defined in Ancestors:<a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDataSet.html" title="Basic metadata for this information">header</a><br/><span class="xhtPieceBold">Instances of this type can be the target of a Reference</span><br class="constraint"/><span class="constraint">Constraints: </span><span title="TODO: placeholder for invariant ecg-id-1, to be defined." class="xhtPieceBold constraint">ecg-id-1</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-dr-13, to be defined." class="xhtPieceBold constraint">ecg-dr-13</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-dr-19, to be defined." class="xhtPieceBold constraint">ecg-dr-19</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-dr-20, to be defined." class="xhtPieceBold constraint">ecg-dr-20</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-dr-21, to be defined." class="xhtPieceBold constraint">ecg-dr-21</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-ann-1, to be defined." class="xhtPieceBold constraint">ecg-ann-1</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-ann-2, to be defined." class="xhtPieceBold constraint">ecg-ann-2</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-ann-3, to be defined." class="xhtPieceBold constraint">ecg-ann-3</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-ann-4, to be defined." class="xhtPieceBold constraint">ecg-ann-4</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-ann-5, to be defined." class="xhtPieceBold constraint">ecg-ann-5</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-ann-6, to be defined." class="xhtPieceBold constraint">ecg-ann-6</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.header">header</a><a name="EHDSECGAnnotationSet.header"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.header.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.header.identifier">identifier</a><a name="EHDSECGAnnotationSet.header.identifier"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..<span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier" class="xhtPieceDeEmphasized">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Needed for links</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.header.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.header.author[x]">author[x]</a><a name="EHDSECGAnnotationSet.header.author_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">[A] One set = one author</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.header.author[x].</span><span title="Model for information about a health professional.">authorEHDSHealthProfessional</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSHealthProfessional.html">EHDSHealthProfessional</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.header.author[x].</span><span title="Model for device information">authorEHDSDevice</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html">EHDSDevice</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.header.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.header.date">date</a><a name="EHDSECGAnnotationSet.header.date"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..<span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime" class="xhtPieceDeEmphasized">dateTime</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Date of creation of the set</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.recording" title="Link to the annotated recording.">recording</a><a name="EHDSECGAnnotationSet.recording"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Link to the annotated recording</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.algorithm" title="With its version. Required when the author is a device (ecg-ann-6).">algorithm</a><a name="EHDSECGAnnotationSet.algorithm"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSECGAlgorithm.html">EHDSECGAlgorithm</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Algorithm that produced the set</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.executionManifest" title="As in EHDSECGDerivedResult.">executionManifest</a><a name="EHDSECGAnnotationSet.executionManifest"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">[A] Execution manifest</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.executionManifest.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.executionManifest.attachment" title="With its content as data or a URL (ecg-dr-19).">attachment</a><a name="EHDSECGAnnotationSet.executionManifest.attachment"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSAttachment.html">EHDSAttachment</a></td><td style="" class="hierarchy xhtCellBorder0">[A] The manifest</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.executionManifest.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.executionManifest.contentHash" title="Required to match inline content (ecg-dr-21).">contentHash</a><a name="EHDSECGAnnotationSet.executionManifest.contentHash"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">[A] SHA-256 of the manifest</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.useTier" title="As in EHDSECGDerivedResult.">useTier</a><a name="EHDSECGAnnotationSet.useTier"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Intended use<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGUseTierVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGUseTierVS" class="binding">ECG Use Tier (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.review" title="Same structure and rules as EHDSECGDerivedResult.review; review.replacement links to a corrected annotation set (ecg-ann-1).">review</a><a name="EHDSECGAnnotationSet.review"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">[A] Human oversight<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.review.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.review.status" title="not-reviewed, accepted, modified, rejected.">status</a><a name="EHDSECGAnnotationSet.review.status"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Review status<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGReviewStatusVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGReviewStatusVS" class="binding">ECG Review Status (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.review.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.review.reviewer" title="Required when status is not not-reviewed (ecg-dr-13).">reviewer</a><a name="EHDSECGAnnotationSet.review.reviewer"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSHealthProfessional.html">EHDSHealthProfessional</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Reviewer</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.review.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.review.datetime" title="Required when status is not not-reviewed, unless datetimeAbsentReason is given.">datetime</a><a name="EHDSECGAnnotationSet.review.datetime"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Date of review</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.review.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.review.datetimeAbsentReason" title="Why the review date is unknown.">datetimeAbsentReason</a><a name="EHDSECGAnnotationSet.review.datetimeAbsentReason"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Why the review date is unknown<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGDataAbsentReasonVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGDataAbsentReasonVS" class="binding">ECG Data Absent Reason (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.review.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.review.replacement" title="When status = modified (ecg-ann-1).">replacement</a><a name="EHDSECGAnnotationSet.review.replacement"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Link to the corrected annotation set</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.review.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.review.comment" title="Comment.">comment</a><a name="EHDSECGAnnotationSet.review.comment"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Comment</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.annotation" title="Inline events (short recordings).">annotation</a><a name="EHDSECGAnnotationSet.annotation"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">[A] Inline events<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.annotation.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.annotation.code" title="Wave boundary, beat class, episode, artefact.">code</a><a name="EHDSECGAnnotationSet.annotation.code"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Annotation code<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGAnnotationVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGAnnotationVS" class="binding">ECG Annotation (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.annotation.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.annotation.onset[x]" title="ms from recording start (&gt;= 0), or absolute time. Within the recording (ecg-ann-5).">onset[x]</a><a name="EHDSECGAnnotationSet.annotation.onset_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">[A] Onset</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.annotation.onset[x].</span><span title="Base StructureDefinition for decimal Type: A rational number with implicit precision">onsetDecimal</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.annotation.onset[x].</span><span title="Base StructureDefinition for dateTime Type: A date, date-time or partial date (e.g. just year or year + month).  If hours and minutes are specified, a time zone SHALL be populated. The format is a union of the schema types gYear, gYearMonth, date and dateTime. Seconds must be provided due to schema type constraints but may be zero-filled and may be ignored.                 Dates SHALL be valid dates.">onsetDateTime</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.annotation.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.annotation.end[x]" title="Absent for a fiducial point. Same type as onset[x], not before it (ecg-ann-2), within the recording (ecg-ann-5).">end[x]</a><a name="EHDSECGAnnotationSet.annotation.end_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">[A] End</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.annotation.end[x].</span><span title="Base StructureDefinition for decimal Type: A rational number with implicit precision">endDecimal</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.annotation.end[x].</span><span title="Base StructureDefinition for dateTime Type: A date, date-time or partial date (e.g. just year or year + month).  If hours and minutes are specified, a time zone SHALL be populated. The format is a union of the schema types gYear, gYearMonth, date and dateTime. Seconds must be provided due to schema type constraints but may be zero-filled and may be ignored.                 Dates SHALL be valid dates.">endDateTime</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.annotation.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.annotation.lead" title="Absent = all leads.">lead</a><a name="EHDSECGAnnotationSet.annotation.lead"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Lead<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGLeadVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS" class="binding">ECG Lead (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span><br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.annotation.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.annotation.value[x]" title="Optional value.">value[x]</a><a name="EHDSECGAnnotationSet.annotation.value_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">[A] Value</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.annotation.value[x].</span><span title="Base StructureDefinition for Quantity Type: A measured amount (or an amount that can potentially be measured). Note that measured amounts include amounts that are not precisely quantified, including amounts involving arbitrary units and floating currencies.">valueQuantity</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.annotation.value[x].</span><span title="Base StructureDefinition for CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.">valueCodeableConcept</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.annotation.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.annotation.confidence" title="Between 0 and 1 (ecg-ann-4).">confidence</a><a name="EHDSECGAnnotationSet.annotation.confidence"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Confidence</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.annotation.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.annotation.localId" title="Unique within the set (ecg-ann-3).">localId</a><a name="EHDSECGAnnotationSet.annotation.localId"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Local id</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.annotation.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.annotation.parent" title="localId of an existing annotation of the same set: wave -&gt; beat -&gt; episode (ecg-ann-3).">parent</a><a name="EHDSECGAnnotationSet.annotation.parent"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Parent annotation</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.bulkPayload" title="Long recordings: DICOM Waveform Annotation SR, WFDB annotations, or a tabular format to be specified.">bulkPayload</a><a name="EHDSECGAnnotationSet.bulkPayload"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSAttachment.html">EHDSAttachment</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Annotations in an external format</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.bulkPayloadContentHash" title="SHA-256 of bulkPayload.">bulkPayloadContentHash</a><a name="EHDSECGAnnotationSet.bulkPayloadContentHash"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">[A] SHA-256 of bulkPayload</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck00.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAnnotationSet.</span><a href="StructureDefinition-EHDSECGAnnotationSet-definitions.html#EHDSECGAnnotationSet.summary" title="Links to the aggregates computed from the set (AF burden, event counts), which are derived results of the examination.">summary</a><a name="EHDSECGAnnotationSet.summary"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Links to aggregates<br/></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
+    <valueCode value="can-be-target"/>
+  </extension>
+  <url value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+  <version value="0.1.0-ci-build"/>
+  <name value="EHDSECGAnnotationSet"/>
+  <title value="ECG annotation set model"/>
+  <status value="draft"/>
+  <date value="2026-11-06T23:02:43+01:00"/>
+  <publisher value="HL7 Europe"/>
+  <contact>
+    <name value="HL7 Europe"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.eu"/>
+    </telecom>
+  </contact>
+  <description value="Time-anchored annotations. One set = one author (algorithm or person) at one time, as in the HL7 aECG annotationSet, SCP-ECG section 18 and the DICOM Waveform Annotation SR."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="150"/>
+      <display value="Europe"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright HL7 Europe. Licensed under creative commons public domain (CC0 1.0)."/>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+  <baseDefinition value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDataSet"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="1.0.0"/>
+    </extension>
+    <element id="EHDSECGAnnotationSet">
+      <path value="EHDSECGAnnotationSet"/>
+      <short value="ECG annotation set model"/>
+      <definition value="Time-anchored annotations. One set = one author (algorithm or person) at one time, as in the HL7 aECG annotationSet, SCP-ECG section 18 and the DICOM Waveform Annotation SR."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <constraint>
+        <key value="ecg-id-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-id-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-dr-13"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-dr-13, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-dr-19"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-dr-19, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-dr-20"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-dr-20, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-dr-21"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-dr-21, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-ann-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-ann-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-ann-2"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-ann-2, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-ann-3"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-ann-3, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-ann-4"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-ann-4, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-ann-5"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-ann-5, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-ann-6"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-ann-6, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="EHDSECGAnnotationSet.header">
+      <path value="EHDSECGAnnotationSet.header"/>
+      <short value="Basic metadata for this information"/>
+      <definition value="Basic metadata for this information"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.header.subject">
+      <path value="EHDSECGAnnotationSet.header.subject"/>
+      <short value="Patient/subject information"/>
+      <definition value="Patient/subject information"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.subject"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.header.identifier">
+      <path value="EHDSECGAnnotationSet.header.identifier"/>
+      <short value="[A] Needed for links"/>
+      <definition value="Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDataSet.header.identifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.header.author[x]">
+      <path value="EHDSECGAnnotationSet.header.author[x]"/>
+      <short value="[A] One set = one author"/>
+      <definition value="Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.author[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.header.date">
+      <path value="EHDSECGAnnotationSet.header.date"/>
+      <short value="[A] Date of creation of the set"/>
+      <definition value="Date and optionally time of authoring/issuing"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.date"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.header.status">
+      <path value="EHDSECGAnnotationSet.header.status"/>
+      <short value="Status of the resource or document"/>
+      <definition value="Status of the resource or document"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.header.source">
+      <path value="EHDSECGAnnotationSet.header.source"/>
+      <short value="Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information."/>
+      <definition value="Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.source"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.header.language">
+      <path value="EHDSECGAnnotationSet.header.language"/>
+      <short value="Language in which the resource is written. Language is expressed by the IETF language tag."/>
+      <definition value="Language in which the resource is written. Language is expressed by the IETF language tag."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.language"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="BCP 47"/>
+      </binding>
+    </element>
+    <element id="EHDSECGAnnotationSet.recording">
+      <path value="EHDSECGAnnotationSet.recording"/>
+      <short value="[A] Link to the annotated recording"/>
+      <definition value="Link to the annotated recording."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.recording"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.algorithm">
+      <path value="EHDSECGAnnotationSet.algorithm"/>
+      <short value="[A] Algorithm that produced the set"/>
+      <definition value="With its version. Required when the author is a device (ecg-ann-6)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.algorithm"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAlgorithm"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.executionManifest">
+      <path value="EHDSECGAnnotationSet.executionManifest"/>
+      <short value="[A] Execution manifest"/>
+      <definition value="As in EHDSECGDerivedResult."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.executionManifest"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.executionManifest.attachment">
+      <path value="EHDSECGAnnotationSet.executionManifest.attachment"/>
+      <short value="[A] The manifest"/>
+      <definition value="With its content as data or a URL (ecg-dr-19)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.executionManifest.attachment"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.executionManifest.contentHash">
+      <path value="EHDSECGAnnotationSet.executionManifest.contentHash"/>
+      <short value="[A] SHA-256 of the manifest"/>
+      <definition value="Required to match inline content (ecg-dr-21)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.executionManifest.contentHash"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.useTier">
+      <path value="EHDSECGAnnotationSet.useTier"/>
+      <short value="[A] Intended use"/>
+      <definition value="As in EHDSECGDerivedResult."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.useTier"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGUseTierVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGAnnotationSet.review">
+      <path value="EHDSECGAnnotationSet.review"/>
+      <short value="[A] Human oversight"/>
+      <definition value="Same structure and rules as EHDSECGDerivedResult.review; review.replacement links to a corrected annotation set (ecg-ann-1)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.review"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.review.status">
+      <path value="EHDSECGAnnotationSet.review.status"/>
+      <short value="[A] Review status"/>
+      <definition value="not-reviewed, accepted, modified, rejected."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.review.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGReviewStatusVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGAnnotationSet.review.reviewer">
+      <path value="EHDSECGAnnotationSet.review.reviewer"/>
+      <short value="[A] Reviewer"/>
+      <definition value="Required when status is not not-reviewed (ecg-dr-13)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.review.reviewer"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.review.datetime">
+      <path value="EHDSECGAnnotationSet.review.datetime"/>
+      <short value="[A] Date of review"/>
+      <definition value="Required when status is not not-reviewed, unless datetimeAbsentReason is given."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.review.datetime"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.review.datetimeAbsentReason">
+      <path value="EHDSECGAnnotationSet.review.datetimeAbsentReason"/>
+      <short value="[A] Why the review date is unknown"/>
+      <definition value="Why the review date is unknown."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.review.datetimeAbsentReason"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGDataAbsentReasonVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGAnnotationSet.review.replacement">
+      <path value="EHDSECGAnnotationSet.review.replacement"/>
+      <short value="[A] Link to the corrected annotation set"/>
+      <definition value="When status = modified (ecg-ann-1)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.review.replacement"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.review.comment">
+      <path value="EHDSECGAnnotationSet.review.comment"/>
+      <short value="[A] Comment"/>
+      <definition value="Comment."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.review.comment"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.annotation">
+      <path value="EHDSECGAnnotationSet.annotation"/>
+      <short value="[A] Inline events"/>
+      <definition value="Inline events (short recordings)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.annotation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.annotation.code">
+      <path value="EHDSECGAnnotationSet.annotation.code"/>
+      <short value="[A] Annotation code"/>
+      <definition value="Wave boundary, beat class, episode, artefact."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.annotation.code"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGAnnotationVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGAnnotationSet.annotation.onset[x]">
+      <path value="EHDSECGAnnotationSet.annotation.onset[x]"/>
+      <short value="[A] Onset"/>
+      <definition value="ms from recording start (&gt;= 0), or absolute time. Within the recording (ecg-ann-5)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.annotation.onset[x]"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.annotation.end[x]">
+      <path value="EHDSECGAnnotationSet.annotation.end[x]"/>
+      <short value="[A] End"/>
+      <definition value="Absent for a fiducial point. Same type as onset[x], not before it (ecg-ann-2), within the recording (ecg-ann-5)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.annotation.end[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.annotation.lead">
+      <path value="EHDSECGAnnotationSet.annotation.lead"/>
+      <short value="[A] Lead"/>
+      <definition value="Absent = all leads."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.annotation.lead"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGAnnotationSet.annotation.value[x]">
+      <path value="EHDSECGAnnotationSet.annotation.value[x]"/>
+      <short value="[A] Value"/>
+      <definition value="Optional value."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.annotation.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.annotation.confidence">
+      <path value="EHDSECGAnnotationSet.annotation.confidence"/>
+      <short value="[A] Confidence"/>
+      <definition value="Between 0 and 1 (ecg-ann-4)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.annotation.confidence"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.annotation.localId">
+      <path value="EHDSECGAnnotationSet.annotation.localId"/>
+      <short value="[A] Local id"/>
+      <definition value="Unique within the set (ecg-ann-3)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.annotation.localId"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.annotation.parent">
+      <path value="EHDSECGAnnotationSet.annotation.parent"/>
+      <short value="[A] Parent annotation"/>
+      <definition value="localId of an existing annotation of the same set: wave -&gt; beat -&gt; episode (ecg-ann-3)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.annotation.parent"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.bulkPayload">
+      <path value="EHDSECGAnnotationSet.bulkPayload"/>
+      <short value="[A] Annotations in an external format"/>
+      <definition value="Long recordings: DICOM Waveform Annotation SR, WFDB annotations, or a tabular format to be specified."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.bulkPayload"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.bulkPayloadContentHash">
+      <path value="EHDSECGAnnotationSet.bulkPayloadContentHash"/>
+      <short value="[A] SHA-256 of bulkPayload"/>
+      <definition value="SHA-256 of bulkPayload."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.bulkPayloadContentHash"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.summary">
+      <path value="EHDSECGAnnotationSet.summary"/>
+      <short value="[A] Links to aggregates"/>
+      <definition value="Links to the aggregates computed from the set (AF burden, event counts), which are derived results of the examination."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGAnnotationSet.summary"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="EHDSECGAnnotationSet">
+      <path value="EHDSECGAnnotationSet"/>
+      <short value="ECG annotation set model"/>
+      <definition value="Time-anchored annotations. One set = one author (algorithm or person) at one time, as in the HL7 aECG annotationSet, SCP-ECG section 18 and the DICOM Waveform Annotation SR."/>
+      <constraint>
+        <key value="ecg-id-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-id-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-dr-13"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-dr-13, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-dr-19"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-dr-19, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-dr-20"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-dr-20, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-dr-21"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-dr-21, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-ann-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-ann-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-ann-2"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-ann-2, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-ann-3"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-ann-3, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-ann-4"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-ann-4, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-ann-5"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-ann-5, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-ann-6"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-ann-6, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </constraint>
+    </element>
+    <element id="EHDSECGAnnotationSet.header.identifier">
+      <path value="EHDSECGAnnotationSet.header.identifier"/>
+      <short value="[A] Needed for links"/>
+      <min value="1"/>
+    </element>
+    <element id="EHDSECGAnnotationSet.header.author[x]">
+      <path value="EHDSECGAnnotationSet.header.author[x]"/>
+      <short value="[A] One set = one author"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.header.date">
+      <path value="EHDSECGAnnotationSet.header.date"/>
+      <short value="[A] Date of creation of the set"/>
+      <min value="1"/>
+    </element>
+    <element id="EHDSECGAnnotationSet.recording">
+      <path value="EHDSECGAnnotationSet.recording"/>
+      <short value="[A] Link to the annotated recording"/>
+      <definition value="Link to the annotated recording."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.algorithm">
+      <path value="EHDSECGAnnotationSet.algorithm"/>
+      <short value="[A] Algorithm that produced the set"/>
+      <definition value="With its version. Required when the author is a device (ecg-ann-6)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAlgorithm"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.executionManifest">
+      <path value="EHDSECGAnnotationSet.executionManifest"/>
+      <short value="[A] Execution manifest"/>
+      <definition value="As in EHDSECGDerivedResult."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.executionManifest.attachment">
+      <path value="EHDSECGAnnotationSet.executionManifest.attachment"/>
+      <short value="[A] The manifest"/>
+      <definition value="With its content as data or a URL (ecg-dr-19)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.executionManifest.contentHash">
+      <path value="EHDSECGAnnotationSet.executionManifest.contentHash"/>
+      <short value="[A] SHA-256 of the manifest"/>
+      <definition value="Required to match inline content (ecg-dr-21)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.useTier">
+      <path value="EHDSECGAnnotationSet.useTier"/>
+      <short value="[A] Intended use"/>
+      <definition value="As in EHDSECGDerivedResult."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGUseTierVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGAnnotationSet.review">
+      <path value="EHDSECGAnnotationSet.review"/>
+      <short value="[A] Human oversight"/>
+      <definition value="Same structure and rules as EHDSECGDerivedResult.review; review.replacement links to a corrected annotation set (ecg-ann-1)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.review.status">
+      <path value="EHDSECGAnnotationSet.review.status"/>
+      <short value="[A] Review status"/>
+      <definition value="not-reviewed, accepted, modified, rejected."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGReviewStatusVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGAnnotationSet.review.reviewer">
+      <path value="EHDSECGAnnotationSet.review.reviewer"/>
+      <short value="[A] Reviewer"/>
+      <definition value="Required when status is not not-reviewed (ecg-dr-13)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.review.datetime">
+      <path value="EHDSECGAnnotationSet.review.datetime"/>
+      <short value="[A] Date of review"/>
+      <definition value="Required when status is not not-reviewed, unless datetimeAbsentReason is given."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.review.datetimeAbsentReason">
+      <path value="EHDSECGAnnotationSet.review.datetimeAbsentReason"/>
+      <short value="[A] Why the review date is unknown"/>
+      <definition value="Why the review date is unknown."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGDataAbsentReasonVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGAnnotationSet.review.replacement">
+      <path value="EHDSECGAnnotationSet.review.replacement"/>
+      <short value="[A] Link to the corrected annotation set"/>
+      <definition value="When status = modified (ecg-ann-1)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.review.comment">
+      <path value="EHDSECGAnnotationSet.review.comment"/>
+      <short value="[A] Comment"/>
+      <definition value="Comment."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.annotation">
+      <path value="EHDSECGAnnotationSet.annotation"/>
+      <short value="[A] Inline events"/>
+      <definition value="Inline events (short recordings)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.annotation.code">
+      <path value="EHDSECGAnnotationSet.annotation.code"/>
+      <short value="[A] Annotation code"/>
+      <definition value="Wave boundary, beat class, episode, artefact."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGAnnotationVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGAnnotationSet.annotation.onset[x]">
+      <path value="EHDSECGAnnotationSet.annotation.onset[x]"/>
+      <short value="[A] Onset"/>
+      <definition value="ms from recording start (&gt;= 0), or absolute time. Within the recording (ecg-ann-5)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.annotation.end[x]">
+      <path value="EHDSECGAnnotationSet.annotation.end[x]"/>
+      <short value="[A] End"/>
+      <definition value="Absent for a fiducial point. Same type as onset[x], not before it (ecg-ann-2), within the recording (ecg-ann-5)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.annotation.lead">
+      <path value="EHDSECGAnnotationSet.annotation.lead"/>
+      <short value="[A] Lead"/>
+      <definition value="Absent = all leads."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGAnnotationSet.annotation.value[x]">
+      <path value="EHDSECGAnnotationSet.annotation.value[x]"/>
+      <short value="[A] Value"/>
+      <definition value="Optional value."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.annotation.confidence">
+      <path value="EHDSECGAnnotationSet.annotation.confidence"/>
+      <short value="[A] Confidence"/>
+      <definition value="Between 0 and 1 (ecg-ann-4)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.annotation.localId">
+      <path value="EHDSECGAnnotationSet.annotation.localId"/>
+      <short value="[A] Local id"/>
+      <definition value="Unique within the set (ecg-ann-3)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.annotation.parent">
+      <path value="EHDSECGAnnotationSet.annotation.parent"/>
+      <short value="[A] Parent annotation"/>
+      <definition value="localId of an existing annotation of the same set: wave -&gt; beat -&gt; episode (ecg-ann-3)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.bulkPayload">
+      <path value="EHDSECGAnnotationSet.bulkPayload"/>
+      <short value="[A] Annotations in an external format"/>
+      <definition value="Long recordings: DICOM Waveform Annotation SR, WFDB annotations, or a tabular format to be specified."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.bulkPayloadContentHash">
+      <path value="EHDSECGAnnotationSet.bulkPayloadContentHash"/>
+      <short value="[A] SHA-256 of bulkPayload"/>
+      <definition value="SHA-256 of bulkPayload."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAnnotationSet.summary">
+      <path value="EHDSECGAnnotationSet.summary"/>
+      <short value="[A] Links to aggregates"/>
+      <definition value="Links to the aggregates computed from the set (AF burden, event counts), which are derived results of the examination."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

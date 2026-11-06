@@ -1,0 +1,1805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="EHDSECGExamination"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition EHDSECGExamination</b></p><table border="0" cellpadding="0" cellspacing="0" class="xhtTableBorder0"><tr class="xhtRowBorder1"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination" title="One acquisition session (a resting 12-lead ECG, a stress test, a Holter recording...). It groups the signal, the annotations and every result derived from it.">EHDSECGExamination</a><a name="EHDSECGExamination"> </a></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( ecg-id-1, ecg-ex-1, ecg-ex-2, ecg-ex-3, ecg-ex-4 )" class="xhtConstraintStyle">C</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html">EHDSObservation</a></td><td style="" class="hierarchy xhtCellBorder0">ECG examination model<br/><br/>Elements defined in Ancestors:<a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDataSet.html" title="Basic metadata for this information">header</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html" title="Clinically relevant time or time period for the observation">observationDate[x]</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html" title="Observation type. Code and name representing the type of the observation using the agreed code systems.">type</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html" title="Original (conventional) name of the observation as used in the local laboratory or clinical system.">originalName</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html" title="Observation method (measurement principle) to obtain the result.">method</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html" title="Specimen used for this observation.">specimen</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html" title="Identifies order and order placer this observation belongs to">order</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html" title="Performer of the observation. Some test could be performed by the patient himself or by a care giver. Those are in the scope of this deliverable under specified conditions.">performer[x]</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html" title="Anatomic location and laterality where the observation was performed.">bodySite</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html" title="Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation.">result</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html" title="Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result.">referenceRange</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html" title="Information about reference intervals and result interpretation.">interpretation</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html" title="Comments and narrative representation of the observation result and findings.">note</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html" title="Component in case the observation consists of multiple sub-observations (e.g. blood pressure).">component</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html" title="Reference to the related resource from which the observation has been made. For example, a calculated anion gap or a fetal measurement based on an ultrasound image.">derivedFrom[x]</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html" title="This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group.">hasMember[x]</a><br/><span class="xhtPieceBold">Instances of this type can be the target of a Reference</span><br class="constraint"/><span class="constraint">Constraints: </span><span title="TODO: placeholder for invariant ecg-id-1, to be defined." class="xhtPieceBold constraint">ecg-id-1</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-ex-1, to be defined." class="xhtPieceBold constraint">ecg-ex-1</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-ex-2, to be defined." class="xhtPieceBold constraint">ecg-ex-2</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-ex-3, to be defined." class="xhtPieceBold constraint">ecg-ex-3</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-ex-4, to be defined." class="xhtPieceBold constraint">ecg-ex-4</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.header">header</a><a name="EHDSECGExamination.header"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.header.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.header.identifier">identifier</a><a name="EHDSECGExamination.header.identifier"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..<span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier" class="xhtPieceDeEmphasized">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Durable, globally unique identifier (ecg-id-1)</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.observationDate[x]">observationDate[x]</a><a name="EHDSECGExamination.observationDate_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime" class="xhtPieceDeEmphasized">dateTime</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#Period" class="xhtPieceDeEmphasized">Period</a></td><td style="" class="hierarchy xhtCellBorder0">[C] dateTime for short recordings; Period for long-term recordings. Time-zone offset required with a time of day</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.type">type</a><a name="EHDSECGExamination.type"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[C] LOINC 11524-6 EKG study. Additional codings allowed (e.g. SNOMED CT 268400002 12 lead ECG)<br/><span class="xhtPieceBold">Required Pattern: </span><div><pre class="json"><code>{
+  &quot;coding&quot; : [
+    {
+      &quot;system&quot; : &quot;http://loinc.org&quot;,
+      &quot;code&quot; : <span title="EKG study">&quot;11524-6&quot;</span>
+    }
+  ]
+}</code></pre></div></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.specimen" class="xhtPieceStrikeout">specimen</a><a name="EHDSECGExamination.specimen"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceStrikeout"/><span class="xhtPieceStrikeout xhtPieceDeEmphasized">0</span><span class="xhtPieceStrikeout">..</span><span class="xhtPieceStrikeout">0</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceItalic xhtPieceDeEmphasized">Specimen used for this observation.</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.result">result</a><a name="EHDSECGExamination.result"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.result.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.result.value[x]">value[x]</a><a name="EHDSECGExamination.result.value_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Overall conclusion category for this examination<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGOverallConclusionVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGOverallConclusionVS" class="binding">ECG Overall Conclusion (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.hasMember[x]">hasMember[x]</a><a name="EHDSECGExamination.hasMember_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSECGDerivedResult.html">EHDSECGDerivedResult</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Measurement sets, statement sets, AI and biomarker results derived from this examination. At least one measurement set with the minimum measurements for the examination kind (ecg-ex-3)</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.examinationKind" title="resting, exercise stress, pharmacological stress, ambulatory long-term (Holter), event / loop recorder, patch, consumer single-lead device, in-hospital monitoring strip.">examinationKind</a><a name="EHDSECGExamination.examinationKind"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Examination kind<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGExaminationKindVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGExaminationKindVS" class="binding">ECG Examination Kind (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.ageAtExamination" title="For de-identified data or when the date of birth is not shared. ECG criteria are age-dependent.">ageAtExamination</a><a name="EHDSECGExamination.ageAtExamination"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Age of the patient at the examination</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.ageAtExamination.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.ageAtExamination.code">code</a><a name="EHDSECGExamination.ageAtExamination.code"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#code" class="xhtPieceDeEmphasized">code</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Coded form of the unit</span><br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGAgeUnitVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGAgeUnitVS" class="binding">ECG Age Unit (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.leadSystem" title="Standard 12-lead, Mason-Likar, Frank XYZ, EASI, reduced lead set, single lead (cf. DICOM CID 3263).">leadSystem</a><a name="EHDSECGExamination.leadSystem"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Lead system<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGLeadSystemVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS" class="binding">ECG Lead System (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.acquisitionDevice" title="Manufacturer, model, serial number, firmware. Always at Core level, here or on each recording (ecg-ex-4).">acquisitionDevice</a><a name="EHDSECGExamination.acquisitionDevice"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html">EHDSDevice</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Electrocardiograph or recorder</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.patientState" title="Supine, sitting, standing, exercise, recovery, during symptoms (cf. DICOM CID 3262).">patientState</a><a name="EHDSECGExamination.patientState"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Position and state<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.stressTest" title="Detailed model deferred to a later version.">stressTest</a><a name="EHDSECGExamination.stressTest"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">[A] Stress-test context</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.stressTest.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.stressTest.protocol" title="Bruce, modified Bruce, ramp, cycle ergometer...">protocol</a><a name="EHDSECGExamination.stressTest.protocol"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Protocol</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.stressTest.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.stressTest.maximumWorkload" title="W or METs.">maximumWorkload</a><a name="EHDSECGExamination.stressTest.maximumWorkload"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Maximum workload</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.stressTest.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.stressTest.exerciseDuration" title="Duration.">exerciseDuration</a><a name="EHDSECGExamination.stressTest.exerciseDuration"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Exercise duration</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.stressTest.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.stressTest.terminationReason" title="Reasons for stopping.">terminationReason</a><a name="EHDSECGExamination.stressTest.terminationReason"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Reasons for stopping<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.recording" title="Required at Core level, with at least one rhythm recording (ecg-ex-1); absent only in Legacy.">recording</a><a name="EHDSECGExamination.recording"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSECGRecording.html">EHDSECGRecording</a></td><td style="" class="hierarchy xhtCellBorder0">[C] The signal<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.legacyReason" title="historical record, device without digital signal export, signal not retained, reconstructed from paper only, other. Required when there is no recording (ecg-ex-1).">legacyReason</a><a name="EHDSECGExamination.legacyReason"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Why the signal is absent (Legacy)<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGLegacyReasonVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGLegacyReasonVS" class="binding">ECG Legacy Reason (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck00.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination.</span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.annotationSet" title="Time-anchored annotations on the recordings.">annotationSet</a><a name="EHDSECGExamination.annotationSet"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSECGAnnotationSet.html">EHDSECGAnnotationSet</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Time-anchored annotations<br/></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
+    <valueCode value="can-be-target"/>
+  </extension>
+  <url value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination"/>
+  <version value="0.1.0-ci-build"/>
+  <name value="EHDSECGExamination"/>
+  <title value="ECG examination model"/>
+  <status value="draft"/>
+  <date value="2026-11-06T23:02:43+01:00"/>
+  <publisher value="HL7 Europe"/>
+  <contact>
+    <name value="HL7 Europe"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.eu"/>
+    </telecom>
+  </contact>
+  <description value="One acquisition session (a resting 12-lead ECG, a stress test, a Holter recording...). It groups the signal, the annotations and every result derived from it."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="150"/>
+      <display value="Europe"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright HL7 Europe. Licensed under creative commons public domain (CC0 1.0)."/>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination"/>
+  <baseDefinition value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="1.0.0"/>
+    </extension>
+    <element id="EHDSECGExamination">
+      <path value="EHDSECGExamination"/>
+      <short value="ECG examination model"/>
+      <definition value="One acquisition session (a resting 12-lead ECG, a stress test, a Holter recording...). It groups the signal, the annotations and every result derived from it."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <constraint>
+        <key value="ecg-id-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-id-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-ex-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-ex-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-ex-2"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-ex-2, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-ex-3"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-ex-3, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-ex-4"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-ex-4, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination"/>
+      </constraint>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="EHDSECGExamination.header">
+      <path value="EHDSECGExamination.header"/>
+      <short value="Basic metadata for this information"/>
+      <definition value="Basic metadata for this information"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.header.subject">
+      <path value="EHDSECGExamination.header.subject"/>
+      <short value="Patient who is receiving health care. This patient might be different from the direct subject of the observation."/>
+      <definition value="Patient/subject information"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.subject"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.header.identifier">
+      <path value="EHDSECGExamination.header.identifier"/>
+      <short value="[C] Durable, globally unique identifier (ecg-id-1)"/>
+      <definition value="Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDataSet.header.identifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.header.author[x]">
+      <path value="EHDSECGExamination.header.author[x]"/>
+      <short value="Author(s) responsible for the provided information."/>
+      <definition value="Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDataSet.header.author[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.header.date">
+      <path value="EHDSECGExamination.header.date"/>
+      <short value="Date and optionally time of authoring/issuing"/>
+      <definition value="Date and optionally time of authoring/issuing"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.date"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.header.status">
+      <path value="EHDSECGExamination.header.status"/>
+      <short value="Status of the resource or document"/>
+      <definition value="Status of the resource or document"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="HL7 Observation status"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.header.source">
+      <path value="EHDSECGExamination.header.source"/>
+      <short value="Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information."/>
+      <definition value="Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.source"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.header.language">
+      <path value="EHDSECGExamination.header.language"/>
+      <short value="Language in which the resource is written. Language is expressed by the IETF language tag."/>
+      <definition value="Language in which the resource is written. Language is expressed by the IETF language tag."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.language"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="BCP 47"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.header.directSubject[x]">
+      <path value="EHDSECGExamination.header.directSubject[x]"/>
+      <short value="The direct subject of the observation if different from the patient (subject of care), e.g. an observation of an implanted device. Additional types of subject may be allowed in implementations."/>
+      <definition value="The direct subject of the observation if different from the patient (subject of care), e.g. an observation of an implanted device. Additional types of subject may be allowed in implementations."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.header.directSubject[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSLocation"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSProcedure"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.observationDate[x]">
+      <path value="EHDSECGExamination.observationDate[x]"/>
+      <short value="[C] dateTime for short recordings; Period for long-term recordings. Time-zone offset required with a time of day"/>
+      <definition value="Clinically relevant time or time period for the observation"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.observationDate[x]"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <type>
+        <code value="Period"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.type">
+      <path value="EHDSECGExamination.type"/>
+      <short value="[C] LOINC 11524-6 EKG study. Additional codings allowed (e.g. SNOMED CT 268400002 12 lead ECG)"/>
+      <definition value="Observation type. Code and name representing the type of the observation using the agreed code systems."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.type"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="11524-6"/>
+        </coding>
+      </patternCodeableConcept>
+      <binding>
+        <strength value="preferred"/>
+        <description value="LOINC, SNOMED CT"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.originalName">
+      <path value="EHDSECGExamination.originalName"/>
+      <short value="Original (conventional) name of the observation as used in the local laboratory or clinical system."/>
+      <definition value="Original (conventional) name of the observation as used in the local laboratory or clinical system."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.originalName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.method">
+      <path value="EHDSECGExamination.method"/>
+      <short value="Observation method"/>
+      <definition value="Observation method (measurement principle) to obtain the result."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.method"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="SNOMED CT"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.specimen">
+      <path value="EHDSECGExamination.specimen"/>
+      <short value="Specimen used for this observation."/>
+      <definition value="Specimen used for this observation."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="EHDSObservation.specimen"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSSpecimen"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.order">
+      <path value="EHDSECGExamination.order"/>
+      <short value="Identifies order and order placer this observation belongs to"/>
+      <definition value="Identifies order and order placer this observation belongs to"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.order"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSServiceRequest"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.performer[x]">
+      <path value="EHDSECGExamination.performer[x]"/>
+      <short value="Performer of the observation. Some test could be performed by the patient himself or by a care giver. Those are in the scope of this deliverable under specified conditions."/>
+      <definition value="Performer of the observation. Some test could be performed by the patient himself or by a care giver. Those are in the scope of this deliverable under specified conditions."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSObservation.performer[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSRelatedPerson"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.bodySite">
+      <path value="EHDSECGExamination.bodySite"/>
+      <short value="Anatomic location and laterality where the observation was performed."/>
+      <definition value="Anatomic location and laterality where the observation was performed."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.bodySite"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSBodyStructure"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.result">
+      <path value="EHDSECGExamination.result"/>
+      <short value="Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation."/>
+      <definition value="Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.result"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.result.value[x]">
+      <path value="EHDSECGExamination.result.value[x]"/>
+      <short value="[C] Overall conclusion category for this examination"/>
+      <definition value="Observation result value according to the type of observation. Model covers only most frequently used data types but other data types can be used as well.&#xD;&#xA;    Text result value should be used only if coded result value is not expected otherwise use valueCodeableConcept.text. For Quantity, Range and Ratio, result units of the measurement should be provided."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.result.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGOverallConclusionVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.result.uncertainty">
+      <path value="EHDSECGExamination.result.uncertainty"/>
+      <short value="Measurement uncertainty type and interval if needed."/>
+      <definition value="Measurement uncertainty information about the observation result."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.result.uncertainty"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.result.uncertainty.value">
+      <path value="EHDSECGExamination.result.uncertainty.value"/>
+      <short value="The numerical value of the measurement uncertainty."/>
+      <definition value="The numerical value of the measurement uncertainty."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.result.uncertainty.value"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.result.uncertainty.type">
+      <path value="EHDSECGExamination.result.uncertainty.type"/>
+      <short value="Probability Distribution Type for uncertainty"/>
+      <definition value="Probability Distribution Type for uncertainty"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.result.uncertainty.type"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="HL7 ProbabilityDistributionType"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.result.dataAbsentReason">
+      <path value="EHDSECGExamination.result.dataAbsentReason"/>
+      <short value="Provides a reason why the expected value in the element Observation.value[x] is missing."/>
+      <definition value="Provides a reason why the expected value in the element Observation.value[x] is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.result.dataAbsentReason"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="HL7 Data absent reason"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.referenceRange">
+      <path value="EHDSECGExamination.referenceRange"/>
+      <short value="Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result."/>
+      <definition value="Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result."/>
+      <comment value="Reference ranges are usually implied only for a numeric scale type. Use of the same units for reference range and value is implied."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSObservation.referenceRange"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.referenceRange.low">
+      <path value="EHDSECGExamination.referenceRange.low"/>
+      <short value="Low limit of the reference range."/>
+      <definition value="Low limit of the reference range."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.referenceRange.low"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="UCUM for units"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.referenceRange.high">
+      <path value="EHDSECGExamination.referenceRange.high"/>
+      <short value="High limit of the reference range."/>
+      <definition value="High limit of the reference range."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.referenceRange.high"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="UCUM for units"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.referenceRange.normalValue">
+      <path value="EHDSECGExamination.referenceRange.normalValue"/>
+      <short value="Normal value, if relevant for the reference range."/>
+      <definition value="Normal value, if relevant for the reference range."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.referenceRange.normalValue"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="SNOMED CT"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.referenceRange.type">
+      <path value="EHDSECGExamination.referenceRange.type"/>
+      <short value="Type of reference range."/>
+      <definition value="Type of reference range."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.referenceRange.type"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="HL7 Observation Reference Range Meaning Codes"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.referenceRange.appliesTo">
+      <path value="EHDSECGExamination.referenceRange.appliesTo"/>
+      <short value="Codes to indicate the target population this reference range applies to."/>
+      <definition value="Codes to indicate the target population this reference range applies to. For example, a reference range may be based on the normal population or a particular sex or race. Multiple appliesTo are interpreted as an \&quot;AND\&quot; of the target populations."/>
+      <comment value="Multiple appliesTo are interpreted as an &quot;AND&quot; of the target populations."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSObservation.referenceRange.appliesTo"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="SNOMED CT, HL7 v3-Race"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.referenceRange.age">
+      <path value="EHDSECGExamination.referenceRange.age"/>
+      <short value="Age range to which this reference range applies if applicable."/>
+      <definition value="Age range to which this reference range applies if applicable."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.referenceRange.age"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Range"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="UCUM for units"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.referenceRange.text">
+      <path value="EHDSECGExamination.referenceRange.text"/>
+      <short value="Text based reference range in an observation."/>
+      <definition value="Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation. An example would be a reference value of \&quot;Negative\&quot; or a list or table of \&quot;normals\&quot;."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.referenceRange.text"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.interpretation">
+      <path value="EHDSECGExamination.interpretation"/>
+      <short value="Information about reference intervals and result interpretation."/>
+      <definition value="Information about reference intervals and result interpretation."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSObservation.interpretation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="SNOMED CT, HL7 ObservationInterpretation"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.note">
+      <path value="EHDSECGExamination.note"/>
+      <short value="Comments and narrative representation of the observation result and findings."/>
+      <definition value="Comments and narrative representation of the observation result and findings."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.note"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.component">
+      <path value="EHDSECGExamination.component"/>
+      <short value="Component in case the observation consists of multiple sub-observations (e.g. blood pressure)."/>
+      <definition value="Component in case the observation consists of multiple sub-observations (e.g. blood pressure)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSObservation.component"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.component.type">
+      <path value="EHDSECGExamination.component.type"/>
+      <short value="Code representing the observation using the agreed code systems."/>
+      <definition value="Code representing the observation using the agreed code systems."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.type"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="LOINC, SNOMED CT"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.component.originalName">
+      <path value="EHDSECGExamination.component.originalName"/>
+      <short value="Original (user-friendly) name of the observation as used in the local laboratory or clinical system."/>
+      <definition value="Original (user-friendly) name of the observation as used in the local laboratory or clinical system."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.originalName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.component.result">
+      <path value="EHDSECGExamination.component.result"/>
+      <short value="Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation."/>
+      <definition value="Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.result"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.component.result.value[x]">
+      <path value="EHDSECGExamination.component.result.value[x]"/>
+      <short value="Observation result value according to the type of observation. Model covers only most frequently used data types but other data types can be used as well.&#xD;&#xA;      Text result value should be used only if coded result value is not expected otherwise use valueCodeableConcept.text. For Quantity, Range and Ratio, result units of the measurement should be provided."/>
+      <definition value="Observation result value according to the type of observation. Model covers only most frequently used data types but other data types can be used as well.&#xD;&#xA;      Text result value should be used only if coded result value is not expected otherwise use valueCodeableConcept.text. For Quantity, Range and Ratio, result units of the measurement should be provided."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.result.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <type>
+        <code value="Range"/>
+      </type>
+      <type>
+        <code value="Ratio"/>
+      </type>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="UCUM for units, SNOMED CT for coded results"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.component.result.uncertainty">
+      <path value="EHDSECGExamination.component.result.uncertainty"/>
+      <short value="Measurement uncertainty type and interval if needed."/>
+      <definition value="Measurement uncertainty information about the observation result."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.result.uncertainty"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.component.result.uncertainty.value">
+      <path value="EHDSECGExamination.component.result.uncertainty.value"/>
+      <short value="The numerical value of the measurement uncertainty."/>
+      <definition value="The numerical value of the measurement uncertainty."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.result.uncertainty.value"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.component.result.uncertainty.type">
+      <path value="EHDSECGExamination.component.result.uncertainty.type"/>
+      <short value="Probability Distribution Type for uncertainty"/>
+      <definition value="Probability Distribution Type for uncertainty"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.result.uncertainty.type"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="HL7 ProbabilityDistributionType"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.component.result.dataAbsentReason">
+      <path value="EHDSECGExamination.component.result.dataAbsentReason"/>
+      <short value="Provides a reason why the expected value in the element component.value[x] is missing."/>
+      <definition value="Provides a reason why the expected value in the element component.value[x] is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.result.dataAbsentReason"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="HL7 Data absent reason"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.component.referenceRange">
+      <path value="EHDSECGExamination.component.referenceRange"/>
+      <short value="Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result."/>
+      <definition value="Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result."/>
+      <comment value="Reference ranges are usually implied only for a numeric scale type. Use of the same units for reference range and value is implied."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSObservation.component.referenceRange"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.component.referenceRange.low">
+      <path value="EHDSECGExamination.component.referenceRange.low"/>
+      <short value="Low limit of the reference range."/>
+      <definition value="Low limit of the reference range."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.referenceRange.low"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="UCUM for units"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.component.referenceRange.high">
+      <path value="EHDSECGExamination.component.referenceRange.high"/>
+      <short value="High limit of the reference range."/>
+      <definition value="High limit of the reference range."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.referenceRange.high"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="UCUM for units"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.component.referenceRange.normalValue">
+      <path value="EHDSECGExamination.component.referenceRange.normalValue"/>
+      <short value="Normal value, if relevant for the reference range."/>
+      <definition value="Normal value, if relevant for the reference range."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.referenceRange.normalValue"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="SNOMED CT"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.component.referenceRange.type">
+      <path value="EHDSECGExamination.component.referenceRange.type"/>
+      <short value="Type of reference range."/>
+      <definition value="Type of reference range."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.referenceRange.type"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="HL7 Observation Reference Range Meaning Codes"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.component.referenceRange.appliesTo">
+      <path value="EHDSECGExamination.component.referenceRange.appliesTo"/>
+      <short value="Codes to indicate the target population this reference range applies to."/>
+      <definition value="Codes to indicate the target population this reference range applies to. For example, a reference range may be based on the normal population or a particular sex or race. Multiple appliesTo are interpreted as an \&quot;AND\&quot; of the target populations."/>
+      <comment value="Multiple appliesTo are interpreted as an &quot;AND&quot; of the target populations."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSObservation.component.referenceRange.appliesTo"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="SNOMED CT, HL7 v3-Race"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.component.referenceRange.age">
+      <path value="EHDSECGExamination.component.referenceRange.age"/>
+      <short value="Age range to which this reference range applies if applicable."/>
+      <definition value="Age range to which this reference range applies if applicable."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.referenceRange.age"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Range"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="UCUM for units"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.component.referenceRange.text">
+      <path value="EHDSECGExamination.component.referenceRange.text"/>
+      <short value="Text based reference range in an observation."/>
+      <definition value="Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation. An example would be a reference value of \&quot;Negative\&quot; or a list or table of \&quot;normals\&quot;."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.referenceRange.text"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.component.interpretation">
+      <path value="EHDSECGExamination.component.interpretation"/>
+      <short value="Information about reference intervals and result interpretation."/>
+      <definition value="Information about reference intervals and result interpretation."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSObservation.component.interpretation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="SNOMED CT, HL7 ObservationInterpretation"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.derivedFrom[x]">
+      <path value="EHDSECGExamination.derivedFrom[x]"/>
+      <short value="Reference to the related resource from which the observation has been made. For example, a calculated anion gap or a fetal measurement based on an ultrasound image."/>
+      <definition value="Reference to the related resource from which the observation has been made. For example, a calculated anion gap or a fetal measurement based on an ultrasound image."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSObservation.derivedFrom[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSLaboratoryObservation"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSImagingStudy"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.hasMember[x]">
+      <path value="EHDSECGExamination.hasMember[x]"/>
+      <short value="[C] Measurement sets, statement sets, AI and biomarker results derived from this examination. At least one measurement set with the minimum measurements for the examination kind (ecg-ex-3)"/>
+      <definition value="This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSObservation.hasMember[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGDerivedResult"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.examinationKind">
+      <path value="EHDSECGExamination.examinationKind"/>
+      <short value="[C] Examination kind"/>
+      <definition value="resting, exercise stress, pharmacological stress, ambulatory long-term (Holter), event / loop recorder, patch, consumer single-lead device, in-hospital monitoring strip."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGExamination.examinationKind"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGExaminationKindVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.ageAtExamination">
+      <path value="EHDSECGExamination.ageAtExamination"/>
+      <short value="[C] Age of the patient at the examination"/>
+      <definition value="For de-identified data or when the date of birth is not shared. ECG criteria are age-dependent."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGExamination.ageAtExamination"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="qty-3"/>
+        <severity value="error"/>
+        <human value="If a code for the unit is present, the system SHALL also be present"/>
+        <expression value="code.empty() or system.exists()"/>
+        <xpath value="not(exists(f:code)) or exists(f:system)"/>
+      </constraint>
+    </element>
+    <element id="EHDSECGExamination.ageAtExamination.id">
+      <path value="EHDSECGExamination.ageAtExamination.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="EHDSECGExamination.ageAtExamination.extension">
+      <path value="EHDSECGExamination.ageAtExamination.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="EHDSECGExamination.ageAtExamination.value">
+      <path value="EHDSECGExamination.ageAtExamination.value"/>
+      <short value="Numerical value (with implicit precision)"/>
+      <definition value="The value of the measured amount. The value includes an implicit precision in the presentation of the value."/>
+      <comment value="The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books)."/>
+      <requirements value="Precision is handled implicitly in almost all cases of measurement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Quantity.value"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="SN.2  / CQ - N/A"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value"/>
+      </mapping>
+    </element>
+    <element id="EHDSECGExamination.ageAtExamination.comparator">
+      <path value="EHDSECGExamination.ageAtExamination.comparator"/>
+      <short value="&lt; | &lt;= | &gt;= | &gt; - how to understand the value"/>
+      <definition value="How the value should be understood and represented - whether the actual value is greater or less than the stated value due to measurement issues; e.g. if the comparator is &quot;&lt;&quot; , then the real value is &lt; stated value."/>
+      <requirements value="Need a framework for handling measures where the value is &lt;5ug/L or &gt;400mg/L due to the limitations of measuring methodology."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Quantity.comparator"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <meaningWhenMissing value="If there is no comparator, then there is no modification of the value"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="This is labeled as &quot;Is Modifier&quot; because the comparator modifies the interpretation of the value significantly. If there is no comparator, then there is no modification of the value"/>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="QuantityComparator"/>
+        </extension>
+        <strength value="required"/>
+        <description value="How the Quantity should be understood and represented."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1"/>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="SN.1  / CQ.1"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="IVL properties"/>
+      </mapping>
+    </element>
+    <element id="EHDSECGExamination.ageAtExamination.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true"/>
+      </extension>
+      <path value="EHDSECGExamination.ageAtExamination.unit"/>
+      <short value="Unit representation"/>
+      <definition value="A human-readable form of the unit."/>
+      <requirements value="There are many representations for units of measure and in many contexts, particular representations are fixed and required. I.e. mcg for micrograms."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Quantity.unit"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="(see OBX.6 etc.) / CQ.2"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="PQ.unit"/>
+      </mapping>
+    </element>
+    <element id="EHDSECGExamination.ageAtExamination.system">
+      <path value="EHDSECGExamination.ageAtExamination.system"/>
+      <short value="System that defines coded unit form"/>
+      <definition value="The identification of the system that provides the coded form of the unit."/>
+      <requirements value="Need to know the system that defines the coded form of the unit."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Quantity.system"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <condition value="qty-3"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="(see OBX.6 etc.) / CQ.2"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="CO.codeSystem, PQ.translation.codeSystem"/>
+      </mapping>
+    </element>
+    <element id="EHDSECGExamination.ageAtExamination.code">
+      <path value="EHDSECGExamination.ageAtExamination.code"/>
+      <short value="Coded form of the unit"/>
+      <definition value="A computer processable form of the unit in some unit representation system."/>
+      <comment value="The preferred system is UCUM, but SNOMED CT can also be used (for customary units) or ISO 4217 for currency.  The context of use may additionally require a code from a particular system."/>
+      <requirements value="Need a computable form of the unit that is fixed across all forms. UCUM provides this for quantities, but SNOMED CT provides many units of interest."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Quantity.code"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGAgeUnitVS"/>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="(see OBX.6 etc.) / CQ.2"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="PQ.code, MO.currency, PQ.translation.code"/>
+      </mapping>
+    </element>
+    <element id="EHDSECGExamination.leadSystem">
+      <path value="EHDSECGExamination.leadSystem"/>
+      <short value="[C] Lead system"/>
+      <definition value="Standard 12-lead, Mason-Likar, Frank XYZ, EASI, reduced lead set, single lead (cf. DICOM CID 3263)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGExamination.leadSystem"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.acquisitionDevice">
+      <path value="EHDSECGExamination.acquisitionDevice"/>
+      <short value="[C] Electrocardiograph or recorder"/>
+      <definition value="Manufacturer, model, serial number, firmware. Always at Core level, here or on each recording (ecg-ex-4)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGExamination.acquisitionDevice"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.patientState">
+      <path value="EHDSECGExamination.patientState"/>
+      <short value="[C] Position and state"/>
+      <definition value="Supine, sitting, standing, exercise, recovery, during symptoms (cf. DICOM CID 3262)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGExamination.patientState"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.stressTest">
+      <path value="EHDSECGExamination.stressTest"/>
+      <short value="[A] Stress-test context"/>
+      <definition value="Detailed model deferred to a later version."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGExamination.stressTest"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.stressTest.protocol">
+      <path value="EHDSECGExamination.stressTest.protocol"/>
+      <short value="[A] Protocol"/>
+      <definition value="Bruce, modified Bruce, ramp, cycle ergometer..."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGExamination.stressTest.protocol"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.stressTest.maximumWorkload">
+      <path value="EHDSECGExamination.stressTest.maximumWorkload"/>
+      <short value="[A] Maximum workload"/>
+      <definition value="W or METs."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGExamination.stressTest.maximumWorkload"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.stressTest.exerciseDuration">
+      <path value="EHDSECGExamination.stressTest.exerciseDuration"/>
+      <short value="[A] Exercise duration"/>
+      <definition value="Duration."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGExamination.stressTest.exerciseDuration"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.stressTest.terminationReason">
+      <path value="EHDSECGExamination.stressTest.terminationReason"/>
+      <short value="[A] Reasons for stopping"/>
+      <definition value="Reasons for stopping."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGExamination.stressTest.terminationReason"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.recording">
+      <path value="EHDSECGExamination.recording"/>
+      <short value="[C] The signal"/>
+      <definition value="Required at Core level, with at least one rhythm recording (ecg-ex-1); absent only in Legacy."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGExamination.recording"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.legacyReason">
+      <path value="EHDSECGExamination.legacyReason"/>
+      <short value="[C] Why the signal is absent (Legacy)"/>
+      <definition value="historical record, device without digital signal export, signal not retained, reconstructed from paper only, other. Required when there is no recording (ecg-ex-1)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGExamination.legacyReason"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGLegacyReasonVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.annotationSet">
+      <path value="EHDSECGExamination.annotationSet"/>
+      <short value="[A] Time-anchored annotations"/>
+      <definition value="Time-anchored annotations on the recordings."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGExamination.annotationSet"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="EHDSECGExamination">
+      <path value="EHDSECGExamination"/>
+      <short value="ECG examination model"/>
+      <definition value="One acquisition session (a resting 12-lead ECG, a stress test, a Holter recording...). It groups the signal, the annotations and every result derived from it."/>
+      <constraint>
+        <key value="ecg-id-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-id-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-ex-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-ex-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-ex-2"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-ex-2, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-ex-3"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-ex-3, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-ex-4"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-ex-4, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination"/>
+      </constraint>
+    </element>
+    <element id="EHDSECGExamination.header.identifier">
+      <path value="EHDSECGExamination.header.identifier"/>
+      <short value="[C] Durable, globally unique identifier (ecg-id-1)"/>
+      <min value="1"/>
+    </element>
+    <element id="EHDSECGExamination.observationDate[x]">
+      <path value="EHDSECGExamination.observationDate[x]"/>
+      <short value="[C] dateTime for short recordings; Period for long-term recordings. Time-zone offset required with a time of day"/>
+    </element>
+    <element id="EHDSECGExamination.type">
+      <path value="EHDSECGExamination.type"/>
+      <short value="[C] LOINC 11524-6 EKG study. Additional codings allowed (e.g. SNOMED CT 268400002 12 lead ECG)"/>
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="11524-6"/>
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="EHDSECGExamination.specimen">
+      <path value="EHDSECGExamination.specimen"/>
+      <max value="0"/>
+    </element>
+    <element id="EHDSECGExamination.result.value[x]">
+      <path value="EHDSECGExamination.result.value[x]"/>
+      <short value="[C] Overall conclusion category for this examination"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGOverallConclusionVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.hasMember[x]">
+      <path value="EHDSECGExamination.hasMember[x]"/>
+      <short value="[C] Measurement sets, statement sets, AI and biomarker results derived from this examination. At least one measurement set with the minimum measurements for the examination kind (ecg-ex-3)"/>
+      <type>
+        <code value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGDerivedResult"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.examinationKind">
+      <path value="EHDSECGExamination.examinationKind"/>
+      <short value="[C] Examination kind"/>
+      <definition value="resting, exercise stress, pharmacological stress, ambulatory long-term (Holter), event / loop recorder, patch, consumer single-lead device, in-hospital monitoring strip."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGExaminationKindVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.ageAtExamination">
+      <path value="EHDSECGExamination.ageAtExamination"/>
+      <short value="[C] Age of the patient at the examination"/>
+      <definition value="For de-identified data or when the date of birth is not shared. ECG criteria are age-dependent."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.ageAtExamination.code">
+      <path value="EHDSECGExamination.ageAtExamination.code"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGAgeUnitVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.leadSystem">
+      <path value="EHDSECGExamination.leadSystem"/>
+      <short value="[C] Lead system"/>
+      <definition value="Standard 12-lead, Mason-Likar, Frank XYZ, EASI, reduced lead set, single lead (cf. DICOM CID 3263)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.acquisitionDevice">
+      <path value="EHDSECGExamination.acquisitionDevice"/>
+      <short value="[C] Electrocardiograph or recorder"/>
+      <definition value="Manufacturer, model, serial number, firmware. Always at Core level, here or on each recording (ecg-ex-4)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.patientState">
+      <path value="EHDSECGExamination.patientState"/>
+      <short value="[C] Position and state"/>
+      <definition value="Supine, sitting, standing, exercise, recovery, during symptoms (cf. DICOM CID 3262)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.stressTest">
+      <path value="EHDSECGExamination.stressTest"/>
+      <short value="[A] Stress-test context"/>
+      <definition value="Detailed model deferred to a later version."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.stressTest.protocol">
+      <path value="EHDSECGExamination.stressTest.protocol"/>
+      <short value="[A] Protocol"/>
+      <definition value="Bruce, modified Bruce, ramp, cycle ergometer..."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.stressTest.maximumWorkload">
+      <path value="EHDSECGExamination.stressTest.maximumWorkload"/>
+      <short value="[A] Maximum workload"/>
+      <definition value="W or METs."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.stressTest.exerciseDuration">
+      <path value="EHDSECGExamination.stressTest.exerciseDuration"/>
+      <short value="[A] Exercise duration"/>
+      <definition value="Duration."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.stressTest.terminationReason">
+      <path value="EHDSECGExamination.stressTest.terminationReason"/>
+      <short value="[A] Reasons for stopping"/>
+      <definition value="Reasons for stopping."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.recording">
+      <path value="EHDSECGExamination.recording"/>
+      <short value="[C] The signal"/>
+      <definition value="Required at Core level, with at least one rhythm recording (ecg-ex-1); absent only in Legacy."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </type>
+    </element>
+    <element id="EHDSECGExamination.legacyReason">
+      <path value="EHDSECGExamination.legacyReason"/>
+      <short value="[C] Why the signal is absent (Legacy)"/>
+      <definition value="historical record, device without digital signal export, signal not retained, reconstructed from paper only, other. Required when there is no recording (ecg-ex-1)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGLegacyReasonVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGExamination.annotationSet">
+      <path value="EHDSECGExamination.annotationSet"/>
+      <short value="[A] Time-anchored annotations"/>
+      <definition value="Time-anchored annotations on the recordings."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

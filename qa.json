@@ -1,0 +1,20 @@
+{
+  "url" : "http://hl7.eu/fhir/ecg/ImplementationGuide/hl7.fhir.eu.ecg",
+  "name" : "Hl7EuEcgReportIg",
+  "title" : "HL7 Europe Electrocardiogram (ECG) Report",
+  "description" : "This guide describes how the Electrocardiogram (ECG) Report can be represented in the European realm.",
+  "status" : "draft",
+  "package-id" : "hl7.fhir.eu.ecg",
+  "ig-ver" : "0.1.0-ci-build",
+  "date" : "Fri, 06 Nov, 2026 23:02:43 +0100",
+  "dateISO8601" : "2026-11-06T23:02:43+01:00",
+  "errs" : 1,
+  "warnings" : 34,
+  "hints" : 13,
+  "broken-links" : 0,
+  "suppressed-hints" : 1,
+  "suppressed-warnings" : 1,
+  "version" : "4.0.1",
+  "tool" : "6.0.0-snapshot1 (3)",
+  "maxMemory" : 2089990080
+}

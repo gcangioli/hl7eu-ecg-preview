@@ -1,0 +1,98 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"EHDSECGBiomarkerDefinition","EHDSECGBiomarkerDefinition","","","",0,*,"","","","null {[]} {[]}
+","ECG biomarker definition model","Registry entry for a derived or AI biomarker, equivalent to FHIR R5 ObservationDefinition. Describes what the biomarker is; the algorithms that compute it and their performance are described in EHDSECGAlgorithm.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","ecg-def-1:TODO: placeholder for invariant ecg-def-1, to be defined. {true}
+ecg-def-2:TODO: placeholder for invariant ecg-def-2, to be defined. {true}ecg-def-3:TODO: placeholder for invariant ecg-def-3, to be defined. {true}"
+"EHDSECGBiomarkerDefinition.url","EHDSECGBiomarkerDefinition.url","","","",1,1,"","","","uri {[]} {[]}
+","Canonical URL","Canonical URL.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.url",1,1,"",""
+"EHDSECGBiomarkerDefinition.version","EHDSECGBiomarkerDefinition.version","","","",1,1,"","","","string {[]} {[]}
+","Version","Version.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.version",1,1,"",""
+"EHDSECGBiomarkerDefinition.status","EHDSECGBiomarkerDefinition.status","","","",1,1,"","","","code {[]} {[]}
+","Status","draft, active, retired.","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/publication-status","",,,,"EHDSECGBiomarkerDefinition.status",1,1,"",""
+"EHDSECGBiomarkerDefinition.governanceTier","EHDSECGBiomarkerDefinition.governanceTier","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Recognition of the definition","Who vouches for its meaning: local, accredited-centre, esc-registry, other-recognised-authority. Only local restricts the use of the results, to research (ecg-dr-9).","","","","","","","","","",,"required","","http://hl7.eu/fhir/ecg/ValueSet/ECGDefinitionTierVS","",,,,"EHDSECGBiomarkerDefinition.governanceTier",1,1,"",""
+"EHDSECGBiomarkerDefinition.recognisedBy","EHDSECGBiomarkerDefinition.recognisedBy","","","",0,1,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}
+","Body that reviewed the definition","Required for other-recognised-authority (ecg-def-3).","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.recognisedBy",0,1,"",""
+"EHDSECGBiomarkerDefinition.code","EHDSECGBiomarkerDefinition.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Registry code","Registry code, plus LOINC / SNOMED CT / MDC equivalents once available.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.code",1,1,"",""
+"EHDSECGBiomarkerDefinition.title","EHDSECGBiomarkerDefinition.title","","","",1,1,"","","","string {[]} {[]}
+","Title","Title.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.title",1,1,"",""
+"EHDSECGBiomarkerDefinition.description","EHDSECGBiomarkerDefinition.description","","","",1,1,"","","","markdown {[]} {[]}
+","Clinical definition","Clinical definition.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.description",1,1,"",""
+"EHDSECGBiomarkerDefinition.outputKind","EHDSECGBiomarkerDefinition.outputKind","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Output kind","detection-probability, risk-at-horizon, continuous-estimate, classification, measurement, annotation, signal, embedding, text.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGOutputKindVS","",,,,"EHDSECGBiomarkerDefinition.outputKind",1,1,"",""
+"EHDSECGBiomarkerDefinition.targetCondition","EHDSECGBiomarkerDefinition.targetCondition","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Target condition","SNOMED CT condition targeted.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.targetCondition",0,1,"",""
+"EHDSECGBiomarkerDefinition.referenceStandard","EHDSECGBiomarkerDefinition.referenceStandard","","","",0,1,"","","","string {[]} {[]}
+","Reference standard","Ground truth, e.g. LVEF <= 40 % by echocardiography within 30 days.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.referenceStandard",0,1,"",""
+"EHDSECGBiomarkerDefinition.horizon","EHDSECGBiomarkerDefinition.horizon","","","",0,1,"","","","Duration {[]} {[]}
+","Horizon","Required when outputKind = risk-at-horizon, absent otherwise (ecg-def-1).","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.horizon",0,1,"","drt-1:There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM. {code.exists() implies ((system = %ucum) and value.exists())}
+ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}qty-3:If a code for the unit is present, the system SHALL also be present {code.empty() or system.exists()}"
+"EHDSECGBiomarkerDefinition.horizon.id","EHDSECGBiomarkerDefinition.horizon.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"EHDSECGBiomarkerDefinition.horizon.extension","EHDSECGBiomarkerDefinition.horizon.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"EHDSECGBiomarkerDefinition.horizon.value","EHDSECGBiomarkerDefinition.horizon.value","","","",0,1,"","","Y","decimal {[]} {[]}
+","Numerical value (with implicit precision)","The value of the measured amount. The value includes an implicit precision in the presentation of the value.","The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books).","Precision is handled implicitly in almost all cases of measurement.","","","","","","","",,,,,"",,,,"Quantity.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"EHDSECGBiomarkerDefinition.horizon.comparator","EHDSECGBiomarkerDefinition.horizon.comparator","","","",0,1,"","Y","Y","code {[]} {[]}
+","< | <= | >= | > - how to understand the value","How the value should be understood and represented - whether the actual value is greater or less than the stated value due to measurement issues; e.g. if the comparator is ""<"" , then the real value is < stated value.","","Need a framework for handling measures where the value is <5ug/L or >400mg/L due to the limitations of measuring methodology.","","If there is no comparator, then there is no modification of the value","","","","","",,"required","How the Quantity should be understood and represented.","http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1","",,,,"Quantity.comparator",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"EHDSECGBiomarkerDefinition.horizon.unit","EHDSECGBiomarkerDefinition.horizon.unit","","","",0,1,"","","Y","string {[]} {[]}
+","Unit representation","A human-readable form of the unit.","","There are many representations for units of measure and in many contexts, particular representations are fixed and required. I.e. mcg for micrograms.","","","","","","","",,,,,"",,,,"Quantity.unit",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"EHDSECGBiomarkerDefinition.horizon.system","EHDSECGBiomarkerDefinition.horizon.system","","","",0,1,"","","Y","uri {[]} {[]}
+","System that defines coded unit form","The identification of the system that provides the coded form of the unit.","","Need to know the system that defines the coded form of the unit.","","","","","","","",,,,,"",,,,"Quantity.system",0,1,"qty-3
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"EHDSECGBiomarkerDefinition.horizon.code","EHDSECGBiomarkerDefinition.horizon.code","","","",0,1,"","","Y","code {[]} {[]}
+","Coded form of the unit","A computer processable form of the unit in some unit representation system.","The preferred system is UCUM, but SNOMED CT can also be used (for customary units) or ISO 4217 for currency.  The context of use may additionally require a code from a particular system.","Need a computable form of the unit that is fixed across all forms. UCUM provides this for quantities, but SNOMED CT provides many units of interest.","","","","","","","",,"required","","http://hl7.eu/fhir/ecg/ValueSet/ECGDurationUnitVS","",,,,"Quantity.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"EHDSECGBiomarkerDefinition.representation","EHDSECGBiomarkerDefinition.representation","","","",0,1,"","","","Base {[]} {[]}
+","Representation","For embeddings: what the vector means. Required when outputKind = embedding (ecg-def-2).","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.representation",0,1,"",""
+"EHDSECGBiomarkerDefinition.representation.sourceModel","EHDSECGBiomarkerDefinition.representation.sourceModel","","","",1,1,"","","","string {[]} {[]}
+","Source model","Model that produces the representation, with its version.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.representation.sourceModel",1,1,"",""
+"EHDSECGBiomarkerDefinition.representation.dimension","EHDSECGBiomarkerDefinition.representation.dimension","","","",1,1,"","","","integer {[]} {[]}
+","Dimension","Number of values.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.representation.dimension",1,1,"",""
+"EHDSECGBiomarkerDefinition.representation.encoding","EHDSECGBiomarkerDefinition.representation.encoding","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Encoding","Encoding of the values, e.g. little-endian float32.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.representation.encoding",1,1,"",""
+"EHDSECGBiomarkerDefinition.representation.space","EHDSECGBiomarkerDefinition.representation.space","","","",0,1,"","","","string {[]} {[]}
+","Representation space","Description of the representation space and of how it may be used (distance, normalisation).","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.representation.space",0,1,"",""
+"EHDSECGBiomarkerDefinition.permittedDataType","EHDSECGBiomarkerDefinition.permittedDataType","","","",1,*,"","","","code {[]} {[]}
+","Allowed result types","FHIR data type names, e.g. Quantity, CodeableConcept, SampledData. Value set to be defined.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.permittedDataType",1,*,"",""
+"EHDSECGBiomarkerDefinition.unit","EHDSECGBiomarkerDefinition.unit","","","",0,1,"","","","Coding {[]} {[]}
+","Unit","UCUM unit.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.unit",0,1,"",""
+"EHDSECGBiomarkerDefinition.plausibleRange","EHDSECGBiomarkerDefinition.plausibleRange","","","",0,1,"","","","Range {[]} {[]}
+","Plausible range","Physically possible range.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.plausibleRange",0,1,"",""
+"EHDSECGBiomarkerDefinition.answerValueSet","EHDSECGBiomarkerDefinition.answerValueSet","","","",0,1,"","","","canonical {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ValueSet]]}
+","Answer value set","Allowed values for classifications.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.answerValueSet",0,1,"",""
+"EHDSECGBiomarkerDefinition.threshold","EHDSECGBiomarkerDefinition.threshold","","","",0,*,"","","","Base {[]} {[]}
+","Clinically meaningful cut-offs","Cut-offs that define the categories of the biomarker. Operating points and performance of a given algorithm are described with the algorithm.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.threshold",0,*,"",""
+"EHDSECGBiomarkerDefinition.threshold.operatingPoint","EHDSECGBiomarkerDefinition.threshold.operatingPoint","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Name of the cut-off","Name of the cut-off.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.threshold.operatingPoint",1,1,"",""
+"EHDSECGBiomarkerDefinition.threshold.value","EHDSECGBiomarkerDefinition.threshold.value","","","",1,1,"","","","Quantity {[]} {[]}
+","Cut-off value","Cut-off value.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.threshold.value",1,1,"",""
+"EHDSECGBiomarkerDefinition.inputRequirement","EHDSECGBiomarkerDefinition.inputRequirement","","","",0,*,"","","","Base {[]} {[]}
+","Input requirements","Inputs the biomarker needs. Shared structure with EHDSECGAlgorithm.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.inputRequirement",0,*,"",""
+"EHDSECGBiomarkerDefinition.inputRequirement.role","EHDSECGBiomarkerDefinition.inputRequirement.role","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Role","index-ecg, comparison-ecg, clinical-covariate...","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGInputRoleVS","",,,,"EHDSECGBiomarkerDefinition.inputRequirement.role",1,1,"",""
+"EHDSECGBiomarkerDefinition.inputRequirement.leadSystem","EHDSECGBiomarkerDefinition.inputRequirement.leadSystem","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Lead system","E.g. standard 12-lead, single lead.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS","",,,,"EHDSECGBiomarkerDefinition.inputRequirement.leadSystem",0,1,"",""
+"EHDSECGBiomarkerDefinition.inputRequirement.requiredLead","EHDSECGBiomarkerDefinition.inputRequirement.requiredLead","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Required leads","Leads that must be present.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS","",,,,"EHDSECGBiomarkerDefinition.inputRequirement.requiredLead",0,*,"",""
+"EHDSECGBiomarkerDefinition.inputRequirement.minimumSamplingFrequency","EHDSECGBiomarkerDefinition.inputRequirement.minimumSamplingFrequency","","","",0,1,"","","","Quantity {[]} {[]}
+","Minimum sampling frequency","UCUM Hz.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.inputRequirement.minimumSamplingFrequency",0,1,"",""
+"EHDSECGBiomarkerDefinition.inputRequirement.minimumDuration","EHDSECGBiomarkerDefinition.inputRequirement.minimumDuration","","","",0,1,"","","","Quantity {[]} {[]}
+","Minimum duration","UCUM s.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.inputRequirement.minimumDuration",0,1,"",""
+"EHDSECGBiomarkerDefinition.inputRequirement.covariate","EHDSECGBiomarkerDefinition.inputRequirement.covariate","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Covariate","For a clinical covariate: what it is (age, sex...).","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.inputRequirement.covariate",0,1,"",""
+"EHDSECGBiomarkerDefinition.inputRequirement.note","EHDSECGBiomarkerDefinition.inputRequirement.note","","","",0,1,"","","","string {[]} {[]}
+","Other requirements","E.g. excluded populations.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.inputRequirement.note",0,1,"",""
+"EHDSECGBiomarkerDefinition.comparability","EHDSECGBiomarkerDefinition.comparability","","","",1,1,"","","","code {[]} {[]}
+","Comparability","algorithm-specific, harmonised.","","","","","","","","","",,"required","","http://hl7.eu/fhir/ecg/ValueSet/ECGComparabilityVS","",,,,"EHDSECGBiomarkerDefinition.comparability",1,1,"",""
+"EHDSECGBiomarkerDefinition.evidence","EHDSECGBiomarkerDefinition.evidence","","","",0,*,"","","","uri {[]} {[]}
+","Evidence","Validation publications (DOI).","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.evidence",0,*,"",""
+"EHDSECGBiomarkerDefinition.steward","EHDSECGBiomarkerDefinition.steward","","","",1,1,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}
+","Steward","Responsible organisation: the research team, the accredited centre or the ESC.","","","","","","","","","",,,,,"",,,,"EHDSECGBiomarkerDefinition.steward",1,1,"",""

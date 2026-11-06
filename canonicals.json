@@ -1,0 +1,322 @@
+[{
+  "id" : "hl7.fhir.eu.ecg",
+  "type" : "ImplementationGuide",
+  "url" : "http://hl7.eu/fhir/ecg/ImplementationGuide/hl7.fhir.eu.ecg",
+  "version" : "0.1.0-ci-build",
+  "name" : "Hl7EuEcgReportIg"
+},
+{
+  "id" : "EHDSECGAlgorithm",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAlgorithm",
+  "version" : "0.1.0-ci-build",
+  "name" : "EHDSECGAlgorithm"
+},
+{
+  "id" : "EHDSECGAnnotationSet",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet",
+  "version" : "0.1.0-ci-build",
+  "name" : "EHDSECGAnnotationSet"
+},
+{
+  "id" : "EHDSECGBiomarkerDefinition",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGBiomarkerDefinition",
+  "version" : "0.1.0-ci-build",
+  "name" : "EHDSECGBiomarkerDefinition"
+},
+{
+  "id" : "EHDSECGDerivedResult",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGDerivedResult",
+  "version" : "0.1.0-ci-build",
+  "name" : "EHDSECGDerivedResult"
+},
+{
+  "id" : "EHDSECGExamination",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination",
+  "version" : "0.1.0-ci-build",
+  "name" : "EHDSECGExamination"
+},
+{
+  "id" : "EHDSECGRecording",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording",
+  "version" : "0.1.0-ci-build",
+  "name" : "EHDSECGRecording"
+},
+{
+  "id" : "EHDSECGReport",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGReport",
+  "version" : "0.1.0-ci-build",
+  "name" : "EHDSECGReport"
+},
+{
+  "id" : "EHDSECGResearchDataset",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResearchDataset",
+  "version" : "0.1.0-ci-build",
+  "name" : "EHDSECGResearchDataset"
+},
+{
+  "id" : "EHDSECGResearchRecord",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResearchRecord",
+  "version" : "0.1.0-ci-build",
+  "name" : "EHDSECGResearchRecord"
+},
+{
+  "id" : "EHDSECGResultDocument",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument",
+  "version" : "0.1.0-ci-build",
+  "name" : "EHDSECGResultDocument"
+},
+{
+  "id" : "diagnosticreport-eu-ecg",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.eu/fhir/ecg/StructureDefinition/diagnosticreport-eu-ecg",
+  "version" : "0.1.0-ci-build",
+  "name" : "DiagnosticReportEcgEu"
+},
+{
+  "id" : "ECGAgeUnitVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGAgeUnitVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGAgeUnitVS"
+},
+{
+  "id" : "ECGAmplitudeUnitVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGAmplitudeUnitVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGAmplitudeUnitVS"
+},
+{
+  "id" : "ECGAnnotationVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGAnnotationVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGAnnotationVS"
+},
+{
+  "id" : "ECGApplicabilityStatusVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGApplicabilityStatusVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGApplicabilityStatusVS"
+},
+{
+  "id" : "ECGChannelStatusVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGChannelStatusVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGChannelStatusVS"
+},
+{
+  "id" : "ECGComparabilityVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGComparabilityVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGComparabilityVS"
+},
+{
+  "id" : "ECGDataAbsentReasonVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGDataAbsentReasonVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGDataAbsentReasonVS"
+},
+{
+  "id" : "ECGDefinitionTierVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGDefinitionTierVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGDefinitionTierVS"
+},
+{
+  "id" : "ECGDerivedResultCategoryVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGDerivedResultCategoryVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGDerivedResultCategoryVS"
+},
+{
+  "id" : "ECGDerivedResultTypeVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGDerivedResultTypeVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGDerivedResultTypeVS"
+},
+{
+  "id" : "ECGDisplayLayoutVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGDisplayLayoutVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGDisplayLayoutVS"
+},
+{
+  "id" : "ECGDocumentTypeVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGDocumentTypeVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGDocumentTypeVS"
+},
+{
+  "id" : "ECGDurationUnitVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGDurationUnitVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGDurationUnitVS"
+},
+{
+  "id" : "ECGExaminationKindVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGExaminationKindVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGExaminationKindVS"
+},
+{
+  "id" : "ECGExecutionContextVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGExecutionContextVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGExecutionContextVS"
+},
+{
+  "id" : "ECGFileFormatVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGFileFormatVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGFileFormatVS"
+},
+{
+  "id" : "ECGFilterTypeVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGFilterTypeVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGFilterTypeVS"
+},
+{
+  "id" : "ECGFindingVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGFindingVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGFindingVS"
+},
+{
+  "id" : "ECGInputRoleVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGInputRoleVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGInputRoleVS"
+},
+{
+  "id" : "ECGLabelProvenanceVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGLabelProvenanceVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGLabelProvenanceVS"
+},
+{
+  "id" : "ECGLeadSystemVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGLeadSystemVS"
+},
+{
+  "id" : "ECGLeadVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGLeadVS"
+},
+{
+  "id" : "ECGLegacyReasonVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGLegacyReasonVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGLegacyReasonVS"
+},
+{
+  "id" : "ECGLinkedDataTypeVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGLinkedDataTypeVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGLinkedDataTypeVS"
+},
+{
+  "id" : "ECGMeasurementBasisVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGMeasurementBasisVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGMeasurementBasisVS"
+},
+{
+  "id" : "ECGOutputKindVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGOutputKindVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGOutputKindVS"
+},
+{
+  "id" : "ECGOverallConclusionVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGOverallConclusionVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGOverallConclusionVS"
+},
+{
+  "id" : "ECGPerformanceMetricVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGPerformanceMetricVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGPerformanceMetricVS"
+},
+{
+  "id" : "ECGQTcFormulaVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGQTcFormulaVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGQTcFormulaVS"
+},
+{
+  "id" : "ECGRecordingKindVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGRecordingKindVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGRecordingKindVS"
+},
+{
+  "id" : "ECGReviewStatusVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGReviewStatusVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGReviewStatusVS"
+},
+{
+  "id" : "ECGSignalOriginVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGSignalOriginVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGSignalOriginVS"
+},
+{
+  "id" : "ECGTransformationTypeVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGTransformationTypeVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGTransformationTypeVS"
+},
+{
+  "id" : "ECGUseTierVS",
+  "type" : "ValueSet",
+  "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGUseTierVS",
+  "version" : "0.1.0-ci-build",
+  "name" : "ECGUseTierVS"
+}]

@@ -1,0 +1,70 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"EHDSECGAnnotationSet","EHDSECGAnnotationSet","","","",0,*,"","","","null {[]} {[]}
+","ECG annotation set model","Time-anchored annotations. One set = one author (algorithm or person) at one time, as in the HL7 aECG annotationSet, SCP-ECG section 18 and the DICOM Waveform Annotation SR.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","ecg-id-1:TODO: placeholder for invariant ecg-id-1, to be defined. {true}
+ecg-dr-13:TODO: placeholder for invariant ecg-dr-13, to be defined. {true}ecg-dr-19:TODO: placeholder for invariant ecg-dr-19, to be defined. {true}ecg-dr-20:TODO: placeholder for invariant ecg-dr-20, to be defined. {true}ecg-dr-21:TODO: placeholder for invariant ecg-dr-21, to be defined. {true}ecg-ann-1:TODO: placeholder for invariant ecg-ann-1, to be defined. {true}ecg-ann-2:TODO: placeholder for invariant ecg-ann-2, to be defined. {true}ecg-ann-3:TODO: placeholder for invariant ecg-ann-3, to be defined. {true}ecg-ann-4:TODO: placeholder for invariant ecg-ann-4, to be defined. {true}ecg-ann-5:TODO: placeholder for invariant ecg-ann-5, to be defined. {true}ecg-ann-6:TODO: placeholder for invariant ecg-ann-6, to be defined. {true}","n/a"
+"EHDSECGAnnotationSet.header","EHDSECGAnnotationSet.header","","","",1,1,"","","","Base {[]} {[]}
+","Basic metadata for this information","Basic metadata for this information","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header",1,1,"",""
+"EHDSECGAnnotationSet.header.subject","EHDSECGAnnotationSet.header.subject","","","",1,1,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSPatient {[]} {[]}
+","Patient/subject information","Patient/subject information","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.subject",1,1,"",""
+"EHDSECGAnnotationSet.header.identifier","EHDSECGAnnotationSet.header.identifier","","","",1,*,"","","","Identifier {[]} {[]}
+","[A] Needed for links","Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.identifier",0,*,"",""
+"EHDSECGAnnotationSet.header.author[x]","EHDSECGAnnotationSet.header.author[x]","","","",1,1,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
+http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","[A] One set = one author","Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.author[x]",0,*,"",""
+"EHDSECGAnnotationSet.header.date","EHDSECGAnnotationSet.header.date","","","",1,1,"","","","dateTime {[]} {[]}
+","[A] Date of creation of the set","Date and optionally time of authoring/issuing","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.date",0,1,"",""
+"EHDSECGAnnotationSet.header.status","EHDSECGAnnotationSet.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Status of the resource or document","Status of the resource or document","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.status",1,1,"",""
+"EHDSECGAnnotationSet.header.source","EHDSECGAnnotationSet.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information.","Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.source",0,1,"",""
+"EHDSECGAnnotationSet.header.language","EHDSECGAnnotationSet.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Language in which the resource is written. Language is expressed by the IETF language tag.","Language in which the resource is written. Language is expressed by the IETF language tag.","","","","","","","","","",,"preferred","BCP 47","","",,,,"EHDSDataSet.header.language",0,1,"",""
+"EHDSECGAnnotationSet.recording","EHDSECGAnnotationSet.recording","","","",1,1,"","","","Identifier {[]} {[]}
+","[A] Link to the annotated recording","Link to the annotated recording.","","","","","","","","","",,,,,"",,,,"EHDSECGAnnotationSet.recording",1,1,"",""
+"EHDSECGAnnotationSet.algorithm","EHDSECGAnnotationSet.algorithm","","","",0,1,"","","","http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAlgorithm {[]} {[]}
+","[A] Algorithm that produced the set","With its version. Required when the author is a device (ecg-ann-6).","","","","","","","","","",,,,,"",,,,"EHDSECGAnnotationSet.algorithm",0,1,"",""
+"EHDSECGAnnotationSet.executionManifest","EHDSECGAnnotationSet.executionManifest","","","",0,1,"","","","Base {[]} {[]}
+","[A] Execution manifest","As in EHDSECGDerivedResult.","","","","","","","","","",,,,,"",,,,"EHDSECGAnnotationSet.executionManifest",0,1,"",""
+"EHDSECGAnnotationSet.executionManifest.attachment","EHDSECGAnnotationSet.executionManifest.attachment","","","",1,1,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment {[]} {[]}
+","[A] The manifest","With its content as data or a URL (ecg-dr-19).","","","","","","","","","",,,,,"",,,,"EHDSECGAnnotationSet.executionManifest.attachment",1,1,"",""
+"EHDSECGAnnotationSet.executionManifest.contentHash","EHDSECGAnnotationSet.executionManifest.contentHash","","","",0,1,"","","","string {[]} {[]}
+","[A] SHA-256 of the manifest","Required to match inline content (ecg-dr-21).","","","","","","","","","",,,,,"",,,,"EHDSECGAnnotationSet.executionManifest.contentHash",0,1,"",""
+"EHDSECGAnnotationSet.useTier","EHDSECGAnnotationSet.useTier","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","[A] Intended use","As in EHDSECGDerivedResult.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGUseTierVS","",,,,"EHDSECGAnnotationSet.useTier",0,1,"",""
+"EHDSECGAnnotationSet.review","EHDSECGAnnotationSet.review","","","",0,*,"","","","Base {[]} {[]}
+","[A] Human oversight","Same structure and rules as EHDSECGDerivedResult.review; review.replacement links to a corrected annotation set (ecg-ann-1).","","","","","","","","","",,,,,"",,,,"EHDSECGAnnotationSet.review",0,*,"",""
+"EHDSECGAnnotationSet.review.status","EHDSECGAnnotationSet.review.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","[A] Review status","not-reviewed, accepted, modified, rejected.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGReviewStatusVS","",,,,"EHDSECGAnnotationSet.review.status",1,1,"",""
+"EHDSECGAnnotationSet.review.reviewer","EHDSECGAnnotationSet.review.reviewer","","","",0,1,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
+","[A] Reviewer","Required when status is not not-reviewed (ecg-dr-13).","","","","","","","","","",,,,,"",,,,"EHDSECGAnnotationSet.review.reviewer",0,1,"",""
+"EHDSECGAnnotationSet.review.datetime","EHDSECGAnnotationSet.review.datetime","","","",0,1,"","","","dateTime {[]} {[]}
+","[A] Date of review","Required when status is not not-reviewed, unless datetimeAbsentReason is given.","","","","","","","","","",,,,,"",,,,"EHDSECGAnnotationSet.review.datetime",0,1,"",""
+"EHDSECGAnnotationSet.review.datetimeAbsentReason","EHDSECGAnnotationSet.review.datetimeAbsentReason","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","[A] Why the review date is unknown","Why the review date is unknown.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGDataAbsentReasonVS","",,,,"EHDSECGAnnotationSet.review.datetimeAbsentReason",0,1,"",""
+"EHDSECGAnnotationSet.review.replacement","EHDSECGAnnotationSet.review.replacement","","","",0,1,"","","","Identifier {[]} {[]}
+","[A] Link to the corrected annotation set","When status = modified (ecg-ann-1).","","","","","","","","","",,,,,"",,,,"EHDSECGAnnotationSet.review.replacement",0,1,"",""
+"EHDSECGAnnotationSet.review.comment","EHDSECGAnnotationSet.review.comment","","","",0,1,"","","","string {[]} {[]}
+","[A] Comment","Comment.","","","","","","","","","",,,,,"",,,,"EHDSECGAnnotationSet.review.comment",0,1,"",""
+"EHDSECGAnnotationSet.annotation","EHDSECGAnnotationSet.annotation","","","",0,*,"","","","Base {[]} {[]}
+","[A] Inline events","Inline events (short recordings).","","","","","","","","","",,,,,"",,,,"EHDSECGAnnotationSet.annotation",0,*,"",""
+"EHDSECGAnnotationSet.annotation.code","EHDSECGAnnotationSet.annotation.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","[A] Annotation code","Wave boundary, beat class, episode, artefact.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGAnnotationVS","",,,,"EHDSECGAnnotationSet.annotation.code",1,1,"",""
+"EHDSECGAnnotationSet.annotation.onset[x]","EHDSECGAnnotationSet.annotation.onset[x]","","","",1,1,"","","","decimal {[]} {[]}
+dateTime {[]} {[]}","[A] Onset","ms from recording start (>= 0), or absolute time. Within the recording (ecg-ann-5).","","","","","","","","","",,,,,"",,,,"EHDSECGAnnotationSet.annotation.onset[x]",1,1,"",""
+"EHDSECGAnnotationSet.annotation.end[x]","EHDSECGAnnotationSet.annotation.end[x]","","","",0,1,"","","","decimal {[]} {[]}
+dateTime {[]} {[]}","[A] End","Absent for a fiducial point. Same type as onset[x], not before it (ecg-ann-2), within the recording (ecg-ann-5).","","","","","","","","","",,,,,"",,,,"EHDSECGAnnotationSet.annotation.end[x]",0,1,"",""
+"EHDSECGAnnotationSet.annotation.lead","EHDSECGAnnotationSet.annotation.lead","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","[A] Lead","Absent = all leads.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS","",,,,"EHDSECGAnnotationSet.annotation.lead",0,*,"",""
+"EHDSECGAnnotationSet.annotation.value[x]","EHDSECGAnnotationSet.annotation.value[x]","","","",0,1,"","","","Quantity {[]} {[]}
+CodeableConcept {[]} {[]}","[A] Value","Optional value.","","","","","","","","","",,,,,"",,,,"EHDSECGAnnotationSet.annotation.value[x]",0,1,"",""
+"EHDSECGAnnotationSet.annotation.confidence","EHDSECGAnnotationSet.annotation.confidence","","","",0,1,"","","","decimal {[]} {[]}
+","[A] Confidence","Between 0 and 1 (ecg-ann-4).","","","","","","","","","",,,,,"",,,,"EHDSECGAnnotationSet.annotation.confidence",0,1,"",""
+"EHDSECGAnnotationSet.annotation.localId","EHDSECGAnnotationSet.annotation.localId","","","",0,1,"","","","string {[]} {[]}
+","[A] Local id","Unique within the set (ecg-ann-3).","","","","","","","","","",,,,,"",,,,"EHDSECGAnnotationSet.annotation.localId",0,1,"",""
+"EHDSECGAnnotationSet.annotation.parent","EHDSECGAnnotationSet.annotation.parent","","","",0,1,"","","","string {[]} {[]}
+","[A] Parent annotation","localId of an existing annotation of the same set: wave -> beat -> episode (ecg-ann-3).","","","","","","","","","",,,,,"",,,,"EHDSECGAnnotationSet.annotation.parent",0,1,"",""
+"EHDSECGAnnotationSet.bulkPayload","EHDSECGAnnotationSet.bulkPayload","","","",0,1,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment {[]} {[]}
+","[A] Annotations in an external format","Long recordings: DICOM Waveform Annotation SR, WFDB annotations, or a tabular format to be specified.","","","","","","","","","",,,,,"",,,,"EHDSECGAnnotationSet.bulkPayload",0,1,"",""
+"EHDSECGAnnotationSet.bulkPayloadContentHash","EHDSECGAnnotationSet.bulkPayloadContentHash","","","",0,1,"","","","string {[]} {[]}
+","[A] SHA-256 of bulkPayload","SHA-256 of bulkPayload.","","","","","","","","","",,,,,"",,,,"EHDSECGAnnotationSet.bulkPayloadContentHash",0,1,"",""
+"EHDSECGAnnotationSet.summary","EHDSECGAnnotationSet.summary","","","",0,*,"","","","Identifier {[]} {[]}
+","[A] Links to aggregates","Links to the aggregates computed from the set (AF burden, event counts), which are derived results of the examination.","","","","","","","","","",,,,,"",,,,"EHDSECGAnnotationSet.summary",0,*,"",""

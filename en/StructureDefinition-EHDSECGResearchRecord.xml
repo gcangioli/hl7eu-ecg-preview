@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="EHDSECGResearchRecord"/>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition EHDSECGResearchRecord</b></p><table border="0" cellpadding="0" cellspacing="0" class="xhtTableBorder0"><tr class="xhtRowBorder1"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-EHDSECGResearchRecord-definitions.html#EHDSECGResearchRecord" title="Research extraction profile for EHDS secondary use (chapter IV of the Regulation): one record per pseudonymised subject. Shares the semantic core of the care profile, does not require a PDF rendering, and documents what a training or evaluation set needs.">EHDSECGResearchRecord</a><a name="EHDSECGResearchRecord"> </a></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( ecg-rep-1, ecg-rep-2, ecg-res-1 )" class="xhtConstraintStyle">C</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="" class="hierarchy xhtCellBorder0">ECG research record model<br/><span class="xhtPieceBold">Instances of this type can be the target of a Reference</span><br class="constraint"/><span class="constraint">Constraints: </span><span title="TODO: placeholder for invariant ecg-rep-1, to be defined." class="xhtPieceBold constraint">ecg-rep-1</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-rep-2, to be defined." class="xhtPieceBold constraint">ecg-rep-2</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-res-1, to be defined." class="xhtPieceBold constraint">ecg-res-1</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchRecord.</span><a href="StructureDefinition-EHDSECGResearchRecord-definitions.html#EHDSECGResearchRecord.dataset" title="The research dataset the record belongs to.">dataset</a><a name="EHDSECGResearchRecord.dataset"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">Research dataset</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchRecord.</span><a href="StructureDefinition-EHDSECGResearchRecord-definitions.html#EHDSECGResearchRecord.subjectPseudonym" title="Stable within the scope of the data permit, so that successive ECGs of the same person stay linked; the system is specific to that scope.">subjectPseudonym</a><a name="EHDSECGResearchRecord.subjectPseudonym"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">Pseudonym of the subject</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchRecord.</span><a href="StructureDefinition-EHDSECGResearchRecord-definitions.html#EHDSECGResearchRecord.sex" title="Sex, when part of the permitted data.">sex</a><a name="EHDSECGResearchRecord.sex"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Sex</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchRecord.</span><a href="StructureDefinition-EHDSECGResearchRecord-definitions.html#EHDSECGResearchRecord.ageAtFirstExamination" title="UCUM a.">ageAtFirstExamination</a><a name="EHDSECGResearchRecord.ageAtFirstExamination"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">Age at first examination</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchRecord.</span><a href="StructureDefinition-EHDSECGResearchRecord-definitions.html#EHDSECGResearchRecord.examination" title="With recordings, annotations and results. presentedForm is not required. header.subject carries the pseudonym (ecg-res-1).">examination</a><a name="EHDSECGResearchRecord.examination"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSECGExamination.html">EHDSECGExamination</a></td><td style="" class="hierarchy xhtCellBorder0">Examinations of the subject<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchRecord.</span><a href="StructureDefinition-EHDSECGResearchRecord-definitions.html#EHDSECGResearchRecord.covariate" title="Height, weight, blood pressure, conditions, each with a header.identifier so that results can reference them as inputs.">covariate</a><a name="EHDSECGResearchRecord.covariate"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html">EHDSObservation</a></td><td style="" class="hierarchy xhtCellBorder0">Clinical covariates<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchRecord.</span><a href="StructureDefinition-EHDSECGResearchRecord-definitions.html#EHDSECGResearchRecord.linkedData" title="Other data linked for the analysis (echocardiography, laboratory, outcome events), published elsewhere.">linkedData</a><a name="EHDSECGResearchRecord.linkedData"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">Other linked data<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchRecord.linkedData.</span><a href="StructureDefinition-EHDSECGResearchRecord-definitions.html#EHDSECGResearchRecord.linkedData.type" title="A linked datum may be cited as a clinical covariate or an upstream result, and as a comparison ECG when it is an ECG.">type</a><a name="EHDSECGResearchRecord.linkedData.type"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">What the linked datum is<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGLinkedDataTypeVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGLinkedDataTypeVS" class="binding">ECG Linked Data Type (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchRecord.linkedData.</span><a href="StructureDefinition-EHDSECGResearchRecord-definitions.html#EHDSECGResearchRecord.linkedData.reference" title="Global system. Results of the record may cite it as an input. When resolved, its target suits linkedData.type (ecg-rep-2).">reference</a><a name="EHDSECGResearchRecord.linkedData.reference"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">External identifier of the linked object</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchRecord.linkedData.</span><a href="StructureDefinition-EHDSECGResearchRecord-definitions.html#EHDSECGResearchRecord.linkedData.relativeTime" title="Time from the first examination of the record, UCUM time unit.">relativeTime</a><a name="EHDSECGResearchRecord.linkedData.relativeTime"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">Time from the first examination</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck01.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchRecord.</span><a href="StructureDefinition-EHDSECGResearchRecord-definitions.html#EHDSECGResearchRecord.transformation" title="Transformations applied to this record beyond the dataset-level ones.">transformation</a><a name="EHDSECGResearchRecord.transformation"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">Record-level transformations<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchRecord.transformation.</span><a href="StructureDefinition-EHDSECGResearchRecord-definitions.html#EHDSECGResearchRecord.transformation.type" title="Type of transformation.">type</a><a name="EHDSECGResearchRecord.transformation.type"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Transformation type<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGTransformationTypeVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGTransformationTypeVS" class="binding">ECG Transformation Type (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchRecord.transformation.</span><a href="StructureDefinition-EHDSECGResearchRecord-definitions.html#EHDSECGResearchRecord.transformation.description" title="What was done.">description</a><a name="EHDSECGResearchRecord.transformation.description"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">What was done</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchRecord.transformation.</span><a href="StructureDefinition-EHDSECGResearchRecord-definitions.html#EHDSECGResearchRecord.transformation.tool" title="Tool and version.">tool</a><a name="EHDSECGResearchRecord.transformation.tool"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html">EHDSDevice</a></td><td style="" class="hierarchy xhtCellBorder0">Tool and version</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck000.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchRecord.transformation.</span><a href="StructureDefinition-EHDSECGResearchRecord-definitions.html#EHDSECGResearchRecord.transformation.parameters" title="Parameters, when they do not compromise pseudonymisation.">parameters</a><a name="EHDSECGResearchRecord.transformation.parameters"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Parameters</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
+    <valueCode value="can-be-target"/>
+  </extension>
+  <url value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResearchRecord"/>
+  <version value="0.1.0-ci-build"/>
+  <name value="EHDSECGResearchRecord"/>
+  <title value="ECG research record model"/>
+  <status value="draft"/>
+  <date value="2026-11-06T23:02:43+01:00"/>
+  <publisher value="HL7 Europe"/>
+  <contact>
+    <name value="HL7 Europe"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.eu"/>
+    </telecom>
+  </contact>
+  <description value="Research extraction profile for EHDS secondary use (chapter IV of the Regulation): one record per pseudonymised subject. Shares the semantic core of the care profile, does not require a PDF rendering, and documents what a training or evaluation set needs."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="150"/>
+      <display value="Europe"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright HL7 Europe. Licensed under creative commons public domain (CC0 1.0)."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResearchRecord"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.0.1"/>
+    </extension>
+    <element id="EHDSECGResearchRecord">
+      <path value="EHDSECGResearchRecord"/>
+      <short value="ECG research record model"/>
+      <definition value="Research extraction profile for EHDS secondary use (chapter IV of the Regulation): one record per pseudonymised subject. Shares the semantic core of the care profile, does not require a PDF rendering, and documents what a training or evaluation set needs."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <constraint>
+        <key value="ecg-rep-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rep-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResearchRecord"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rep-2"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rep-2, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResearchRecord"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-res-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-res-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResearchRecord"/>
+      </constraint>
+      <isModifier value="false"/>
+    </element>
+    <element id="EHDSECGResearchRecord.dataset">
+      <path value="EHDSECGResearchRecord.dataset"/>
+      <short value="Research dataset"/>
+      <definition value="The research dataset the record belongs to."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchRecord.dataset"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.subjectPseudonym">
+      <path value="EHDSECGResearchRecord.subjectPseudonym"/>
+      <short value="Pseudonym of the subject"/>
+      <definition value="Stable within the scope of the data permit, so that successive ECGs of the same person stay linked; the system is specific to that scope."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchRecord.subjectPseudonym"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.sex">
+      <path value="EHDSECGResearchRecord.sex"/>
+      <short value="Sex"/>
+      <definition value="Sex, when part of the permitted data."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchRecord.sex"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.ageAtFirstExamination">
+      <path value="EHDSECGResearchRecord.ageAtFirstExamination"/>
+      <short value="Age at first examination"/>
+      <definition value="UCUM a."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchRecord.ageAtFirstExamination"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.examination">
+      <path value="EHDSECGResearchRecord.examination"/>
+      <short value="Examinations of the subject"/>
+      <definition value="With recordings, annotations and results. presentedForm is not required. header.subject carries the pseudonym (ecg-res-1)."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGResearchRecord.examination"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.covariate">
+      <path value="EHDSECGResearchRecord.covariate"/>
+      <short value="Clinical covariates"/>
+      <definition value="Height, weight, blood pressure, conditions, each with a header.identifier so that results can reference them as inputs."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGResearchRecord.covariate"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.linkedData">
+      <path value="EHDSECGResearchRecord.linkedData"/>
+      <short value="Other linked data"/>
+      <definition value="Other data linked for the analysis (echocardiography, laboratory, outcome events), published elsewhere."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGResearchRecord.linkedData"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.linkedData.type">
+      <path value="EHDSECGResearchRecord.linkedData.type"/>
+      <short value="What the linked datum is"/>
+      <definition value="A linked datum may be cited as a clinical covariate or an upstream result, and as a comparison ECG when it is an ECG."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchRecord.linkedData.type"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGLinkedDataTypeVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGResearchRecord.linkedData.reference">
+      <path value="EHDSECGResearchRecord.linkedData.reference"/>
+      <short value="External identifier of the linked object"/>
+      <definition value="Global system. Results of the record may cite it as an input. When resolved, its target suits linkedData.type (ecg-rep-2)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchRecord.linkedData.reference"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.linkedData.relativeTime">
+      <path value="EHDSECGResearchRecord.linkedData.relativeTime"/>
+      <short value="Time from the first examination"/>
+      <definition value="Time from the first examination of the record, UCUM time unit."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchRecord.linkedData.relativeTime"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.transformation">
+      <path value="EHDSECGResearchRecord.transformation"/>
+      <short value="Record-level transformations"/>
+      <definition value="Transformations applied to this record beyond the dataset-level ones."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGResearchRecord.transformation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.transformation.type">
+      <path value="EHDSECGResearchRecord.transformation.type"/>
+      <short value="Transformation type"/>
+      <definition value="Type of transformation."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchRecord.transformation.type"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGTransformationTypeVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGResearchRecord.transformation.description">
+      <path value="EHDSECGResearchRecord.transformation.description"/>
+      <short value="What was done"/>
+      <definition value="What was done."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchRecord.transformation.description"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.transformation.tool">
+      <path value="EHDSECGResearchRecord.transformation.tool"/>
+      <short value="Tool and version"/>
+      <definition value="Tool and version."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchRecord.transformation.tool"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.transformation.parameters">
+      <path value="EHDSECGResearchRecord.transformation.parameters"/>
+      <short value="Parameters"/>
+      <definition value="Parameters, when they do not compromise pseudonymisation."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchRecord.transformation.parameters"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="EHDSECGResearchRecord">
+      <path value="EHDSECGResearchRecord"/>
+      <short value="ECG research record model"/>
+      <definition value="Research extraction profile for EHDS secondary use (chapter IV of the Regulation): one record per pseudonymised subject. Shares the semantic core of the care profile, does not require a PDF rendering, and documents what a training or evaluation set needs."/>
+      <constraint>
+        <key value="ecg-rep-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rep-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResearchRecord"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rep-2"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rep-2, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResearchRecord"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-res-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-res-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResearchRecord"/>
+      </constraint>
+    </element>
+    <element id="EHDSECGResearchRecord.dataset">
+      <path value="EHDSECGResearchRecord.dataset"/>
+      <short value="Research dataset"/>
+      <definition value="The research dataset the record belongs to."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.subjectPseudonym">
+      <path value="EHDSECGResearchRecord.subjectPseudonym"/>
+      <short value="Pseudonym of the subject"/>
+      <definition value="Stable within the scope of the data permit, so that successive ECGs of the same person stay linked; the system is specific to that scope."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.sex">
+      <path value="EHDSECGResearchRecord.sex"/>
+      <short value="Sex"/>
+      <definition value="Sex, when part of the permitted data."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.ageAtFirstExamination">
+      <path value="EHDSECGResearchRecord.ageAtFirstExamination"/>
+      <short value="Age at first examination"/>
+      <definition value="UCUM a."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.examination">
+      <path value="EHDSECGResearchRecord.examination"/>
+      <short value="Examinations of the subject"/>
+      <definition value="With recordings, annotations and results. presentedForm is not required. header.subject carries the pseudonym (ecg-res-1)."/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.covariate">
+      <path value="EHDSECGResearchRecord.covariate"/>
+      <short value="Clinical covariates"/>
+      <definition value="Height, weight, blood pressure, conditions, each with a header.identifier so that results can reference them as inputs."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.linkedData">
+      <path value="EHDSECGResearchRecord.linkedData"/>
+      <short value="Other linked data"/>
+      <definition value="Other data linked for the analysis (echocardiography, laboratory, outcome events), published elsewhere."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.linkedData.type">
+      <path value="EHDSECGResearchRecord.linkedData.type"/>
+      <short value="What the linked datum is"/>
+      <definition value="A linked datum may be cited as a clinical covariate or an upstream result, and as a comparison ECG when it is an ECG."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGLinkedDataTypeVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGResearchRecord.linkedData.reference">
+      <path value="EHDSECGResearchRecord.linkedData.reference"/>
+      <short value="External identifier of the linked object"/>
+      <definition value="Global system. Results of the record may cite it as an input. When resolved, its target suits linkedData.type (ecg-rep-2)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.linkedData.relativeTime">
+      <path value="EHDSECGResearchRecord.linkedData.relativeTime"/>
+      <short value="Time from the first examination"/>
+      <definition value="Time from the first examination of the record, UCUM time unit."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.transformation">
+      <path value="EHDSECGResearchRecord.transformation"/>
+      <short value="Record-level transformations"/>
+      <definition value="Transformations applied to this record beyond the dataset-level ones."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.transformation.type">
+      <path value="EHDSECGResearchRecord.transformation.type"/>
+      <short value="Transformation type"/>
+      <definition value="Type of transformation."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGTransformationTypeVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGResearchRecord.transformation.description">
+      <path value="EHDSECGResearchRecord.transformation.description"/>
+      <short value="What was done"/>
+      <definition value="What was done."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.transformation.tool">
+      <path value="EHDSECGResearchRecord.transformation.tool"/>
+      <short value="Tool and version"/>
+      <definition value="Tool and version."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchRecord.transformation.parameters">
+      <path value="EHDSECGResearchRecord.transformation.parameters"/>
+      <short value="Parameters"/>
+      <definition value="Parameters, when they do not compromise pseudonymisation."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

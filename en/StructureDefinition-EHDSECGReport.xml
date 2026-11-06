@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="EHDSECGReport"/>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition EHDSECGReport</b></p><table border="0" cellpadding="0" cellspacing="0" class="xhtTableBorder0"><tr class="xhtRowBorder1"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport" title="The exchangeable unit for the EHDS priority category medical test results (Regulation (EU) 2025/327, art. 14(1)(e)). Sibling of EHDSLaboratoryReport.">EHDSECGReport</a><a name="EHDSECGReport"> </a></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( ecg-rep-1, ecg-rep-2, ecg-rep-3, ecg-rep-4 )" class="xhtConstraintStyle">C</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDocument.html">EHDSDocument</a></td><td style="" class="hierarchy xhtCellBorder0">ECG report model<br/><br/>Elements defined in Ancestors:<a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDataSet.html" title="Basic metadata for this information">header</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDocument.html">header</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDocument.html" title="A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document">presentedForm</a><br/><span class="xhtPieceBold">Instances of this type can be the target of a Reference</span><br class="constraint"/><span class="constraint">Constraints: </span><span title="TODO: placeholder for invariant ecg-rep-1, to be defined." class="xhtPieceBold constraint">ecg-rep-1</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-rep-2, to be defined." class="xhtPieceBold constraint">ecg-rep-2</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-rep-3, to be defined." class="xhtPieceBold constraint">ecg-rep-3</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-rep-4, to be defined." class="xhtPieceBold constraint">ecg-rep-4</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.header">header</a><a name="EHDSECGReport.header"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.header.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.header.documentType">documentType</a><a name="EHDSECGReport.header.documentType"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Type of ECG document. Preferred: LOINC 11524-6 EKG study; 98857-6 for stress tests. Final binding open<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGDocumentTypeVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGDocumentTypeVS" class="binding">ECG Document Type (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.header.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.header.eventType">eventType</a><a name="EHDSECGReport.header.eventType"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Examination kind(s) covered, for search<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGExaminationKindVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGExaminationKindVS" class="binding">ECG Examination Kind (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.presentedForm">presentedForm</a><a name="EHDSECGReport.presentedForm"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..<span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSAttachment.html" class="xhtPieceDeEmphasized">EHDSAttachment</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Human-readable rendering of the full report including the tracing (PDF/A recommended). Each rendering carries its content, as data or a URL (ecg-rep-4)</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body" title="Structured content of the ECG report.">body</a><a name="EHDSECGReport.body"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">[C] Structured content</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.orderInformation" title="Same structure as EHDSLaboratoryReport.body.orderInformation.">orderInformation</a><a name="EHDSECGReport.body.orderInformation"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">[C] Order information<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.orderInformation.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.orderInformation.orderId" title="Identifier of the order.">orderId</a><a name="EHDSECGReport.body.orderInformation.orderId"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">Order identifier<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.orderInformation.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.orderInformation.orderDateAndTime" title="Date and time of the order.">orderDateAndTime</a><a name="EHDSECGReport.body.orderInformation.orderDateAndTime"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="" class="hierarchy xhtCellBorder0">Order date and time</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.orderInformation.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.orderInformation.orderPlacer[x]" title="Who placed the order.">orderPlacer[x]</a><a name="EHDSECGReport.body.orderInformation.orderPlacer_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">Order placer</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.orderInformation.orderPlacer[x].</span><span title="Model for information about a health professional.">orderPlacerEHDSHealthProfessional</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSHealthProfessional.html">EHDSHealthProfessional</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.orderInformation.orderPlacer[x].</span><span title="Model for information about an organisation">orderPlacerEHDSOrganisation</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSOrganisation.html">EHDSOrganisation</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.orderInformation.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.orderInformation.orderReason[x]" title="Reason for the order.">orderReason[x]</a><a name="EHDSECGReport.body.orderInformation.orderReason_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">Order reason<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.orderInformation.orderReason[x].</span><span title="Model for a clinical condition, problem, diagnosis, or other event, situation, or issue that has risen to a level of concern.">orderReasonEHDSCondition</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSCondition.html">EHDSCondition</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.orderInformation.orderReason[x].</span><span title="Base StructureDefinition for CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.">orderReasonCodeableConcept</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.orderInformation.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.orderInformation.clinicalQuestion" title="Clinical question of the requester.">clinicalQuestion</a><a name="EHDSECGReport.body.orderInformation.clinicalQuestion"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Clinical question</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.supportingInformation" title="Clinical context relevant to the interpretation of the ECG.">supportingInformation</a><a name="EHDSECGReport.body.supportingInformation"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">[C] Clinical context relevant to interpretation</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.supportingInformation.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.supportingInformation.symptom[x]" title="Palpitations, chest pain, syncope...">symptom[x]</a><a name="EHDSECGReport.body.supportingInformation.symptom_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">[C] Symptoms at the time of recording<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.supportingInformation.symptom[x].</span><span title="Model for information about an oservation and its results.">symptomEHDSObservation</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html">EHDSObservation</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.supportingInformation.symptom[x].</span><span title="Base StructureDefinition for CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.">symptomCodeableConcept</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.supportingInformation.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.supportingInformation.condition" title="Relevant conditions.">condition</a><a name="EHDSECGReport.body.supportingInformation.condition"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSCondition.html">EHDSCondition</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Relevant conditions<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.supportingInformation.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.supportingInformation.medication[x]" title="Antiarrhythmics, QT-prolonging drugs, digoxin. ATC allowed.">medication[x]</a><a name="EHDSECGReport.body.supportingInformation.medication_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">[C] Medications affecting the ECG<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.supportingInformation.medication[x].</span><span title="The model covers details about single medication administrations within the scope of imaging and laboratory procedures.">medicationEHDSMedicationAdministration</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSMedicationAdministration.html">EHDSMedicationAdministration</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.supportingInformation.medication[x].</span><span title="Base StructureDefinition for CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.">medicationCodeableConcept</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.supportingInformation.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.supportingInformation.implantedDevice" title="Pacemaker, ICD, CRT, ILR.">implantedDevice</a><a name="EHDSECGReport.body.supportingInformation.implantedDevice"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html">EHDSDevice</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Implanted cardiac device<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.supportingInformation.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.supportingInformation.pacingMode" title="NBG/NASPE-BPEG code, e.g. DDD.">pacingMode</a><a name="EHDSECGReport.body.supportingInformation.pacingMode"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Programmed pacing mode</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.supportingInformation.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.supportingInformation.vitalSign" title="Height, weight, blood pressure at the time of recording.">vitalSign</a><a name="EHDSECGReport.body.supportingInformation.vitalSign"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html">EHDSObservation</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Vital signs at the time of recording<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.supportingInformation.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.supportingInformation.sexForClinicalUse" title="As in EHDSLaboratoryReport (sex-specific reference ranges, e.g. QTc).">sexForClinicalUse</a><a name="EHDSECGReport.body.supportingInformation.sexForClinicalUse"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Sex for clinical use</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.supportingInformation.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.supportingInformation.other" title="Any other supporting information.">other</a><a name="EHDSECGReport.body.supportingInformation.other"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0">Resource</td><td style="" class="hierarchy xhtCellBorder0">[A] Other supporting information<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.examination" title="The ECG examination(s) reported.">examination</a><a name="EHDSECGReport.body.examination"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSECGExamination.html">EHDSECGExamination</a></td><td style="" class="hierarchy xhtCellBorder0">[C] ECG examination(s) reported<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck101.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.conclusion" title="Report-level conclusion.">conclusion</a><a name="EHDSECGReport.body.conclusion"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">[C] Report-level conclusion</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.conclusion.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.conclusion.text" title="Narrative conclusion as signed by the reporting physician (or as produced by the device if unconfirmed).">text</a><a name="EHDSECGReport.body.conclusion.text"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Narrative conclusion</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.conclusion.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.conclusion.overall" title="normal, otherwise normal, borderline, abnormal, non-diagnostic.">overall</a><a name="EHDSECGReport.body.conclusion.overall"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Overall conclusion<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGOverallConclusionVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGOverallConclusionVS" class="binding">ECG Overall Conclusion (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.conclusion.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.conclusion.finding" title="Coded diagnostic statements.">finding</a><a name="EHDSECGReport.body.conclusion.finding"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Coded diagnostic statements<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGFindingVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGFindingVS" class="binding">ECG Finding (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span><br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1011.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.conclusion.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.conclusion.comparisonWithPrior" title="Comparison with a previous ECG.">comparisonWithPrior</a><a name="EHDSECGReport.body.conclusion.comparisonWithPrior"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">[C] Comparison with a previous ECG</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.conclusion.comparisonWithPrior.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.conclusion.comparisonWithPrior.prior" title="Identifier of the previous examination. Always an external link.">prior</a><a name="EHDSECGReport.body.conclusion.comparisonWithPrior.prior"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Previous examination (link)</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10101.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.conclusion.comparisonWithPrior.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.conclusion.comparisonWithPrior.change[x]" title="unchanged, changed (+ description).">change[x]</a><a name="EHDSECGReport.body.conclusion.comparisonWithPrior.change_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">[C] Change</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck101010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.conclusion.comparisonWithPrior.change[x].</span><span title="Base StructureDefinition for CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.">changeCodeableConcept</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck101000.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.conclusion.comparisonWithPrior.change[x].</span><span title="Base StructureDefinition for string Type: A sequence of Unicode characters">changeString</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1000.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.body.conclusion.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.conclusion.recommendation" title="Recommendations (further tests, follow-up).">recommendation</a><a name="EHDSECGReport.body.conclusion.recommendation"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Recommendations</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck00.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGReport.</span><a href="StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.attachments" title="Other attached documents.">attachments</a><a name="EHDSECGReport.attachments"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSAttachment.html">EHDSAttachment</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Other attached documents<br/></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
+    <valueCode value="can-be-target"/>
+  </extension>
+  <url value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGReport"/>
+  <version value="0.1.0-ci-build"/>
+  <name value="EHDSECGReport"/>
+  <title value="ECG report model"/>
+  <status value="draft"/>
+  <date value="2026-11-06T23:02:43+01:00"/>
+  <publisher value="HL7 Europe"/>
+  <contact>
+    <name value="HL7 Europe"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.eu"/>
+    </telecom>
+  </contact>
+  <description value="The exchangeable unit for the EHDS priority category medical test results (Regulation (EU) 2025/327, art. 14(1)(e)). Sibling of EHDSLaboratoryReport."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="150"/>
+      <display value="Europe"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright HL7 Europe. Licensed under creative commons public domain (CC0 1.0)."/>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGReport"/>
+  <baseDefinition value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDocument"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="1.0.0"/>
+    </extension>
+    <element id="EHDSECGReport">
+      <path value="EHDSECGReport"/>
+      <short value="ECG report model"/>
+      <definition value="The exchangeable unit for the EHDS priority category medical test results (Regulation (EU) 2025/327, art. 14(1)(e)). Sibling of EHDSLaboratoryReport."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <constraint>
+        <key value="ecg-rep-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rep-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGReport"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rep-2"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rep-2, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGReport"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rep-3"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rep-3, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGReport"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rep-4"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rep-4, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGReport"/>
+      </constraint>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="EHDSECGReport.header">
+      <path value="EHDSECGReport.header"/>
+      <short value="Document header"/>
+      <definition value="Basic metadata for this information"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.header.subject">
+      <path value="EHDSECGReport.header.subject"/>
+      <short value="Patient/subject information"/>
+      <definition value="Patient/subject information"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.subject"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.header.identifier">
+      <path value="EHDSECGReport.header.identifier"/>
+      <short value="Unique identifier of the document"/>
+      <definition value="Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDataSet.header.identifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.header.author[x]">
+      <path value="EHDSECGReport.header.author[x]"/>
+      <short value="Author(s) of the document"/>
+      <definition value="Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDataSet.header.author[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.header.date">
+      <path value="EHDSECGReport.header.date"/>
+      <short value="Date of finalising/issuing the document"/>
+      <definition value="Date and optionally time of authoring/issuing"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.date"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.header.status">
+      <path value="EHDSECGReport.header.status"/>
+      <short value="Status of the document"/>
+      <definition value="Status of the resource or document"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.header.source">
+      <path value="EHDSECGReport.header.source"/>
+      <short value="Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information."/>
+      <definition value="Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="EHDSDataSet.header.source"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.header.language">
+      <path value="EHDSECGReport.header.language"/>
+      <short value="Language in which the resource is written. Language is expressed by the IETF language tag."/>
+      <definition value="Language in which the resource is written. Language is expressed by the IETF language tag."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.language"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="BCP 47"/>
+      </binding>
+    </element>
+    <element id="EHDSECGReport.header.documentType">
+      <path value="EHDSECGReport.header.documentType"/>
+      <short value="[C] Type of ECG document. Preferred: LOINC 11524-6 EKG study; 98857-6 for stress tests. Final binding open"/>
+      <definition value="Type of document at hand, e.g. 60591-5 Patient summary document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.documentType"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGDocumentTypeVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGReport.header.documentTitle">
+      <path value="EHDSECGReport.header.documentTitle"/>
+      <short value="Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: 'Laboratory Result Report', 'Patient Summary of Jane Green 10.12.2024'"/>
+      <definition value="Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: 'Laboratory Result Report', 'Patient Summary of Jane Green 10.12.2024'"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.documentTitle"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.header.period">
+      <path value="EHDSECGReport.header.period"/>
+      <short value="Time of service that is being documented"/>
+      <definition value="Time of service that is being documented"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.period"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.header.version">
+      <path value="EHDSECGReport.header.version"/>
+      <short value="Business version of the document. The exact algorithm for versioning is decided by the producer/custodian"/>
+      <definition value="Business version of the document. The exact algorithm for versioning is decided by the producer/custodian"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.version"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.header.attestation">
+      <path value="EHDSECGReport.header.attestation"/>
+      <short value="Document attestation details"/>
+      <definition value="Document attestation details"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.header.attestation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.header.attestation.attester[x]">
+      <path value="EHDSECGReport.header.attestation.attester[x]"/>
+      <short value="Attester who validated the document"/>
+      <definition value="Attester who validated the document"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.attestation.attester[x]"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.header.attestation.datetime">
+      <path value="EHDSECGReport.header.attestation.datetime"/>
+      <short value="Date and time of the approval of the document by Attester"/>
+      <definition value="Date and time of the approval of the document by Attester"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.attestation.datetime"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.header.legalAuthentication">
+      <path value="EHDSECGReport.header.legalAuthentication"/>
+      <short value="Document legal authentication details"/>
+      <definition value="Document legal authentication details"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.header.legalAuthentication"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.header.legalAuthentication.legalAuthenticator[x]">
+      <path value="EHDSECGReport.header.legalAuthentication.legalAuthenticator[x]"/>
+      <short value="The person or organisation taking responsibility for the content of the document."/>
+      <definition value="The person or organisation taking responsibility for the content of the document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.legalAuthentication.legalAuthenticator[x]"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.header.legalAuthentication.datetime">
+      <path value="EHDSECGReport.header.legalAuthentication.datetime"/>
+      <short value="Date and time when the document was authorised"/>
+      <definition value="Date and time when the document was authorised"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.legalAuthentication.datetime"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.header.eventType">
+      <path value="EHDSECGReport.header.eventType"/>
+      <short value="[C] Examination kind(s) covered, for search"/>
+      <definition value="Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.header.eventType"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGExaminationKindVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGReport.header.serviceSpecialty">
+      <path value="EHDSECGReport.header.serviceSpecialty"/>
+      <short value="Additional details about where the content was created (e.g. clinical specialty)"/>
+      <definition value="Additional details about where the content was created (e.g. clinical specialty)"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.header.serviceSpecialty"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="SNOMED CT"/>
+      </binding>
+    </element>
+    <element id="EHDSECGReport.header.custodian">
+      <path value="EHDSECGReport.header.custodian"/>
+      <short value="Organisation that is in charge of maintaining the document/report."/>
+      <definition value="Organisation that is in charge of maintaining the document/report."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.custodian"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.presentedForm">
+      <path value="EHDSECGReport.presentedForm"/>
+      <short value="[C] Human-readable rendering of the full report including the tracing (PDF/A recommended). Each rendering carries its content, as data or a URL (ecg-rep-4)"/>
+      <definition value="A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document"/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.presentedForm"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body">
+      <path value="EHDSECGReport.body"/>
+      <short value="[C] Structured content"/>
+      <definition value="Structured content of the ECG report."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGReport.body"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.orderInformation">
+      <path value="EHDSECGReport.body.orderInformation"/>
+      <short value="[C] Order information"/>
+      <definition value="Same structure as EHDSLaboratoryReport.body.orderInformation."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGReport.body.orderInformation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.orderInformation.orderId">
+      <path value="EHDSECGReport.body.orderInformation.orderId"/>
+      <short value="Order identifier"/>
+      <definition value="Identifier of the order."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGReport.body.orderInformation.orderId"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.orderInformation.orderDateAndTime">
+      <path value="EHDSECGReport.body.orderInformation.orderDateAndTime"/>
+      <short value="Order date and time"/>
+      <definition value="Date and time of the order."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGReport.body.orderInformation.orderDateAndTime"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.orderInformation.orderPlacer[x]">
+      <path value="EHDSECGReport.body.orderInformation.orderPlacer[x]"/>
+      <short value="Order placer"/>
+      <definition value="Who placed the order."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGReport.body.orderInformation.orderPlacer[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.orderInformation.orderReason[x]">
+      <path value="EHDSECGReport.body.orderInformation.orderReason[x]"/>
+      <short value="Order reason"/>
+      <definition value="Reason for the order."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGReport.body.orderInformation.orderReason[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSCondition"/>
+      </type>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.orderInformation.clinicalQuestion">
+      <path value="EHDSECGReport.body.orderInformation.clinicalQuestion"/>
+      <short value="Clinical question"/>
+      <definition value="Clinical question of the requester."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGReport.body.orderInformation.clinicalQuestion"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.supportingInformation">
+      <path value="EHDSECGReport.body.supportingInformation"/>
+      <short value="[C] Clinical context relevant to interpretation"/>
+      <definition value="Clinical context relevant to the interpretation of the ECG."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGReport.body.supportingInformation"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.supportingInformation.symptom[x]">
+      <path value="EHDSECGReport.body.supportingInformation.symptom[x]"/>
+      <short value="[C] Symptoms at the time of recording"/>
+      <definition value="Palpitations, chest pain, syncope..."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGReport.body.supportingInformation.symptom[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.supportingInformation.condition">
+      <path value="EHDSECGReport.body.supportingInformation.condition"/>
+      <short value="[C] Relevant conditions"/>
+      <definition value="Relevant conditions."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGReport.body.supportingInformation.condition"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSCondition"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.supportingInformation.medication[x]">
+      <path value="EHDSECGReport.body.supportingInformation.medication[x]"/>
+      <short value="[C] Medications affecting the ECG"/>
+      <definition value="Antiarrhythmics, QT-prolonging drugs, digoxin. ATC allowed."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGReport.body.supportingInformation.medication[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration"/>
+      </type>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.supportingInformation.implantedDevice">
+      <path value="EHDSECGReport.body.supportingInformation.implantedDevice"/>
+      <short value="[C] Implanted cardiac device"/>
+      <definition value="Pacemaker, ICD, CRT, ILR."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGReport.body.supportingInformation.implantedDevice"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.supportingInformation.pacingMode">
+      <path value="EHDSECGReport.body.supportingInformation.pacingMode"/>
+      <short value="[C] Programmed pacing mode"/>
+      <definition value="NBG/NASPE-BPEG code, e.g. DDD."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGReport.body.supportingInformation.pacingMode"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.supportingInformation.vitalSign">
+      <path value="EHDSECGReport.body.supportingInformation.vitalSign"/>
+      <short value="[C] Vital signs at the time of recording"/>
+      <definition value="Height, weight, blood pressure at the time of recording."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGReport.body.supportingInformation.vitalSign"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.supportingInformation.sexForClinicalUse">
+      <path value="EHDSECGReport.body.supportingInformation.sexForClinicalUse"/>
+      <short value="[C] Sex for clinical use"/>
+      <definition value="As in EHDSLaboratoryReport (sex-specific reference ranges, e.g. QTc)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGReport.body.supportingInformation.sexForClinicalUse"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.supportingInformation.other">
+      <path value="EHDSECGReport.body.supportingInformation.other"/>
+      <short value="[A] Other supporting information"/>
+      <definition value="Any other supporting information."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGReport.body.supportingInformation.other"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Resource"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.examination">
+      <path value="EHDSECGReport.body.examination"/>
+      <short value="[C] ECG examination(s) reported"/>
+      <definition value="The ECG examination(s) reported."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGReport.body.examination"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.conclusion">
+      <path value="EHDSECGReport.body.conclusion"/>
+      <short value="[C] Report-level conclusion"/>
+      <definition value="Report-level conclusion."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGReport.body.conclusion"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.conclusion.text">
+      <path value="EHDSECGReport.body.conclusion.text"/>
+      <short value="[C] Narrative conclusion"/>
+      <definition value="Narrative conclusion as signed by the reporting physician (or as produced by the device if unconfirmed)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGReport.body.conclusion.text"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.conclusion.overall">
+      <path value="EHDSECGReport.body.conclusion.overall"/>
+      <short value="[C] Overall conclusion"/>
+      <definition value="normal, otherwise normal, borderline, abnormal, non-diagnostic."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGReport.body.conclusion.overall"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGOverallConclusionVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGReport.body.conclusion.finding">
+      <path value="EHDSECGReport.body.conclusion.finding"/>
+      <short value="[C] Coded diagnostic statements"/>
+      <definition value="Coded diagnostic statements."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGReport.body.conclusion.finding"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGFindingVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGReport.body.conclusion.comparisonWithPrior">
+      <path value="EHDSECGReport.body.conclusion.comparisonWithPrior"/>
+      <short value="[C] Comparison with a previous ECG"/>
+      <definition value="Comparison with a previous ECG."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGReport.body.conclusion.comparisonWithPrior"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.conclusion.comparisonWithPrior.prior">
+      <path value="EHDSECGReport.body.conclusion.comparisonWithPrior.prior"/>
+      <short value="[C] Previous examination (link)"/>
+      <definition value="Identifier of the previous examination. Always an external link."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGReport.body.conclusion.comparisonWithPrior.prior"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.conclusion.comparisonWithPrior.change[x]">
+      <path value="EHDSECGReport.body.conclusion.comparisonWithPrior.change[x]"/>
+      <short value="[C] Change"/>
+      <definition value="unchanged, changed (+ description)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGReport.body.conclusion.comparisonWithPrior.change[x]"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.conclusion.recommendation">
+      <path value="EHDSECGReport.body.conclusion.recommendation"/>
+      <short value="[C] Recommendations"/>
+      <definition value="Recommendations (further tests, follow-up)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGReport.body.conclusion.recommendation"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.attachments">
+      <path value="EHDSECGReport.attachments"/>
+      <short value="[C] Other attached documents"/>
+      <definition value="Other attached documents."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGReport.attachments"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="EHDSECGReport">
+      <path value="EHDSECGReport"/>
+      <short value="ECG report model"/>
+      <definition value="The exchangeable unit for the EHDS priority category medical test results (Regulation (EU) 2025/327, art. 14(1)(e)). Sibling of EHDSLaboratoryReport."/>
+      <constraint>
+        <key value="ecg-rep-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rep-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGReport"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rep-2"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rep-2, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGReport"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rep-3"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rep-3, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGReport"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rep-4"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rep-4, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGReport"/>
+      </constraint>
+    </element>
+    <element id="EHDSECGReport.header.documentType">
+      <path value="EHDSECGReport.header.documentType"/>
+      <short value="[C] Type of ECG document. Preferred: LOINC 11524-6 EKG study; 98857-6 for stress tests. Final binding open"/>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGDocumentTypeVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGReport.header.eventType">
+      <path value="EHDSECGReport.header.eventType"/>
+      <short value="[C] Examination kind(s) covered, for search"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGExaminationKindVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGReport.presentedForm">
+      <path value="EHDSECGReport.presentedForm"/>
+      <short value="[C] Human-readable rendering of the full report including the tracing (PDF/A recommended). Each rendering carries its content, as data or a URL (ecg-rep-4)"/>
+      <min value="1"/>
+    </element>
+    <element id="EHDSECGReport.body">
+      <path value="EHDSECGReport.body"/>
+      <short value="[C] Structured content"/>
+      <definition value="Structured content of the ECG report."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.orderInformation">
+      <path value="EHDSECGReport.body.orderInformation"/>
+      <short value="[C] Order information"/>
+      <definition value="Same structure as EHDSLaboratoryReport.body.orderInformation."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.orderInformation.orderId">
+      <path value="EHDSECGReport.body.orderInformation.orderId"/>
+      <short value="Order identifier"/>
+      <definition value="Identifier of the order."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.orderInformation.orderDateAndTime">
+      <path value="EHDSECGReport.body.orderInformation.orderDateAndTime"/>
+      <short value="Order date and time"/>
+      <definition value="Date and time of the order."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.orderInformation.orderPlacer[x]">
+      <path value="EHDSECGReport.body.orderInformation.orderPlacer[x]"/>
+      <short value="Order placer"/>
+      <definition value="Who placed the order."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.orderInformation.orderReason[x]">
+      <path value="EHDSECGReport.body.orderInformation.orderReason[x]"/>
+      <short value="Order reason"/>
+      <definition value="Reason for the order."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSCondition"/>
+      </type>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.orderInformation.clinicalQuestion">
+      <path value="EHDSECGReport.body.orderInformation.clinicalQuestion"/>
+      <short value="Clinical question"/>
+      <definition value="Clinical question of the requester."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.supportingInformation">
+      <path value="EHDSECGReport.body.supportingInformation"/>
+      <short value="[C] Clinical context relevant to interpretation"/>
+      <definition value="Clinical context relevant to the interpretation of the ECG."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.supportingInformation.symptom[x]">
+      <path value="EHDSECGReport.body.supportingInformation.symptom[x]"/>
+      <short value="[C] Symptoms at the time of recording"/>
+      <definition value="Palpitations, chest pain, syncope..."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.supportingInformation.condition">
+      <path value="EHDSECGReport.body.supportingInformation.condition"/>
+      <short value="[C] Relevant conditions"/>
+      <definition value="Relevant conditions."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSCondition"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.supportingInformation.medication[x]">
+      <path value="EHDSECGReport.body.supportingInformation.medication[x]"/>
+      <short value="[C] Medications affecting the ECG"/>
+      <definition value="Antiarrhythmics, QT-prolonging drugs, digoxin. ATC allowed."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration"/>
+      </type>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.supportingInformation.implantedDevice">
+      <path value="EHDSECGReport.body.supportingInformation.implantedDevice"/>
+      <short value="[C] Implanted cardiac device"/>
+      <definition value="Pacemaker, ICD, CRT, ILR."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.supportingInformation.pacingMode">
+      <path value="EHDSECGReport.body.supportingInformation.pacingMode"/>
+      <short value="[C] Programmed pacing mode"/>
+      <definition value="NBG/NASPE-BPEG code, e.g. DDD."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.supportingInformation.vitalSign">
+      <path value="EHDSECGReport.body.supportingInformation.vitalSign"/>
+      <short value="[C] Vital signs at the time of recording"/>
+      <definition value="Height, weight, blood pressure at the time of recording."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.supportingInformation.sexForClinicalUse">
+      <path value="EHDSECGReport.body.supportingInformation.sexForClinicalUse"/>
+      <short value="[C] Sex for clinical use"/>
+      <definition value="As in EHDSLaboratoryReport (sex-specific reference ranges, e.g. QTc)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.supportingInformation.other">
+      <path value="EHDSECGReport.body.supportingInformation.other"/>
+      <short value="[A] Other supporting information"/>
+      <definition value="Any other supporting information."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Resource"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.examination">
+      <path value="EHDSECGReport.body.examination"/>
+      <short value="[C] ECG examination(s) reported"/>
+      <definition value="The ECG examination(s) reported."/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.conclusion">
+      <path value="EHDSECGReport.body.conclusion"/>
+      <short value="[C] Report-level conclusion"/>
+      <definition value="Report-level conclusion."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.conclusion.text">
+      <path value="EHDSECGReport.body.conclusion.text"/>
+      <short value="[C] Narrative conclusion"/>
+      <definition value="Narrative conclusion as signed by the reporting physician (or as produced by the device if unconfirmed)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.conclusion.overall">
+      <path value="EHDSECGReport.body.conclusion.overall"/>
+      <short value="[C] Overall conclusion"/>
+      <definition value="normal, otherwise normal, borderline, abnormal, non-diagnostic."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGOverallConclusionVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGReport.body.conclusion.finding">
+      <path value="EHDSECGReport.body.conclusion.finding"/>
+      <short value="[C] Coded diagnostic statements"/>
+      <definition value="Coded diagnostic statements."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGFindingVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGReport.body.conclusion.comparisonWithPrior">
+      <path value="EHDSECGReport.body.conclusion.comparisonWithPrior"/>
+      <short value="[C] Comparison with a previous ECG"/>
+      <definition value="Comparison with a previous ECG."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.conclusion.comparisonWithPrior.prior">
+      <path value="EHDSECGReport.body.conclusion.comparisonWithPrior.prior"/>
+      <short value="[C] Previous examination (link)"/>
+      <definition value="Identifier of the previous examination. Always an external link."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.conclusion.comparisonWithPrior.change[x]">
+      <path value="EHDSECGReport.body.conclusion.comparisonWithPrior.change[x]"/>
+      <short value="[C] Change"/>
+      <definition value="unchanged, changed (+ description)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.body.conclusion.recommendation">
+      <path value="EHDSECGReport.body.conclusion.recommendation"/>
+      <short value="[C] Recommendations"/>
+      <definition value="Recommendations (further tests, follow-up)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGReport.attachments">
+      <path value="EHDSECGReport.attachments"/>
+      <short value="[C] Other attached documents"/>
+      <definition value="Other attached documents."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

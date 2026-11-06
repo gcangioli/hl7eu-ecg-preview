@@ -1,0 +1,1184 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAlgorithm> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "EHDSECGAlgorithm"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition EHDSECGAlgorithm</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder0\"><tr class=\"xhtRowBorder1\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th scope=\"col\" style=\"; width: 100px\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm\" title=\"An algorithm that produces ECG derived results, with the performance of this version of the algorithm.\">EHDSECGAlgorithm</a><a name=\"EHDSECGAlgorithm\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html\">EHDSDevice</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">ECG algorithm model<br/><br/>Elements defined in Ancestors:<a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html\" title=\"Identifier of the device instance\">instanceIdentifier</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html\" title=\"Unique Device Identifier (UDI) value\">udi</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html\" title=\"Name of device manufacturer. If the manufacturer code is included in an identifier, manufacturer must correspond to that code.\">manufacturer</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html\" title=\"The date and time when the device was manufactured\">manufactureDate</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html\" title=\"The date and time beyond which this device is no longer valid or should not be used (if applicable)\">expiryDate</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html\" title=\"Lot number of device. May be omitted if included in an identifier.\">lotNumber</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html\" title=\"Serial number assigned by the manufacturer. May be omitted if included in an identifier.\">serialNumber</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html\" title=\"The name and name type of the device.\">name</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html\" title=\"The manufacturer's model number for the device\">modelNumber</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html\" title=\"The actual design of the device and/or software version running on the device\">version</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html\" title=\"Device type\">type</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html\" title=\"Device note and/or comment\">note</a><br/><span class=\"xhtPieceBold\">Instances of this type can be the target of a Reference</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.udi\">udi</a><a name=\"EHDSECGAlgorithm.udi\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\" class=\"xhtPieceDeEmphasized\">Identifier</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">MDR UDI-DI when the software is a medical device</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.manufacturer\">manufacturer</a><a name=\"EHDSECGAlgorithm.manufacturer\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..<span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\" class=\"xhtPieceDeEmphasized\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Name of device manufacturer. If the manufacturer code is included in an identifier, manufacturer must correspond to that code.</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.name\">name</a><a name=\"EHDSECGAlgorithm.name\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..<span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Base</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">The name and name type of the device.</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.version\">version</a><a name=\"EHDSECGAlgorithm.version\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\" class=\"xhtPieceDeEmphasized\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">SHALL be populated when known; when absent, consumers SHALL display 'version not stated'</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.regulatoryStatus\" title=\"Regulatory status per jurisdiction.\">regulatoryStatus</a><a name=\"EHDSECGAlgorithm.regulatoryStatus\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Regulatory status per jurisdiction<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.regulatoryStatus.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.regulatoryStatus.framework\" title=\"EU MDR, EU IVDR, EU AI Act, FDA, other.\">framework</a><a name=\"EHDSECGAlgorithm.regulatoryStatus.framework\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Framework</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck111.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_choice.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Choice of Types\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.regulatoryStatus.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.regulatoryStatus.classification[x]\" title=\"E.g. MDR class IIa; AI Act high-risk.\">classification[x]</a><a name=\"EHDSECGAlgorithm.regulatoryStatus.classification_x_\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">Classification</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.regulatoryStatus.classification[x].</span><span title=\"Base StructureDefinition for CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.\">classificationCodeableConcept</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.regulatoryStatus.classification[x].</span><span title=\"Base StructureDefinition for string Type: A sequence of Unicode characters\">classificationString</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.regulatoryStatus.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.regulatoryStatus.certificate\" title=\"Certificate or registration number.\">certificate</a><a name=\"EHDSECGAlgorithm.regulatoryStatus.certificate\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Certificate or registration number</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.regulatoryStatus.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.regulatoryStatus.intendedUse\" title=\"Declared intended use.\">intendedUse</a><a name=\"EHDSECGAlgorithm.regulatoryStatus.intendedUse\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Declared intended use</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.method\" title=\"rule-based, classical machine learning, deep learning, foundation model, large language model.\">method</a><a name=\"EHDSECGAlgorithm.method\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Method</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.modelCard\" title=\"Training data, performance, limitations.\">modelCard</a><a name=\"EHDSECGAlgorithm.modelCard\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSAttachment.html\">EHDSAttachment</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Model card</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.implementsDefinition\" title=\"Results this algorithm can produce (versioned canonical).\">implementsDefinition</a><a name=\"EHDSECGAlgorithm.implementsDefinition\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/references.html\">canonical</a>()</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Definitions implemented<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.inputRequirement\" title=\"What the algorithm needs as input. Same structure as in EHDSECGBiomarkerDefinition.\">inputRequirement</a><a name=\"EHDSECGAlgorithm.inputRequirement\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Input requirements<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.inputRequirement.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.inputRequirement.role\" title=\"index-ecg, comparison-ecg, clinical-covariate...\">role</a><a name=\"EHDSECGAlgorithm.inputRequirement.role\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Role<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGInputRoleVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGInputRoleVS\" class=\"binding\">ECG Input Role (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.inputRequirement.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.inputRequirement.leadSystem\" title=\"E.g. standard 12-lead, single lead.\">leadSystem</a><a name=\"EHDSECGAlgorithm.inputRequirement.leadSystem\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Lead system<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGLeadSystemVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS\" class=\"binding\">ECG Lead System (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.inputRequirement.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.inputRequirement.requiredLead\" title=\"Leads that must be present.\">requiredLead</a><a name=\"EHDSECGAlgorithm.inputRequirement.requiredLead\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Required leads<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGLeadVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS\" class=\"binding\">ECG Lead (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span><br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.inputRequirement.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.inputRequirement.minimumSamplingFrequency\" title=\"UCUM Hz.\">minimumSamplingFrequency</a><a name=\"EHDSECGAlgorithm.inputRequirement.minimumSamplingFrequency\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Minimum sampling frequency</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.inputRequirement.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.inputRequirement.minimumDuration\" title=\"UCUM s.\">minimumDuration</a><a name=\"EHDSECGAlgorithm.inputRequirement.minimumDuration\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Minimum duration</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.inputRequirement.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.inputRequirement.covariate\" title=\"For a clinical covariate: what it is (age, sex...).\">covariate</a><a name=\"EHDSECGAlgorithm.inputRequirement.covariate\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Covariate</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.inputRequirement.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.inputRequirement.note\" title=\"E.g. excluded populations.\">note</a><a name=\"EHDSECGAlgorithm.inputRequirement.note\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Other requirements</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck01.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.performance\" title=\"Performance of this version of the algorithm for one definition. Operating points and calibration depend on the algorithm version, so they are described here rather than in the shared definition.\">performance</a><a name=\"EHDSECGAlgorithm.performance\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Performance of this version<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck010.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.performance.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.performance.definition\" title=\"Definition the performance refers to.\">definition</a><a name=\"EHDSECGAlgorithm.performance.definition\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/references.html\">canonical</a>()</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Definition (versioned)</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck010.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.performance.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.performance.operatingPoint\" title=\"E.g. high-sensitivity.\">operatingPoint</a><a name=\"EHDSECGAlgorithm.performance.operatingPoint\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Operating point</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck010.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.performance.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.performance.threshold\" title=\"Threshold used by this algorithm version at that operating point.\">threshold</a><a name=\"EHDSECGAlgorithm.performance.threshold\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Threshold</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck011.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.performance.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.performance.metric\" title=\"One performance metric.\">metric</a><a name=\"EHDSECGAlgorithm.performance.metric\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Performance metric<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck0110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.performance.metric.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.performance.metric.type\" title=\"sensitivity, specificity, PPV, NPV, AUC, calibration slope, calibration intercept, Brier score...\">type</a><a name=\"EHDSECGAlgorithm.performance.metric.type\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Metric type<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGPerformanceMetricVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGPerformanceMetricVS\" class=\"binding\">ECG Performance Metric (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck0110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.performance.metric.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.performance.metric.value\" title=\"Value.\">value</a><a name=\"EHDSECGAlgorithm.performance.metric.value\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Value</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck0100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.performance.metric.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.performance.metric.interval\" title=\"Confidence interval.\">interval</a><a name=\"EHDSECGAlgorithm.performance.metric.interval\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Range\">Range</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Confidence interval</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck010.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.performance.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.performance.validationPopulation\" title=\"Population and setting of the validation.\">validationPopulation</a><a name=\"EHDSECGAlgorithm.performance.validationPopulation\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Validation population</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck000.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGAlgorithm.performance.</span><a href=\"StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.performance.evidence\" title=\"Publications or reports (DOI).\">evidence</a><a name=\"EHDSECGAlgorithm.performance.evidence\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Evidence<br/></td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics" ] ;
+     fhir:Extension.valueCode [ fhir:value "can-be-target" ]
+  ] ;
+  fhir:StructureDefinition.url [ fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAlgorithm"] ;
+  fhir:StructureDefinition.version [ fhir:value "0.1.0-ci-build"] ;
+  fhir:StructureDefinition.name [ fhir:value "EHDSECGAlgorithm"] ;
+  fhir:StructureDefinition.title [ fhir:value "ECG algorithm model"] ;
+  fhir:StructureDefinition.status [ fhir:value "draft"] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-11-06T23:02:43+01:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.publisher [ fhir:value "HL7 Europe"] ;
+  fhir:StructureDefinition.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Europe" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://hl7.eu" ]
+     ]
+  ] ;
+  fhir:StructureDefinition.description [ fhir:value "An algorithm that produces ECG derived results, with the performance of this version of the algorithm."] ;
+  fhir:StructureDefinition.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ] ;
+       fhir:Coding.code [ fhir:value "150" ] ;
+       fhir:Coding.display [ fhir:value "Europe" ]
+     ]
+  ] ;
+  fhir:StructureDefinition.copyright [ fhir:value "Copyright HL7 Europe. Licensed under creative commons public domain (CC0 1.0)."] ;
+  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
+  fhir:StructureDefinition.mapping [
+     fhir:index -1 ;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "rim" ] ;
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/v3" ] ;
+     fhir:StructureDefinition.mapping.name [ fhir:value "RIM Mapping" ]
+  ] ;
+  fhir:StructureDefinition.kind [ fhir:value "logical"] ;
+  fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean] ;
+  fhir:StructureDefinition.type [ fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAlgorithm"] ;
+  fhir:StructureDefinition.baseDefinition [
+     fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice" ;
+     fhir:link <http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice>
+  ] ;
+  fhir:StructureDefinition.derivation [ fhir:value "specialization"] ;
+  fhir:StructureDefinition.snapshot [
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version" ] ;
+       fhir:Extension.valueString [ fhir:value "1.0.0" ]
+     ] ;
+     fhir:StructureDefinition.snapshot.element [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm" ] ;
+       fhir:ElementDefinition.short [ fhir:value "ECG algorithm model" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "An algorithm that produces ECG derived results, with the performance of this version of the algorithm." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Base" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.instanceIdentifier" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.instanceIdentifier" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Identifier of the device instance" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Identifier of the device instance" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDevice.instanceIdentifier" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.udi" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.udi" ] ;
+       fhir:ElementDefinition.short [ fhir:value "MDR UDI-DI when the software is a medical device" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Unique Device Identifier (UDI) value" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDevice.udi" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.manufacturer" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.manufacturer" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Name of device manufacturer. If the manufacturer code is included in an identifier, manufacturer must correspond to that code." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Name of device manufacturer. If the manufacturer code is included in an identifier, manufacturer must correspond to that code." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDevice.manufacturer" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.manufactureDate" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.manufactureDate" ] ;
+       fhir:ElementDefinition.short [ fhir:value "The date and time when the device was manufactured" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The date and time when the device was manufactured" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDevice.manufactureDate" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.expiryDate" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.expiryDate" ] ;
+       fhir:ElementDefinition.short [ fhir:value "The date and time beyond which this device is no longer valid or should not be used (if applicable)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The date and time beyond which this device is no longer valid or should not be used (if applicable)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDevice.expiryDate" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.lotNumber" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.lotNumber" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lot number of device. May be omitted if included in an identifier." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lot number of device. May be omitted if included in an identifier." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDevice.lotNumber" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.serialNumber" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.serialNumber" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Serial number assigned by the manufacturer. May be omitted if included in an identifier." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Serial number assigned by the manufacturer. May be omitted if included in an identifier." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDevice.serialNumber" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.name" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.name" ] ;
+       fhir:ElementDefinition.short [ fhir:value "The name and name type of the device." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The name and name type of the device." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDevice.name" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.name.value" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.name.value" ] ;
+       fhir:ElementDefinition.short [ fhir:value "The name of the device as known to e.g. the manufacturer and/or patient" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The name of the device as known to e.g. the manufacturer and/or patient" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDevice.name.value" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.name.type" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.name.type" ] ;
+       fhir:ElementDefinition.short [ fhir:value "The type of name, e.g. UDI Label name, user friendly name" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The type of name, e.g. UDI Label name, user friendly name" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDevice.name.type" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.modelNumber" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.modelNumber" ] ;
+       fhir:ElementDefinition.short [ fhir:value "The manufacturer's model number for the device" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The manufacturer's model number for the device" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDevice.modelNumber" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.version" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.version" ] ;
+       fhir:ElementDefinition.short [ fhir:value "SHALL be populated when known; when absent, consumers SHALL display 'version not stated'" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The actual design of the device and/or software version running on the device" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDevice.version" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.type" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.type" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Device type" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Device type" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDevice.type" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "SNOMED CT, EMDN" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.note" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.note" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Device note and/or comment" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Device note and/or comment" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDevice.note" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.regulatoryStatus" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.regulatoryStatus" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Regulatory status per jurisdiction" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Regulatory status per jurisdiction." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.regulatoryStatus" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.regulatoryStatus.framework" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.regulatoryStatus.framework" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Framework" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "EU MDR, EU IVDR, EU AI Act, FDA, other." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.regulatoryStatus.framework" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.regulatoryStatus.classification[x]" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.regulatoryStatus.classification[x]" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Classification" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "E.g. MDR class IIa; AI Act high-risk." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.regulatoryStatus.classification[x]" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.regulatoryStatus.certificate" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.regulatoryStatus.certificate" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Certificate or registration number" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Certificate or registration number." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.regulatoryStatus.certificate" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.regulatoryStatus.intendedUse" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.regulatoryStatus.intendedUse" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Declared intended use" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Declared intended use." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.regulatoryStatus.intendedUse" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.method" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.method" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Method" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "rule-based, classical machine learning, deep learning, foundation model, large language model." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.method" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.modelCard" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.modelCard" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Model card" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Training data, performance, limitations." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.modelCard" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.implementsDefinition" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.implementsDefinition" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Definitions implemented" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Results this algorithm can produce (versioned canonical)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.implementsDefinition" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "canonical" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.inputRequirement" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.inputRequirement" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Input requirements" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "What the algorithm needs as input. Same structure as in EHDSECGBiomarkerDefinition." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.inputRequirement" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.inputRequirement.role" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.inputRequirement.role" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Role" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "index-ecg, comparison-ecg, clinical-covariate..." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.inputRequirement.role" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGInputRoleVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGInputRoleVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.inputRequirement.leadSystem" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.inputRequirement.leadSystem" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lead system" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "E.g. standard 12-lead, single lead." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.inputRequirement.leadSystem" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.inputRequirement.requiredLead" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.inputRequirement.requiredLead" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Required leads" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Leads that must be present." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.inputRequirement.requiredLead" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.inputRequirement.minimumSamplingFrequency" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.inputRequirement.minimumSamplingFrequency" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Minimum sampling frequency" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "UCUM Hz." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.inputRequirement.minimumSamplingFrequency" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.inputRequirement.minimumDuration" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.inputRequirement.minimumDuration" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Minimum duration" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "UCUM s." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.inputRequirement.minimumDuration" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.inputRequirement.covariate" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.inputRequirement.covariate" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Covariate" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "For a clinical covariate: what it is (age, sex...)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.inputRequirement.covariate" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.inputRequirement.note" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.inputRequirement.note" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Other requirements" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "E.g. excluded populations." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.inputRequirement.note" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.performance" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.performance" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Performance of this version" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Performance of this version of the algorithm for one definition. Operating points and calibration depend on the algorithm version, so they are described here rather than in the shared definition." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.performance" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.performance.definition" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.performance.definition" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Definition (versioned)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Definition the performance refers to." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.performance.definition" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "canonical" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.performance.operatingPoint" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.performance.operatingPoint" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Operating point" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "E.g. high-sensitivity." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.performance.operatingPoint" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.performance.threshold" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.performance.threshold" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Threshold" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Threshold used by this algorithm version at that operating point." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.performance.threshold" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.performance.metric" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.performance.metric" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Performance metric" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "One performance metric." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.performance.metric" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.performance.metric.type" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.performance.metric.type" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Metric type" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "sensitivity, specificity, PPV, NPV, AUC, calibration slope, calibration intercept, Brier score..." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.performance.metric.type" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGPerformanceMetricVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGPerformanceMetricVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.performance.metric.value" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.performance.metric.value" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Value" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Value." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.performance.metric.value" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "decimal" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.performance.metric.interval" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.performance.metric.interval" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Confidence interval" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Confidence interval." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.performance.metric.interval" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Range" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.performance.validationPopulation" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.performance.validationPopulation" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Validation population" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Population and setting of the validation." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.performance.validationPopulation" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.performance.evidence" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.performance.evidence" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Evidence" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Publications or reports (DOI)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGAlgorithm.performance.evidence" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "uri" ]
+       ]
+     ]
+  ] ;
+  fhir:StructureDefinition.differential [
+     fhir:StructureDefinition.differential.element [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm" ] ;
+       fhir:ElementDefinition.short [ fhir:value "ECG algorithm model" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "An algorithm that produces ECG derived results, with the performance of this version of the algorithm." ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.udi" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.udi" ] ;
+       fhir:ElementDefinition.short [ fhir:value "MDR UDI-DI when the software is a medical device" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.manufacturer" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.manufacturer" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.name" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.name" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.version" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.version" ] ;
+       fhir:ElementDefinition.short [ fhir:value "SHALL be populated when known; when absent, consumers SHALL display 'version not stated'" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.regulatoryStatus" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.regulatoryStatus" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Regulatory status per jurisdiction" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Regulatory status per jurisdiction." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.regulatoryStatus.framework" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.regulatoryStatus.framework" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Framework" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "EU MDR, EU IVDR, EU AI Act, FDA, other." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.regulatoryStatus.classification[x]" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.regulatoryStatus.classification[x]" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Classification" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "E.g. MDR class IIa; AI Act high-risk." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.regulatoryStatus.certificate" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.regulatoryStatus.certificate" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Certificate or registration number" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Certificate or registration number." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.regulatoryStatus.intendedUse" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.regulatoryStatus.intendedUse" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Declared intended use" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Declared intended use." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.method" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.method" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Method" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "rule-based, classical machine learning, deep learning, foundation model, large language model." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.modelCard" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.modelCard" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Model card" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Training data, performance, limitations." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.implementsDefinition" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.implementsDefinition" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Definitions implemented" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Results this algorithm can produce (versioned canonical)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "canonical" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.inputRequirement" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.inputRequirement" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Input requirements" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "What the algorithm needs as input. Same structure as in EHDSECGBiomarkerDefinition." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.inputRequirement.role" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.inputRequirement.role" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Role" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "index-ecg, comparison-ecg, clinical-covariate..." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGInputRoleVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGInputRoleVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.inputRequirement.leadSystem" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.inputRequirement.leadSystem" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lead system" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "E.g. standard 12-lead, single lead." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.inputRequirement.requiredLead" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.inputRequirement.requiredLead" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Required leads" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Leads that must be present." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.inputRequirement.minimumSamplingFrequency" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.inputRequirement.minimumSamplingFrequency" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Minimum sampling frequency" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "UCUM Hz." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.inputRequirement.minimumDuration" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.inputRequirement.minimumDuration" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Minimum duration" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "UCUM s." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.inputRequirement.covariate" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.inputRequirement.covariate" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Covariate" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "For a clinical covariate: what it is (age, sex...)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.inputRequirement.note" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.inputRequirement.note" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Other requirements" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "E.g. excluded populations." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.performance" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.performance" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Performance of this version" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Performance of this version of the algorithm for one definition. Operating points and calibration depend on the algorithm version, so they are described here rather than in the shared definition." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.performance.definition" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.performance.definition" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Definition (versioned)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Definition the performance refers to." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "canonical" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.performance.operatingPoint" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.performance.operatingPoint" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Operating point" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "E.g. high-sensitivity." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.performance.threshold" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.performance.threshold" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Threshold" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Threshold used by this algorithm version at that operating point." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.performance.metric" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.performance.metric" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Performance metric" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "One performance metric." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.performance.metric.type" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.performance.metric.type" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Metric type" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "sensitivity, specificity, PPV, NPV, AUC, calibration slope, calibration intercept, Brier score..." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGPerformanceMetricVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGPerformanceMetricVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.performance.metric.value" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.performance.metric.value" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Value" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Value." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "decimal" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.performance.metric.interval" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.performance.metric.interval" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Confidence interval" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Confidence interval." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Range" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.performance.validationPopulation" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.performance.validationPopulation" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Validation population" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Population and setting of the validation." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGAlgorithm.performance.evidence" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGAlgorithm.performance.evidence" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Evidence" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Publications or reports (DOI)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "uri" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAlgorithm.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

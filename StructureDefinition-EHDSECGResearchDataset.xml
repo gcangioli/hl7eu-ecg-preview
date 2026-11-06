@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="EHDSECGResearchDataset"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition EHDSECGResearchDataset</b></p><table border="0" cellpadding="0" cellspacing="0" class="xhtTableBorder0"><tr class="xhtRowBorder1"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-EHDSECGResearchDataset-definitions.html#EHDSECGResearchDataset" title="Description of a research dataset, i.e. a set of EHDSECGResearchRecord. The dataset is also described in the health data catalogue with HealthDCAT-AP.">EHDSECGResearchDataset</a><a name="EHDSECGResearchDataset"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="" class="hierarchy xhtCellBorder0">ECG research dataset model<br/><span class="xhtPieceBold">Instances of this type can be the target of a Reference</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchDataset.</span><a href="StructureDefinition-EHDSECGResearchDataset-definitions.html#EHDSECGResearchDataset.identifier" title="Dataset identifier.">identifier</a><a name="EHDSECGResearchDataset.identifier"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">Dataset identifier</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchDataset.</span><a href="StructureDefinition-EHDSECGResearchDataset-definitions.html#EHDSECGResearchDataset.title" title="Title.">title</a><a name="EHDSECGResearchDataset.title"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Title</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchDataset.</span><a href="StructureDefinition-EHDSECGResearchDataset-definitions.html#EHDSECGResearchDataset.catalogueRecord" title="HealthDCAT-AP record of the dataset in the national or EU health data catalogue.">catalogueRecord</a><a name="EHDSECGResearchDataset.catalogueRecord"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td><td style="" class="hierarchy xhtCellBorder0">HealthDCAT-AP record</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchDataset.</span><a href="StructureDefinition-EHDSECGResearchDataset-definitions.html#EHDSECGResearchDataset.dataPermit" title="Data permit or approval under which the dataset is made available. A use tier does not grant access to data: access is governed by the permit.">dataPermit</a><a name="EHDSECGResearchDataset.dataPermit"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">Data permit</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchDataset.</span><a href="StructureDefinition-EHDSECGResearchDataset-definitions.html#EHDSECGResearchDataset.cohortDefinition" title="Which subjects and which examinations constitute the cohort.">cohortDefinition</a><a name="EHDSECGResearchDataset.cohortDefinition"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Cohort definition</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchDataset.</span><a href="StructureDefinition-EHDSECGResearchDataset-definitions.html#EHDSECGResearchDataset.linkageScope" title="Within which scope pseudonyms are stable and records are linked.">linkageScope</a><a name="EHDSECGResearchDataset.linkageScope"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Linkage scope</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchDataset.</span><a href="StructureDefinition-EHDSECGResearchDataset-definitions.html#EHDSECGResearchDataset.exclusion" title="Excluded examinations or subjects.">exclusion</a><a name="EHDSECGResearchDataset.exclusion"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">Exclusions<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchDataset.exclusion.</span><a href="StructureDefinition-EHDSECGResearchDataset-definitions.html#EHDSECGResearchDataset.exclusion.reason" title="Reason for exclusion.">reason</a><a name="EHDSECGResearchDataset.exclusion.reason"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Reason for exclusion</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchDataset.exclusion.</span><a href="StructureDefinition-EHDSECGResearchDataset-definitions.html#EHDSECGResearchDataset.exclusion.count" title="Number excluded for that reason.">count</a><a name="EHDSECGResearchDataset.exclusion.count"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td style="" class="hierarchy xhtCellBorder0">Number excluded</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchDataset.</span><a href="StructureDefinition-EHDSECGResearchDataset-definitions.html#EHDSECGResearchDataset.missingness" title="Missing values per element.">missingness</a><a name="EHDSECGResearchDataset.missingness"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">Missing values<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchDataset.missingness.</span><a href="StructureDefinition-EHDSECGResearchDataset-definitions.html#EHDSECGResearchDataset.missingness.element" title="Element concerned.">element</a><a name="EHDSECGResearchDataset.missingness.element"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Element concerned</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchDataset.missingness.</span><a href="StructureDefinition-EHDSECGResearchDataset-definitions.html#EHDSECGResearchDataset.missingness.proportion" title="Proportion missing, between 0 and 1.">proportion</a><a name="EHDSECGResearchDataset.missingness.proportion"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="" class="hierarchy xhtCellBorder0">Proportion missing</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchDataset.</span><a href="StructureDefinition-EHDSECGResearchDataset-definitions.html#EHDSECGResearchDataset.labelSource" title="Origins of the labels present.">labelSource</a><a name="EHDSECGResearchDataset.labelSource"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Origins of the labels present<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGLabelProvenanceVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGLabelProvenanceVS" class="binding">ECG Label Provenance (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span><br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchDataset.</span><a href="StructureDefinition-EHDSECGResearchDataset-definitions.html#EHDSECGResearchDataset.transformation" title="Transformations applied to the dataset.">transformation</a><a name="EHDSECGResearchDataset.transformation"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">Transformations applied<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchDataset.transformation.</span><a href="StructureDefinition-EHDSECGResearchDataset-definitions.html#EHDSECGResearchDataset.transformation.type" title="de-identification, date shift, identifier pseudonymisation, resampling, filtering, cropping, lead reconstruction.">type</a><a name="EHDSECGResearchDataset.transformation.type"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Transformation type<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGTransformationTypeVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGTransformationTypeVS" class="binding">ECG Transformation Type (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchDataset.transformation.</span><a href="StructureDefinition-EHDSECGResearchDataset-definitions.html#EHDSECGResearchDataset.transformation.description" title="What was done.">description</a><a name="EHDSECGResearchDataset.transformation.description"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">What was done</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchDataset.transformation.</span><a href="StructureDefinition-EHDSECGResearchDataset-definitions.html#EHDSECGResearchDataset.transformation.tool" title="Tool and version.">tool</a><a name="EHDSECGResearchDataset.transformation.tool"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html">EHDSDevice</a></td><td style="" class="hierarchy xhtCellBorder0">Tool and version</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchDataset.transformation.</span><a href="StructureDefinition-EHDSECGResearchDataset-definitions.html#EHDSECGResearchDataset.transformation.parameters" title="Parameters, when they do not compromise pseudonymisation.">parameters</a><a name="EHDSECGResearchDataset.transformation.parameters"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Parameters</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck00.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResearchDataset.</span><a href="StructureDefinition-EHDSECGResearchDataset-definitions.html#EHDSECGResearchDataset.recordCount" title="Number of research records.">recordCount</a><a name="EHDSECGResearchDataset.recordCount"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td style="" class="hierarchy xhtCellBorder0">Number of research records</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
+    <valueCode value="can-be-target"/>
+  </extension>
+  <url value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResearchDataset"/>
+  <version value="0.1.0-ci-build"/>
+  <name value="EHDSECGResearchDataset"/>
+  <title value="ECG research dataset model"/>
+  <status value="draft"/>
+  <date value="2026-11-06T23:02:43+01:00"/>
+  <publisher value="HL7 Europe"/>
+  <contact>
+    <name value="HL7 Europe"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.eu"/>
+    </telecom>
+  </contact>
+  <description value="Description of a research dataset, i.e. a set of EHDSECGResearchRecord. The dataset is also described in the health data catalogue with HealthDCAT-AP."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="150"/>
+      <display value="Europe"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright HL7 Europe. Licensed under creative commons public domain (CC0 1.0)."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResearchDataset"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.0.1"/>
+    </extension>
+    <element id="EHDSECGResearchDataset">
+      <path value="EHDSECGResearchDataset"/>
+      <short value="ECG research dataset model"/>
+      <definition value="Description of a research dataset, i.e. a set of EHDSECGResearchRecord. The dataset is also described in the health data catalogue with HealthDCAT-AP."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="EHDSECGResearchDataset.identifier">
+      <path value="EHDSECGResearchDataset.identifier"/>
+      <short value="Dataset identifier"/>
+      <definition value="Dataset identifier."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchDataset.identifier"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.title">
+      <path value="EHDSECGResearchDataset.title"/>
+      <short value="Title"/>
+      <definition value="Title."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchDataset.title"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.catalogueRecord">
+      <path value="EHDSECGResearchDataset.catalogueRecord"/>
+      <short value="HealthDCAT-AP record"/>
+      <definition value="HealthDCAT-AP record of the dataset in the national or EU health data catalogue."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchDataset.catalogueRecord"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.dataPermit">
+      <path value="EHDSECGResearchDataset.dataPermit"/>
+      <short value="Data permit"/>
+      <definition value="Data permit or approval under which the dataset is made available. A use tier does not grant access to data: access is governed by the permit."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchDataset.dataPermit"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.cohortDefinition">
+      <path value="EHDSECGResearchDataset.cohortDefinition"/>
+      <short value="Cohort definition"/>
+      <definition value="Which subjects and which examinations constitute the cohort."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchDataset.cohortDefinition"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.linkageScope">
+      <path value="EHDSECGResearchDataset.linkageScope"/>
+      <short value="Linkage scope"/>
+      <definition value="Within which scope pseudonyms are stable and records are linked."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchDataset.linkageScope"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.exclusion">
+      <path value="EHDSECGResearchDataset.exclusion"/>
+      <short value="Exclusions"/>
+      <definition value="Excluded examinations or subjects."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGResearchDataset.exclusion"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.exclusion.reason">
+      <path value="EHDSECGResearchDataset.exclusion.reason"/>
+      <short value="Reason for exclusion"/>
+      <definition value="Reason for exclusion."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchDataset.exclusion.reason"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.exclusion.count">
+      <path value="EHDSECGResearchDataset.exclusion.count"/>
+      <short value="Number excluded"/>
+      <definition value="Number excluded for that reason."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchDataset.exclusion.count"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="integer"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.missingness">
+      <path value="EHDSECGResearchDataset.missingness"/>
+      <short value="Missing values"/>
+      <definition value="Missing values per element."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGResearchDataset.missingness"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.missingness.element">
+      <path value="EHDSECGResearchDataset.missingness.element"/>
+      <short value="Element concerned"/>
+      <definition value="Element concerned."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchDataset.missingness.element"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.missingness.proportion">
+      <path value="EHDSECGResearchDataset.missingness.proportion"/>
+      <short value="Proportion missing"/>
+      <definition value="Proportion missing, between 0 and 1."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchDataset.missingness.proportion"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.labelSource">
+      <path value="EHDSECGResearchDataset.labelSource"/>
+      <short value="Origins of the labels present"/>
+      <definition value="Origins of the labels present."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGResearchDataset.labelSource"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGLabelProvenanceVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGResearchDataset.transformation">
+      <path value="EHDSECGResearchDataset.transformation"/>
+      <short value="Transformations applied"/>
+      <definition value="Transformations applied to the dataset."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGResearchDataset.transformation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.transformation.type">
+      <path value="EHDSECGResearchDataset.transformation.type"/>
+      <short value="Transformation type"/>
+      <definition value="de-identification, date shift, identifier pseudonymisation, resampling, filtering, cropping, lead reconstruction."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchDataset.transformation.type"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGTransformationTypeVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGResearchDataset.transformation.description">
+      <path value="EHDSECGResearchDataset.transformation.description"/>
+      <short value="What was done"/>
+      <definition value="What was done."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchDataset.transformation.description"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.transformation.tool">
+      <path value="EHDSECGResearchDataset.transformation.tool"/>
+      <short value="Tool and version"/>
+      <definition value="Tool and version."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchDataset.transformation.tool"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.transformation.parameters">
+      <path value="EHDSECGResearchDataset.transformation.parameters"/>
+      <short value="Parameters"/>
+      <definition value="Parameters, when they do not compromise pseudonymisation."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchDataset.transformation.parameters"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.recordCount">
+      <path value="EHDSECGResearchDataset.recordCount"/>
+      <short value="Number of research records"/>
+      <definition value="Number of research records."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResearchDataset.recordCount"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="integer"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="EHDSECGResearchDataset">
+      <path value="EHDSECGResearchDataset"/>
+      <short value="ECG research dataset model"/>
+      <definition value="Description of a research dataset, i.e. a set of EHDSECGResearchRecord. The dataset is also described in the health data catalogue with HealthDCAT-AP."/>
+    </element>
+    <element id="EHDSECGResearchDataset.identifier">
+      <path value="EHDSECGResearchDataset.identifier"/>
+      <short value="Dataset identifier"/>
+      <definition value="Dataset identifier."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.title">
+      <path value="EHDSECGResearchDataset.title"/>
+      <short value="Title"/>
+      <definition value="Title."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.catalogueRecord">
+      <path value="EHDSECGResearchDataset.catalogueRecord"/>
+      <short value="HealthDCAT-AP record"/>
+      <definition value="HealthDCAT-AP record of the dataset in the national or EU health data catalogue."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.dataPermit">
+      <path value="EHDSECGResearchDataset.dataPermit"/>
+      <short value="Data permit"/>
+      <definition value="Data permit or approval under which the dataset is made available. A use tier does not grant access to data: access is governed by the permit."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.cohortDefinition">
+      <path value="EHDSECGResearchDataset.cohortDefinition"/>
+      <short value="Cohort definition"/>
+      <definition value="Which subjects and which examinations constitute the cohort."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.linkageScope">
+      <path value="EHDSECGResearchDataset.linkageScope"/>
+      <short value="Linkage scope"/>
+      <definition value="Within which scope pseudonyms are stable and records are linked."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.exclusion">
+      <path value="EHDSECGResearchDataset.exclusion"/>
+      <short value="Exclusions"/>
+      <definition value="Excluded examinations or subjects."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.exclusion.reason">
+      <path value="EHDSECGResearchDataset.exclusion.reason"/>
+      <short value="Reason for exclusion"/>
+      <definition value="Reason for exclusion."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.exclusion.count">
+      <path value="EHDSECGResearchDataset.exclusion.count"/>
+      <short value="Number excluded"/>
+      <definition value="Number excluded for that reason."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="integer"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.missingness">
+      <path value="EHDSECGResearchDataset.missingness"/>
+      <short value="Missing values"/>
+      <definition value="Missing values per element."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.missingness.element">
+      <path value="EHDSECGResearchDataset.missingness.element"/>
+      <short value="Element concerned"/>
+      <definition value="Element concerned."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.missingness.proportion">
+      <path value="EHDSECGResearchDataset.missingness.proportion"/>
+      <short value="Proportion missing"/>
+      <definition value="Proportion missing, between 0 and 1."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.labelSource">
+      <path value="EHDSECGResearchDataset.labelSource"/>
+      <short value="Origins of the labels present"/>
+      <definition value="Origins of the labels present."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGLabelProvenanceVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGResearchDataset.transformation">
+      <path value="EHDSECGResearchDataset.transformation"/>
+      <short value="Transformations applied"/>
+      <definition value="Transformations applied to the dataset."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.transformation.type">
+      <path value="EHDSECGResearchDataset.transformation.type"/>
+      <short value="Transformation type"/>
+      <definition value="de-identification, date shift, identifier pseudonymisation, resampling, filtering, cropping, lead reconstruction."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGTransformationTypeVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGResearchDataset.transformation.description">
+      <path value="EHDSECGResearchDataset.transformation.description"/>
+      <short value="What was done"/>
+      <definition value="What was done."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.transformation.tool">
+      <path value="EHDSECGResearchDataset.transformation.tool"/>
+      <short value="Tool and version"/>
+      <definition value="Tool and version."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.transformation.parameters">
+      <path value="EHDSECGResearchDataset.transformation.parameters"/>
+      <short value="Parameters"/>
+      <definition value="Parameters, when they do not compromise pseudonymisation."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGResearchDataset.recordCount">
+      <path value="EHDSECGResearchDataset.recordCount"/>
+      <short value="Number of research records"/>
+      <definition value="Number of research records."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="integer"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

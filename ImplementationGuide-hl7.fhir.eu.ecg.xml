@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.eu.ecg"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.eu.ecg</b></p><a name="hl7.fhir.eu.ecg"> </a><a name="hchl7.fhir.eu.ecg"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><h2>Hl7EuEcgReportIg</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.eu/fhir/ecg/ImplementationGuide/hl7.fhir.eu.ecg</pre><div><p>This guide describes how the Electrocardiogram (ECG) Report can be represented in the European realm.</p>
+</div></div>
+  </text>
+  <url value="http://hl7.eu/fhir/ecg/ImplementationGuide/hl7.fhir.eu.ecg"/>
+  <version value="0.1.0-ci-build"/>
+  <name value="Hl7EuEcgReportIg"/>
+  <title value="HL7 Europe Electrocardiogram (ECG) Report"/>
+  <status value="draft"/>
+  <date value="2026-11-06T23:02:43+01:00"/>
+  <publisher value="HL7 Europe"/>
+  <contact>
+    <name value="HL7 Europe"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.eu"/>
+    </telecom>
+  </contact>
+  <description value="This guide describes how the Electrocardiogram (ECG) Report can be represented in the European realm."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="150"/>
+      <display value="Europe"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright HL7 Europe. Licensed under creative commons public domain (CC0 1.0)."/>
+  <packageId value="hl7.fhir.eu.ecg"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="7.5.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.4.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_eu_base">
+    <uri value="http://hl7.eu/fhir/base/ImplementationGuide/hl7.fhir.eu.base"/>
+    <packageId value="hl7.fhir.eu.base"/>
+    <version value="2.0.1"/>
+  </dependsOn>
+  <dependsOn id="xtehr_eu_ehds_models">
+    <uri value="http://www.xt-ehr.eu/fhir/models/ImplementationGuide/xtehr.eu.ehds.models"/>
+    <packageId value="xtehr.eu.ehds.models"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_xver_r5_r4">
+    <uri value="http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4"/>
+    <packageId value="hl7.fhir.uv.xver-r5.r4"/>
+    <version value="0.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_eu_extensions_r4">
+    <uri value="http://hl7.eu/fhir/extensions/ImplementationGuide/hl7.fhir.eu.extensions"/>
+    <packageId value="hl7.fhir.eu.extensions.r4"/>
+    <version value="1.3.1"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#1.3.0"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2026+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="usage-stats-opt-out"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid-template"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid-template"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.eu/fhir/ecg/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <grouping id="EcgLogicalModels">
+      <name value="ECG Logical Models"/>
+      <description value="ECG logical models specified by this guide. They are not part of the EHDS logical models (see the Logical Models page)."/>
+    </grouping>
+    <grouping id="EuEcgReport">
+      <name value="European ECG Report"/>
+      <description value="European ECG Report profiles."/>
+    </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/diagnosticreport-eu-ecg"/>
+      </reference>
+      <name value="DiagnosticReport: ECG Report (EU)"/>
+      <description value="This profile defines how to represent an Electrocardiogram (ECG) Report in HL7 FHIR for the purpose of this guide."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="EuEcgReport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/diagnosticreport-example-ecg"/>
+      </reference>
+      <name value="DiagnosticReport: ECG Report, normal sinus rhythm"/>
+      <description value="Example of a resting 12-lead ECG report."/>
+      <exampleCanonical value="http://hl7.eu/fhir/ecg/StructureDefinition/diagnosticreport-eu-ecg"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGAgeUnitVS"/>
+      </reference>
+      <name value="ECG Age Unit (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/EHDSECGAlgorithm"/>
+      </reference>
+      <name value="ECG algorithm model"/>
+      <description value="An algorithm that produces ECG derived results, with the performance of this version of the algorithm."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="EcgLogicalModels"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGAmplitudeUnitVS"/>
+      </reference>
+      <name value="ECG Amplitude Unit (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGAnnotationVS"/>
+      </reference>
+      <name value="ECG Annotation (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/EHDSECGAnnotationSet"/>
+      </reference>
+      <name value="ECG annotation set model"/>
+      <description value="Time-anchored annotations. One set = one author (algorithm or person) at one time, as in the HL7 aECG annotationSet, SCP-ECG section 18 and the DICOM Waveform Annotation SR."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="EcgLogicalModels"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGApplicabilityStatusVS"/>
+      </reference>
+      <name value="ECG Applicability Status (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/EHDSECGBiomarkerDefinition"/>
+      </reference>
+      <name value="ECG biomarker definition model"/>
+      <description value="Registry entry for a derived or AI biomarker, equivalent to FHIR R5 ObservationDefinition. Describes what the biomarker is; the algorithms that compute it and their performance are described in EHDSECGAlgorithm."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="EcgLogicalModels"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGChannelStatusVS"/>
+      </reference>
+      <name value="ECG Channel Status (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGComparabilityVS"/>
+      </reference>
+      <name value="ECG Comparability (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGDataAbsentReasonVS"/>
+      </reference>
+      <name value="ECG Data Absent Reason (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGDefinitionTierVS"/>
+      </reference>
+      <name value="ECG Definition Tier (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGDerivedResultCategoryVS"/>
+      </reference>
+      <name value="ECG Derived Result Category (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/EHDSECGDerivedResult"/>
+      </reference>
+      <name value="ECG derived result model"/>
+      <description value="One envelope for measurements, diagnostic statements, AI inferences and other derived biomarkers. The meaning of a non-standard result lives in a versioned definition (EHDSECGBiomarkerDefinition). Typical Core uses: the global measurement set (type measurement-set, one component per LOINC measurement) and the diagnostic statement set (type statement-set, one component per SNOMED CT finding)."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="EcgLogicalModels"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGDerivedResultTypeVS"/>
+      </reference>
+      <name value="ECG Derived Result Type (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGDisplayLayoutVS"/>
+      </reference>
+      <name value="ECG Display Layout (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGDocumentTypeVS"/>
+      </reference>
+      <name value="ECG Document Type (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGDurationUnitVS"/>
+      </reference>
+      <name value="ECG Duration Unit (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGExaminationKindVS"/>
+      </reference>
+      <name value="ECG Examination Kind (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/EHDSECGExamination"/>
+      </reference>
+      <name value="ECG examination model"/>
+      <description value="One acquisition session (a resting 12-lead ECG, a stress test, a Holter recording...). It groups the signal, the annotations and every result derived from it."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="EcgLogicalModels"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGExecutionContextVS"/>
+      </reference>
+      <name value="ECG Execution Context (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGFileFormatVS"/>
+      </reference>
+      <name value="ECG File Format (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGFilterTypeVS"/>
+      </reference>
+      <name value="ECG Filter Type (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGFindingVS"/>
+      </reference>
+      <name value="ECG Finding (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGInputRoleVS"/>
+      </reference>
+      <name value="ECG Input Role (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGLabelProvenanceVS"/>
+      </reference>
+      <name value="ECG Label Provenance (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGLeadVS"/>
+      </reference>
+      <name value="ECG Lead (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGLeadSystemVS"/>
+      </reference>
+      <name value="ECG Lead System (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGLegacyReasonVS"/>
+      </reference>
+      <name value="ECG Legacy Reason (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGLinkedDataTypeVS"/>
+      </reference>
+      <name value="ECG Linked Data Type (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGMeasurementBasisVS"/>
+      </reference>
+      <name value="ECG Measurement Basis (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGOutputKindVS"/>
+      </reference>
+      <name value="ECG Output Kind (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGOverallConclusionVS"/>
+      </reference>
+      <name value="ECG Overall Conclusion (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGPerformanceMetricVS"/>
+      </reference>
+      <name value="ECG Performance Metric (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGQTcFormulaVS"/>
+      </reference>
+      <name value="ECG Q Tc Formula (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGRecordingKindVS"/>
+      </reference>
+      <name value="ECG Recording Kind (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/EHDSECGRecording"/>
+      </reference>
+      <name value="ECG recording model"/>
+      <description value="The waveform and its acquisition metadata, which the Xt-EHR models do not provide. The metadata are always structured; the samples are carried inline (FHIR SampledData, required for short recordings) or by reference to a native object (long recordings). The time of sample i of a channel, from acquisitionStart, is startOffset + skew + i / samplingFrequency."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="EcgLogicalModels"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/EHDSECGReport"/>
+      </reference>
+      <name value="ECG report model"/>
+      <description value="The exchangeable unit for the EHDS priority category medical test results (Regulation (EU) 2025/327, art. 14(1)(e)). Sibling of EHDSLaboratoryReport."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="EcgLogicalModels"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/EHDSECGResearchDataset"/>
+      </reference>
+      <name value="ECG research dataset model"/>
+      <description value="Description of a research dataset, i.e. a set of EHDSECGResearchRecord. The dataset is also described in the health data catalogue with HealthDCAT-AP."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="EcgLogicalModels"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/EHDSECGResearchRecord"/>
+      </reference>
+      <name value="ECG research record model"/>
+      <description value="Research extraction profile for EHDS secondary use (chapter IV of the Regulation): one record per pseudonymised subject. Shares the semantic core of the care profile, does not require a PDF rendering, and documents what a training or evaluation set needs."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="EcgLogicalModels"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/EHDSECGResultDocument"/>
+      </reference>
+      <name value="ECG result document model"/>
+      <description value="Transports annotations and derived results produced after the ECG was first exchanged (for example an AI analysis of an archived ECG or a later re-reading), without rebuilding the original report. The objects it carries link to the examination and recordings by their durable identifiers (external links)."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="EcgLogicalModels"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGReviewStatusVS"/>
+      </reference>
+      <name value="ECG Review Status (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGSignalOriginVS"/>
+      </reference>
+      <name value="ECG Signal Origin (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGTransformationTypeVS"/>
+      </reference>
+      <name value="ECG Transformation Type (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ECGUseTierVS"/>
+      </reference>
+      <name value="ECG Use Tier (placeholder)"/>
+      <description value="TODO: placeholder value set, to be defined."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-example-ecg"/>
+      </reference>
+      <name value="Patient: Example"/>
+      <description value="Example of a patient."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="introduction.html"/>
+        </extension>
+        <nameUrl value="introduction.html"/>
+        <title value="Introduction"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="logicalmodels.html"/>
+        </extension>
+        <nameUrl value="logicalmodels.html"/>
+        <title value="Logical Models"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modelmap.html"/>
+        </extension>
+        <nameUrl value="modelmap.html"/>
+        <title value="Logical Model Mappings"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="knownIssues.html"/>
+        </extension>
+        <nameUrl value="knownIssues.html"/>
+        <title value="Known Issues"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="copyright.html"/>
+        </extension>
+        <nameUrl value="copyright.html"/>
+        <title value="Copyright"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="crossversionanalysis.html"/>
+        </extension>
+        <nameUrl value="crossversionanalysis.html"/>
+        <title value="Cross-version Analysis"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="dependencies.html"/>
+        </extension>
+        <nameUrl value="dependencies.html"/>
+        <title value="Dependencies"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="expansion-params.html"/>
+        </extension>
+        <nameUrl value="expansion-params.html"/>
+        <title value="Expansion Parameters"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="authors.html"/>
+        </extension>
+        <nameUrl value="authors.html"/>
+        <title value="Authors and Contributors"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="changes.html"/>
+        </extension>
+        <nameUrl value="changes.html"/>
+        <title value="Change Log"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/assets"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

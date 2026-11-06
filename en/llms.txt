@@ -1,0 +1,82 @@
+# hl7.fhir.eu.ecg#0.1.0-ci-build: HL7 Europe Electrocardiogram (ECG) Report(en)
+
+## Pages
+
+* [Home](index.md)
+* [Artifacts Summary](artifacts.md)
+* [Authors and Contributors](authors.md)
+* [Change Log](changes.md)
+* [Copyright](copyright.md)
+* [Cross-version Analysis](crossversionanalysis.md)
+* [Dependencies](dependencies.md)
+* [Downloads](downloads.md)
+* [Expansion Parameters](expansion-params.md)
+* [Introduction](introduction.md)
+* [Known Issues](knownIssues.md)
+* [Logical Models](logicalmodels.md)
+* [Logical Model Mappings](modelmap.md)
+
+## Resources
+
+### ValueSets
+
+* [ECG Age Unit (placeholder)](ValueSet-ECGAgeUnitVS.md)
+* [ECG Amplitude Unit (placeholder)](ValueSet-ECGAmplitudeUnitVS.md)
+* [ECG Annotation (placeholder)](ValueSet-ECGAnnotationVS.md)
+* [ECG Applicability Status (placeholder)](ValueSet-ECGApplicabilityStatusVS.md)
+* [ECG Channel Status (placeholder)](ValueSet-ECGChannelStatusVS.md)
+* [ECG Comparability (placeholder)](ValueSet-ECGComparabilityVS.md)
+* [ECG Data Absent Reason (placeholder)](ValueSet-ECGDataAbsentReasonVS.md)
+* [ECG Definition Tier (placeholder)](ValueSet-ECGDefinitionTierVS.md)
+* [ECG Derived Result Category (placeholder)](ValueSet-ECGDerivedResultCategoryVS.md)
+* [ECG Derived Result Type (placeholder)](ValueSet-ECGDerivedResultTypeVS.md)
+* [ECG Display Layout (placeholder)](ValueSet-ECGDisplayLayoutVS.md)
+* [ECG Document Type (placeholder)](ValueSet-ECGDocumentTypeVS.md)
+* [ECG Duration Unit (placeholder)](ValueSet-ECGDurationUnitVS.md)
+* [ECG Examination Kind (placeholder)](ValueSet-ECGExaminationKindVS.md)
+* [ECG Execution Context (placeholder)](ValueSet-ECGExecutionContextVS.md)
+* [ECG File Format (placeholder)](ValueSet-ECGFileFormatVS.md)
+* [ECG Filter Type (placeholder)](ValueSet-ECGFilterTypeVS.md)
+* [ECG Finding (placeholder)](ValueSet-ECGFindingVS.md)
+* [ECG Input Role (placeholder)](ValueSet-ECGInputRoleVS.md)
+* [ECG Label Provenance (placeholder)](ValueSet-ECGLabelProvenanceVS.md)
+* [ECG Lead System (placeholder)](ValueSet-ECGLeadSystemVS.md)
+* [ECG Lead (placeholder)](ValueSet-ECGLeadVS.md)
+* [ECG Legacy Reason (placeholder)](ValueSet-ECGLegacyReasonVS.md)
+* [ECG Linked Data Type (placeholder)](ValueSet-ECGLinkedDataTypeVS.md)
+* [ECG Measurement Basis (placeholder)](ValueSet-ECGMeasurementBasisVS.md)
+* [ECG Output Kind (placeholder)](ValueSet-ECGOutputKindVS.md)
+* [ECG Overall Conclusion (placeholder)](ValueSet-ECGOverallConclusionVS.md)
+* [ECG Performance Metric (placeholder)](ValueSet-ECGPerformanceMetricVS.md)
+* [ECG Q Tc Formula (placeholder)](ValueSet-ECGQTcFormulaVS.md)
+* [ECG Recording Kind (placeholder)](ValueSet-ECGRecordingKindVS.md)
+* [ECG Review Status (placeholder)](ValueSet-ECGReviewStatusVS.md)
+* [ECG Signal Origin (placeholder)](ValueSet-ECGSignalOriginVS.md)
+* [ECG Transformation Type (placeholder)](ValueSet-ECGTransformationTypeVS.md)
+* [ECG Use Tier (placeholder)](ValueSet-ECGUseTierVS.md)
+
+### Logicals
+
+* [ECG algorithm model](StructureDefinition-EHDSECGAlgorithm.md)
+* [ECG annotation set model](StructureDefinition-EHDSECGAnnotationSet.md)
+* [ECG biomarker definition model](StructureDefinition-EHDSECGBiomarkerDefinition.md)
+* [ECG derived result model](StructureDefinition-EHDSECGDerivedResult.md)
+* [ECG examination model](StructureDefinition-EHDSECGExamination.md)
+* [ECG recording model](StructureDefinition-EHDSECGRecording.md)
+* [ECG report model](StructureDefinition-EHDSECGReport.md)
+* [ECG research dataset model](StructureDefinition-EHDSECGResearchDataset.md)
+* [ECG research record model](StructureDefinition-EHDSECGResearchRecord.md)
+* [ECG result document model](StructureDefinition-EHDSECGResultDocument.md)
+
+### Resource Profiles
+
+* [DiagnosticReport: ECG Report (EU)](StructureDefinition-diagnosticreport-eu-ecg.md)
+
+### ImplementationGuides
+
+* [HL7 Europe Electrocardiogram (ECG) Report](ImplementationGuide-hl7.fhir.eu.ecg.md)
+
+### Examples
+
+* [diagnosticreport-example-ecg (DiagnosticReport)](DiagnosticReport-diagnosticreport-example-ecg.md)
+* [patient-example-ecg (Patient)](Patient-patient-example-ecg.md)

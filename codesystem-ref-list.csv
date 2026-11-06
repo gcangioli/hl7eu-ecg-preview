@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://hl7.org/fhir/publication-status,4.0.1,active,"2.16.840.1.113883.4.642.4.4",PublicationStatus,PublicationStatus,"The lifecycle status of an artifact.","ValueSet/publication-status"

@@ -1,0 +1,600 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>ECG examination model - HL7 Europe Electrocardiogram (ECG) Report v0.1.0-ci-build</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/liquid.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+<link href="assets/css/hl7eu.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"13.5"}
+    h3,h4,h5,h6{--heading-prefix:"13.5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+                <!-- Left logo: HL7 Europe -->
+        <div id="project-nav">
+          <a id="project-logo" data-no-external="true" href="https://hl7europe.org"><img height="60" alt="HL7 Europe website" src="assets/images/hl7-eu-logo.png"/></a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" data-no-external="true" href="https://hl7.org/fhir"><img height="45" alt="HL7 FHIR" src="assets/images/fhir-logo-www.png"/></a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 Europe Electrocardiogram (ECG) Report</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0-ci-build - ci-build
+
+
+
+  <span title="">150</span>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Introduction
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="introduction.html">Introduction</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="logicalmodels.html">Logical Models</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="modelmap.html">Logical Model Mappings</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">About
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="authors.html">Authors and Contributors</a>
+      </li>
+      <li>
+        <a href="knownIssues.html">Known Issues</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="dependencies.html">Dependencies</a>
+      </li>
+      <li>
+        <a href="expansion-params.html">Expansion Parameters</a>
+      </li>
+      <li>
+        <a href="changes.html">Change Log</a>
+      </li>
+      <li>
+        <a href="copyright.html">Copyright</a>
+      </li>
+      <li>
+        <a href="crossversionanalysis.html">Cross-version Analysis</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ECG examination model</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<!-- layouts\layout-profile-mappings -->
+<div style="counter-reset: section 5" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 Europe Electrocardiogram (ECG) Report - Local Development build (v0.1.0-ci-build) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://hl7.eu/fhir/ecg/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="StructureDefinition-EHDSECGExamination.html">Content</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-EHDSECGExamination-definitions.html">Detailed Descriptions</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">Mappings</a>
+    </li>
+  
+
+
+
+
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-EHDSECGExamination.profile.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-EHDSECGExamination.profile.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-EHDSECGExamination.profile.ttl.html">TTL</a>
+    </li>
+  
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+<h2 id="root">Logical Model: ECG examination model - Mappings</h2>
+
+  <table class="colsd" data-fhir="generated">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+
+            as of 
+2026-11-06
+
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+
+  <p>Mappings for the EHDSECGExamination logical model.</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <h3>Mappings to Structures in this Implementation Guide</h3>
+<p>No Mappings Found</p>
+<h3>Mappings to other Structures</h3>
+<p>No Mappings Found</p>
+<h3>Other Mappings</h3>
+<table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" id="EHDSECGExaminationMo" class="xhtTableBorder0" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" class="xhtRowBorder1" data-fhir="generated-heirarchy"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/v3" title="http://hl7.org/v3">RIM Mapping</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" id="o-a" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination" title="One acquisition session (a resting 12-lead ECG, a stress test, a Holter recording...). It groups the signal, the annotations and every result derived from it.">EHDSECGExamination</a><a name="o-EHDSECGExamination"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>n/a</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-aa" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.header" title="Basic metadata for this information">header</a><a name="o-EHDSECGExamination.header"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-aaa" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / header / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.header.subject" title="Patient/subject information">subject</a><a name="o-EHDSECGExamination.header.subject"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-aab" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / header / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.header.identifier" title="Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).">identifier</a><a name="o-EHDSECGExamination.header.identifier"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-aac" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / header / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.header.author[x]" title="Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models.">author[x]</a><a name="o-EHDSECGExamination.header.author_x_"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-aad" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / header / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.header.date" title="Date and optionally time of authoring/issuing">date</a><a name="o-EHDSECGExamination.header.date"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-aae" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / header / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.header.status" title="Status of the resource or document">status</a><a name="o-EHDSECGExamination.header.status"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-aaf" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / header / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.header.source" title="Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information.">source</a><a name="o-EHDSECGExamination.header.source"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-aag" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / header / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.header.language" title="Language in which the resource is written. Language is expressed by the IETF language tag.">language</a><a name="o-EHDSECGExamination.header.language"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-aah" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / header / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.header.directSubject[x]" title="The direct subject of the observation if different from the patient (subject of care), e.g. an observation of an implanted device. Additional types of subject may be allowed in implementations.">directSubject[x]</a><a name="o-EHDSECGExamination.header.directSubject_x_"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ab" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.observationDate[x]" title="Clinically relevant time or time period for the observation">observationDate[x]</a><a name="o-EHDSECGExamination.observationDate_x_"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ac" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.type" title="Observation type. Code and name representing the type of the observation using the agreed code systems.">type</a><a name="o-EHDSECGExamination.type"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ad" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.originalName" title="Original (conventional) name of the observation as used in the local laboratory or clinical system.">originalName</a><a name="o-EHDSECGExamination.originalName"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ae" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.method" title="Observation method (measurement principle) to obtain the result.">method</a><a name="o-EHDSECGExamination.method"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-af" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.specimen" title="Specimen used for this observation.">specimen</a><a name="o-EHDSECGExamination.specimen"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ag" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.order" title="Identifies order and order placer this observation belongs to">order</a><a name="o-EHDSECGExamination.order"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ah" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.performer[x]" title="Performer of the observation. Some test could be performed by the patient himself or by a care giver. Those are in the scope of this deliverable under specified conditions.">performer[x]</a><a name="o-EHDSECGExamination.performer_x_"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ai" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.bodySite" title="Anatomic location and laterality where the observation was performed.">bodySite</a><a name="o-EHDSECGExamination.bodySite"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-aj" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.result" title="Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation.">result</a><a name="o-EHDSECGExamination.result"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-aja" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / result / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.result.value[x]" title="Observation result value according to the type of observation. Model covers only most frequently used data types but other data types can be used as well.
+    Text result value should be used only if coded result value is not expected otherwise use valueCodeableConcept.text. For Quantity, Range and Ratio, result units of the measurement should be provided.">value[x]</a><a name="o-EHDSECGExamination.result.value_x_"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ajb" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / result / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.result.uncertainty" title="Measurement uncertainty information about the observation result.">uncertainty</a><a name="o-EHDSECGExamination.result.uncertainty"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ajba" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / result / uncertainty / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.result.uncertainty.value" title="The numerical value of the measurement uncertainty.">value</a><a name="o-EHDSECGExamination.result.uncertainty.value"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ajbb" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / result / uncertainty / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.result.uncertainty.type" title="Probability Distribution Type for uncertainty">type</a><a name="o-EHDSECGExamination.result.uncertainty.type"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ajc" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / result / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.result.dataAbsentReason" title="Provides a reason why the expected value in the element Observation.value[x] is missing.">dataAbsentReason</a><a name="o-EHDSECGExamination.result.dataAbsentReason"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ak" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.referenceRange" title="Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result.">referenceRange</a><a name="o-EHDSECGExamination.referenceRange"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-aka" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / referenceRange / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.referenceRange.low" title="Low limit of the reference range.">low</a><a name="o-EHDSECGExamination.referenceRange.low"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-akb" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / referenceRange / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.referenceRange.high" title="High limit of the reference range.">high</a><a name="o-EHDSECGExamination.referenceRange.high"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-akc" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / referenceRange / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.referenceRange.normalValue" title="Normal value, if relevant for the reference range.">normalValue</a><a name="o-EHDSECGExamination.referenceRange.normalValue"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-akd" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / referenceRange / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.referenceRange.type" title="Type of reference range.">type</a><a name="o-EHDSECGExamination.referenceRange.type"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ake" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / referenceRange / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.referenceRange.appliesTo" title="Codes to indicate the target population this reference range applies to. For example, a reference range may be based on the normal population or a particular sex or race. Multiple appliesTo are interpreted as an \&quot;AND\&quot; of the target populations.">appliesTo</a><a name="o-EHDSECGExamination.referenceRange.appliesTo"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-akf" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / referenceRange / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.referenceRange.age" title="Age range to which this reference range applies if applicable.">age</a><a name="o-EHDSECGExamination.referenceRange.age"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-akg" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / referenceRange / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.referenceRange.text" title="Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation. An example would be a reference value of \&quot;Negative\&quot; or a list or table of \&quot;normals\&quot;.">text</a><a name="o-EHDSECGExamination.referenceRange.text"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-al" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.interpretation" title="Information about reference intervals and result interpretation.">interpretation</a><a name="o-EHDSECGExamination.interpretation"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-am" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.note" title="Comments and narrative representation of the observation result and findings.">note</a><a name="o-EHDSECGExamination.note"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-an" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.component" title="Component in case the observation consists of multiple sub-observations (e.g. blood pressure).">component</a><a name="o-EHDSECGExamination.component"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ana" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / component / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.component.type" title="Code representing the observation using the agreed code systems.">type</a><a name="o-EHDSECGExamination.component.type"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-anb" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / component / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.component.originalName" title="Original (user-friendly) name of the observation as used in the local laboratory or clinical system.">originalName</a><a name="o-EHDSECGExamination.component.originalName"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-anc" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / component / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.component.result" title="Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation.">result</a><a name="o-EHDSECGExamination.component.result"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-anca" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / component / result / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.component.result.value[x]" title="Observation result value according to the type of observation. Model covers only most frequently used data types but other data types can be used as well.
+      Text result value should be used only if coded result value is not expected otherwise use valueCodeableConcept.text. For Quantity, Range and Ratio, result units of the measurement should be provided.">value[x]</a><a name="o-EHDSECGExamination.component.result.value_x_"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ancb" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / component / result / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.component.result.uncertainty" title="Measurement uncertainty information about the observation result.">uncertainty</a><a name="o-EHDSECGExamination.component.result.uncertainty"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ancba" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck11110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / component / result / uncertainty / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.component.result.uncertainty.value" title="The numerical value of the measurement uncertainty.">value</a><a name="o-EHDSECGExamination.component.result.uncertainty.value"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ancbb" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck11100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / component / result / uncertainty / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.component.result.uncertainty.type" title="Probability Distribution Type for uncertainty">type</a><a name="o-EHDSECGExamination.component.result.uncertainty.type"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ancc" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / component / result / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.component.result.dataAbsentReason" title="Provides a reason why the expected value in the element component.value[x] is missing.">dataAbsentReason</a><a name="o-EHDSECGExamination.component.result.dataAbsentReason"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-and" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / component / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.component.referenceRange" title="Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result.">referenceRange</a><a name="o-EHDSECGExamination.component.referenceRange"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-anda" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / component / referenceRange / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.component.referenceRange.low" title="Low limit of the reference range.">low</a><a name="o-EHDSECGExamination.component.referenceRange.low"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-andb" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / component / referenceRange / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.component.referenceRange.high" title="High limit of the reference range.">high</a><a name="o-EHDSECGExamination.component.referenceRange.high"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-andc" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / component / referenceRange / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.component.referenceRange.normalValue" title="Normal value, if relevant for the reference range.">normalValue</a><a name="o-EHDSECGExamination.component.referenceRange.normalValue"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-andd" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / component / referenceRange / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.component.referenceRange.type" title="Type of reference range.">type</a><a name="o-EHDSECGExamination.component.referenceRange.type"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ande" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / component / referenceRange / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.component.referenceRange.appliesTo" title="Codes to indicate the target population this reference range applies to. For example, a reference range may be based on the normal population or a particular sex or race. Multiple appliesTo are interpreted as an \&quot;AND\&quot; of the target populations.">appliesTo</a><a name="o-EHDSECGExamination.component.referenceRange.appliesTo"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-andf" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / component / referenceRange / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.component.referenceRange.age" title="Age range to which this reference range applies if applicable.">age</a><a name="o-EHDSECGExamination.component.referenceRange.age"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-andg" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / component / referenceRange / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.component.referenceRange.text" title="Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation. An example would be a reference value of \&quot;Negative\&quot; or a list or table of \&quot;normals\&quot;.">text</a><a name="o-EHDSECGExamination.component.referenceRange.text"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ane" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / component / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.component.interpretation" title="Information about reference intervals and result interpretation.">interpretation</a><a name="o-EHDSECGExamination.component.interpretation"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ao" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.derivedFrom[x]" title="Reference to the related resource from which the observation has been made. For example, a calculated anion gap or a fetal measurement based on an ultrasound image.">derivedFrom[x]</a><a name="o-EHDSECGExamination.derivedFrom_x_"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ap" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.hasMember[x]" title="This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group.">hasMember[x]</a><a name="o-EHDSECGExamination.hasMember_x_"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-aq" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.examinationKind" title="resting, exercise stress, pharmacological stress, ambulatory long-term (Holter), event / loop recorder, patch, consumer single-lead device, in-hospital monitoring strip.">examinationKind</a><a name="o-EHDSECGExamination.examinationKind"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ar" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.ageAtExamination" title="For de-identified data or when the date of birth is not shared. ECG criteria are age-dependent.">ageAtExamination</a><a name="o-EHDSECGExamination.ageAtExamination"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ara" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / ageAtExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.ageAtExamination.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.">@id</a><a name="o-EHDSECGExamination.ageAtExamination.id"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>n/a</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-arb" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck112.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / ageAtExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.ageAtExamination.extension" title="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.">extension</a><a name="o-EHDSECGExamination.ageAtExamination.extension"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>n/a</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-arc" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / ageAtExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.ageAtExamination.value" title="The value of the measured amount. The value includes an implicit precision in the presentation of the value.">value</a><a name="o-EHDSECGExamination.ageAtExamination.value"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div><ul><li>PQ.value</li><li> CO.value</li><li> MO.value</li><li> IVL.high or IVL.low depending on the value</li></ul></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ard" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / ageAtExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.ageAtExamination.comparator" title="How the value should be understood and represented - whether the actual value is greater or less than the stated value due to measurement issues; e.g. if the comparator is &quot;&lt;&quot; , then the real value is &lt; stated value.">comparator</a><a name="o-EHDSECGExamination.ageAtExamination.comparator"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>IVL properties</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-are" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / ageAtExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.ageAtExamination.unit" title="A human-readable form of the unit.">unit</a><a name="o-EHDSECGExamination.ageAtExamination.unit"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>PQ.unit</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-arf" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / ageAtExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.ageAtExamination.system" title="The identification of the system that provides the coded form of the unit.">system</a><a name="o-EHDSECGExamination.ageAtExamination.system"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div><ul><li>CO.codeSystem</li><li> PQ.translation.codeSystem</li></ul></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-arg" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / ageAtExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.ageAtExamination.code" title="A computer processable form of the unit in some unit representation system.">code</a><a name="o-EHDSECGExamination.ageAtExamination.code"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div><ul><li>PQ.code</li><li> MO.currency</li><li> PQ.translation.code</li></ul></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-as" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.leadSystem" title="Standard 12-lead, Mason-Likar, Frank XYZ, EASI, reduced lead set, single lead (cf. DICOM CID 3263).">leadSystem</a><a name="o-EHDSECGExamination.leadSystem"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-at" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.acquisitionDevice" title="Manufacturer, model, serial number, firmware. Always at Core level, here or on each recording (ecg-ex-4).">acquisitionDevice</a><a name="o-EHDSECGExamination.acquisitionDevice"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-au" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.patientState" title="Supine, sitting, standing, exercise, recovery, during symptoms (cf. DICOM CID 3262).">patientState</a><a name="o-EHDSECGExamination.patientState"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-av" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.stressTest" title="Detailed model deferred to a later version.">stressTest</a><a name="o-EHDSECGExamination.stressTest"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ava" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / stressTest / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.stressTest.protocol" title="Bruce, modified Bruce, ramp, cycle ergometer...">protocol</a><a name="o-EHDSECGExamination.stressTest.protocol"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-avb" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / stressTest / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.stressTest.maximumWorkload" title="W or METs.">maximumWorkload</a><a name="o-EHDSECGExamination.stressTest.maximumWorkload"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-avc" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / stressTest / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.stressTest.exerciseDuration" title="Duration.">exerciseDuration</a><a name="o-EHDSECGExamination.stressTest.exerciseDuration"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-avd" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / stressTest / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.stressTest.terminationReason" title="Reasons for stopping.">terminationReason</a><a name="o-EHDSECGExamination.stressTest.terminationReason"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-aw" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.recording" title="Required at Core level, with at least one rhythm recording (ecg-ex-1); absent only in Legacy.">recording</a><a name="o-EHDSECGExamination.recording"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ax" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.legacyReason" title="historical record, device without digital signal export, signal not retained, reconstructed from paper only, other. Required when there is no recording (ecg-ex-1).">legacyReason</a><a name="o-EHDSECGExamination.legacyReason"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ay" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck00.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGExamination / </span><a href="StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.annotationSet" title="Time-anchored annotations on the recordings.">annotationSet</a><a name="o-EHDSECGExamination.annotationSet"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="2" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/tabs.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.eu">HL7 Europe</a>.  
+          Package hl7.fhir.eu.ecg#0.1.0-ci-build based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-11-06 23:02:00 +0100">
+    2026-11-06
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://jira.hl7.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+                 
+                 <a style="color: var(--footer-hyperlink-text-color)" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

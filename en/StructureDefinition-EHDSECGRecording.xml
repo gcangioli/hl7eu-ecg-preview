@@ -1,0 +1,1645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="EHDSECGRecording"/>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition EHDSECGRecording</b></p><table border="0" cellpadding="0" cellspacing="0" class="xhtTableBorder0"><tr class="xhtRowBorder1"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording" title="The waveform and its acquisition metadata, which the Xt-EHR models do not provide. The metadata are always structured; the samples are carried inline (FHIR SampledData, required for short recordings) or by reference to a native object (long recordings). The time of sample i of a channel, from acquisitionStart, is startOffset + skew + i / samplingFrequency.">EHDSECGRecording</a><a name="EHDSECGRecording"> </a></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( ecg-id-1, ecg-rec-1, ecg-rec-2, ecg-rec-3, ecg-rec-4, ecg-rec-5, ecg-rec-6, ecg-rec-7, ecg-rec-8, ecg-rec-9, ecg-rec-10, ecg-rec-11, ecg-rec-12 )" class="xhtConstraintStyle">C</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDataSet.html">EHDSDataSet</a></td><td style="" class="hierarchy xhtCellBorder0">ECG recording model<br/><br/>Elements defined in Ancestors:<a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDataSet.html" title="Basic metadata for this information">header</a><br/><span class="xhtPieceBold">Instances of this type can be the target of a Reference</span><br class="constraint"/><span class="constraint">Constraints: </span><span title="TODO: placeholder for invariant ecg-id-1, to be defined." class="xhtPieceBold constraint">ecg-id-1</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-rec-1, to be defined." class="xhtPieceBold constraint">ecg-rec-1</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-rec-2, to be defined." class="xhtPieceBold constraint">ecg-rec-2</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-rec-3, to be defined." class="xhtPieceBold constraint">ecg-rec-3</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-rec-4, to be defined." class="xhtPieceBold constraint">ecg-rec-4</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-rec-5, to be defined." class="xhtPieceBold constraint">ecg-rec-5</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-rec-6, to be defined." class="xhtPieceBold constraint">ecg-rec-6</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-rec-7, to be defined." class="xhtPieceBold constraint">ecg-rec-7</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-rec-8, to be defined." class="xhtPieceBold constraint">ecg-rec-8</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-rec-9, to be defined." class="xhtPieceBold constraint">ecg-rec-9</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-rec-10, to be defined." class="xhtPieceBold constraint">ecg-rec-10</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-rec-11, to be defined." class="xhtPieceBold constraint">ecg-rec-11</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-rec-12, to be defined." class="xhtPieceBold constraint">ecg-rec-12</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.header">header</a><a name="EHDSECGRecording.header"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.header.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.header.identifier">identifier</a><a name="EHDSECGRecording.header.identifier"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..<span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier" class="xhtPieceDeEmphasized">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">[C] E.g. DICOM SOP Instance UID, vendor recording id</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.recordingKind" title="rhythm (continuous strip), representative (median) beat, selected episode, reconstructed signal.">recordingKind</a><a name="EHDSECGRecording.recordingKind"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Recording kind<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGRecordingKindVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGRecordingKindVS" class="binding">ECG Recording Kind (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.acquisitionStart" title="Time-zone offset required.">acquisitionStart</a><a name="EHDSECGRecording.acquisitionStart"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Start of the recording</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.duration" title="UCUM s.">duration</a><a name="EHDSECGRecording.duration"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Duration</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.acquisitionDevice" title="Device that acquired this signal, if different from the examination's device.">acquisitionDevice</a><a name="EHDSECGRecording.acquisitionDevice"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html">EHDSDevice</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Acquisition device</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.signalProvenance" title="Ordered chain of steps, from the acquisition to this representation (e.g. vendor format -&gt; WFDB -&gt; EHDS).">signalProvenance</a><a name="EHDSECGRecording.signalProvenance"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">[C] How this signal came to exist<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.signalProvenance.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.signalProvenance.origin" title="native-digital, converted-lossless, converted-lossy, losslessness-not-documented, computed-from-recording, reconstructed-from-image, reconstructed-from-reduced-leads, synthetic.">origin</a><a name="EHDSECGRecording.signalProvenance.origin"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Origin<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGSignalOriginVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGSignalOriginVS" class="binding">ECG Signal Origin (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.signalProvenance.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.signalProvenance.sourceFormat" title="Format the signal was converted from.">sourceFormat</a><a name="EHDSECGRecording.signalProvenance.sourceFormat"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Source format<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGFileFormatVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGFileFormatVS" class="binding">ECG File Format (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.signalProvenance.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.signalProvenance.conversionTool" title="Converter, digitiser or signal-processing algorithm, and its version.">conversionTool</a><a name="EHDSECGRecording.signalProvenance.conversionTool"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html">EHDSDevice</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Conversion tool</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.signalProvenance.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.signalProvenance.derivedFrom" title="Link to the source recording(s), e.g. the rhythm strip a median beat was computed from.">derivedFrom</a><a name="EHDSECGRecording.signalProvenance.derivedFrom"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Source recording(s)<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.powerlineFrequency" title="50 or 60 Hz.">powerlineFrequency</a><a name="EHDSECGRecording.powerlineFrequency"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Powerline frequency</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.display" title="Does not change the samples; the PDF rendering remains the reference display.">display</a><a name="EHDSECGRecording.display"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">[C] Display recommended by the source</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.display.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.display.speed" title="UCUM mm/s (DICOM Waveform Data Display Scale).">speed</a><a name="EHDSECGRecording.display.speed"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Paper speed</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.display.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.display.gain" title="UCUM mm/mV, stated only when the displayed channels share the same gain. From DICOM: Absolute Channel Display Scale (003A,0248) divided by Channel Sensitivity (003A,0210).">gain</a><a name="EHDSECGRecording.display.gain"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Gain</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.display.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.display.layout" title="3 x 4, 3 x 4 with rhythm strip, 6 x 2, 12 x 1, other.">layout</a><a name="EHDSECGRecording.display.layout"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Layout<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGDisplayLayoutVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGDisplayLayoutVS" class="binding">ECG Display Layout (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup" title="DICOM multiplex group, aECG sequenceSet.">channelGroup</a><a name="EHDSECGRecording.channelGroup"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">[C] Channels sharing one time base<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.label" title="E.g. rhythm, median beat.">label</a><a name="EHDSECGRecording.channelGroup.label"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Label</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.samplingFrequency" title="UCUM Hz; &gt; 0 (ecg-rec-9).">samplingFrequency</a><a name="EHDSECGRecording.channelGroup.samplingFrequency"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Sampling frequency</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.numberOfSamples" title="&gt;= 1. Equals the number of values in each channel's samples.data (ecg-rec-6).">numberOfSamples</a><a name="EHDSECGRecording.channelGroup.numberOfSamples"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Samples per channel</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.startOffset" title="UCUM ms; &gt;= 0; absent means 0. Supports non-simultaneous acquisition (e.g. 3 x 4 leads). The group ends within the recording (ecg-rec-2).">startOffset</a><a name="EHDSECGRecording.channelGroup.startOffset"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Offset from acquisitionStart</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.bitsPerSample" title="ADC resolution.">bitsPerSample</a><a name="EHDSECGRecording.channelGroup.bitsPerSample"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td style="" class="hierarchy xhtCellBorder0">[C] ADC resolution</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.filter" title="Applied to every channel of the group that does not state its own.">filter</a><a name="EHDSECGRecording.channelGroup.filter"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">[C] Filters applied before storage<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.filter.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.filter.type" title="high-pass, low-pass, notch, other.">type</a><a name="EHDSECGRecording.channelGroup.filter.type"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Filter type<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGFilterTypeVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGFilterTypeVS" class="binding">ECG Filter Type (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.filter.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.filter.frequency" title="UCUM Hz.">frequency</a><a name="EHDSECGRecording.channelGroup.filter.frequency"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Cut-off or notch frequency</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.filter.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.filter.description" title="Order, slope, bandwidth, algorithm.">description</a><a name="EHDSECGRecording.channelGroup.filter.description"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Filter description</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck101.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel" title="One lead.">channel</a><a name="EHDSECGRecording.channelGroup.channel"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">[C] One lead<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.channel.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.lead" title="MDC MDC_ECG_ELEC_POTL_* codes; required within the set it covers, extensible for non-standard leads.">lead</a><a name="EHDSECGRecording.channelGroup.channel.lead"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Lead<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGLeadVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS" class="binding">ECG Lead (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.channel.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.derived" title="True if computed from other leads (III, aVR, aVL, aVF usually are).">derived</a><a name="EHDSECGRecording.channelGroup.channel.derived"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Derived lead</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.channel.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.derivation" title="Formula or method of derivation.">derivation</a><a name="EHDSECGRecording.channelGroup.channel.derivation"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Derivation</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.channel.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.unit" title="channel.origin and samples.origin use the same unit (ecg-rec-8).">unit</a><a name="EHDSECGRecording.channelGroup.channel.unit"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="" class="hierarchy xhtCellBorder0">[C] UCUM unit of the physical values<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGAmplitudeUnitVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGAmplitudeUnitVS" class="binding">ECG Amplitude Unit (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.channel.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.origin" title="In unit. Always present, also when samples are carried by reference.">origin</a><a name="EHDSECGRecording.channelGroup.channel.origin"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Baseline offset</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.channel.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.factor" title="Multiplier from stored integer to physical value in unit (e.g. 4.88 uV per LSB). Always present.">factor</a><a name="EHDSECGRecording.channelGroup.channel.factor"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Amplitude resolution</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.channel.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.status" title="ok, disconnected, noisy, saturated, lead-reversal-suspected, questionable, invalid, uncalibrated, unzeroed, test-data.">status</a><a name="EHDSECGRecording.channelGroup.channel.status"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Channel status<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGChannelStatusVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGChannelStatusVS" class="binding">ECG Channel Status (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span><br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.channel.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.skew" title="Offset of the first sample of this channel from the start of the channel group, UCUM ms (DICOM Channel Time Skew or Channel Sample Skew). 0 = simultaneous; absent = not documented, counted as 0.">skew</a><a name="EHDSECGRecording.channelGroup.channel.skew"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Channel skew</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1011.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.channel.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.filter" title="Filters of this channel, when they differ from those of the group; they replace channelGroup.filter for this channel.">filter</a><a name="EHDSECGRecording.channelGroup.channel.filter"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">[C] Channel filters<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.channel.filter.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.filter.type" title="high-pass, low-pass, notch, other.">type</a><a name="EHDSECGRecording.channelGroup.channel.filter.type"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Filter type<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGFilterTypeVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGFilterTypeVS" class="binding">ECG Filter Type (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.channel.filter.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.filter.frequency" title="UCUM Hz.">frequency</a><a name="EHDSECGRecording.channelGroup.channel.filter.frequency"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Cut-off or notch frequency</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.channel.filter.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.filter.description" title="Order, slope, bandwidth, algorithm.">description</a><a name="EHDSECGRecording.channelGroup.channel.filter.description"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Filter description</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1000.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.channelGroup.channel.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.samples" title="FHIR R5 SampledData. Required for short recordings (ecg-rec-3). data present with numberOfSamples values; dimensions = 1; interval equals 1 / samplingFrequency; origin and factor equal the channel's (ecg-rec-4 to ecg-rec-7).">samples</a><a name="EHDSECGRecording.channelGroup.channel.samples"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#SampledData">SampledData</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Inline samples</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck01.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.nativeObject" title="Optional, in addition to the inline samples for short recordings; the way to carry the samples of long recordings.">nativeObject</a><a name="EHDSECGRecording.nativeObject"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">[C] Original object in its native format<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.nativeObject.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.nativeObject.format" title="The object must be retrievable (ecg-rec-10).">format</a><a name="EHDSECGRecording.nativeObject.format"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Format<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGFileFormatVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGFileFormatVS" class="binding">ECG File Format (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck011.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.nativeObject.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.nativeObject.file" title="E.g. WFDB .hea + .dat.">file</a><a name="EHDSECGRecording.nativeObject.file"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">[C] File(s) making up the object<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck0110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.nativeObject.file.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.nativeObject.file.attachment" title="The file itself or its URL.">attachment</a><a name="EHDSECGRecording.nativeObject.file.attachment"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSAttachment.html">EHDSAttachment</a></td><td style="" class="hierarchy xhtCellBorder0">[C] The file or its URL</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck0100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.nativeObject.file.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.nativeObject.file.contentHash" title="SHA-256 of the file.">contentHash</a><a name="EHDSECGRecording.nativeObject.file.contentHash"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">[C] SHA-256 of the file</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.nativeObject.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.nativeObject.imagingStudy" title="12-Lead ECG, General ECG, General 32-bit ECG or Ambulatory ECG SOP instance, retrievable through the imaging infrastructure (IHE MADO).">imagingStudy</a><a name="EHDSECGRecording.nativeObject.imagingStudy"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSImagingStudy.html">EHDSImagingStudy</a></td><td style="" class="hierarchy xhtCellBorder0">[C] DICOM study holding the ECG</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck000.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGRecording.nativeObject.</span><a href="StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.nativeObject.endpoint" title="Where the object can be retrieved, e.g. for long-term recordings.">endpoint</a><a name="EHDSECGRecording.nativeObject.endpoint"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSEndpoint.html">EHDSEndpoint</a></td><td style="" class="hierarchy xhtCellBorder0">[C] Endpoint</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
+    <valueCode value="can-be-target"/>
+  </extension>
+  <url value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+  <version value="0.1.0-ci-build"/>
+  <name value="EHDSECGRecording"/>
+  <title value="ECG recording model"/>
+  <status value="draft"/>
+  <date value="2026-11-06T23:02:43+01:00"/>
+  <publisher value="HL7 Europe"/>
+  <contact>
+    <name value="HL7 Europe"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.eu"/>
+    </telecom>
+  </contact>
+  <description value="The waveform and its acquisition metadata, which the Xt-EHR models do not provide. The metadata are always structured; the samples are carried inline (FHIR SampledData, required for short recordings) or by reference to a native object (long recordings). The time of sample i of a channel, from acquisitionStart, is startOffset + skew + i / samplingFrequency."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="150"/>
+      <display value="Europe"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright HL7 Europe. Licensed under creative commons public domain (CC0 1.0)."/>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+  <baseDefinition value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDataSet"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="1.0.0"/>
+    </extension>
+    <element id="EHDSECGRecording">
+      <path value="EHDSECGRecording"/>
+      <short value="ECG recording model"/>
+      <definition value="The waveform and its acquisition metadata, which the Xt-EHR models do not provide. The metadata are always structured; the samples are carried inline (FHIR SampledData, required for short recordings) or by reference to a native object (long recordings). The time of sample i of a channel, from acquisitionStart, is startOffset + skew + i / samplingFrequency."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <constraint>
+        <key value="ecg-id-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-id-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-2"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-2, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-3"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-3, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-4"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-4, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-5"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-5, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-6"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-6, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-7"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-7, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-8"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-8, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-9"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-9, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-10"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-10, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-11"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-11, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-12"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-12, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="EHDSECGRecording.header">
+      <path value="EHDSECGRecording.header"/>
+      <short value="Basic metadata for this information"/>
+      <definition value="Basic metadata for this information"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.header.subject">
+      <path value="EHDSECGRecording.header.subject"/>
+      <short value="Patient/subject information"/>
+      <definition value="Patient/subject information"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.subject"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.header.identifier">
+      <path value="EHDSECGRecording.header.identifier"/>
+      <short value="[C] E.g. DICOM SOP Instance UID, vendor recording id"/>
+      <definition value="Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDataSet.header.identifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.header.author[x]">
+      <path value="EHDSECGRecording.header.author[x]"/>
+      <short value="Author(s) responsible for the provided information."/>
+      <definition value="Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDataSet.header.author[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.header.date">
+      <path value="EHDSECGRecording.header.date"/>
+      <short value="Date and optionally time of authoring/issuing"/>
+      <definition value="Date and optionally time of authoring/issuing"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.date"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.header.status">
+      <path value="EHDSECGRecording.header.status"/>
+      <short value="Status of the resource or document"/>
+      <definition value="Status of the resource or document"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.header.source">
+      <path value="EHDSECGRecording.header.source"/>
+      <short value="Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information."/>
+      <definition value="Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.source"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.header.language">
+      <path value="EHDSECGRecording.header.language"/>
+      <short value="Language in which the resource is written. Language is expressed by the IETF language tag."/>
+      <definition value="Language in which the resource is written. Language is expressed by the IETF language tag."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.language"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="BCP 47"/>
+      </binding>
+    </element>
+    <element id="EHDSECGRecording.recordingKind">
+      <path value="EHDSECGRecording.recordingKind"/>
+      <short value="[C] Recording kind"/>
+      <definition value="rhythm (continuous strip), representative (median) beat, selected episode, reconstructed signal."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.recordingKind"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGRecordingKindVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGRecording.acquisitionStart">
+      <path value="EHDSECGRecording.acquisitionStart"/>
+      <short value="[C] Start of the recording"/>
+      <definition value="Time-zone offset required."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.acquisitionStart"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.duration">
+      <path value="EHDSECGRecording.duration"/>
+      <short value="[C] Duration"/>
+      <definition value="UCUM s."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.duration"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.acquisitionDevice">
+      <path value="EHDSECGRecording.acquisitionDevice"/>
+      <short value="[C] Acquisition device"/>
+      <definition value="Device that acquired this signal, if different from the examination's device."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.acquisitionDevice"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.signalProvenance">
+      <path value="EHDSECGRecording.signalProvenance"/>
+      <short value="[C] How this signal came to exist"/>
+      <definition value="Ordered chain of steps, from the acquisition to this representation (e.g. vendor format -&gt; WFDB -&gt; EHDS)."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGRecording.signalProvenance"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.signalProvenance.origin">
+      <path value="EHDSECGRecording.signalProvenance.origin"/>
+      <short value="[C] Origin"/>
+      <definition value="native-digital, converted-lossless, converted-lossy, losslessness-not-documented, computed-from-recording, reconstructed-from-image, reconstructed-from-reduced-leads, synthetic."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.signalProvenance.origin"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGSignalOriginVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGRecording.signalProvenance.sourceFormat">
+      <path value="EHDSECGRecording.signalProvenance.sourceFormat"/>
+      <short value="[C] Source format"/>
+      <definition value="Format the signal was converted from."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.signalProvenance.sourceFormat"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGFileFormatVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGRecording.signalProvenance.conversionTool">
+      <path value="EHDSECGRecording.signalProvenance.conversionTool"/>
+      <short value="[C] Conversion tool"/>
+      <definition value="Converter, digitiser or signal-processing algorithm, and its version."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.signalProvenance.conversionTool"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.signalProvenance.derivedFrom">
+      <path value="EHDSECGRecording.signalProvenance.derivedFrom"/>
+      <short value="[C] Source recording(s)"/>
+      <definition value="Link to the source recording(s), e.g. the rhythm strip a median beat was computed from."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGRecording.signalProvenance.derivedFrom"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.powerlineFrequency">
+      <path value="EHDSECGRecording.powerlineFrequency"/>
+      <short value="[C] Powerline frequency"/>
+      <definition value="50 or 60 Hz."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.powerlineFrequency"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.display">
+      <path value="EHDSECGRecording.display"/>
+      <short value="[C] Display recommended by the source"/>
+      <definition value="Does not change the samples; the PDF rendering remains the reference display."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.display"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.display.speed">
+      <path value="EHDSECGRecording.display.speed"/>
+      <short value="[C] Paper speed"/>
+      <definition value="UCUM mm/s (DICOM Waveform Data Display Scale)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.display.speed"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.display.gain">
+      <path value="EHDSECGRecording.display.gain"/>
+      <short value="[C] Gain"/>
+      <definition value="UCUM mm/mV, stated only when the displayed channels share the same gain. From DICOM: Absolute Channel Display Scale (003A,0248) divided by Channel Sensitivity (003A,0210)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.display.gain"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.display.layout">
+      <path value="EHDSECGRecording.display.layout"/>
+      <short value="[C] Layout"/>
+      <definition value="3 x 4, 3 x 4 with rhythm strip, 6 x 2, 12 x 1, other."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.display.layout"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGDisplayLayoutVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGRecording.channelGroup">
+      <path value="EHDSECGRecording.channelGroup"/>
+      <short value="[C] Channels sharing one time base"/>
+      <definition value="DICOM multiplex group, aECG sequenceSet."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.label">
+      <path value="EHDSECGRecording.channelGroup.label"/>
+      <short value="[C] Label"/>
+      <definition value="E.g. rhythm, median beat."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.label"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.samplingFrequency">
+      <path value="EHDSECGRecording.channelGroup.samplingFrequency"/>
+      <short value="[C] Sampling frequency"/>
+      <definition value="UCUM Hz; &gt; 0 (ecg-rec-9)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.samplingFrequency"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.numberOfSamples">
+      <path value="EHDSECGRecording.channelGroup.numberOfSamples"/>
+      <short value="[C] Samples per channel"/>
+      <definition value="&gt;= 1. Equals the number of values in each channel's samples.data (ecg-rec-6)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.numberOfSamples"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="integer"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.startOffset">
+      <path value="EHDSECGRecording.channelGroup.startOffset"/>
+      <short value="[C] Offset from acquisitionStart"/>
+      <definition value="UCUM ms; &gt;= 0; absent means 0. Supports non-simultaneous acquisition (e.g. 3 x 4 leads). The group ends within the recording (ecg-rec-2)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.startOffset"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.bitsPerSample">
+      <path value="EHDSECGRecording.channelGroup.bitsPerSample"/>
+      <short value="[C] ADC resolution"/>
+      <definition value="ADC resolution."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.bitsPerSample"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="integer"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.filter">
+      <path value="EHDSECGRecording.channelGroup.filter"/>
+      <short value="[C] Filters applied before storage"/>
+      <definition value="Applied to every channel of the group that does not state its own."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.filter"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.filter.type">
+      <path value="EHDSECGRecording.channelGroup.filter.type"/>
+      <short value="[C] Filter type"/>
+      <definition value="high-pass, low-pass, notch, other."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.filter.type"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGFilterTypeVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.filter.frequency">
+      <path value="EHDSECGRecording.channelGroup.filter.frequency"/>
+      <short value="[C] Cut-off or notch frequency"/>
+      <definition value="UCUM Hz."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.filter.frequency"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.filter.description">
+      <path value="EHDSECGRecording.channelGroup.filter.description"/>
+      <short value="[C] Filter description"/>
+      <definition value="Order, slope, bandwidth, algorithm."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.filter.description"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel">
+      <path value="EHDSECGRecording.channelGroup.channel"/>
+      <short value="[C] One lead"/>
+      <definition value="One lead."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.channel"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.lead">
+      <path value="EHDSECGRecording.channelGroup.channel.lead"/>
+      <short value="[C] Lead"/>
+      <definition value="MDC MDC_ECG_ELEC_POTL_* codes; required within the set it covers, extensible for non-standard leads."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.channel.lead"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.derived">
+      <path value="EHDSECGRecording.channelGroup.channel.derived"/>
+      <short value="[C] Derived lead"/>
+      <definition value="True if computed from other leads (III, aVR, aVL, aVF usually are)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.channel.derived"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.derivation">
+      <path value="EHDSECGRecording.channelGroup.channel.derivation"/>
+      <short value="[C] Derivation"/>
+      <definition value="Formula or method of derivation."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.channel.derivation"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.unit">
+      <path value="EHDSECGRecording.channelGroup.channel.unit"/>
+      <short value="[C] UCUM unit of the physical values"/>
+      <definition value="channel.origin and samples.origin use the same unit (ecg-rec-8)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.channel.unit"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGAmplitudeUnitVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.origin">
+      <path value="EHDSECGRecording.channelGroup.channel.origin"/>
+      <short value="[C] Baseline offset"/>
+      <definition value="In unit. Always present, also when samples are carried by reference."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.channel.origin"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.factor">
+      <path value="EHDSECGRecording.channelGroup.channel.factor"/>
+      <short value="[C] Amplitude resolution"/>
+      <definition value="Multiplier from stored integer to physical value in unit (e.g. 4.88 uV per LSB). Always present."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.channel.factor"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.status">
+      <path value="EHDSECGRecording.channelGroup.channel.status"/>
+      <short value="[C] Channel status"/>
+      <definition value="ok, disconnected, noisy, saturated, lead-reversal-suspected, questionable, invalid, uncalibrated, unzeroed, test-data."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.channel.status"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGChannelStatusVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.skew">
+      <path value="EHDSECGRecording.channelGroup.channel.skew"/>
+      <short value="[C] Channel skew"/>
+      <definition value="Offset of the first sample of this channel from the start of the channel group, UCUM ms (DICOM Channel Time Skew or Channel Sample Skew). 0 = simultaneous; absent = not documented, counted as 0."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.channel.skew"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.filter">
+      <path value="EHDSECGRecording.channelGroup.channel.filter"/>
+      <short value="[C] Channel filters"/>
+      <definition value="Filters of this channel, when they differ from those of the group; they replace channelGroup.filter for this channel."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.channel.filter"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.filter.type">
+      <path value="EHDSECGRecording.channelGroup.channel.filter.type"/>
+      <short value="[C] Filter type"/>
+      <definition value="high-pass, low-pass, notch, other."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.channel.filter.type"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGFilterTypeVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.filter.frequency">
+      <path value="EHDSECGRecording.channelGroup.channel.filter.frequency"/>
+      <short value="[C] Cut-off or notch frequency"/>
+      <definition value="UCUM Hz."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.channel.filter.frequency"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.filter.description">
+      <path value="EHDSECGRecording.channelGroup.channel.filter.description"/>
+      <short value="[C] Filter description"/>
+      <definition value="Order, slope, bandwidth, algorithm."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.channel.filter.description"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.samples">
+      <path value="EHDSECGRecording.channelGroup.channel.samples"/>
+      <short value="[C] Inline samples"/>
+      <definition value="FHIR R5 SampledData. Required for short recordings (ecg-rec-3). data present with numberOfSamples values; dimensions = 1; interval equals 1 / samplingFrequency; origin and factor equal the channel's (ecg-rec-4 to ecg-rec-7)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.channelGroup.channel.samples"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="SampledData"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.nativeObject">
+      <path value="EHDSECGRecording.nativeObject"/>
+      <short value="[C] Original object in its native format"/>
+      <definition value="Optional, in addition to the inline samples for short recordings; the way to carry the samples of long recordings."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGRecording.nativeObject"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.nativeObject.format">
+      <path value="EHDSECGRecording.nativeObject.format"/>
+      <short value="[C] Format"/>
+      <definition value="The object must be retrievable (ecg-rec-10)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.nativeObject.format"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGFileFormatVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGRecording.nativeObject.file">
+      <path value="EHDSECGRecording.nativeObject.file"/>
+      <short value="[C] File(s) making up the object"/>
+      <definition value="E.g. WFDB .hea + .dat."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGRecording.nativeObject.file"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.nativeObject.file.attachment">
+      <path value="EHDSECGRecording.nativeObject.file.attachment"/>
+      <short value="[C] The file or its URL"/>
+      <definition value="The file itself or its URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.nativeObject.file.attachment"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.nativeObject.file.contentHash">
+      <path value="EHDSECGRecording.nativeObject.file.contentHash"/>
+      <short value="[C] SHA-256 of the file"/>
+      <definition value="SHA-256 of the file."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.nativeObject.file.contentHash"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.nativeObject.imagingStudy">
+      <path value="EHDSECGRecording.nativeObject.imagingStudy"/>
+      <short value="[C] DICOM study holding the ECG"/>
+      <definition value="12-Lead ECG, General ECG, General 32-bit ECG or Ambulatory ECG SOP instance, retrievable through the imaging infrastructure (IHE MADO)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.nativeObject.imagingStudy"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSImagingStudy"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.nativeObject.endpoint">
+      <path value="EHDSECGRecording.nativeObject.endpoint"/>
+      <short value="[C] Endpoint"/>
+      <definition value="Where the object can be retrieved, e.g. for long-term recordings."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGRecording.nativeObject.endpoint"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSEndpoint"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="EHDSECGRecording">
+      <path value="EHDSECGRecording"/>
+      <short value="ECG recording model"/>
+      <definition value="The waveform and its acquisition metadata, which the Xt-EHR models do not provide. The metadata are always structured; the samples are carried inline (FHIR SampledData, required for short recordings) or by reference to a native object (long recordings). The time of sample i of a channel, from acquisitionStart, is startOffset + skew + i / samplingFrequency."/>
+      <constraint>
+        <key value="ecg-id-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-id-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-2"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-2, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-3"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-3, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-4"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-4, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-5"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-5, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-6"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-6, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-7"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-7, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-8"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-8, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-9"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-9, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-10"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-10, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-11"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-11, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rec-12"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rec-12, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"/>
+      </constraint>
+    </element>
+    <element id="EHDSECGRecording.header.identifier">
+      <path value="EHDSECGRecording.header.identifier"/>
+      <short value="[C] E.g. DICOM SOP Instance UID, vendor recording id"/>
+      <min value="1"/>
+    </element>
+    <element id="EHDSECGRecording.recordingKind">
+      <path value="EHDSECGRecording.recordingKind"/>
+      <short value="[C] Recording kind"/>
+      <definition value="rhythm (continuous strip), representative (median) beat, selected episode, reconstructed signal."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGRecordingKindVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGRecording.acquisitionStart">
+      <path value="EHDSECGRecording.acquisitionStart"/>
+      <short value="[C] Start of the recording"/>
+      <definition value="Time-zone offset required."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.duration">
+      <path value="EHDSECGRecording.duration"/>
+      <short value="[C] Duration"/>
+      <definition value="UCUM s."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.acquisitionDevice">
+      <path value="EHDSECGRecording.acquisitionDevice"/>
+      <short value="[C] Acquisition device"/>
+      <definition value="Device that acquired this signal, if different from the examination's device."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.signalProvenance">
+      <path value="EHDSECGRecording.signalProvenance"/>
+      <short value="[C] How this signal came to exist"/>
+      <definition value="Ordered chain of steps, from the acquisition to this representation (e.g. vendor format -&gt; WFDB -&gt; EHDS)."/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.signalProvenance.origin">
+      <path value="EHDSECGRecording.signalProvenance.origin"/>
+      <short value="[C] Origin"/>
+      <definition value="native-digital, converted-lossless, converted-lossy, losslessness-not-documented, computed-from-recording, reconstructed-from-image, reconstructed-from-reduced-leads, synthetic."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGSignalOriginVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGRecording.signalProvenance.sourceFormat">
+      <path value="EHDSECGRecording.signalProvenance.sourceFormat"/>
+      <short value="[C] Source format"/>
+      <definition value="Format the signal was converted from."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGFileFormatVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGRecording.signalProvenance.conversionTool">
+      <path value="EHDSECGRecording.signalProvenance.conversionTool"/>
+      <short value="[C] Conversion tool"/>
+      <definition value="Converter, digitiser or signal-processing algorithm, and its version."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.signalProvenance.derivedFrom">
+      <path value="EHDSECGRecording.signalProvenance.derivedFrom"/>
+      <short value="[C] Source recording(s)"/>
+      <definition value="Link to the source recording(s), e.g. the rhythm strip a median beat was computed from."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.powerlineFrequency">
+      <path value="EHDSECGRecording.powerlineFrequency"/>
+      <short value="[C] Powerline frequency"/>
+      <definition value="50 or 60 Hz."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.display">
+      <path value="EHDSECGRecording.display"/>
+      <short value="[C] Display recommended by the source"/>
+      <definition value="Does not change the samples; the PDF rendering remains the reference display."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.display.speed">
+      <path value="EHDSECGRecording.display.speed"/>
+      <short value="[C] Paper speed"/>
+      <definition value="UCUM mm/s (DICOM Waveform Data Display Scale)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.display.gain">
+      <path value="EHDSECGRecording.display.gain"/>
+      <short value="[C] Gain"/>
+      <definition value="UCUM mm/mV, stated only when the displayed channels share the same gain. From DICOM: Absolute Channel Display Scale (003A,0248) divided by Channel Sensitivity (003A,0210)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.display.layout">
+      <path value="EHDSECGRecording.display.layout"/>
+      <short value="[C] Layout"/>
+      <definition value="3 x 4, 3 x 4 with rhythm strip, 6 x 2, 12 x 1, other."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGDisplayLayoutVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGRecording.channelGroup">
+      <path value="EHDSECGRecording.channelGroup"/>
+      <short value="[C] Channels sharing one time base"/>
+      <definition value="DICOM multiplex group, aECG sequenceSet."/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.label">
+      <path value="EHDSECGRecording.channelGroup.label"/>
+      <short value="[C] Label"/>
+      <definition value="E.g. rhythm, median beat."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.samplingFrequency">
+      <path value="EHDSECGRecording.channelGroup.samplingFrequency"/>
+      <short value="[C] Sampling frequency"/>
+      <definition value="UCUM Hz; &gt; 0 (ecg-rec-9)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.numberOfSamples">
+      <path value="EHDSECGRecording.channelGroup.numberOfSamples"/>
+      <short value="[C] Samples per channel"/>
+      <definition value="&gt;= 1. Equals the number of values in each channel's samples.data (ecg-rec-6)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="integer"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.startOffset">
+      <path value="EHDSECGRecording.channelGroup.startOffset"/>
+      <short value="[C] Offset from acquisitionStart"/>
+      <definition value="UCUM ms; &gt;= 0; absent means 0. Supports non-simultaneous acquisition (e.g. 3 x 4 leads). The group ends within the recording (ecg-rec-2)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.bitsPerSample">
+      <path value="EHDSECGRecording.channelGroup.bitsPerSample"/>
+      <short value="[C] ADC resolution"/>
+      <definition value="ADC resolution."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="integer"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.filter">
+      <path value="EHDSECGRecording.channelGroup.filter"/>
+      <short value="[C] Filters applied before storage"/>
+      <definition value="Applied to every channel of the group that does not state its own."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.filter.type">
+      <path value="EHDSECGRecording.channelGroup.filter.type"/>
+      <short value="[C] Filter type"/>
+      <definition value="high-pass, low-pass, notch, other."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGFilterTypeVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.filter.frequency">
+      <path value="EHDSECGRecording.channelGroup.filter.frequency"/>
+      <short value="[C] Cut-off or notch frequency"/>
+      <definition value="UCUM Hz."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.filter.description">
+      <path value="EHDSECGRecording.channelGroup.filter.description"/>
+      <short value="[C] Filter description"/>
+      <definition value="Order, slope, bandwidth, algorithm."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel">
+      <path value="EHDSECGRecording.channelGroup.channel"/>
+      <short value="[C] One lead"/>
+      <definition value="One lead."/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.lead">
+      <path value="EHDSECGRecording.channelGroup.channel.lead"/>
+      <short value="[C] Lead"/>
+      <definition value="MDC MDC_ECG_ELEC_POTL_* codes; required within the set it covers, extensible for non-standard leads."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.derived">
+      <path value="EHDSECGRecording.channelGroup.channel.derived"/>
+      <short value="[C] Derived lead"/>
+      <definition value="True if computed from other leads (III, aVR, aVL, aVF usually are)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.derivation">
+      <path value="EHDSECGRecording.channelGroup.channel.derivation"/>
+      <short value="[C] Derivation"/>
+      <definition value="Formula or method of derivation."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.unit">
+      <path value="EHDSECGRecording.channelGroup.channel.unit"/>
+      <short value="[C] UCUM unit of the physical values"/>
+      <definition value="channel.origin and samples.origin use the same unit (ecg-rec-8)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGAmplitudeUnitVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.origin">
+      <path value="EHDSECGRecording.channelGroup.channel.origin"/>
+      <short value="[C] Baseline offset"/>
+      <definition value="In unit. Always present, also when samples are carried by reference."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.factor">
+      <path value="EHDSECGRecording.channelGroup.channel.factor"/>
+      <short value="[C] Amplitude resolution"/>
+      <definition value="Multiplier from stored integer to physical value in unit (e.g. 4.88 uV per LSB). Always present."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.status">
+      <path value="EHDSECGRecording.channelGroup.channel.status"/>
+      <short value="[C] Channel status"/>
+      <definition value="ok, disconnected, noisy, saturated, lead-reversal-suspected, questionable, invalid, uncalibrated, unzeroed, test-data."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGChannelStatusVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.skew">
+      <path value="EHDSECGRecording.channelGroup.channel.skew"/>
+      <short value="[C] Channel skew"/>
+      <definition value="Offset of the first sample of this channel from the start of the channel group, UCUM ms (DICOM Channel Time Skew or Channel Sample Skew). 0 = simultaneous; absent = not documented, counted as 0."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.filter">
+      <path value="EHDSECGRecording.channelGroup.channel.filter"/>
+      <short value="[C] Channel filters"/>
+      <definition value="Filters of this channel, when they differ from those of the group; they replace channelGroup.filter for this channel."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.filter.type">
+      <path value="EHDSECGRecording.channelGroup.channel.filter.type"/>
+      <short value="[C] Filter type"/>
+      <definition value="high-pass, low-pass, notch, other."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGFilterTypeVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.filter.frequency">
+      <path value="EHDSECGRecording.channelGroup.channel.filter.frequency"/>
+      <short value="[C] Cut-off or notch frequency"/>
+      <definition value="UCUM Hz."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.filter.description">
+      <path value="EHDSECGRecording.channelGroup.channel.filter.description"/>
+      <short value="[C] Filter description"/>
+      <definition value="Order, slope, bandwidth, algorithm."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.channelGroup.channel.samples">
+      <path value="EHDSECGRecording.channelGroup.channel.samples"/>
+      <short value="[C] Inline samples"/>
+      <definition value="FHIR R5 SampledData. Required for short recordings (ecg-rec-3). data present with numberOfSamples values; dimensions = 1; interval equals 1 / samplingFrequency; origin and factor equal the channel's (ecg-rec-4 to ecg-rec-7)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="SampledData"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.nativeObject">
+      <path value="EHDSECGRecording.nativeObject"/>
+      <short value="[C] Original object in its native format"/>
+      <definition value="Optional, in addition to the inline samples for short recordings; the way to carry the samples of long recordings."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.nativeObject.format">
+      <path value="EHDSECGRecording.nativeObject.format"/>
+      <short value="[C] Format"/>
+      <definition value="The object must be retrievable (ecg-rec-10)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGFileFormatVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGRecording.nativeObject.file">
+      <path value="EHDSECGRecording.nativeObject.file"/>
+      <short value="[C] File(s) making up the object"/>
+      <definition value="E.g. WFDB .hea + .dat."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.nativeObject.file.attachment">
+      <path value="EHDSECGRecording.nativeObject.file.attachment"/>
+      <short value="[C] The file or its URL"/>
+      <definition value="The file itself or its URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.nativeObject.file.contentHash">
+      <path value="EHDSECGRecording.nativeObject.file.contentHash"/>
+      <short value="[C] SHA-256 of the file"/>
+      <definition value="SHA-256 of the file."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.nativeObject.imagingStudy">
+      <path value="EHDSECGRecording.nativeObject.imagingStudy"/>
+      <short value="[C] DICOM study holding the ECG"/>
+      <definition value="12-Lead ECG, General ECG, General 32-bit ECG or Ambulatory ECG SOP instance, retrievable through the imaging infrastructure (IHE MADO)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSImagingStudy"/>
+      </type>
+    </element>
+    <element id="EHDSECGRecording.nativeObject.endpoint">
+      <path value="EHDSECGRecording.nativeObject.endpoint"/>
+      <short value="[C] Endpoint"/>
+      <definition value="Where the object can be retrieved, e.g. for long-term recordings."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSEndpoint"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

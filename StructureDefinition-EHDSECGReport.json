@@ -1,0 +1,1286 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "EHDSECGReport",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition EHDSECGReport</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder0\"><tr class=\"xhtRowBorder1\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th scope=\"col\" style=\"; width: 100px\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport\" title=\"The exchangeable unit for the EHDS priority category medical test results (Regulation (EU) 2025/327, art. 14(1)(e)). Sibling of EHDSLaboratoryReport.\">EHDSECGReport</a><a name=\"EHDSECGReport\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/conformance-rules.html#constraints\" title=\"This element has or is affected by constraints ( ecg-rep-1, ecg-rep-2, ecg-rep-3, ecg-rep-4 )\" class=\"xhtConstraintStyle\">C</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDocument.html\">EHDSDocument</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">ECG report model<br/><br/>Elements defined in Ancestors:<a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDataSet.html\" title=\"Basic metadata for this information\">header</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDocument.html\">header</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDocument.html\" title=\"A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document\">presentedForm</a><br/><span class=\"xhtPieceBold\">Instances of this type can be the target of a Reference</span><br class=\"constraint\"/><span class=\"constraint\">Constraints: </span><span title=\"TODO: placeholder for invariant ecg-rep-1, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rep-1</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-rep-2, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rep-2</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-rep-3, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rep-3</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-rep-4, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rep-4</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.header\">header</a><a name=\"EHDSECGReport.header\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.header.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.header.documentType\">documentType</a><a name=\"EHDSECGReport.header.documentType\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">1</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\" class=\"xhtPieceDeEmphasized\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Type of ECG document. Preferred: LOINC 11524-6 EKG study; 98857-6 for stress tests. Final binding open<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGDocumentTypeVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGDocumentTypeVS\" class=\"binding\">ECG Document Type (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\" class=\"binding\">preferred</a><span class=\"binding\">)</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.header.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.header.eventType\">eventType</a><a name=\"EHDSECGReport.header.eventType\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\" class=\"xhtPieceDeEmphasized\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Examination kind(s) covered, for search<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGExaminationKindVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGExaminationKindVS\" class=\"binding\">ECG Examination Kind (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.presentedForm\">presentedForm</a><a name=\"EHDSECGReport.presentedForm\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..<span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSAttachment.html\" class=\"xhtPieceDeEmphasized\">EHDSAttachment</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Human-readable rendering of the full report including the tracing (PDF/A recommended). Each rendering carries its content, as data or a URL (ecg-rep-4)</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body\" title=\"Structured content of the ECG report.\">body</a><a name=\"EHDSECGReport.body\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Structured content</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck111.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.orderInformation\" title=\"Same structure as EHDSLaboratoryReport.body.orderInformation.\">orderInformation</a><a name=\"EHDSECGReport.body.orderInformation\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Order information<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.orderInformation.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.orderInformation.orderId\" title=\"Identifier of the order.\">orderId</a><a name=\"EHDSECGReport.body.orderInformation.orderId\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Order identifier<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.orderInformation.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.orderInformation.orderDateAndTime\" title=\"Date and time of the order.\">orderDateAndTime</a><a name=\"EHDSECGReport.body.orderInformation.orderDateAndTime\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Order date and time</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1111.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_choice.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Choice of Types\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.orderInformation.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.orderInformation.orderPlacer[x]\" title=\"Who placed the order.\">orderPlacer[x]</a><a name=\"EHDSECGReport.body.orderInformation.orderPlacer_x_\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">Order placer</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck11110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.orderInformation.orderPlacer[x].</span><span title=\"Model for information about a health professional.\">orderPlacerEHDSHealthProfessional</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSHealthProfessional.html\">EHDSHealthProfessional</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.orderInformation.orderPlacer[x].</span><span title=\"Model for information about an organisation\">orderPlacerEHDSOrganisation</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSOrganisation.html\">EHDSOrganisation</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1111.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_choice.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Choice of Types\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.orderInformation.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.orderInformation.orderReason[x]\" title=\"Reason for the order.\">orderReason[x]</a><a name=\"EHDSECGReport.body.orderInformation.orderReason_x_\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">Order reason<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.orderInformation.orderReason[x].</span><span title=\"Model for a clinical condition, problem, diagnosis, or other event, situation, or issue that has risen to a level of concern.\">orderReasonEHDSCondition</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSCondition.html\">EHDSCondition</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck11100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.orderInformation.orderReason[x].</span><span title=\"Base StructureDefinition for CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.\">orderReasonCodeableConcept</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.orderInformation.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.orderInformation.clinicalQuestion\" title=\"Clinical question of the requester.\">clinicalQuestion</a><a name=\"EHDSECGReport.body.orderInformation.clinicalQuestion\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Clinical question</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck111.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.supportingInformation\" title=\"Clinical context relevant to the interpretation of the ECG.\">supportingInformation</a><a name=\"EHDSECGReport.body.supportingInformation\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Clinical context relevant to interpretation</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1111.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_choice.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Choice of Types\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.supportingInformation.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.supportingInformation.symptom[x]\" title=\"Palpitations, chest pain, syncope...\">symptom[x]</a><a name=\"EHDSECGReport.body.supportingInformation.symptom_x_\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Symptoms at the time of recording<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck11110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.supportingInformation.symptom[x].</span><span title=\"Model for information about an oservation and its results.\">symptomEHDSObservation</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html\">EHDSObservation</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.supportingInformation.symptom[x].</span><span title=\"Base StructureDefinition for CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.\">symptomCodeableConcept</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.supportingInformation.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.supportingInformation.condition\" title=\"Relevant conditions.\">condition</a><a name=\"EHDSECGReport.body.supportingInformation.condition\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSCondition.html\">EHDSCondition</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Relevant conditions<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1111.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_choice.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Choice of Types\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.supportingInformation.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.supportingInformation.medication[x]\" title=\"Antiarrhythmics, QT-prolonging drugs, digoxin. ATC allowed.\">medication[x]</a><a name=\"EHDSECGReport.body.supportingInformation.medication_x_\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Medications affecting the ECG<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck11110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.supportingInformation.medication[x].</span><span title=\"The model covers details about single medication administrations within the scope of imaging and laboratory procedures.\">medicationEHDSMedicationAdministration</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSMedicationAdministration.html\">EHDSMedicationAdministration</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.supportingInformation.medication[x].</span><span title=\"Base StructureDefinition for CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.\">medicationCodeableConcept</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.supportingInformation.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.supportingInformation.implantedDevice\" title=\"Pacemaker, ICD, CRT, ILR.\">implantedDevice</a><a name=\"EHDSECGReport.body.supportingInformation.implantedDevice\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html\">EHDSDevice</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Implanted cardiac device<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.supportingInformation.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.supportingInformation.pacingMode\" title=\"NBG/NASPE-BPEG code, e.g. DDD.\">pacingMode</a><a name=\"EHDSECGReport.body.supportingInformation.pacingMode\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Programmed pacing mode</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.supportingInformation.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.supportingInformation.vitalSign\" title=\"Height, weight, blood pressure at the time of recording.\">vitalSign</a><a name=\"EHDSECGReport.body.supportingInformation.vitalSign\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html\">EHDSObservation</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Vital signs at the time of recording<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.supportingInformation.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.supportingInformation.sexForClinicalUse\" title=\"As in EHDSLaboratoryReport (sex-specific reference ranges, e.g. QTc).\">sexForClinicalUse</a><a name=\"EHDSECGReport.body.supportingInformation.sexForClinicalUse\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Sex for clinical use</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.supportingInformation.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.supportingInformation.other\" title=\"Any other supporting information.\">other</a><a name=\"EHDSECGReport.body.supportingInformation.other\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Resource</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[A] Other supporting information<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.examination\" title=\"The ECG examination(s) reported.\">examination</a><a name=\"EHDSECGReport.body.examination\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSECGExamination.html\">EHDSECGExamination</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] ECG examination(s) reported<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck101.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.conclusion\" title=\"Report-level conclusion.\">conclusion</a><a name=\"EHDSECGReport.body.conclusion\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Report-level conclusion</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1010.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.conclusion.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.conclusion.text\" title=\"Narrative conclusion as signed by the reporting physician (or as produced by the device if unconfirmed).\">text</a><a name=\"EHDSECGReport.body.conclusion.text\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Narrative conclusion</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1010.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.conclusion.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.conclusion.overall\" title=\"normal, otherwise normal, borderline, abnormal, non-diagnostic.\">overall</a><a name=\"EHDSECGReport.body.conclusion.overall\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Overall conclusion<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGOverallConclusionVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGOverallConclusionVS\" class=\"binding\">ECG Overall Conclusion (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1010.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.conclusion.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.conclusion.finding\" title=\"Coded diagnostic statements.\">finding</a><a name=\"EHDSECGReport.body.conclusion.finding\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Coded diagnostic statements<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGFindingVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGFindingVS\" class=\"binding\">ECG Finding (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span><br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1011.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.conclusion.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.conclusion.comparisonWithPrior\" title=\"Comparison with a previous ECG.\">comparisonWithPrior</a><a name=\"EHDSECGReport.body.conclusion.comparisonWithPrior\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Comparison with a previous ECG</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.conclusion.comparisonWithPrior.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.conclusion.comparisonWithPrior.prior\" title=\"Identifier of the previous examination. Always an external link.\">prior</a><a name=\"EHDSECGReport.body.conclusion.comparisonWithPrior.prior\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Previous examination (link)</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10101.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_choice.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Choice of Types\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.conclusion.comparisonWithPrior.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.conclusion.comparisonWithPrior.change[x]\" title=\"unchanged, changed (+ description).\">change[x]</a><a name=\"EHDSECGReport.body.conclusion.comparisonWithPrior.change_x_\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Change</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck101010.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.conclusion.comparisonWithPrior.change[x].</span><span title=\"Base StructureDefinition for CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.\">changeCodeableConcept</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck101000.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.conclusion.comparisonWithPrior.change[x].</span><span title=\"Base StructureDefinition for string Type: A sequence of Unicode characters\">changeString</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1000.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.body.conclusion.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.body.conclusion.recommendation\" title=\"Recommendations (further tests, follow-up).\">recommendation</a><a name=\"EHDSECGReport.body.conclusion.recommendation\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Recommendations</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck00.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGReport.</span><a href=\"StructureDefinition-EHDSECGReport-definitions.html#EHDSECGReport.attachments\" title=\"Other attached documents.\">attachments</a><a name=\"EHDSECGReport.attachments\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSAttachment.html\">EHDSAttachment</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Other attached documents<br/></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+    "valueCode" : "can-be-target"
+  }],
+  "url" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGReport",
+  "version" : "0.1.0-ci-build",
+  "name" : "EHDSECGReport",
+  "title" : "ECG report model",
+  "status" : "draft",
+  "date" : "2026-11-06T23:02:43+01:00",
+  "publisher" : "HL7 Europe",
+  "contact" : [{
+    "name" : "HL7 Europe",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.eu"
+    }]
+  }],
+  "description" : "The exchangeable unit for the EHDS priority category medical test results (Regulation (EU) 2025/327, art. 14(1)(e)). Sibling of EHDSLaboratoryReport.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "150",
+      "display" : "Europe"
+    }]
+  }],
+  "copyright" : "Copyright HL7 Europe. Licensed under creative commons public domain (CC0 1.0).",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGReport",
+  "baseDefinition" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDocument",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "1.0.0"
+    }],
+    "element" : [{
+      "id" : "EHDSECGReport",
+      "path" : "EHDSECGReport",
+      "short" : "ECG report model",
+      "definition" : "The exchangeable unit for the EHDS priority category medical test results (Regulation (EU) 2025/327, art. 14(1)(e)). Sibling of EHDSLaboratoryReport.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "constraint" : [{
+        "key" : "ecg-rep-1",
+        "severity" : "warning",
+        "human" : "TODO: placeholder for invariant ecg-rep-1, to be defined.",
+        "expression" : "true",
+        "source" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGReport"
+      },
+      {
+        "key" : "ecg-rep-2",
+        "severity" : "warning",
+        "human" : "TODO: placeholder for invariant ecg-rep-2, to be defined.",
+        "expression" : "true",
+        "source" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGReport"
+      },
+      {
+        "key" : "ecg-rep-3",
+        "severity" : "warning",
+        "human" : "TODO: placeholder for invariant ecg-rep-3, to be defined.",
+        "expression" : "true",
+        "source" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGReport"
+      },
+      {
+        "key" : "ecg-rep-4",
+        "severity" : "warning",
+        "human" : "TODO: placeholder for invariant ecg-rep-4, to be defined.",
+        "expression" : "true",
+        "source" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGReport"
+      }],
+      "isModifier" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.header",
+      "path" : "EHDSECGReport.header",
+      "short" : "Document header",
+      "definition" : "Basic metadata for this information",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDataSet.header",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.header.subject",
+      "path" : "EHDSECGReport.header.subject",
+      "short" : "Patient/subject information",
+      "definition" : "Patient/subject information",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDataSet.header.subject",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSPatient"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.header.identifier",
+      "path" : "EHDSECGReport.header.identifier",
+      "short" : "Unique identifier of the document",
+      "definition" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).",
+      "min" : 1,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDataSet.header.identifier",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.header.author[x]",
+      "path" : "EHDSECGReport.header.author[x]",
+      "short" : "Author(s) of the document",
+      "definition" : "Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models.",
+      "min" : 1,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDataSet.header.author[x]",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
+      },
+      {
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"
+      },
+      {
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.header.date",
+      "path" : "EHDSECGReport.header.date",
+      "short" : "Date of finalising/issuing the document",
+      "definition" : "Date and optionally time of authoring/issuing",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDataSet.header.date",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.header.status",
+      "path" : "EHDSECGReport.header.status",
+      "short" : "Status of the document",
+      "definition" : "Status of the resource or document",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDataSet.header.status",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.header.source",
+      "path" : "EHDSECGReport.header.source",
+      "short" : "Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information.",
+      "definition" : "Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information.",
+      "min" : 0,
+      "max" : "0",
+      "base" : {
+        "path" : "EHDSDataSet.header.source",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.header.language",
+      "path" : "EHDSECGReport.header.language",
+      "short" : "Language in which the resource is written. Language is expressed by the IETF language tag.",
+      "definition" : "Language in which the resource is written. Language is expressed by the IETF language tag.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDataSet.header.language",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "description" : "BCP 47"
+      }
+    },
+    {
+      "id" : "EHDSECGReport.header.documentType",
+      "path" : "EHDSECGReport.header.documentType",
+      "short" : "[C] Type of ECG document. Preferred: LOINC 11524-6 EKG study; 98857-6 for stress tests. Final binding open",
+      "definition" : "Type of document at hand, e.g. 60591-5 Patient summary document.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDocument.header.documentType",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "http://hl7.eu/fhir/ecg/ValueSet/ECGDocumentTypeVS"
+      }
+    },
+    {
+      "id" : "EHDSECGReport.header.documentTitle",
+      "path" : "EHDSECGReport.header.documentTitle",
+      "short" : "Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: 'Laboratory Result Report', 'Patient Summary of Jane Green 10.12.2024'",
+      "definition" : "Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: 'Laboratory Result Report', 'Patient Summary of Jane Green 10.12.2024'",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDocument.header.documentTitle",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.header.period",
+      "path" : "EHDSECGReport.header.period",
+      "short" : "Time of service that is being documented",
+      "definition" : "Time of service that is being documented",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDocument.header.period",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Period"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.header.version",
+      "path" : "EHDSECGReport.header.version",
+      "short" : "Business version of the document. The exact algorithm for versioning is decided by the producer/custodian",
+      "definition" : "Business version of the document. The exact algorithm for versioning is decided by the producer/custodian",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDocument.header.version",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.header.attestation",
+      "path" : "EHDSECGReport.header.attestation",
+      "short" : "Document attestation details",
+      "definition" : "Document attestation details",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDocument.header.attestation",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.header.attestation.attester[x]",
+      "path" : "EHDSECGReport.header.attestation.attester[x]",
+      "short" : "Attester who validated the document",
+      "definition" : "Attester who validated the document",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDocument.header.attestation.attester[x]",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
+      },
+      {
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.header.attestation.datetime",
+      "path" : "EHDSECGReport.header.attestation.datetime",
+      "short" : "Date and time of the approval of the document by Attester",
+      "definition" : "Date and time of the approval of the document by Attester",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDocument.header.attestation.datetime",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.header.legalAuthentication",
+      "path" : "EHDSECGReport.header.legalAuthentication",
+      "short" : "Document legal authentication details",
+      "definition" : "Document legal authentication details",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDocument.header.legalAuthentication",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.header.legalAuthentication.legalAuthenticator[x]",
+      "path" : "EHDSECGReport.header.legalAuthentication.legalAuthenticator[x]",
+      "short" : "The person or organisation taking responsibility for the content of the document.",
+      "definition" : "The person or organisation taking responsibility for the content of the document.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDocument.header.legalAuthentication.legalAuthenticator[x]",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
+      },
+      {
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.header.legalAuthentication.datetime",
+      "path" : "EHDSECGReport.header.legalAuthentication.datetime",
+      "short" : "Date and time when the document was authorised",
+      "definition" : "Date and time when the document was authorised",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDocument.header.legalAuthentication.datetime",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.header.eventType",
+      "path" : "EHDSECGReport.header.eventType",
+      "short" : "[C] Examination kind(s) covered, for search",
+      "definition" : "Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDocument.header.eventType",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.eu/fhir/ecg/ValueSet/ECGExaminationKindVS"
+      }
+    },
+    {
+      "id" : "EHDSECGReport.header.serviceSpecialty",
+      "path" : "EHDSECGReport.header.serviceSpecialty",
+      "short" : "Additional details about where the content was created (e.g. clinical specialty)",
+      "definition" : "Additional details about where the content was created (e.g. clinical specialty)",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDocument.header.serviceSpecialty",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "description" : "SNOMED CT"
+      }
+    },
+    {
+      "id" : "EHDSECGReport.header.custodian",
+      "path" : "EHDSECGReport.header.custodian",
+      "short" : "Organisation that is in charge of maintaining the document/report.",
+      "definition" : "Organisation that is in charge of maintaining the document/report.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDocument.header.custodian",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.presentedForm",
+      "path" : "EHDSECGReport.presentedForm",
+      "short" : "[C] Human-readable rendering of the full report including the tracing (PDF/A recommended). Each rendering carries its content, as data or a URL (ecg-rep-4)",
+      "definition" : "A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document",
+      "min" : 1,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDocument.presentedForm",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body",
+      "path" : "EHDSECGReport.body",
+      "short" : "[C] Structured content",
+      "definition" : "Structured content of the ECG report.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSECGReport.body",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.orderInformation",
+      "path" : "EHDSECGReport.body.orderInformation",
+      "short" : "[C] Order information",
+      "definition" : "Same structure as EHDSLaboratoryReport.body.orderInformation.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSECGReport.body.orderInformation",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.orderInformation.orderId",
+      "path" : "EHDSECGReport.body.orderInformation.orderId",
+      "short" : "Order identifier",
+      "definition" : "Identifier of the order.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSECGReport.body.orderInformation.orderId",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.orderInformation.orderDateAndTime",
+      "path" : "EHDSECGReport.body.orderInformation.orderDateAndTime",
+      "short" : "Order date and time",
+      "definition" : "Date and time of the order.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSECGReport.body.orderInformation.orderDateAndTime",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.orderInformation.orderPlacer[x]",
+      "path" : "EHDSECGReport.body.orderInformation.orderPlacer[x]",
+      "short" : "Order placer",
+      "definition" : "Who placed the order.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSECGReport.body.orderInformation.orderPlacer[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
+      },
+      {
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.orderInformation.orderReason[x]",
+      "path" : "EHDSECGReport.body.orderInformation.orderReason[x]",
+      "short" : "Order reason",
+      "definition" : "Reason for the order.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSECGReport.body.orderInformation.orderReason[x]",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSCondition"
+      },
+      {
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.orderInformation.clinicalQuestion",
+      "path" : "EHDSECGReport.body.orderInformation.clinicalQuestion",
+      "short" : "Clinical question",
+      "definition" : "Clinical question of the requester.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSECGReport.body.orderInformation.clinicalQuestion",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.supportingInformation",
+      "path" : "EHDSECGReport.body.supportingInformation",
+      "short" : "[C] Clinical context relevant to interpretation",
+      "definition" : "Clinical context relevant to the interpretation of the ECG.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSECGReport.body.supportingInformation",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.supportingInformation.symptom[x]",
+      "path" : "EHDSECGReport.body.supportingInformation.symptom[x]",
+      "short" : "[C] Symptoms at the time of recording",
+      "definition" : "Palpitations, chest pain, syncope...",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSECGReport.body.supportingInformation.symptom[x]",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSObservation"
+      },
+      {
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.supportingInformation.condition",
+      "path" : "EHDSECGReport.body.supportingInformation.condition",
+      "short" : "[C] Relevant conditions",
+      "definition" : "Relevant conditions.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSECGReport.body.supportingInformation.condition",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSCondition"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.supportingInformation.medication[x]",
+      "path" : "EHDSECGReport.body.supportingInformation.medication[x]",
+      "short" : "[C] Medications affecting the ECG",
+      "definition" : "Antiarrhythmics, QT-prolonging drugs, digoxin. ATC allowed.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSECGReport.body.supportingInformation.medication[x]",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration"
+      },
+      {
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.supportingInformation.implantedDevice",
+      "path" : "EHDSECGReport.body.supportingInformation.implantedDevice",
+      "short" : "[C] Implanted cardiac device",
+      "definition" : "Pacemaker, ICD, CRT, ILR.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSECGReport.body.supportingInformation.implantedDevice",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.supportingInformation.pacingMode",
+      "path" : "EHDSECGReport.body.supportingInformation.pacingMode",
+      "short" : "[C] Programmed pacing mode",
+      "definition" : "NBG/NASPE-BPEG code, e.g. DDD.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSECGReport.body.supportingInformation.pacingMode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.supportingInformation.vitalSign",
+      "path" : "EHDSECGReport.body.supportingInformation.vitalSign",
+      "short" : "[C] Vital signs at the time of recording",
+      "definition" : "Height, weight, blood pressure at the time of recording.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSECGReport.body.supportingInformation.vitalSign",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSObservation"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.supportingInformation.sexForClinicalUse",
+      "path" : "EHDSECGReport.body.supportingInformation.sexForClinicalUse",
+      "short" : "[C] Sex for clinical use",
+      "definition" : "As in EHDSLaboratoryReport (sex-specific reference ranges, e.g. QTc).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSECGReport.body.supportingInformation.sexForClinicalUse",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.supportingInformation.other",
+      "path" : "EHDSECGReport.body.supportingInformation.other",
+      "short" : "[A] Other supporting information",
+      "definition" : "Any other supporting information.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSECGReport.body.supportingInformation.other",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Resource"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.examination",
+      "path" : "EHDSECGReport.body.examination",
+      "short" : "[C] ECG examination(s) reported",
+      "definition" : "The ECG examination(s) reported.",
+      "min" : 1,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSECGReport.body.examination",
+        "min" : 1,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.conclusion",
+      "path" : "EHDSECGReport.body.conclusion",
+      "short" : "[C] Report-level conclusion",
+      "definition" : "Report-level conclusion.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSECGReport.body.conclusion",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.conclusion.text",
+      "path" : "EHDSECGReport.body.conclusion.text",
+      "short" : "[C] Narrative conclusion",
+      "definition" : "Narrative conclusion as signed by the reporting physician (or as produced by the device if unconfirmed).",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSECGReport.body.conclusion.text",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.conclusion.overall",
+      "path" : "EHDSECGReport.body.conclusion.overall",
+      "short" : "[C] Overall conclusion",
+      "definition" : "normal, otherwise normal, borderline, abnormal, non-diagnostic.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSECGReport.body.conclusion.overall",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.eu/fhir/ecg/ValueSet/ECGOverallConclusionVS"
+      }
+    },
+    {
+      "id" : "EHDSECGReport.body.conclusion.finding",
+      "path" : "EHDSECGReport.body.conclusion.finding",
+      "short" : "[C] Coded diagnostic statements",
+      "definition" : "Coded diagnostic statements.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSECGReport.body.conclusion.finding",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.eu/fhir/ecg/ValueSet/ECGFindingVS"
+      }
+    },
+    {
+      "id" : "EHDSECGReport.body.conclusion.comparisonWithPrior",
+      "path" : "EHDSECGReport.body.conclusion.comparisonWithPrior",
+      "short" : "[C] Comparison with a previous ECG",
+      "definition" : "Comparison with a previous ECG.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSECGReport.body.conclusion.comparisonWithPrior",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.conclusion.comparisonWithPrior.prior",
+      "path" : "EHDSECGReport.body.conclusion.comparisonWithPrior.prior",
+      "short" : "[C] Previous examination (link)",
+      "definition" : "Identifier of the previous examination. Always an external link.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSECGReport.body.conclusion.comparisonWithPrior.prior",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.conclusion.comparisonWithPrior.change[x]",
+      "path" : "EHDSECGReport.body.conclusion.comparisonWithPrior.change[x]",
+      "short" : "[C] Change",
+      "definition" : "unchanged, changed (+ description).",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSECGReport.body.conclusion.comparisonWithPrior.change[x]",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      },
+      {
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.conclusion.recommendation",
+      "path" : "EHDSECGReport.body.conclusion.recommendation",
+      "short" : "[C] Recommendations",
+      "definition" : "Recommendations (further tests, follow-up).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSECGReport.body.conclusion.recommendation",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.attachments",
+      "path" : "EHDSECGReport.attachments",
+      "short" : "[C] Other attached documents",
+      "definition" : "Other attached documents.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSECGReport.attachments",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "EHDSECGReport",
+      "path" : "EHDSECGReport",
+      "short" : "ECG report model",
+      "definition" : "The exchangeable unit for the EHDS priority category medical test results (Regulation (EU) 2025/327, art. 14(1)(e)). Sibling of EHDSLaboratoryReport.",
+      "constraint" : [{
+        "key" : "ecg-rep-1",
+        "severity" : "warning",
+        "human" : "TODO: placeholder for invariant ecg-rep-1, to be defined.",
+        "expression" : "true",
+        "source" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGReport"
+      },
+      {
+        "key" : "ecg-rep-2",
+        "severity" : "warning",
+        "human" : "TODO: placeholder for invariant ecg-rep-2, to be defined.",
+        "expression" : "true",
+        "source" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGReport"
+      },
+      {
+        "key" : "ecg-rep-3",
+        "severity" : "warning",
+        "human" : "TODO: placeholder for invariant ecg-rep-3, to be defined.",
+        "expression" : "true",
+        "source" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGReport"
+      },
+      {
+        "key" : "ecg-rep-4",
+        "severity" : "warning",
+        "human" : "TODO: placeholder for invariant ecg-rep-4, to be defined.",
+        "expression" : "true",
+        "source" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGReport"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.header.documentType",
+      "path" : "EHDSECGReport.header.documentType",
+      "short" : "[C] Type of ECG document. Preferred: LOINC 11524-6 EKG study; 98857-6 for stress tests. Final binding open",
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "http://hl7.eu/fhir/ecg/ValueSet/ECGDocumentTypeVS"
+      }
+    },
+    {
+      "id" : "EHDSECGReport.header.eventType",
+      "path" : "EHDSECGReport.header.eventType",
+      "short" : "[C] Examination kind(s) covered, for search",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.eu/fhir/ecg/ValueSet/ECGExaminationKindVS"
+      }
+    },
+    {
+      "id" : "EHDSECGReport.presentedForm",
+      "path" : "EHDSECGReport.presentedForm",
+      "short" : "[C] Human-readable rendering of the full report including the tracing (PDF/A recommended). Each rendering carries its content, as data or a URL (ecg-rep-4)",
+      "min" : 1
+    },
+    {
+      "id" : "EHDSECGReport.body",
+      "path" : "EHDSECGReport.body",
+      "short" : "[C] Structured content",
+      "definition" : "Structured content of the ECG report.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.orderInformation",
+      "path" : "EHDSECGReport.body.orderInformation",
+      "short" : "[C] Order information",
+      "definition" : "Same structure as EHDSLaboratoryReport.body.orderInformation.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.orderInformation.orderId",
+      "path" : "EHDSECGReport.body.orderInformation.orderId",
+      "short" : "Order identifier",
+      "definition" : "Identifier of the order.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.orderInformation.orderDateAndTime",
+      "path" : "EHDSECGReport.body.orderInformation.orderDateAndTime",
+      "short" : "Order date and time",
+      "definition" : "Date and time of the order.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.orderInformation.orderPlacer[x]",
+      "path" : "EHDSECGReport.body.orderInformation.orderPlacer[x]",
+      "short" : "Order placer",
+      "definition" : "Who placed the order.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
+      },
+      {
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.orderInformation.orderReason[x]",
+      "path" : "EHDSECGReport.body.orderInformation.orderReason[x]",
+      "short" : "Order reason",
+      "definition" : "Reason for the order.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSCondition"
+      },
+      {
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.orderInformation.clinicalQuestion",
+      "path" : "EHDSECGReport.body.orderInformation.clinicalQuestion",
+      "short" : "Clinical question",
+      "definition" : "Clinical question of the requester.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.supportingInformation",
+      "path" : "EHDSECGReport.body.supportingInformation",
+      "short" : "[C] Clinical context relevant to interpretation",
+      "definition" : "Clinical context relevant to the interpretation of the ECG.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.supportingInformation.symptom[x]",
+      "path" : "EHDSECGReport.body.supportingInformation.symptom[x]",
+      "short" : "[C] Symptoms at the time of recording",
+      "definition" : "Palpitations, chest pain, syncope...",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSObservation"
+      },
+      {
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.supportingInformation.condition",
+      "path" : "EHDSECGReport.body.supportingInformation.condition",
+      "short" : "[C] Relevant conditions",
+      "definition" : "Relevant conditions.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSCondition"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.supportingInformation.medication[x]",
+      "path" : "EHDSECGReport.body.supportingInformation.medication[x]",
+      "short" : "[C] Medications affecting the ECG",
+      "definition" : "Antiarrhythmics, QT-prolonging drugs, digoxin. ATC allowed.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration"
+      },
+      {
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.supportingInformation.implantedDevice",
+      "path" : "EHDSECGReport.body.supportingInformation.implantedDevice",
+      "short" : "[C] Implanted cardiac device",
+      "definition" : "Pacemaker, ICD, CRT, ILR.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.supportingInformation.pacingMode",
+      "path" : "EHDSECGReport.body.supportingInformation.pacingMode",
+      "short" : "[C] Programmed pacing mode",
+      "definition" : "NBG/NASPE-BPEG code, e.g. DDD.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.supportingInformation.vitalSign",
+      "path" : "EHDSECGReport.body.supportingInformation.vitalSign",
+      "short" : "[C] Vital signs at the time of recording",
+      "definition" : "Height, weight, blood pressure at the time of recording.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSObservation"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.supportingInformation.sexForClinicalUse",
+      "path" : "EHDSECGReport.body.supportingInformation.sexForClinicalUse",
+      "short" : "[C] Sex for clinical use",
+      "definition" : "As in EHDSLaboratoryReport (sex-specific reference ranges, e.g. QTc).",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.supportingInformation.other",
+      "path" : "EHDSECGReport.body.supportingInformation.other",
+      "short" : "[A] Other supporting information",
+      "definition" : "Any other supporting information.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Resource"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.examination",
+      "path" : "EHDSECGReport.body.examination",
+      "short" : "[C] ECG examination(s) reported",
+      "definition" : "The ECG examination(s) reported.",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.conclusion",
+      "path" : "EHDSECGReport.body.conclusion",
+      "short" : "[C] Report-level conclusion",
+      "definition" : "Report-level conclusion.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.conclusion.text",
+      "path" : "EHDSECGReport.body.conclusion.text",
+      "short" : "[C] Narrative conclusion",
+      "definition" : "Narrative conclusion as signed by the reporting physician (or as produced by the device if unconfirmed).",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.conclusion.overall",
+      "path" : "EHDSECGReport.body.conclusion.overall",
+      "short" : "[C] Overall conclusion",
+      "definition" : "normal, otherwise normal, borderline, abnormal, non-diagnostic.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.eu/fhir/ecg/ValueSet/ECGOverallConclusionVS"
+      }
+    },
+    {
+      "id" : "EHDSECGReport.body.conclusion.finding",
+      "path" : "EHDSECGReport.body.conclusion.finding",
+      "short" : "[C] Coded diagnostic statements",
+      "definition" : "Coded diagnostic statements.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.eu/fhir/ecg/ValueSet/ECGFindingVS"
+      }
+    },
+    {
+      "id" : "EHDSECGReport.body.conclusion.comparisonWithPrior",
+      "path" : "EHDSECGReport.body.conclusion.comparisonWithPrior",
+      "short" : "[C] Comparison with a previous ECG",
+      "definition" : "Comparison with a previous ECG.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.conclusion.comparisonWithPrior.prior",
+      "path" : "EHDSECGReport.body.conclusion.comparisonWithPrior.prior",
+      "short" : "[C] Previous examination (link)",
+      "definition" : "Identifier of the previous examination. Always an external link.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.conclusion.comparisonWithPrior.change[x]",
+      "path" : "EHDSECGReport.body.conclusion.comparisonWithPrior.change[x]",
+      "short" : "[C] Change",
+      "definition" : "unchanged, changed (+ description).",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      },
+      {
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.body.conclusion.recommendation",
+      "path" : "EHDSECGReport.body.conclusion.recommendation",
+      "short" : "[C] Recommendations",
+      "definition" : "Recommendations (further tests, follow-up).",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSECGReport.attachments",
+      "path" : "EHDSECGReport.attachments",
+      "short" : "[C] Other attached documents",
+      "definition" : "Other attached documents.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment"
+      }]
+    }]
+  }
+}

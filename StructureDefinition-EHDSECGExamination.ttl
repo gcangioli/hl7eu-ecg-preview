@@ -1,0 +1,2113 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "EHDSECGExamination"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition EHDSECGExamination</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder0\"><tr class=\"xhtRowBorder1\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th scope=\"col\" style=\"; width: 100px\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination\" title=\"One acquisition session (a resting 12-lead ECG, a stress test, a Holter recording...). It groups the signal, the annotations and every result derived from it.\">EHDSECGExamination</a><a name=\"EHDSECGExamination\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/conformance-rules.html#constraints\" title=\"This element has or is affected by constraints ( ecg-id-1, ecg-ex-1, ecg-ex-2, ecg-ex-3, ecg-ex-4 )\" class=\"xhtConstraintStyle\">C</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html\">EHDSObservation</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">ECG examination model<br/><br/>Elements defined in Ancestors:<a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDataSet.html\" title=\"Basic metadata for this information\">header</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html\" title=\"Clinically relevant time or time period for the observation\">observationDate[x]</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html\" title=\"Observation type. Code and name representing the type of the observation using the agreed code systems.\">type</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html\" title=\"Original (conventional) name of the observation as used in the local laboratory or clinical system.\">originalName</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html\" title=\"Observation method (measurement principle) to obtain the result.\">method</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html\" title=\"Specimen used for this observation.\">specimen</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html\" title=\"Identifies order and order placer this observation belongs to\">order</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html\" title=\"Performer of the observation. Some test could be performed by the patient himself or by a care giver. Those are in the scope of this deliverable under specified conditions.\">performer[x]</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html\" title=\"Anatomic location and laterality where the observation was performed.\">bodySite</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html\" title=\"Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation.\">result</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html\" title=\"Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result.\">referenceRange</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html\" title=\"Information about reference intervals and result interpretation.\">interpretation</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html\" title=\"Comments and narrative representation of the observation result and findings.\">note</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html\" title=\"Component in case the observation consists of multiple sub-observations (e.g. blood pressure).\">component</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html\" title=\"Reference to the related resource from which the observation has been made. For example, a calculated anion gap or a fetal measurement based on an ultrasound image.\">derivedFrom[x]</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSObservation.html\" title=\"This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group.\">hasMember[x]</a><br/><span class=\"xhtPieceBold\">Instances of this type can be the target of a Reference</span><br class=\"constraint\"/><span class=\"constraint\">Constraints: </span><span title=\"TODO: placeholder for invariant ecg-id-1, to be defined.\" class=\"xhtPieceBold constraint\">ecg-id-1</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-ex-1, to be defined.\" class=\"xhtPieceBold constraint\">ecg-ex-1</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-ex-2, to be defined.\" class=\"xhtPieceBold constraint\">ecg-ex-2</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-ex-3, to be defined.\" class=\"xhtPieceBold constraint\">ecg-ex-3</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-ex-4, to be defined.\" class=\"xhtPieceBold constraint\">ecg-ex-4</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.header\">header</a><a name=\"EHDSECGExamination.header\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.header.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.header.identifier\">identifier</a><a name=\"EHDSECGExamination.header.identifier\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..<span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\" class=\"xhtPieceDeEmphasized\">Identifier</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Durable, globally unique identifier (ecg-id-1)</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.observationDate[x]\">observationDate[x]</a><a name=\"EHDSECGExamination.observationDate_x_\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">1</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\" class=\"xhtPieceDeEmphasized\">dateTime</a><span class=\"xhtPieceDeEmphasized\">, </span><a href=\"http://hl7.org/fhir/R4/datatypes.html#Period\" class=\"xhtPieceDeEmphasized\">Period</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] dateTime for short recordings; Period for long-term recordings. Time-zone offset required with a time of day</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.type\">type</a><a name=\"EHDSECGExamination.type\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">1</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\" class=\"xhtPieceDeEmphasized\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] LOINC 11524-6 EKG study. Additional codings allowed (e.g. SNOMED CT 268400002 12 lead ECG)<br/><span class=\"xhtPieceBold\">Required Pattern: </span><div><pre class=\"json\"><code>{\n  \"coding\" : [\n    {\n      \"system\" : \"http://loinc.org\",\n      \"code\" : <span title=\"EKG study\">\"11524-6\"</span>\n    }\n  ]\n}</code></pre></div></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.specimen\" class=\"xhtPieceStrikeout\">specimen</a><a name=\"EHDSECGExamination.specimen\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceStrikeout\"/><span class=\"xhtPieceStrikeout xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceStrikeout\">..</span><span class=\"xhtPieceStrikeout\">0</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceItalic xhtPieceDeEmphasized\">Specimen used for this observation.</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.result\">result</a><a name=\"EHDSECGExamination.result\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.result.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.result.value[x]\">value[x]</a><a name=\"EHDSECGExamination.result.value_x_\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Overall conclusion category for this examination<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGOverallConclusionVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGOverallConclusionVS\" class=\"binding\">ECG Overall Conclusion (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.hasMember[x]\">hasMember[x]</a><a name=\"EHDSECGExamination.hasMember_x_\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSECGDerivedResult.html\">EHDSECGDerivedResult</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Measurement sets, statement sets, AI and biomarker results derived from this examination. At least one measurement set with the minimum measurements for the examination kind (ecg-ex-3)</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.examinationKind\" title=\"resting, exercise stress, pharmacological stress, ambulatory long-term (Holter), event / loop recorder, patch, consumer single-lead device, in-hospital monitoring strip.\">examinationKind</a><a name=\"EHDSECGExamination.examinationKind\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Examination kind<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGExaminationKindVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGExaminationKindVS\" class=\"binding\">ECG Examination Kind (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.ageAtExamination\" title=\"For de-identified data or when the date of birth is not shared. ECG criteria are age-dependent.\">ageAtExamination</a><a name=\"EHDSECGExamination.ageAtExamination\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Age of the patient at the examination</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.ageAtExamination.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.ageAtExamination.code\">code</a><a name=\"EHDSECGExamination.ageAtExamination.code\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\" class=\"xhtPieceDeEmphasized\">code</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Coded form of the unit</span><br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGAgeUnitVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGAgeUnitVS\" class=\"binding\">ECG Age Unit (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.leadSystem\" title=\"Standard 12-lead, Mason-Likar, Frank XYZ, EASI, reduced lead set, single lead (cf. DICOM CID 3263).\">leadSystem</a><a name=\"EHDSECGExamination.leadSystem\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Lead system<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGLeadSystemVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS\" class=\"binding\">ECG Lead System (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.acquisitionDevice\" title=\"Manufacturer, model, serial number, firmware. Always at Core level, here or on each recording (ecg-ex-4).\">acquisitionDevice</a><a name=\"EHDSECGExamination.acquisitionDevice\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html\">EHDSDevice</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Electrocardiograph or recorder</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.patientState\" title=\"Supine, sitting, standing, exercise, recovery, during symptoms (cf. DICOM CID 3262).\">patientState</a><a name=\"EHDSECGExamination.patientState\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Position and state<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.stressTest\" title=\"Detailed model deferred to a later version.\">stressTest</a><a name=\"EHDSECGExamination.stressTest\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[A] Stress-test context</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.stressTest.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.stressTest.protocol\" title=\"Bruce, modified Bruce, ramp, cycle ergometer...\">protocol</a><a name=\"EHDSECGExamination.stressTest.protocol\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[A] Protocol</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.stressTest.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.stressTest.maximumWorkload\" title=\"W or METs.\">maximumWorkload</a><a name=\"EHDSECGExamination.stressTest.maximumWorkload\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[A] Maximum workload</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.stressTest.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.stressTest.exerciseDuration\" title=\"Duration.\">exerciseDuration</a><a name=\"EHDSECGExamination.stressTest.exerciseDuration\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[A] Exercise duration</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.stressTest.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.stressTest.terminationReason\" title=\"Reasons for stopping.\">terminationReason</a><a name=\"EHDSECGExamination.stressTest.terminationReason\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[A] Reasons for stopping<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.recording\" title=\"Required at Core level, with at least one rhythm recording (ecg-ex-1); absent only in Legacy.\">recording</a><a name=\"EHDSECGExamination.recording\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSECGRecording.html\">EHDSECGRecording</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] The signal<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.legacyReason\" title=\"historical record, device without digital signal export, signal not retained, reconstructed from paper only, other. Required when there is no recording (ecg-ex-1).\">legacyReason</a><a name=\"EHDSECGExamination.legacyReason\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Why the signal is absent (Legacy)<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGLegacyReasonVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGLegacyReasonVS\" class=\"binding\">ECG Legacy Reason (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck00.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGExamination.</span><a href=\"StructureDefinition-EHDSECGExamination-definitions.html#EHDSECGExamination.annotationSet\" title=\"Time-anchored annotations on the recordings.\">annotationSet</a><a name=\"EHDSECGExamination.annotationSet\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSECGAnnotationSet.html\">EHDSECGAnnotationSet</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[A] Time-anchored annotations<br/></td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics" ] ;
+     fhir:Extension.valueCode [ fhir:value "can-be-target" ]
+  ] ;
+  fhir:StructureDefinition.url [ fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination"] ;
+  fhir:StructureDefinition.version [ fhir:value "0.1.0-ci-build"] ;
+  fhir:StructureDefinition.name [ fhir:value "EHDSECGExamination"] ;
+  fhir:StructureDefinition.title [ fhir:value "ECG examination model"] ;
+  fhir:StructureDefinition.status [ fhir:value "draft"] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-11-06T23:02:43+01:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.publisher [ fhir:value "HL7 Europe"] ;
+  fhir:StructureDefinition.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Europe" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://hl7.eu" ]
+     ]
+  ] ;
+  fhir:StructureDefinition.description [ fhir:value "One acquisition session (a resting 12-lead ECG, a stress test, a Holter recording...). It groups the signal, the annotations and every result derived from it."] ;
+  fhir:StructureDefinition.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ] ;
+       fhir:Coding.code [ fhir:value "150" ] ;
+       fhir:Coding.display [ fhir:value "Europe" ]
+     ]
+  ] ;
+  fhir:StructureDefinition.copyright [ fhir:value "Copyright HL7 Europe. Licensed under creative commons public domain (CC0 1.0)."] ;
+  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
+  fhir:StructureDefinition.mapping [
+     fhir:index 0 ;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "rim" ] ;
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/v3" ] ;
+     fhir:StructureDefinition.mapping.name [ fhir:value "RIM Mapping" ]
+  ] ;
+  fhir:StructureDefinition.kind [ fhir:value "logical"] ;
+  fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean] ;
+  fhir:StructureDefinition.type [ fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination"] ;
+  fhir:StructureDefinition.baseDefinition [
+     fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSObservation" ;
+     fhir:link <http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSObservation>
+  ] ;
+  fhir:StructureDefinition.derivation [ fhir:value "specialization"] ;
+  fhir:StructureDefinition.snapshot [
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version" ] ;
+       fhir:Extension.valueString [ fhir:value "1.0.0" ]
+     ] ;
+     fhir:StructureDefinition.snapshot.element [
+       fhir:index 0 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination" ] ;
+       fhir:ElementDefinition.short [ fhir:value "ECG examination model" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "One acquisition session (a resting 12-lead ECG, a stress test, a Holter recording...). It groups the signal, the annotations and every result derived from it." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Base" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index 0 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-id-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-id-1, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination>
+         ]
+       ], [
+         fhir:index 1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-ex-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-ex-1, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination>
+         ]
+       ], [
+         fhir:index 2 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-ex-2" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-ex-2, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination>
+         ]
+       ], [
+         fhir:index 3 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-ex-3" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-ex-3, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination>
+         ]
+       ], [
+         fhir:index 4 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-ex-4" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-ex-4, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination>
+         ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index 0 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.header" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.header" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Basic metadata for this information" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Basic metadata for this information" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDataSet.header" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.header.subject" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.header.subject" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Patient who is receiving health care. This patient might be different from the direct subject of the observation." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Patient/subject information" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDataSet.header.subject" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSPatient" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.header.identifier" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.header.identifier" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Durable, globally unique identifier (ecg-id-1)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDataSet.header.identifier" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.header.author[x]" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.header.author[x]" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Author(s) responsible for the provided information." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDataSet.header.author[x]" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice" ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.header.date" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.header.date" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date and optionally time of authoring/issuing" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date and optionally time of authoring/issuing" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDataSet.header.date" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.header.status" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.header.status" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Status of the resource or document" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Status of the resource or document" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDataSet.header.status" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "HL7 Observation status" ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.header.source" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.header.source" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDataSet.header.source" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.header.language" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.header.language" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Language in which the resource is written. Language is expressed by the IETF language tag." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Language in which the resource is written. Language is expressed by the IETF language tag." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDataSet.header.language" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "BCP 47" ]
+       ]
+     ], [
+       fhir:index 9 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.header.directSubject[x]" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.header.directSubject[x]" ] ;
+       fhir:ElementDefinition.short [ fhir:value "The direct subject of the observation if different from the patient (subject of care), e.g. an observation of an implanted device. Additional types of subject may be allowed in implementations." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The direct subject of the observation if different from the patient (subject of care), e.g. an observation of an implanted device. Additional types of subject may be allowed in implementations." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.header.directSubject[x]" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSPatient" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSLocation" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSProcedure" ]
+       ]
+     ], [
+       fhir:index 10 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.observationDate[x]" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.observationDate[x]" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] dateTime for short recordings; Period for long-term recordings. Time-zone offset required with a time of day" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Clinically relevant time or time period for the observation" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.observationDate[x]" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Period" ]
+       ]
+     ], [
+       fhir:index 11 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.type" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.type" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] LOINC 11524-6 EKG study. Additional codings allowed (e.g. SNOMED CT 268400002 12 lead ECG)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Observation type. Code and name representing the type of the observation using the agreed code systems." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.type" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.patternCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           a loinc:11524-6 ;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+           fhir:Coding.code [ fhir:value "11524-6" ]
+         ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "LOINC, SNOMED CT" ]
+       ]
+     ], [
+       fhir:index 12 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.originalName" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.originalName" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Original (conventional) name of the observation as used in the local laboratory or clinical system." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Original (conventional) name of the observation as used in the local laboratory or clinical system." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.originalName" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 13 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.method" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.method" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Observation method" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Observation method (measurement principle) to obtain the result." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.method" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "SNOMED CT" ]
+       ]
+     ], [
+       fhir:index 14 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.specimen" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.specimen" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Specimen used for this observation." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Specimen used for this observation." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "0" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.specimen" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSSpecimen" ]
+       ]
+     ], [
+       fhir:index 15 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.order" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.order" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Identifies order and order placer this observation belongs to" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Identifies order and order placer this observation belongs to" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.order" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSServiceRequest" ]
+       ]
+     ], [
+       fhir:index 16 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.performer[x]" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.performer[x]" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Performer of the observation. Some test could be performed by the patient himself or by a care giver. Those are in the scope of this deliverable under specified conditions." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Performer of the observation. Some test could be performed by the patient himself or by a care giver. Those are in the scope of this deliverable under specified conditions." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.performer[x]" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSPatient" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSRelatedPerson" ]
+       ]
+     ], [
+       fhir:index 17 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.bodySite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.bodySite" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Anatomic location and laterality where the observation was performed." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Anatomic location and laterality where the observation was performed." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.bodySite" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSBodyStructure" ]
+       ]
+     ], [
+       fhir:index 18 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.result" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.result" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.result" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index 19 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.result.value[x]" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.result.value[x]" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Overall conclusion category for this examination" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Observation result value according to the type of observation. Model covers only most frequently used data types but other data types can be used as well.\r\n    Text result value should be used only if coded result value is not expected otherwise use valueCodeableConcept.text. For Quantity, Range and Ratio, result units of the measurement should be provided." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.result.value[x]" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGOverallConclusionVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGOverallConclusionVS>
+         ]
+       ]
+     ], [
+       fhir:index 20 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.result.uncertainty" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.result.uncertainty" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Measurement uncertainty type and interval if needed." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Measurement uncertainty information about the observation result." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.result.uncertainty" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index 21 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.result.uncertainty.value" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.result.uncertainty.value" ] ;
+       fhir:ElementDefinition.short [ fhir:value "The numerical value of the measurement uncertainty." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The numerical value of the measurement uncertainty." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.result.uncertainty.value" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "decimal" ]
+       ]
+     ], [
+       fhir:index 22 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.result.uncertainty.type" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.result.uncertainty.type" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Probability Distribution Type for uncertainty" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Probability Distribution Type for uncertainty" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.result.uncertainty.type" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "HL7 ProbabilityDistributionType" ]
+       ]
+     ], [
+       fhir:index 23 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.result.dataAbsentReason" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.result.dataAbsentReason" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Provides a reason why the expected value in the element Observation.value[x] is missing." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Provides a reason why the expected value in the element Observation.value[x] is missing." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.result.dataAbsentReason" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "HL7 Data absent reason" ]
+       ]
+     ], [
+       fhir:index 24 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.referenceRange" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.referenceRange" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result." ] ;
+       fhir:ElementDefinition.comment [ fhir:value "Reference ranges are usually implied only for a numeric scale type. Use of the same units for reference range and value is implied." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.referenceRange" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index 25 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.referenceRange.low" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.referenceRange.low" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Low limit of the reference range." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Low limit of the reference range." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.referenceRange.low" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "UCUM for units" ]
+       ]
+     ], [
+       fhir:index 26 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.referenceRange.high" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.referenceRange.high" ] ;
+       fhir:ElementDefinition.short [ fhir:value "High limit of the reference range." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "High limit of the reference range." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.referenceRange.high" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "UCUM for units" ]
+       ]
+     ], [
+       fhir:index 27 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.referenceRange.normalValue" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.referenceRange.normalValue" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Normal value, if relevant for the reference range." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Normal value, if relevant for the reference range." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.referenceRange.normalValue" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "SNOMED CT" ]
+       ]
+     ], [
+       fhir:index 28 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.referenceRange.type" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.referenceRange.type" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Type of reference range." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Type of reference range." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.referenceRange.type" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "HL7 Observation Reference Range Meaning Codes" ]
+       ]
+     ], [
+       fhir:index 29 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.referenceRange.appliesTo" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.referenceRange.appliesTo" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Codes to indicate the target population this reference range applies to." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Codes to indicate the target population this reference range applies to. For example, a reference range may be based on the normal population or a particular sex or race. Multiple appliesTo are interpreted as an \\\"AND\\\" of the target populations." ] ;
+       fhir:ElementDefinition.comment [ fhir:value "Multiple appliesTo are interpreted as an \"AND\" of the target populations." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.referenceRange.appliesTo" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "SNOMED CT, HL7 v3-Race" ]
+       ]
+     ], [
+       fhir:index 30 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.referenceRange.age" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.referenceRange.age" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Age range to which this reference range applies if applicable." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Age range to which this reference range applies if applicable." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.referenceRange.age" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Range" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "UCUM for units" ]
+       ]
+     ], [
+       fhir:index 31 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.referenceRange.text" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.referenceRange.text" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Text based reference range in an observation." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation. An example would be a reference value of \\\"Negative\\\" or a list or table of \\\"normals\\\"." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.referenceRange.text" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 32 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.interpretation" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.interpretation" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Information about reference intervals and result interpretation." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Information about reference intervals and result interpretation." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.interpretation" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "SNOMED CT, HL7 ObservationInterpretation" ]
+       ]
+     ], [
+       fhir:index 33 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.note" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.note" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Comments and narrative representation of the observation result and findings." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Comments and narrative representation of the observation result and findings." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.note" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 34 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.component" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.component" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Component in case the observation consists of multiple sub-observations (e.g. blood pressure)." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Component in case the observation consists of multiple sub-observations (e.g. blood pressure)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.component" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index 35 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.component.type" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.component.type" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Code representing the observation using the agreed code systems." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Code representing the observation using the agreed code systems." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.component.type" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "LOINC, SNOMED CT" ]
+       ]
+     ], [
+       fhir:index 36 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.component.originalName" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.component.originalName" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Original (user-friendly) name of the observation as used in the local laboratory or clinical system." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Original (user-friendly) name of the observation as used in the local laboratory or clinical system." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.component.originalName" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 37 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.component.result" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.component.result" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.component.result" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index 38 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.component.result.value[x]" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.component.result.value[x]" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Observation result value according to the type of observation. Model covers only most frequently used data types but other data types can be used as well.\r\n      Text result value should be used only if coded result value is not expected otherwise use valueCodeableConcept.text. For Quantity, Range and Ratio, result units of the measurement should be provided." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Observation result value according to the type of observation. Model covers only most frequently used data types but other data types can be used as well.\r\n      Text result value should be used only if coded result value is not expected otherwise use valueCodeableConcept.text. For Quantity, Range and Ratio, result units of the measurement should be provided." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.component.result.value[x]" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Range" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Ratio" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "UCUM for units, SNOMED CT for coded results" ]
+       ]
+     ], [
+       fhir:index 39 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.component.result.uncertainty" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.component.result.uncertainty" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Measurement uncertainty type and interval if needed." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Measurement uncertainty information about the observation result." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.component.result.uncertainty" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index 40 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.component.result.uncertainty.value" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.component.result.uncertainty.value" ] ;
+       fhir:ElementDefinition.short [ fhir:value "The numerical value of the measurement uncertainty." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The numerical value of the measurement uncertainty." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.component.result.uncertainty.value" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "decimal" ]
+       ]
+     ], [
+       fhir:index 41 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.component.result.uncertainty.type" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.component.result.uncertainty.type" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Probability Distribution Type for uncertainty" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Probability Distribution Type for uncertainty" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.component.result.uncertainty.type" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "HL7 ProbabilityDistributionType" ]
+       ]
+     ], [
+       fhir:index 42 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.component.result.dataAbsentReason" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.component.result.dataAbsentReason" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Provides a reason why the expected value in the element component.value[x] is missing." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Provides a reason why the expected value in the element component.value[x] is missing." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.component.result.dataAbsentReason" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "HL7 Data absent reason" ]
+       ]
+     ], [
+       fhir:index 43 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.component.referenceRange" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.component.referenceRange" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result." ] ;
+       fhir:ElementDefinition.comment [ fhir:value "Reference ranges are usually implied only for a numeric scale type. Use of the same units for reference range and value is implied." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.component.referenceRange" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index 44 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.component.referenceRange.low" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.component.referenceRange.low" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Low limit of the reference range." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Low limit of the reference range." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.component.referenceRange.low" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "UCUM for units" ]
+       ]
+     ], [
+       fhir:index 45 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.component.referenceRange.high" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.component.referenceRange.high" ] ;
+       fhir:ElementDefinition.short [ fhir:value "High limit of the reference range." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "High limit of the reference range." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.component.referenceRange.high" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "UCUM for units" ]
+       ]
+     ], [
+       fhir:index 46 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.component.referenceRange.normalValue" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.component.referenceRange.normalValue" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Normal value, if relevant for the reference range." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Normal value, if relevant for the reference range." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.component.referenceRange.normalValue" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "SNOMED CT" ]
+       ]
+     ], [
+       fhir:index 47 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.component.referenceRange.type" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.component.referenceRange.type" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Type of reference range." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Type of reference range." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.component.referenceRange.type" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "HL7 Observation Reference Range Meaning Codes" ]
+       ]
+     ], [
+       fhir:index 48 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.component.referenceRange.appliesTo" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.component.referenceRange.appliesTo" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Codes to indicate the target population this reference range applies to." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Codes to indicate the target population this reference range applies to. For example, a reference range may be based on the normal population or a particular sex or race. Multiple appliesTo are interpreted as an \\\"AND\\\" of the target populations." ] ;
+       fhir:ElementDefinition.comment [ fhir:value "Multiple appliesTo are interpreted as an \"AND\" of the target populations." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.component.referenceRange.appliesTo" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "SNOMED CT, HL7 v3-Race" ]
+       ]
+     ], [
+       fhir:index 49 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.component.referenceRange.age" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.component.referenceRange.age" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Age range to which this reference range applies if applicable." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Age range to which this reference range applies if applicable." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.component.referenceRange.age" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Range" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "UCUM for units" ]
+       ]
+     ], [
+       fhir:index 50 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.component.referenceRange.text" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.component.referenceRange.text" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Text based reference range in an observation." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation. An example would be a reference value of \\\"Negative\\\" or a list or table of \\\"normals\\\"." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.component.referenceRange.text" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 51 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.component.interpretation" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.component.interpretation" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Information about reference intervals and result interpretation." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Information about reference intervals and result interpretation." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.component.interpretation" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "SNOMED CT, HL7 ObservationInterpretation" ]
+       ]
+     ], [
+       fhir:index 52 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.derivedFrom[x]" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.derivedFrom[x]" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Reference to the related resource from which the observation has been made. For example, a calculated anion gap or a fetal measurement based on an ultrasound image." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Reference to the related resource from which the observation has been made. For example, a calculated anion gap or a fetal measurement based on an ultrasound image." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.derivedFrom[x]" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSObservation" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSLaboratoryObservation" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSImagingStudy" ]
+       ]
+     ], [
+       fhir:index 53 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.hasMember[x]" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.hasMember[x]" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Measurement sets, statement sets, AI and biomarker results derived from this examination. At least one measurement set with the minimum measurements for the examination kind (ecg-ex-3)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSObservation.hasMember[x]" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGDerivedResult" ]
+       ]
+     ], [
+       fhir:index 54 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.examinationKind" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.examinationKind" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Examination kind" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "resting, exercise stress, pharmacological stress, ambulatory long-term (Holter), event / loop recorder, patch, consumer single-lead device, in-hospital monitoring strip." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGExamination.examinationKind" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGExaminationKindVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGExaminationKindVS>
+         ]
+       ]
+     ], [
+       fhir:index 55 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.ageAtExamination" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.ageAtExamination" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Age of the patient at the examination" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "For de-identified data or when the date of birth is not shared. ECG criteria are age-dependent." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGExamination.ageAtExamination" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index 0 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ] ;
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element" ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "qty-3" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "If a code for the unit is present, the system SHALL also be present" ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "code.empty() or system.exists()" ] ;
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(exists(f:code)) or exists(f:system)" ]
+       ]
+     ], [
+       fhir:index 56 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.ageAtExamination.id" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.ageAtExamination.id" ] ;
+       fhir:ElementDefinition.representation [
+         fhir:value "xmlAttr" ;
+         fhir:index 0
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.id" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ] ;
+           fhir:Extension.valueUrl [ fhir:value "string" ]
+         ] ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index 0 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 57 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.ageAtExamination.extension" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.ageAtExamination.extension" ] ;
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0 ;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ] ;
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ] ;
+         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ] ;
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       ] ;
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions" ;
+         fhir:index 0
+       ], [
+         fhir:value "user content" ;
+         fhir:index 1
+       ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index 0 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ] ;
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element" ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ] ;
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension" ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index 0 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 58 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.ageAtExamination.value" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.ageAtExamination.value" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Numerical value (with implicit precision)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The value of the measured amount. The value includes an implicit precision in the presentation of the value." ] ;
+       fhir:ElementDefinition.comment [ fhir:value "The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books)." ] ;
+       fhir:ElementDefinition.requirements [ fhir:value "Precision is handled implicitly in almost all cases of measurement." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Quantity.value" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "decimal" ]
+       ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index 0 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ] ;
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element" ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index 0 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "SN.2  / CQ - N/A" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value" ]
+       ]
+     ], [
+       fhir:index 59 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.ageAtExamination.comparator" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.ageAtExamination.comparator" ] ;
+       fhir:ElementDefinition.short [ fhir:value "< | <= | >= | > - how to understand the value" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "How the value should be understood and represented - whether the actual value is greater or less than the stated value due to measurement issues; e.g. if the comparator is \"<\" , then the real value is < stated value." ] ;
+       fhir:ElementDefinition.requirements [ fhir:value "Need a framework for handling measures where the value is <5ug/L or >400mg/L due to the limitations of measuring methodology." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Quantity.comparator" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "code" ]
+       ] ;
+       fhir:ElementDefinition.meaningWhenMissing [ fhir:value "If there is no comparator, then there is no modification of the value" ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index 0 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ] ;
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element" ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:ElementDefinition.isModifierReason [ fhir:value "This is labeled as \"Is Modifier\" because the comparator modifies the interpretation of the value significantly. If there is no comparator, then there is no modification of the value" ] ;
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ] ;
+           fhir:Extension.valueString [ fhir:value "QuantityComparator" ]
+         ] ;
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "How the Quantity should be understood and represented." ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1" ;
+           fhir:link <http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1>
+         ]
+       ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index 0 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "SN.1  / CQ.1" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "IVL properties" ]
+       ]
+     ], [
+       fhir:index 60 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.ageAtExamination.unit" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable" ] ;
+         fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+       ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.ageAtExamination.unit" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Unit representation" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A human-readable form of the unit." ] ;
+       fhir:ElementDefinition.requirements [ fhir:value "There are many representations for units of measure and in many contexts, particular representations are fixed and required. I.e. mcg for micrograms." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Quantity.unit" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index 0 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ] ;
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element" ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index 0 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "(see OBX.6 etc.) / CQ.2" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "PQ.unit" ]
+       ]
+     ], [
+       fhir:index 61 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.ageAtExamination.system" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.ageAtExamination.system" ] ;
+       fhir:ElementDefinition.short [ fhir:value "System that defines coded unit form" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The identification of the system that provides the coded form of the unit." ] ;
+       fhir:ElementDefinition.requirements [ fhir:value "Need to know the system that defines the coded form of the unit." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Quantity.system" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "uri" ]
+       ] ;
+       fhir:ElementDefinition.condition [
+         fhir:value "qty-3" ;
+         fhir:index 0
+       ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index 0 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ] ;
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element" ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index 0 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "(see OBX.6 etc.) / CQ.2" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "CO.codeSystem, PQ.translation.codeSystem" ]
+       ]
+     ], [
+       fhir:index 62 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.ageAtExamination.code" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.ageAtExamination.code" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Coded form of the unit" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "A computer processable form of the unit in some unit representation system." ] ;
+       fhir:ElementDefinition.comment [ fhir:value "The preferred system is UCUM, but SNOMED CT can also be used (for customary units) or ISO 4217 for currency.  The context of use may additionally require a code from a particular system." ] ;
+       fhir:ElementDefinition.requirements [ fhir:value "Need a computable form of the unit that is fixed across all forms. UCUM provides this for quantities, but SNOMED CT provides many units of interest." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Quantity.code" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "code" ]
+       ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index 0 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ] ;
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element" ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGAgeUnitVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGAgeUnitVS>
+         ]
+       ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index 0 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "(see OBX.6 etc.) / CQ.2" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "PQ.code, MO.currency, PQ.translation.code" ]
+       ]
+     ], [
+       fhir:index 63 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.leadSystem" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.leadSystem" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Lead system" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Standard 12-lead, Mason-Likar, Frank XYZ, EASI, reduced lead set, single lead (cf. DICOM CID 3263)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGExamination.leadSystem" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS>
+         ]
+       ]
+     ], [
+       fhir:index 64 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.acquisitionDevice" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.acquisitionDevice" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Electrocardiograph or recorder" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Manufacturer, model, serial number, firmware. Always at Core level, here or on each recording (ecg-ex-4)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGExamination.acquisitionDevice" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice" ]
+       ]
+     ], [
+       fhir:index 65 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.patientState" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.patientState" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Position and state" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Supine, sitting, standing, exercise, recovery, during symptoms (cf. DICOM CID 3262)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGExamination.patientState" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index 66 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.stressTest" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.stressTest" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[A] Stress-test context" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Detailed model deferred to a later version." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGExamination.stressTest" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index 67 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.stressTest.protocol" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.stressTest.protocol" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[A] Protocol" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Bruce, modified Bruce, ramp, cycle ergometer..." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGExamination.stressTest.protocol" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index 68 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.stressTest.maximumWorkload" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.stressTest.maximumWorkload" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[A] Maximum workload" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "W or METs." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGExamination.stressTest.maximumWorkload" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index 69 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.stressTest.exerciseDuration" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.stressTest.exerciseDuration" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[A] Exercise duration" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Duration." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGExamination.stressTest.exerciseDuration" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index 70 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.stressTest.terminationReason" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.stressTest.terminationReason" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[A] Reasons for stopping" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Reasons for stopping." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGExamination.stressTest.terminationReason" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index 71 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.recording" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.recording" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] The signal" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Required at Core level, with at least one rhythm recording (ecg-ex-1); absent only in Legacy." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGExamination.recording" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ]
+       ]
+     ], [
+       fhir:index 72 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.legacyReason" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.legacyReason" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Why the signal is absent (Legacy)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "historical record, device without digital signal export, signal not retained, reconstructed from paper only, other. Required when there is no recording (ecg-ex-1)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGExamination.legacyReason" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGLegacyReasonVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGLegacyReasonVS>
+         ]
+       ]
+     ], [
+       fhir:index 73 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.annotationSet" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.annotationSet" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[A] Time-anchored annotations" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Time-anchored annotations on the recordings." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGExamination.annotationSet" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet" ]
+       ]
+     ]
+  ] ;
+  fhir:StructureDefinition.differential [
+     fhir:StructureDefinition.differential.element [
+       fhir:index 0 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination" ] ;
+       fhir:ElementDefinition.short [ fhir:value "ECG examination model" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "One acquisition session (a resting 12-lead ECG, a stress test, a Holter recording...). It groups the signal, the annotations and every result derived from it." ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index 0 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-id-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-id-1, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination>
+         ]
+       ], [
+         fhir:index 1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-ex-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-ex-1, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination>
+         ]
+       ], [
+         fhir:index 2 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-ex-2" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-ex-2, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination>
+         ]
+       ], [
+         fhir:index 3 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-ex-3" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-ex-3, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination>
+         ]
+       ], [
+         fhir:index 4 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-ex-4" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-ex-4, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination>
+         ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.header.identifier" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.header.identifier" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Durable, globally unique identifier (ecg-id-1)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.observationDate[x]" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.observationDate[x]" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] dateTime for short recordings; Period for long-term recordings. Time-zone offset required with a time of day" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.type" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.type" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] LOINC 11524-6 EKG study. Additional codings allowed (e.g. SNOMED CT 268400002 12 lead ECG)" ] ;
+       fhir:ElementDefinition.patternCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           a loinc:11524-6 ;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+           fhir:Coding.code [ fhir:value "11524-6" ]
+         ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.specimen" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.specimen" ] ;
+       fhir:ElementDefinition.max [ fhir:value "0" ]
+     ], [
+       fhir:index 5 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.result.value[x]" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.result.value[x]" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Overall conclusion category for this examination" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGOverallConclusionVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGOverallConclusionVS>
+         ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.hasMember[x]" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.hasMember[x]" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Measurement sets, statement sets, AI and biomarker results derived from this examination. At least one measurement set with the minimum measurements for the examination kind (ecg-ex-3)" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGDerivedResult" ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.examinationKind" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.examinationKind" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Examination kind" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "resting, exercise stress, pharmacological stress, ambulatory long-term (Holter), event / loop recorder, patch, consumer single-lead device, in-hospital monitoring strip." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGExaminationKindVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGExaminationKindVS>
+         ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.ageAtExamination" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.ageAtExamination" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Age of the patient at the examination" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "For de-identified data or when the date of birth is not shared. ECG criteria are age-dependent." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index 9 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.ageAtExamination.code" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.ageAtExamination.code" ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGAgeUnitVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGAgeUnitVS>
+         ]
+       ]
+     ], [
+       fhir:index 10 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.leadSystem" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.leadSystem" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Lead system" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Standard 12-lead, Mason-Likar, Frank XYZ, EASI, reduced lead set, single lead (cf. DICOM CID 3263)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS>
+         ]
+       ]
+     ], [
+       fhir:index 11 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.acquisitionDevice" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.acquisitionDevice" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Electrocardiograph or recorder" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Manufacturer, model, serial number, firmware. Always at Core level, here or on each recording (ecg-ex-4)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice" ]
+       ]
+     ], [
+       fhir:index 12 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.patientState" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.patientState" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Position and state" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Supine, sitting, standing, exercise, recovery, during symptoms (cf. DICOM CID 3262)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index 13 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.stressTest" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.stressTest" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[A] Stress-test context" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Detailed model deferred to a later version." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index 14 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.stressTest.protocol" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.stressTest.protocol" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[A] Protocol" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Bruce, modified Bruce, ramp, cycle ergometer..." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index 15 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.stressTest.maximumWorkload" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.stressTest.maximumWorkload" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[A] Maximum workload" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "W or METs." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index 16 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.stressTest.exerciseDuration" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.stressTest.exerciseDuration" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[A] Exercise duration" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Duration." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index 17 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.stressTest.terminationReason" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.stressTest.terminationReason" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[A] Reasons for stopping" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Reasons for stopping." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index 18 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.recording" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.recording" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] The signal" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Required at Core level, with at least one rhythm recording (ecg-ex-1); absent only in Legacy." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ]
+       ]
+     ], [
+       fhir:index 19 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.legacyReason" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.legacyReason" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Why the signal is absent (Legacy)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "historical record, device without digital signal export, signal not retained, reconstructed from paper only, other. Required when there is no recording (ecg-ex-1)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGLegacyReasonVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGLegacyReasonVS>
+         ]
+       ]
+     ], [
+       fhir:index 20 ;
+       fhir:Element.id [ fhir:value "EHDSECGExamination.annotationSet" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGExamination.annotationSet" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[A] Time-anchored annotations" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Time-anchored annotations on the recordings." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

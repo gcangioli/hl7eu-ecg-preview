@@ -1,0 +1,41 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"EHDSECGResearchDataset","EHDSECGResearchDataset","","","",0,*,"","","","null {[]} {[]}
+","ECG research dataset model","Description of a research dataset, i.e. a set of EHDSECGResearchRecord. The dataset is also described in the health data catalogue with HealthDCAT-AP.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"EHDSECGResearchDataset.identifier","EHDSECGResearchDataset.identifier","","","",1,1,"","","","Identifier {[]} {[]}
+","Dataset identifier","Dataset identifier.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchDataset.identifier",1,1,"",""
+"EHDSECGResearchDataset.title","EHDSECGResearchDataset.title","","","",1,1,"","","","string {[]} {[]}
+","Title","Title.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchDataset.title",1,1,"",""
+"EHDSECGResearchDataset.catalogueRecord","EHDSECGResearchDataset.catalogueRecord","","","",0,1,"","","","uri {[]} {[]}
+","HealthDCAT-AP record","HealthDCAT-AP record of the dataset in the national or EU health data catalogue.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchDataset.catalogueRecord",0,1,"",""
+"EHDSECGResearchDataset.dataPermit","EHDSECGResearchDataset.dataPermit","","","",0,1,"","","","Identifier {[]} {[]}
+","Data permit","Data permit or approval under which the dataset is made available. A use tier does not grant access to data: access is governed by the permit.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchDataset.dataPermit",0,1,"",""
+"EHDSECGResearchDataset.cohortDefinition","EHDSECGResearchDataset.cohortDefinition","","","",1,1,"","","","string {[]} {[]}
+","Cohort definition","Which subjects and which examinations constitute the cohort.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchDataset.cohortDefinition",1,1,"",""
+"EHDSECGResearchDataset.linkageScope","EHDSECGResearchDataset.linkageScope","","","",1,1,"","","","string {[]} {[]}
+","Linkage scope","Within which scope pseudonyms are stable and records are linked.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchDataset.linkageScope",1,1,"",""
+"EHDSECGResearchDataset.exclusion","EHDSECGResearchDataset.exclusion","","","",0,*,"","","","Base {[]} {[]}
+","Exclusions","Excluded examinations or subjects.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchDataset.exclusion",0,*,"",""
+"EHDSECGResearchDataset.exclusion.reason","EHDSECGResearchDataset.exclusion.reason","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Reason for exclusion","Reason for exclusion.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchDataset.exclusion.reason",1,1,"",""
+"EHDSECGResearchDataset.exclusion.count","EHDSECGResearchDataset.exclusion.count","","","",1,1,"","","","integer {[]} {[]}
+","Number excluded","Number excluded for that reason.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchDataset.exclusion.count",1,1,"",""
+"EHDSECGResearchDataset.missingness","EHDSECGResearchDataset.missingness","","","",0,*,"","","","Base {[]} {[]}
+","Missing values","Missing values per element.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchDataset.missingness",0,*,"",""
+"EHDSECGResearchDataset.missingness.element","EHDSECGResearchDataset.missingness.element","","","",1,1,"","","","string {[]} {[]}
+","Element concerned","Element concerned.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchDataset.missingness.element",1,1,"",""
+"EHDSECGResearchDataset.missingness.proportion","EHDSECGResearchDataset.missingness.proportion","","","",1,1,"","","","decimal {[]} {[]}
+","Proportion missing","Proportion missing, between 0 and 1.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchDataset.missingness.proportion",1,1,"",""
+"EHDSECGResearchDataset.labelSource","EHDSECGResearchDataset.labelSource","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Origins of the labels present","Origins of the labels present.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGLabelProvenanceVS","",,,,"EHDSECGResearchDataset.labelSource",0,*,"",""
+"EHDSECGResearchDataset.transformation","EHDSECGResearchDataset.transformation","","","",0,*,"","","","Base {[]} {[]}
+","Transformations applied","Transformations applied to the dataset.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchDataset.transformation",0,*,"",""
+"EHDSECGResearchDataset.transformation.type","EHDSECGResearchDataset.transformation.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Transformation type","de-identification, date shift, identifier pseudonymisation, resampling, filtering, cropping, lead reconstruction.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGTransformationTypeVS","",,,,"EHDSECGResearchDataset.transformation.type",1,1,"",""
+"EHDSECGResearchDataset.transformation.description","EHDSECGResearchDataset.transformation.description","","","",0,1,"","","","string {[]} {[]}
+","What was done","What was done.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchDataset.transformation.description",0,1,"",""
+"EHDSECGResearchDataset.transformation.tool","EHDSECGResearchDataset.transformation.tool","","","",0,1,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}
+","Tool and version","Tool and version.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchDataset.transformation.tool",0,1,"",""
+"EHDSECGResearchDataset.transformation.parameters","EHDSECGResearchDataset.transformation.parameters","","","",0,1,"","","","string {[]} {[]}
+","Parameters","Parameters, when they do not compromise pseudonymisation.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchDataset.transformation.parameters",0,1,"",""
+"EHDSECGResearchDataset.recordCount","EHDSECGResearchDataset.recordCount","","","",1,1,"","","","integer {[]} {[]}
+","Number of research records","Number of research records.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchDataset.recordCount",1,1,"",""

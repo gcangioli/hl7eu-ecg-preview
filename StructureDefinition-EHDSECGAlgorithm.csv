@@ -1,0 +1,83 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"EHDSECGAlgorithm","EHDSECGAlgorithm","","","",0,*,"","","","null {[]} {[]}
+","ECG algorithm model","An algorithm that produces ECG derived results, with the performance of this version of the algorithm.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"EHDSECGAlgorithm.instanceIdentifier","EHDSECGAlgorithm.instanceIdentifier","","","",0,*,"","","","Identifier {[]} {[]}
+","Identifier of the device instance","Identifier of the device instance","","","","","","","","","",,,,,"",,,,"EHDSDevice.instanceIdentifier",0,*,"",""
+"EHDSECGAlgorithm.udi","EHDSECGAlgorithm.udi","","","",0,*,"","","","Identifier {[]} {[]}
+","MDR UDI-DI when the software is a medical device","Unique Device Identifier (UDI) value","","","","","","","","","",,,,,"",,,,"EHDSDevice.udi",0,*,"",""
+"EHDSECGAlgorithm.manufacturer","EHDSECGAlgorithm.manufacturer","","","",1,1,"","","","string {[]} {[]}
+","Name of device manufacturer. If the manufacturer code is included in an identifier, manufacturer must correspond to that code.","Name of device manufacturer. If the manufacturer code is included in an identifier, manufacturer must correspond to that code.","","","","","","","","","",,,,,"",,,,"EHDSDevice.manufacturer",0,1,"",""
+"EHDSECGAlgorithm.manufactureDate","EHDSECGAlgorithm.manufactureDate","","","",0,1,"","","","dateTime {[]} {[]}
+","The date and time when the device was manufactured","The date and time when the device was manufactured","","","","","","","","","",,,,,"",,,,"EHDSDevice.manufactureDate",0,1,"",""
+"EHDSECGAlgorithm.expiryDate","EHDSECGAlgorithm.expiryDate","","","",0,1,"","","","dateTime {[]} {[]}
+","The date and time beyond which this device is no longer valid or should not be used (if applicable)","The date and time beyond which this device is no longer valid or should not be used (if applicable)","","","","","","","","","",,,,,"",,,,"EHDSDevice.expiryDate",0,1,"",""
+"EHDSECGAlgorithm.lotNumber","EHDSECGAlgorithm.lotNumber","","","",0,1,"","","","string {[]} {[]}
+","Lot number of device. May be omitted if included in an identifier.","Lot number of device. May be omitted if included in an identifier.","","","","","","","","","",,,,,"",,,,"EHDSDevice.lotNumber",0,1,"",""
+"EHDSECGAlgorithm.serialNumber","EHDSECGAlgorithm.serialNumber","","","",0,1,"","","","string {[]} {[]}
+","Serial number assigned by the manufacturer. May be omitted if included in an identifier.","Serial number assigned by the manufacturer. May be omitted if included in an identifier.","","","","","","","","","",,,,,"",,,,"EHDSDevice.serialNumber",0,1,"",""
+"EHDSECGAlgorithm.name","EHDSECGAlgorithm.name","","","",1,*,"","","","Base {[]} {[]}
+","The name and name type of the device.","The name and name type of the device.","","","","","","","","","",,,,,"",,,,"EHDSDevice.name",0,*,"",""
+"EHDSECGAlgorithm.name.value","EHDSECGAlgorithm.name.value","","","",1,1,"","","","string {[]} {[]}
+","The name of the device as known to e.g. the manufacturer and/or patient","The name of the device as known to e.g. the manufacturer and/or patient","","","","","","","","","",,,,,"",,,,"EHDSDevice.name.value",1,1,"",""
+"EHDSECGAlgorithm.name.type","EHDSECGAlgorithm.name.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","The type of name, e.g. UDI Label name, user friendly name","The type of name, e.g. UDI Label name, user friendly name","","","","","","","","","",,,,,"",,,,"EHDSDevice.name.type",1,1,"",""
+"EHDSECGAlgorithm.modelNumber","EHDSECGAlgorithm.modelNumber","","","",0,1,"","","","string {[]} {[]}
+","The manufacturer's model number for the device","The manufacturer's model number for the device","","","","","","","","","",,,,,"",,,,"EHDSDevice.modelNumber",0,1,"",""
+"EHDSECGAlgorithm.version","EHDSECGAlgorithm.version","","","",0,*,"","","","string {[]} {[]}
+","SHALL be populated when known; when absent, consumers SHALL display 'version not stated'","The actual design of the device and/or software version running on the device","","","","","","","","","",,,,,"",,,,"EHDSDevice.version",0,*,"",""
+"EHDSECGAlgorithm.type","EHDSECGAlgorithm.type","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Device type","Device type","","","","","","","","","",,"preferred","SNOMED CT, EMDN","","",,,,"EHDSDevice.type",0,*,"",""
+"EHDSECGAlgorithm.note","EHDSECGAlgorithm.note","","","",0,1,"","","","string {[]} {[]}
+","Device note and/or comment","Device note and/or comment","","","","","","","","","",,,,,"",,,,"EHDSDevice.note",0,1,"",""
+"EHDSECGAlgorithm.regulatoryStatus","EHDSECGAlgorithm.regulatoryStatus","","","",0,*,"","","","Base {[]} {[]}
+","Regulatory status per jurisdiction","Regulatory status per jurisdiction.","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.regulatoryStatus",0,*,"",""
+"EHDSECGAlgorithm.regulatoryStatus.framework","EHDSECGAlgorithm.regulatoryStatus.framework","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Framework","EU MDR, EU IVDR, EU AI Act, FDA, other.","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.regulatoryStatus.framework",1,1,"",""
+"EHDSECGAlgorithm.regulatoryStatus.classification[x]","EHDSECGAlgorithm.regulatoryStatus.classification[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+string {[]} {[]}","Classification","E.g. MDR class IIa; AI Act high-risk.","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.regulatoryStatus.classification[x]",0,1,"",""
+"EHDSECGAlgorithm.regulatoryStatus.certificate","EHDSECGAlgorithm.regulatoryStatus.certificate","","","",0,1,"","","","Identifier {[]} {[]}
+","Certificate or registration number","Certificate or registration number.","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.regulatoryStatus.certificate",0,1,"",""
+"EHDSECGAlgorithm.regulatoryStatus.intendedUse","EHDSECGAlgorithm.regulatoryStatus.intendedUse","","","",0,1,"","","","string {[]} {[]}
+","Declared intended use","Declared intended use.","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.regulatoryStatus.intendedUse",0,1,"",""
+"EHDSECGAlgorithm.method","EHDSECGAlgorithm.method","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Method","rule-based, classical machine learning, deep learning, foundation model, large language model.","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.method",0,1,"",""
+"EHDSECGAlgorithm.modelCard","EHDSECGAlgorithm.modelCard","","","",0,1,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment {[]} {[]}
+","Model card","Training data, performance, limitations.","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.modelCard",0,1,"",""
+"EHDSECGAlgorithm.implementsDefinition","EHDSECGAlgorithm.implementsDefinition","","","",0,*,"","","","canonical {[]} {[]}
+","Definitions implemented","Results this algorithm can produce (versioned canonical).","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.implementsDefinition",0,*,"",""
+"EHDSECGAlgorithm.inputRequirement","EHDSECGAlgorithm.inputRequirement","","","",0,*,"","","","Base {[]} {[]}
+","Input requirements","What the algorithm needs as input. Same structure as in EHDSECGBiomarkerDefinition.","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.inputRequirement",0,*,"",""
+"EHDSECGAlgorithm.inputRequirement.role","EHDSECGAlgorithm.inputRequirement.role","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Role","index-ecg, comparison-ecg, clinical-covariate...","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGInputRoleVS","",,,,"EHDSECGAlgorithm.inputRequirement.role",1,1,"",""
+"EHDSECGAlgorithm.inputRequirement.leadSystem","EHDSECGAlgorithm.inputRequirement.leadSystem","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Lead system","E.g. standard 12-lead, single lead.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS","",,,,"EHDSECGAlgorithm.inputRequirement.leadSystem",0,1,"",""
+"EHDSECGAlgorithm.inputRequirement.requiredLead","EHDSECGAlgorithm.inputRequirement.requiredLead","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Required leads","Leads that must be present.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS","",,,,"EHDSECGAlgorithm.inputRequirement.requiredLead",0,*,"",""
+"EHDSECGAlgorithm.inputRequirement.minimumSamplingFrequency","EHDSECGAlgorithm.inputRequirement.minimumSamplingFrequency","","","",0,1,"","","","Quantity {[]} {[]}
+","Minimum sampling frequency","UCUM Hz.","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.inputRequirement.minimumSamplingFrequency",0,1,"",""
+"EHDSECGAlgorithm.inputRequirement.minimumDuration","EHDSECGAlgorithm.inputRequirement.minimumDuration","","","",0,1,"","","","Quantity {[]} {[]}
+","Minimum duration","UCUM s.","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.inputRequirement.minimumDuration",0,1,"",""
+"EHDSECGAlgorithm.inputRequirement.covariate","EHDSECGAlgorithm.inputRequirement.covariate","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Covariate","For a clinical covariate: what it is (age, sex...).","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.inputRequirement.covariate",0,1,"",""
+"EHDSECGAlgorithm.inputRequirement.note","EHDSECGAlgorithm.inputRequirement.note","","","",0,1,"","","","string {[]} {[]}
+","Other requirements","E.g. excluded populations.","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.inputRequirement.note",0,1,"",""
+"EHDSECGAlgorithm.performance","EHDSECGAlgorithm.performance","","","",0,*,"","","","Base {[]} {[]}
+","Performance of this version","Performance of this version of the algorithm for one definition. Operating points and calibration depend on the algorithm version, so they are described here rather than in the shared definition.","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.performance",0,*,"",""
+"EHDSECGAlgorithm.performance.definition","EHDSECGAlgorithm.performance.definition","","","",1,1,"","","","canonical {[]} {[]}
+","Definition (versioned)","Definition the performance refers to.","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.performance.definition",1,1,"",""
+"EHDSECGAlgorithm.performance.operatingPoint","EHDSECGAlgorithm.performance.operatingPoint","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Operating point","E.g. high-sensitivity.","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.performance.operatingPoint",0,1,"",""
+"EHDSECGAlgorithm.performance.threshold","EHDSECGAlgorithm.performance.threshold","","","",0,1,"","","","Quantity {[]} {[]}
+","Threshold","Threshold used by this algorithm version at that operating point.","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.performance.threshold",0,1,"",""
+"EHDSECGAlgorithm.performance.metric","EHDSECGAlgorithm.performance.metric","","","",1,*,"","","","Base {[]} {[]}
+","Performance metric","One performance metric.","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.performance.metric",1,*,"",""
+"EHDSECGAlgorithm.performance.metric.type","EHDSECGAlgorithm.performance.metric.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Metric type","sensitivity, specificity, PPV, NPV, AUC, calibration slope, calibration intercept, Brier score...","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGPerformanceMetricVS","",,,,"EHDSECGAlgorithm.performance.metric.type",1,1,"",""
+"EHDSECGAlgorithm.performance.metric.value","EHDSECGAlgorithm.performance.metric.value","","","",1,1,"","","","decimal {[]} {[]}
+","Value","Value.","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.performance.metric.value",1,1,"",""
+"EHDSECGAlgorithm.performance.metric.interval","EHDSECGAlgorithm.performance.metric.interval","","","",0,1,"","","","Range {[]} {[]}
+","Confidence interval","Confidence interval.","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.performance.metric.interval",0,1,"",""
+"EHDSECGAlgorithm.performance.validationPopulation","EHDSECGAlgorithm.performance.validationPopulation","","","",1,1,"","","","string {[]} {[]}
+","Validation population","Population and setting of the validation.","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.performance.validationPopulation",1,1,"",""
+"EHDSECGAlgorithm.performance.evidence","EHDSECGAlgorithm.performance.evidence","","","",0,*,"","","","uri {[]} {[]}
+","Evidence","Publications or reports (DOI).","","","","","","","","","",,,,,"",,,,"EHDSECGAlgorithm.performance.evidence",0,*,"",""

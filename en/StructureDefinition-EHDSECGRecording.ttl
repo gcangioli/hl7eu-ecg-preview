@@ -1,0 +1,1965 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "EHDSECGRecording"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition EHDSECGRecording</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder0\"><tr class=\"xhtRowBorder1\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th scope=\"col\" style=\"; width: 100px\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording\" title=\"The waveform and its acquisition metadata, which the Xt-EHR models do not provide. The metadata are always structured; the samples are carried inline (FHIR SampledData, required for short recordings) or by reference to a native object (long recordings). The time of sample i of a channel, from acquisitionStart, is startOffset + skew + i / samplingFrequency.\">EHDSECGRecording</a><a name=\"EHDSECGRecording\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/conformance-rules.html#constraints\" title=\"This element has or is affected by constraints ( ecg-id-1, ecg-rec-1, ecg-rec-2, ecg-rec-3, ecg-rec-4, ecg-rec-5, ecg-rec-6, ecg-rec-7, ecg-rec-8, ecg-rec-9, ecg-rec-10, ecg-rec-11, ecg-rec-12 )\" class=\"xhtConstraintStyle\">C</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDataSet.html\">EHDSDataSet</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">ECG recording model<br/><br/>Elements defined in Ancestors:<a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDataSet.html\" title=\"Basic metadata for this information\">header</a><br/><span class=\"xhtPieceBold\">Instances of this type can be the target of a Reference</span><br class=\"constraint\"/><span class=\"constraint\">Constraints: </span><span title=\"TODO: placeholder for invariant ecg-id-1, to be defined.\" class=\"xhtPieceBold constraint\">ecg-id-1</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-rec-1, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rec-1</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-rec-2, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rec-2</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-rec-3, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rec-3</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-rec-4, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rec-4</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-rec-5, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rec-5</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-rec-6, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rec-6</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-rec-7, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rec-7</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-rec-8, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rec-8</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-rec-9, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rec-9</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-rec-10, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rec-10</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-rec-11, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rec-11</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-rec-12, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rec-12</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.header\">header</a><a name=\"EHDSECGRecording.header\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.header.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.header.identifier\">identifier</a><a name=\"EHDSECGRecording.header.identifier\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..<span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\" class=\"xhtPieceDeEmphasized\">Identifier</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] E.g. DICOM SOP Instance UID, vendor recording id</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.recordingKind\" title=\"rhythm (continuous strip), representative (median) beat, selected episode, reconstructed signal.\">recordingKind</a><a name=\"EHDSECGRecording.recordingKind\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Recording kind<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGRecordingKindVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGRecordingKindVS\" class=\"binding\">ECG Recording Kind (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.acquisitionStart\" title=\"Time-zone offset required.\">acquisitionStart</a><a name=\"EHDSECGRecording.acquisitionStart\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Start of the recording</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.duration\" title=\"UCUM s.\">duration</a><a name=\"EHDSECGRecording.duration\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Duration</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.acquisitionDevice\" title=\"Device that acquired this signal, if different from the examination's device.\">acquisitionDevice</a><a name=\"EHDSECGRecording.acquisitionDevice\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html\">EHDSDevice</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Acquisition device</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.signalProvenance\" title=\"Ordered chain of steps, from the acquisition to this representation (e.g. vendor format -> WFDB -> EHDS).\">signalProvenance</a><a name=\"EHDSECGRecording.signalProvenance\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] How this signal came to exist<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.signalProvenance.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.signalProvenance.origin\" title=\"native-digital, converted-lossless, converted-lossy, losslessness-not-documented, computed-from-recording, reconstructed-from-image, reconstructed-from-reduced-leads, synthetic.\">origin</a><a name=\"EHDSECGRecording.signalProvenance.origin\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Origin<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGSignalOriginVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGSignalOriginVS\" class=\"binding\">ECG Signal Origin (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.signalProvenance.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.signalProvenance.sourceFormat\" title=\"Format the signal was converted from.\">sourceFormat</a><a name=\"EHDSECGRecording.signalProvenance.sourceFormat\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Source format<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGFileFormatVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGFileFormatVS\" class=\"binding\">ECG File Format (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.signalProvenance.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.signalProvenance.conversionTool\" title=\"Converter, digitiser or signal-processing algorithm, and its version.\">conversionTool</a><a name=\"EHDSECGRecording.signalProvenance.conversionTool\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html\">EHDSDevice</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Conversion tool</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.signalProvenance.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.signalProvenance.derivedFrom\" title=\"Link to the source recording(s), e.g. the rhythm strip a median beat was computed from.\">derivedFrom</a><a name=\"EHDSECGRecording.signalProvenance.derivedFrom\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Source recording(s)<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.powerlineFrequency\" title=\"50 or 60 Hz.\">powerlineFrequency</a><a name=\"EHDSECGRecording.powerlineFrequency\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Powerline frequency</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.display\" title=\"Does not change the samples; the PDF rendering remains the reference display.\">display</a><a name=\"EHDSECGRecording.display\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Display recommended by the source</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.display.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.display.speed\" title=\"UCUM mm/s (DICOM Waveform Data Display Scale).\">speed</a><a name=\"EHDSECGRecording.display.speed\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Paper speed</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.display.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.display.gain\" title=\"UCUM mm/mV, stated only when the displayed channels share the same gain. From DICOM: Absolute Channel Display Scale (003A,0248) divided by Channel Sensitivity (003A,0210).\">gain</a><a name=\"EHDSECGRecording.display.gain\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Gain</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.display.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.display.layout\" title=\"3 x 4, 3 x 4 with rhythm strip, 6 x 2, 12 x 1, other.\">layout</a><a name=\"EHDSECGRecording.display.layout\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Layout<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGDisplayLayoutVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGDisplayLayoutVS\" class=\"binding\">ECG Display Layout (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup\" title=\"DICOM multiplex group, aECG sequenceSet.\">channelGroup</a><a name=\"EHDSECGRecording.channelGroup\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Channels sharing one time base<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.label\" title=\"E.g. rhythm, median beat.\">label</a><a name=\"EHDSECGRecording.channelGroup.label\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Label</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.samplingFrequency\" title=\"UCUM Hz; > 0 (ecg-rec-9).\">samplingFrequency</a><a name=\"EHDSECGRecording.channelGroup.samplingFrequency\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Sampling frequency</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.numberOfSamples\" title=\">= 1. Equals the number of values in each channel's samples.data (ecg-rec-6).\">numberOfSamples</a><a name=\"EHDSECGRecording.channelGroup.numberOfSamples\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Samples per channel</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.startOffset\" title=\"UCUM ms; >= 0; absent means 0. Supports non-simultaneous acquisition (e.g. 3 x 4 leads). The group ends within the recording (ecg-rec-2).\">startOffset</a><a name=\"EHDSECGRecording.channelGroup.startOffset\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Offset from acquisitionStart</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.bitsPerSample\" title=\"ADC resolution.\">bitsPerSample</a><a name=\"EHDSECGRecording.channelGroup.bitsPerSample\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] ADC resolution</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck111.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.filter\" title=\"Applied to every channel of the group that does not state its own.\">filter</a><a name=\"EHDSECGRecording.channelGroup.filter\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Filters applied before storage<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.filter.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.filter.type\" title=\"high-pass, low-pass, notch, other.\">type</a><a name=\"EHDSECGRecording.channelGroup.filter.type\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Filter type<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGFilterTypeVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGFilterTypeVS\" class=\"binding\">ECG Filter Type (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.filter.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.filter.frequency\" title=\"UCUM Hz.\">frequency</a><a name=\"EHDSECGRecording.channelGroup.filter.frequency\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Cut-off or notch frequency</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.filter.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.filter.description\" title=\"Order, slope, bandwidth, algorithm.\">description</a><a name=\"EHDSECGRecording.channelGroup.filter.description\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Filter description</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck101.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel\" title=\"One lead.\">channel</a><a name=\"EHDSECGRecording.channelGroup.channel\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] One lead<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1010.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.channel.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.lead\" title=\"MDC MDC_ECG_ELEC_POTL_* codes; required within the set it covers, extensible for non-standard leads.\">lead</a><a name=\"EHDSECGRecording.channelGroup.channel.lead\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Lead<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGLeadVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS\" class=\"binding\">ECG Lead (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1010.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.channel.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.derived\" title=\"True if computed from other leads (III, aVR, aVL, aVF usually are).\">derived</a><a name=\"EHDSECGRecording.channelGroup.channel.derived\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Derived lead</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1010.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.channel.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.derivation\" title=\"Formula or method of derivation.\">derivation</a><a name=\"EHDSECGRecording.channelGroup.channel.derivation\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Derivation</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1010.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.channel.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.unit\" title=\"channel.origin and samples.origin use the same unit (ecg-rec-8).\">unit</a><a name=\"EHDSECGRecording.channelGroup.channel.unit\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] UCUM unit of the physical values<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGAmplitudeUnitVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGAmplitudeUnitVS\" class=\"binding\">ECG Amplitude Unit (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1010.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.channel.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.origin\" title=\"In unit. Always present, also when samples are carried by reference.\">origin</a><a name=\"EHDSECGRecording.channelGroup.channel.origin\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Baseline offset</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1010.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.channel.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.factor\" title=\"Multiplier from stored integer to physical value in unit (e.g. 4.88 uV per LSB). Always present.\">factor</a><a name=\"EHDSECGRecording.channelGroup.channel.factor\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Amplitude resolution</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1010.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.channel.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.status\" title=\"ok, disconnected, noisy, saturated, lead-reversal-suspected, questionable, invalid, uncalibrated, unzeroed, test-data.\">status</a><a name=\"EHDSECGRecording.channelGroup.channel.status\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Channel status<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGChannelStatusVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGChannelStatusVS\" class=\"binding\">ECG Channel Status (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span><br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1010.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.channel.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.skew\" title=\"Offset of the first sample of this channel from the start of the channel group, UCUM ms (DICOM Channel Time Skew or Channel Sample Skew). 0 = simultaneous; absent = not documented, counted as 0.\">skew</a><a name=\"EHDSECGRecording.channelGroup.channel.skew\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Channel skew</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1011.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.channel.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.filter\" title=\"Filters of this channel, when they differ from those of the group; they replace channelGroup.filter for this channel.\">filter</a><a name=\"EHDSECGRecording.channelGroup.channel.filter\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Channel filters<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.channel.filter.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.filter.type\" title=\"high-pass, low-pass, notch, other.\">type</a><a name=\"EHDSECGRecording.channelGroup.channel.filter.type\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Filter type<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGFilterTypeVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGFilterTypeVS\" class=\"binding\">ECG Filter Type (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.channel.filter.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.filter.frequency\" title=\"UCUM Hz.\">frequency</a><a name=\"EHDSECGRecording.channelGroup.channel.filter.frequency\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Cut-off or notch frequency</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.channel.filter.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.filter.description\" title=\"Order, slope, bandwidth, algorithm.\">description</a><a name=\"EHDSECGRecording.channelGroup.channel.filter.description\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Filter description</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1000.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.channelGroup.channel.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.channelGroup.channel.samples\" title=\"FHIR R5 SampledData. Required for short recordings (ecg-rec-3). data present with numberOfSamples values; dimensions = 1; interval equals 1 / samplingFrequency; origin and factor equal the channel's (ecg-rec-4 to ecg-rec-7).\">samples</a><a name=\"EHDSECGRecording.channelGroup.channel.samples\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#SampledData\">SampledData</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Inline samples</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck01.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.nativeObject\" title=\"Optional, in addition to the inline samples for short recordings; the way to carry the samples of long recordings.\">nativeObject</a><a name=\"EHDSECGRecording.nativeObject\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Original object in its native format<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck010.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.nativeObject.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.nativeObject.format\" title=\"The object must be retrievable (ecg-rec-10).\">format</a><a name=\"EHDSECGRecording.nativeObject.format\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Format<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGFileFormatVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGFileFormatVS\" class=\"binding\">ECG File Format (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck011.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.nativeObject.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.nativeObject.file\" title=\"E.g. WFDB .hea + .dat.\">file</a><a name=\"EHDSECGRecording.nativeObject.file\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] File(s) making up the object<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck0110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.nativeObject.file.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.nativeObject.file.attachment\" title=\"The file itself or its URL.\">attachment</a><a name=\"EHDSECGRecording.nativeObject.file.attachment\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSAttachment.html\">EHDSAttachment</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] The file or its URL</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck0100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.nativeObject.file.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.nativeObject.file.contentHash\" title=\"SHA-256 of the file.\">contentHash</a><a name=\"EHDSECGRecording.nativeObject.file.contentHash\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] SHA-256 of the file</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck010.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.nativeObject.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.nativeObject.imagingStudy\" title=\"12-Lead ECG, General ECG, General 32-bit ECG or Ambulatory ECG SOP instance, retrievable through the imaging infrastructure (IHE MADO).\">imagingStudy</a><a name=\"EHDSECGRecording.nativeObject.imagingStudy\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSImagingStudy.html\">EHDSImagingStudy</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] DICOM study holding the ECG</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck000.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGRecording.nativeObject.</span><a href=\"StructureDefinition-EHDSECGRecording-definitions.html#EHDSECGRecording.nativeObject.endpoint\" title=\"Where the object can be retrieved, e.g. for long-term recordings.\">endpoint</a><a name=\"EHDSECGRecording.nativeObject.endpoint\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSEndpoint.html\">EHDSEndpoint</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[C] Endpoint</td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics" ] ;
+     fhir:Extension.valueCode [ fhir:value "can-be-target" ]
+  ] ;
+  fhir:StructureDefinition.url [ fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"] ;
+  fhir:StructureDefinition.version [ fhir:value "0.1.0-ci-build"] ;
+  fhir:StructureDefinition.name [ fhir:value "EHDSECGRecording"] ;
+  fhir:StructureDefinition.title [ fhir:value "ECG recording model"] ;
+  fhir:StructureDefinition.status [ fhir:value "draft"] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-11-06T23:02:43+01:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.publisher [ fhir:value "HL7 Europe"] ;
+  fhir:StructureDefinition.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Europe" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://hl7.eu" ]
+     ]
+  ] ;
+  fhir:StructureDefinition.description [ fhir:value "The waveform and its acquisition metadata, which the Xt-EHR models do not provide. The metadata are always structured; the samples are carried inline (FHIR SampledData, required for short recordings) or by reference to a native object (long recordings). The time of sample i of a channel, from acquisitionStart, is startOffset + skew + i / samplingFrequency."] ;
+  fhir:StructureDefinition.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ] ;
+       fhir:Coding.code [ fhir:value "150" ] ;
+       fhir:Coding.display [ fhir:value "Europe" ]
+     ]
+  ] ;
+  fhir:StructureDefinition.copyright [ fhir:value "Copyright HL7 Europe. Licensed under creative commons public domain (CC0 1.0)."] ;
+  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
+  fhir:StructureDefinition.mapping [
+     fhir:index -1 ;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "rim" ] ;
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/v3" ] ;
+     fhir:StructureDefinition.mapping.name [ fhir:value "RIM Mapping" ]
+  ] ;
+  fhir:StructureDefinition.kind [ fhir:value "logical"] ;
+  fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean] ;
+  fhir:StructureDefinition.type [ fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording"] ;
+  fhir:StructureDefinition.baseDefinition [
+     fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDataSet" ;
+     fhir:link <http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDataSet>
+  ] ;
+  fhir:StructureDefinition.derivation [ fhir:value "specialization"] ;
+  fhir:StructureDefinition.snapshot [
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version" ] ;
+       fhir:Extension.valueString [ fhir:value "1.0.0" ]
+     ] ;
+     fhir:StructureDefinition.snapshot.element [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording" ] ;
+       fhir:ElementDefinition.short [ fhir:value "ECG recording model" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The waveform and its acquisition metadata, which the Xt-EHR models do not provide. The metadata are always structured; the samples are carried inline (FHIR SampledData, required for short recordings) or by reference to a native object (long recordings). The time of sample i of a channel, from acquisitionStart, is startOffset + skew + i / samplingFrequency." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Base" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-id-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-id-1, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-1, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-2" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-2, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-3" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-3, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-4" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-4, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-5" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-5, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-6" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-6, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-7" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-7, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-8" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-8, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-9" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-9, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-10" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-10, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-11" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-11, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-12" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-12, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.mapping [
+         fhir:index -1 ;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ] ;
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.header" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.header" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Basic metadata for this information" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Basic metadata for this information" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDataSet.header" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.header.subject" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.header.subject" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Patient/subject information" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Patient/subject information" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDataSet.header.subject" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSPatient" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.header.identifier" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.header.identifier" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] E.g. DICOM SOP Instance UID, vendor recording id" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDataSet.header.identifier" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.header.author[x]" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.header.author[x]" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Author(s) responsible for the provided information." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDataSet.header.author[x]" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.header.date" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.header.date" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date and optionally time of authoring/issuing" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date and optionally time of authoring/issuing" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDataSet.header.date" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.header.status" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.header.status" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Status of the resource or document" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Status of the resource or document" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDataSet.header.status" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.header.source" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.header.source" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDataSet.header.source" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.header.language" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.header.language" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Language in which the resource is written. Language is expressed by the IETF language tag." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Language in which the resource is written. Language is expressed by the IETF language tag." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSDataSet.header.language" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.description [ fhir:value "BCP 47" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.recordingKind" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.recordingKind" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Recording kind" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "rhythm (continuous strip), representative (median) beat, selected episode, reconstructed signal." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.recordingKind" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGRecordingKindVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGRecordingKindVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.acquisitionStart" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.acquisitionStart" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Start of the recording" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Time-zone offset required." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.acquisitionStart" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.duration" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.duration" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Duration" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "UCUM s." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.duration" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.acquisitionDevice" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.acquisitionDevice" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Acquisition device" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Device that acquired this signal, if different from the examination's device." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.acquisitionDevice" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.signalProvenance" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.signalProvenance" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] How this signal came to exist" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Ordered chain of steps, from the acquisition to this representation (e.g. vendor format -> WFDB -> EHDS)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.signalProvenance" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.signalProvenance.origin" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.signalProvenance.origin" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Origin" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "native-digital, converted-lossless, converted-lossy, losslessness-not-documented, computed-from-recording, reconstructed-from-image, reconstructed-from-reduced-leads, synthetic." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.signalProvenance.origin" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGSignalOriginVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGSignalOriginVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.signalProvenance.sourceFormat" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.signalProvenance.sourceFormat" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Source format" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Format the signal was converted from." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.signalProvenance.sourceFormat" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGFileFormatVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGFileFormatVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.signalProvenance.conversionTool" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.signalProvenance.conversionTool" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Conversion tool" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Converter, digitiser or signal-processing algorithm, and its version." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.signalProvenance.conversionTool" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.signalProvenance.derivedFrom" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.signalProvenance.derivedFrom" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Source recording(s)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Link to the source recording(s), e.g. the rhythm strip a median beat was computed from." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.signalProvenance.derivedFrom" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.powerlineFrequency" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.powerlineFrequency" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Powerline frequency" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "50 or 60 Hz." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.powerlineFrequency" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.display" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.display" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Display recommended by the source" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Does not change the samples; the PDF rendering remains the reference display." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.display" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.display.speed" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.display.speed" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Paper speed" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "UCUM mm/s (DICOM Waveform Data Display Scale)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.display.speed" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.display.gain" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.display.gain" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Gain" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "UCUM mm/mV, stated only when the displayed channels share the same gain. From DICOM: Absolute Channel Display Scale (003A,0248) divided by Channel Sensitivity (003A,0210)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.display.gain" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.display.layout" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.display.layout" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Layout" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "3 x 4, 3 x 4 with rhythm strip, 6 x 2, 12 x 1, other." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.display.layout" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGDisplayLayoutVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGDisplayLayoutVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Channels sharing one time base" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "DICOM multiplex group, aECG sequenceSet." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.label" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.label" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Label" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "E.g. rhythm, median beat." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.label" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.samplingFrequency" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.samplingFrequency" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Sampling frequency" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "UCUM Hz; > 0 (ecg-rec-9)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.samplingFrequency" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.numberOfSamples" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.numberOfSamples" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Samples per channel" ] ;
+       fhir:ElementDefinition.definition [ fhir:value ">= 1. Equals the number of values in each channel's samples.data (ecg-rec-6)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.numberOfSamples" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "integer" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.startOffset" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.startOffset" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Offset from acquisitionStart" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "UCUM ms; >= 0; absent means 0. Supports non-simultaneous acquisition (e.g. 3 x 4 leads). The group ends within the recording (ecg-rec-2)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.startOffset" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.bitsPerSample" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.bitsPerSample" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] ADC resolution" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "ADC resolution." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.bitsPerSample" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "integer" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.filter" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.filter" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Filters applied before storage" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Applied to every channel of the group that does not state its own." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.filter" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.filter.type" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.filter.type" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Filter type" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "high-pass, low-pass, notch, other." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.filter.type" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGFilterTypeVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGFilterTypeVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.filter.frequency" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.filter.frequency" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Cut-off or notch frequency" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "UCUM Hz." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.filter.frequency" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.filter.description" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.filter.description" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Filter description" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Order, slope, bandwidth, algorithm." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.filter.description" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] One lead" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "One lead." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.channel" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.lead" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.lead" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Lead" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "MDC MDC_ECG_ELEC_POTL_* codes; required within the set it covers, extensible for non-standard leads." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.channel.lead" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.derived" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.derived" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Derived lead" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "True if computed from other leads (III, aVR, aVL, aVF usually are)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.channel.derived" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.derivation" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.derivation" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Derivation" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Formula or method of derivation." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.channel.derivation" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.unit" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.unit" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] UCUM unit of the physical values" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "channel.origin and samples.origin use the same unit (ecg-rec-8)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.channel.unit" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGAmplitudeUnitVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGAmplitudeUnitVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.origin" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.origin" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Baseline offset" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "In unit. Always present, also when samples are carried by reference." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.channel.origin" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.factor" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.factor" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Amplitude resolution" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Multiplier from stored integer to physical value in unit (e.g. 4.88 uV per LSB). Always present." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.channel.factor" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "decimal" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.status" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.status" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Channel status" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "ok, disconnected, noisy, saturated, lead-reversal-suspected, questionable, invalid, uncalibrated, unzeroed, test-data." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.channel.status" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGChannelStatusVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGChannelStatusVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.skew" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.skew" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Channel skew" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Offset of the first sample of this channel from the start of the channel group, UCUM ms (DICOM Channel Time Skew or Channel Sample Skew). 0 = simultaneous; absent = not documented, counted as 0." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.channel.skew" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.filter" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.filter" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Channel filters" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Filters of this channel, when they differ from those of the group; they replace channelGroup.filter for this channel." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.channel.filter" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.filter.type" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.filter.type" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Filter type" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "high-pass, low-pass, notch, other." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.channel.filter.type" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGFilterTypeVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGFilterTypeVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.filter.frequency" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.filter.frequency" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Cut-off or notch frequency" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "UCUM Hz." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.channel.filter.frequency" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.filter.description" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.filter.description" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Filter description" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Order, slope, bandwidth, algorithm." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.channel.filter.description" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.samples" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.samples" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Inline samples" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "FHIR R5 SampledData. Required for short recordings (ecg-rec-3). data present with numberOfSamples values; dimensions = 1; interval equals 1 / samplingFrequency; origin and factor equal the channel's (ecg-rec-4 to ecg-rec-7)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.channelGroup.channel.samples" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "SampledData" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.nativeObject" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.nativeObject" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Original object in its native format" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Optional, in addition to the inline samples for short recordings; the way to carry the samples of long recordings." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.nativeObject" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.nativeObject.format" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.nativeObject.format" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Format" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The object must be retrievable (ecg-rec-10)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.nativeObject.format" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGFileFormatVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGFileFormatVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.nativeObject.file" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.nativeObject.file" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] File(s) making up the object" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "E.g. WFDB .hea + .dat." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.nativeObject.file" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.nativeObject.file.attachment" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.nativeObject.file.attachment" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] The file or its URL" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The file itself or its URL." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.nativeObject.file.attachment" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.nativeObject.file.contentHash" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.nativeObject.file.contentHash" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] SHA-256 of the file" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "SHA-256 of the file." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.nativeObject.file.contentHash" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.nativeObject.imagingStudy" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.nativeObject.imagingStudy" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] DICOM study holding the ECG" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "12-Lead ECG, General ECG, General 32-bit ECG or Ambulatory ECG SOP instance, retrievable through the imaging infrastructure (IHE MADO)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.nativeObject.imagingStudy" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSImagingStudy" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.nativeObject.endpoint" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.nativeObject.endpoint" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Endpoint" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Where the object can be retrieved, e.g. for long-term recordings." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "EHDSECGRecording.nativeObject.endpoint" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSEndpoint" ]
+       ]
+     ]
+  ] ;
+  fhir:StructureDefinition.differential [
+     fhir:StructureDefinition.differential.element [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording" ] ;
+       fhir:ElementDefinition.short [ fhir:value "ECG recording model" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The waveform and its acquisition metadata, which the Xt-EHR models do not provide. The metadata are always structured; the samples are carried inline (FHIR SampledData, required for short recordings) or by reference to a native object (long recordings). The time of sample i of a channel, from acquisitionStart, is startOffset + skew + i / samplingFrequency." ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-id-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-id-1, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-1, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-2" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-2, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-3" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-3, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-4" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-4, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-5" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-5, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-6" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-6, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-7" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-7, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-8" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-8, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-9" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-9, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-10" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-10, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-11" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-11, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ecg-rec-12" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "TODO: placeholder for invariant ecg-rec-12, to be defined." ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "true" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording" ;
+           fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.header.identifier" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.header.identifier" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] E.g. DICOM SOP Instance UID, vendor recording id" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.recordingKind" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.recordingKind" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Recording kind" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "rhythm (continuous strip), representative (median) beat, selected episode, reconstructed signal." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGRecordingKindVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGRecordingKindVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.acquisitionStart" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.acquisitionStart" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Start of the recording" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Time-zone offset required." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.duration" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.duration" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Duration" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "UCUM s." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.acquisitionDevice" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.acquisitionDevice" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Acquisition device" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Device that acquired this signal, if different from the examination's device." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.signalProvenance" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.signalProvenance" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] How this signal came to exist" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Ordered chain of steps, from the acquisition to this representation (e.g. vendor format -> WFDB -> EHDS)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.signalProvenance.origin" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.signalProvenance.origin" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Origin" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "native-digital, converted-lossless, converted-lossy, losslessness-not-documented, computed-from-recording, reconstructed-from-image, reconstructed-from-reduced-leads, synthetic." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGSignalOriginVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGSignalOriginVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.signalProvenance.sourceFormat" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.signalProvenance.sourceFormat" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Source format" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Format the signal was converted from." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGFileFormatVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGFileFormatVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.signalProvenance.conversionTool" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.signalProvenance.conversionTool" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Conversion tool" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Converter, digitiser or signal-processing algorithm, and its version." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.signalProvenance.derivedFrom" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.signalProvenance.derivedFrom" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Source recording(s)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Link to the source recording(s), e.g. the rhythm strip a median beat was computed from." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.powerlineFrequency" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.powerlineFrequency" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Powerline frequency" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "50 or 60 Hz." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.display" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.display" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Display recommended by the source" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Does not change the samples; the PDF rendering remains the reference display." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.display.speed" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.display.speed" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Paper speed" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "UCUM mm/s (DICOM Waveform Data Display Scale)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.display.gain" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.display.gain" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Gain" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "UCUM mm/mV, stated only when the displayed channels share the same gain. From DICOM: Absolute Channel Display Scale (003A,0248) divided by Channel Sensitivity (003A,0210)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.display.layout" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.display.layout" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Layout" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "3 x 4, 3 x 4 with rhythm strip, 6 x 2, 12 x 1, other." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGDisplayLayoutVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGDisplayLayoutVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Channels sharing one time base" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "DICOM multiplex group, aECG sequenceSet." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.label" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.label" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Label" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "E.g. rhythm, median beat." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.samplingFrequency" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.samplingFrequency" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Sampling frequency" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "UCUM Hz; > 0 (ecg-rec-9)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.numberOfSamples" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.numberOfSamples" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Samples per channel" ] ;
+       fhir:ElementDefinition.definition [ fhir:value ">= 1. Equals the number of values in each channel's samples.data (ecg-rec-6)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "integer" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.startOffset" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.startOffset" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Offset from acquisitionStart" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "UCUM ms; >= 0; absent means 0. Supports non-simultaneous acquisition (e.g. 3 x 4 leads). The group ends within the recording (ecg-rec-2)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.bitsPerSample" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.bitsPerSample" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] ADC resolution" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "ADC resolution." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "integer" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.filter" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.filter" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Filters applied before storage" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Applied to every channel of the group that does not state its own." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.filter.type" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.filter.type" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Filter type" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "high-pass, low-pass, notch, other." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGFilterTypeVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGFilterTypeVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.filter.frequency" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.filter.frequency" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Cut-off or notch frequency" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "UCUM Hz." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.filter.description" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.filter.description" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Filter description" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Order, slope, bandwidth, algorithm." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] One lead" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "One lead." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.lead" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.lead" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Lead" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "MDC MDC_ECG_ELEC_POTL_* codes; required within the set it covers, extensible for non-standard leads." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.derived" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.derived" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Derived lead" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "True if computed from other leads (III, aVR, aVL, aVF usually are)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.derivation" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.derivation" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Derivation" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Formula or method of derivation." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.unit" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.unit" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] UCUM unit of the physical values" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "channel.origin and samples.origin use the same unit (ecg-rec-8)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGAmplitudeUnitVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGAmplitudeUnitVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.origin" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.origin" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Baseline offset" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "In unit. Always present, also when samples are carried by reference." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.factor" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.factor" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Amplitude resolution" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Multiplier from stored integer to physical value in unit (e.g. 4.88 uV per LSB). Always present." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "decimal" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.status" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.status" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Channel status" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "ok, disconnected, noisy, saturated, lead-reversal-suspected, questionable, invalid, uncalibrated, unzeroed, test-data." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGChannelStatusVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGChannelStatusVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.skew" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.skew" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Channel skew" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Offset of the first sample of this channel from the start of the channel group, UCUM ms (DICOM Channel Time Skew or Channel Sample Skew). 0 = simultaneous; absent = not documented, counted as 0." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.filter" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.filter" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Channel filters" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Filters of this channel, when they differ from those of the group; they replace channelGroup.filter for this channel." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.filter.type" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.filter.type" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Filter type" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "high-pass, low-pass, notch, other." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGFilterTypeVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGFilterTypeVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.filter.frequency" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.filter.frequency" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Cut-off or notch frequency" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "UCUM Hz." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.filter.description" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.filter.description" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Filter description" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Order, slope, bandwidth, algorithm." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.channelGroup.channel.samples" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.channelGroup.channel.samples" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Inline samples" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "FHIR R5 SampledData. Required for short recordings (ecg-rec-3). data present with numberOfSamples values; dimensions = 1; interval equals 1 / samplingFrequency; origin and factor equal the channel's (ecg-rec-4 to ecg-rec-7)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "SampledData" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.nativeObject" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.nativeObject" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Original object in its native format" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Optional, in addition to the inline samples for short recordings; the way to carry the samples of long recordings." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.nativeObject.format" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.nativeObject.format" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Format" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The object must be retrievable (ecg-rec-10)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.eu/fhir/ecg/ValueSet/ECGFileFormatVS" ;
+           fhir:link <http://hl7.eu/fhir/ecg/ValueSet/ECGFileFormatVS>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.nativeObject.file" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.nativeObject.file" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] File(s) making up the object" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "E.g. WFDB .hea + .dat." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Base" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.nativeObject.file.attachment" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.nativeObject.file.attachment" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] The file or its URL" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "The file itself or its URL." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.nativeObject.file.contentHash" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.nativeObject.file.contentHash" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] SHA-256 of the file" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "SHA-256 of the file." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.nativeObject.imagingStudy" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.nativeObject.imagingStudy" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] DICOM study holding the ECG" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "12-Lead ECG, General ECG, General 32-bit ECG or Ambulatory ECG SOP instance, retrievable through the imaging infrastructure (IHE MADO)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSImagingStudy" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "EHDSECGRecording.nativeObject.endpoint" ] ;
+       fhir:ElementDefinition.path [ fhir:value "EHDSECGRecording.nativeObject.endpoint" ] ;
+       fhir:ElementDefinition.short [ fhir:value "[C] Endpoint" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Where the object can be retrieved, e.g. for long-term recordings." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSEndpoint" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGRecording.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

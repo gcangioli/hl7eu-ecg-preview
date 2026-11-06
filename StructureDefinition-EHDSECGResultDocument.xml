@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="EHDSECGResultDocument"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition EHDSECGResultDocument</b></p><table border="0" cellpadding="0" cellspacing="0" class="xhtTableBorder0"><tr class="xhtRowBorder1"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument" title="Transports annotations and derived results produced after the ECG was first exchanged (for example an AI analysis of an archived ECG or a later re-reading), without rebuilding the original report. The objects it carries link to the examination and recordings by their durable identifiers (external links).">EHDSECGResultDocument</a><a name="EHDSECGResultDocument"> </a></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( ecg-rep-1, ecg-rep-2, ecg-rep-3, ecg-rdoc-1, ecg-rdoc-2, ecg-rdoc-3 )" class="xhtConstraintStyle">C</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDocument.html">EHDSDocument</a></td><td style="" class="hierarchy xhtCellBorder0">ECG result document model<br/><br/>Elements defined in Ancestors:<a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDataSet.html" title="Basic metadata for this information">header</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDocument.html">header</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDocument.html" title="A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document">presentedForm</a><br/><span class="xhtPieceBold">Instances of this type can be the target of a Reference</span><br class="constraint"/><span class="constraint">Constraints: </span><span title="TODO: placeholder for invariant ecg-rep-1, to be defined." class="xhtPieceBold constraint">ecg-rep-1</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-rep-2, to be defined." class="xhtPieceBold constraint">ecg-rep-2</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-rep-3, to be defined." class="xhtPieceBold constraint">ecg-rep-3</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-rdoc-1, to be defined." class="xhtPieceBold constraint">ecg-rdoc-1</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-rdoc-2, to be defined." class="xhtPieceBold constraint">ecg-rdoc-2</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-rdoc-3, to be defined." class="xhtPieceBold constraint">ecg-rdoc-3</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResultDocument.</span><a href="StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.header">header</a><a name="EHDSECGResultDocument.header"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResultDocument.header.</span><a href="StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.header.documentType">documentType</a><a name="EHDSECGResultDocument.header.documentType"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Draft code ecg-result-document<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGDocumentTypeVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGDocumentTypeVS" class="binding">ECG Document Type (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResultDocument.</span><a href="StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.presentedForm">presentedForm</a><a name="EHDSECGResultDocument.presentedForm"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSAttachment.html" class="xhtPieceDeEmphasized">EHDSAttachment</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Optional human-readable rendering of the new results</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck01.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResultDocument.</span><a href="StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body" title="Structured content of the result document.">body</a><a name="EHDSECGResultDocument.body"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">[A] Structured content</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck011.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResultDocument.body.</span><a href="StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.orderInformation" title="Identifies who requested it. Same structure as EHDSECGReport.body.orderInformation.">orderInformation</a><a name="EHDSECGResultDocument.body.orderInformation"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">[A] Request for the later analysis or re-reading<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck0110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResultDocument.body.orderInformation.</span><a href="StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.orderInformation.orderId" title="Identifier of the order.">orderId</a><a name="EHDSECGResultDocument.body.orderInformation.orderId"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">Order identifier<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck0110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResultDocument.body.orderInformation.</span><a href="StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.orderInformation.orderDateAndTime" title="Date and time of the order.">orderDateAndTime</a><a name="EHDSECGResultDocument.body.orderInformation.orderDateAndTime"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="" class="hierarchy xhtCellBorder0">Order date and time</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck0111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResultDocument.body.orderInformation.</span><a href="StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.orderInformation.orderPlacer[x]" title="Who placed the order.">orderPlacer[x]</a><a name="EHDSECGResultDocument.body.orderInformation.orderPlacer_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">Order placer</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck01110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResultDocument.body.orderInformation.orderPlacer[x].</span><span title="Model for information about a health professional.">orderPlacerEHDSHealthProfessional</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSHealthProfessional.html">EHDSHealthProfessional</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck01100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResultDocument.body.orderInformation.orderPlacer[x].</span><span title="Model for information about an organisation">orderPlacerEHDSOrganisation</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSOrganisation.html">EHDSOrganisation</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck0111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResultDocument.body.orderInformation.</span><a href="StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.orderInformation.orderReason[x]" title="Reason for the order.">orderReason[x]</a><a name="EHDSECGResultDocument.body.orderInformation.orderReason_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">Order reason<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck01110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResultDocument.body.orderInformation.orderReason[x].</span><span title="Model for a clinical condition, problem, diagnosis, or other event, situation, or issue that has risen to a level of concern.">orderReasonEHDSCondition</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSCondition.html">EHDSCondition</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck01100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResultDocument.body.orderInformation.orderReason[x].</span><span title="Base StructureDefinition for CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.">orderReasonCodeableConcept</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck0100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResultDocument.body.orderInformation.</span><a href="StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.orderInformation.clinicalQuestion" title="Clinical question of the requester.">clinicalQuestion</a><a name="EHDSECGResultDocument.body.orderInformation.clinicalQuestion"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Clinical question</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck011.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResultDocument.body.</span><a href="StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.basedOn" title="The examination(s) the results refer to.">basedOn</a><a name="EHDSECGResultDocument.body.basedOn"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">[A] Examination(s) the results refer to<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck0110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResultDocument.body.basedOn.</span><a href="StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.basedOn.examination" title="External link to the examination.">examination</a><a name="EHDSECGResultDocument.body.basedOn.examination"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Durable identifier of the examination</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck0100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResultDocument.body.basedOn.</span><a href="StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.basedOn.sourceDocument" title="Identifier of a document where the examination can be retrieved.">sourceDocument</a><a name="EHDSECGResultDocument.body.basedOn.sourceDocument"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">[A] Document where the examination can be retrieved</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResultDocument.body.</span><a href="StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.annotationSet" title="Their recording links are external.">annotationSet</a><a name="EHDSECGResultDocument.body.annotationSet"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSECGAnnotationSet.html">EHDSECGAnnotationSet</a></td><td style="" class="hierarchy xhtCellBorder0">[A] New annotation sets<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck000.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGResultDocument.body.</span><a href="StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.result" title="Their anchor and input links may be external (ecg-rdoc-1).">result</a><a name="EHDSECGResultDocument.body.result"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSECGDerivedResult.html">EHDSECGDerivedResult</a></td><td style="" class="hierarchy xhtCellBorder0">[A] New derived results<br/></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
+    <valueCode value="can-be-target"/>
+  </extension>
+  <url value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"/>
+  <version value="0.1.0-ci-build"/>
+  <name value="EHDSECGResultDocument"/>
+  <title value="ECG result document model"/>
+  <status value="draft"/>
+  <date value="2026-11-06T23:02:43+01:00"/>
+  <publisher value="HL7 Europe"/>
+  <contact>
+    <name value="HL7 Europe"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.eu"/>
+    </telecom>
+  </contact>
+  <description value="Transports annotations and derived results produced after the ECG was first exchanged (for example an AI analysis of an archived ECG or a later re-reading), without rebuilding the original report. The objects it carries link to the examination and recordings by their durable identifiers (external links)."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="150"/>
+      <display value="Europe"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright HL7 Europe. Licensed under creative commons public domain (CC0 1.0)."/>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"/>
+  <baseDefinition value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDocument"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="1.0.0"/>
+    </extension>
+    <element id="EHDSECGResultDocument">
+      <path value="EHDSECGResultDocument"/>
+      <short value="ECG result document model"/>
+      <definition value="Transports annotations and derived results produced after the ECG was first exchanged (for example an AI analysis of an archived ECG or a later re-reading), without rebuilding the original report. The objects it carries link to the examination and recordings by their durable identifiers (external links)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <constraint>
+        <key value="ecg-rep-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rep-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rep-2"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rep-2, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rep-3"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rep-3, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rdoc-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rdoc-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rdoc-2"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rdoc-2, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rdoc-3"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rdoc-3, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"/>
+      </constraint>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="EHDSECGResultDocument.header">
+      <path value="EHDSECGResultDocument.header"/>
+      <short value="Document header"/>
+      <definition value="Basic metadata for this information"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.header.subject">
+      <path value="EHDSECGResultDocument.header.subject"/>
+      <short value="Patient/subject information"/>
+      <definition value="Patient/subject information"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.subject"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.header.identifier">
+      <path value="EHDSECGResultDocument.header.identifier"/>
+      <short value="Unique identifier of the document"/>
+      <definition value="Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDataSet.header.identifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.header.author[x]">
+      <path value="EHDSECGResultDocument.header.author[x]"/>
+      <short value="Author(s) of the document"/>
+      <definition value="Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDataSet.header.author[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.header.date">
+      <path value="EHDSECGResultDocument.header.date"/>
+      <short value="Date of finalising/issuing the document"/>
+      <definition value="Date and optionally time of authoring/issuing"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.date"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.header.status">
+      <path value="EHDSECGResultDocument.header.status"/>
+      <short value="Status of the document"/>
+      <definition value="Status of the resource or document"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.header.source">
+      <path value="EHDSECGResultDocument.header.source"/>
+      <short value="Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information."/>
+      <definition value="Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="EHDSDataSet.header.source"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.header.language">
+      <path value="EHDSECGResultDocument.header.language"/>
+      <short value="Language in which the resource is written. Language is expressed by the IETF language tag."/>
+      <definition value="Language in which the resource is written. Language is expressed by the IETF language tag."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.language"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="BCP 47"/>
+      </binding>
+    </element>
+    <element id="EHDSECGResultDocument.header.documentType">
+      <path value="EHDSECGResultDocument.header.documentType"/>
+      <short value="[A] Draft code ecg-result-document"/>
+      <definition value="Type of document at hand, e.g. 60591-5 Patient summary document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.documentType"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGDocumentTypeVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGResultDocument.header.documentTitle">
+      <path value="EHDSECGResultDocument.header.documentTitle"/>
+      <short value="Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: 'Laboratory Result Report', 'Patient Summary of Jane Green 10.12.2024'"/>
+      <definition value="Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: 'Laboratory Result Report', 'Patient Summary of Jane Green 10.12.2024'"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.documentTitle"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.header.period">
+      <path value="EHDSECGResultDocument.header.period"/>
+      <short value="Time of service that is being documented"/>
+      <definition value="Time of service that is being documented"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.period"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.header.version">
+      <path value="EHDSECGResultDocument.header.version"/>
+      <short value="Business version of the document. The exact algorithm for versioning is decided by the producer/custodian"/>
+      <definition value="Business version of the document. The exact algorithm for versioning is decided by the producer/custodian"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.version"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.header.attestation">
+      <path value="EHDSECGResultDocument.header.attestation"/>
+      <short value="Document attestation details"/>
+      <definition value="Document attestation details"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.header.attestation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.header.attestation.attester[x]">
+      <path value="EHDSECGResultDocument.header.attestation.attester[x]"/>
+      <short value="Attester who validated the document"/>
+      <definition value="Attester who validated the document"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.attestation.attester[x]"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.header.attestation.datetime">
+      <path value="EHDSECGResultDocument.header.attestation.datetime"/>
+      <short value="Date and time of the approval of the document by Attester"/>
+      <definition value="Date and time of the approval of the document by Attester"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.attestation.datetime"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.header.legalAuthentication">
+      <path value="EHDSECGResultDocument.header.legalAuthentication"/>
+      <short value="Document legal authentication details"/>
+      <definition value="Document legal authentication details"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.header.legalAuthentication"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.header.legalAuthentication.legalAuthenticator[x]">
+      <path value="EHDSECGResultDocument.header.legalAuthentication.legalAuthenticator[x]"/>
+      <short value="The person or organisation taking responsibility for the content of the document."/>
+      <definition value="The person or organisation taking responsibility for the content of the document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.legalAuthentication.legalAuthenticator[x]"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.header.legalAuthentication.datetime">
+      <path value="EHDSECGResultDocument.header.legalAuthentication.datetime"/>
+      <short value="Date and time when the document was authorised"/>
+      <definition value="Date and time when the document was authorised"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.legalAuthentication.datetime"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.header.eventType">
+      <path value="EHDSECGResultDocument.header.eventType"/>
+      <short value="Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."/>
+      <definition value="Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.header.eventType"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="LOINC, SNOMED CT, dicom-cid-33-Modality"/>
+      </binding>
+    </element>
+    <element id="EHDSECGResultDocument.header.serviceSpecialty">
+      <path value="EHDSECGResultDocument.header.serviceSpecialty"/>
+      <short value="Additional details about where the content was created (e.g. clinical specialty)"/>
+      <definition value="Additional details about where the content was created (e.g. clinical specialty)"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.header.serviceSpecialty"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="SNOMED CT"/>
+      </binding>
+    </element>
+    <element id="EHDSECGResultDocument.header.custodian">
+      <path value="EHDSECGResultDocument.header.custodian"/>
+      <short value="Organisation that is in charge of maintaining the document/report."/>
+      <definition value="Organisation that is in charge of maintaining the document/report."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.custodian"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.presentedForm">
+      <path value="EHDSECGResultDocument.presentedForm"/>
+      <short value="[A] Optional human-readable rendering of the new results"/>
+      <definition value="A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.presentedForm"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body">
+      <path value="EHDSECGResultDocument.body"/>
+      <short value="[A] Structured content"/>
+      <definition value="Structured content of the result document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResultDocument.body"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.orderInformation">
+      <path value="EHDSECGResultDocument.body.orderInformation"/>
+      <short value="[A] Request for the later analysis or re-reading"/>
+      <definition value="Identifies who requested it. Same structure as EHDSECGReport.body.orderInformation."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGResultDocument.body.orderInformation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.orderInformation.orderId">
+      <path value="EHDSECGResultDocument.body.orderInformation.orderId"/>
+      <short value="Order identifier"/>
+      <definition value="Identifier of the order."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGResultDocument.body.orderInformation.orderId"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.orderInformation.orderDateAndTime">
+      <path value="EHDSECGResultDocument.body.orderInformation.orderDateAndTime"/>
+      <short value="Order date and time"/>
+      <definition value="Date and time of the order."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResultDocument.body.orderInformation.orderDateAndTime"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.orderInformation.orderPlacer[x]">
+      <path value="EHDSECGResultDocument.body.orderInformation.orderPlacer[x]"/>
+      <short value="Order placer"/>
+      <definition value="Who placed the order."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResultDocument.body.orderInformation.orderPlacer[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.orderInformation.orderReason[x]">
+      <path value="EHDSECGResultDocument.body.orderInformation.orderReason[x]"/>
+      <short value="Order reason"/>
+      <definition value="Reason for the order."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGResultDocument.body.orderInformation.orderReason[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSCondition"/>
+      </type>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.orderInformation.clinicalQuestion">
+      <path value="EHDSECGResultDocument.body.orderInformation.clinicalQuestion"/>
+      <short value="Clinical question"/>
+      <definition value="Clinical question of the requester."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResultDocument.body.orderInformation.clinicalQuestion"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.basedOn">
+      <path value="EHDSECGResultDocument.body.basedOn"/>
+      <short value="[A] Examination(s) the results refer to"/>
+      <definition value="The examination(s) the results refer to."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGResultDocument.body.basedOn"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.basedOn.examination">
+      <path value="EHDSECGResultDocument.body.basedOn.examination"/>
+      <short value="[A] Durable identifier of the examination"/>
+      <definition value="External link to the examination."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResultDocument.body.basedOn.examination"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.basedOn.sourceDocument">
+      <path value="EHDSECGResultDocument.body.basedOn.sourceDocument"/>
+      <short value="[A] Document where the examination can be retrieved"/>
+      <definition value="Identifier of a document where the examination can be retrieved."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGResultDocument.body.basedOn.sourceDocument"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.annotationSet">
+      <path value="EHDSECGResultDocument.body.annotationSet"/>
+      <short value="[A] New annotation sets"/>
+      <definition value="Their recording links are external."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGResultDocument.body.annotationSet"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.result">
+      <path value="EHDSECGResultDocument.body.result"/>
+      <short value="[A] New derived results"/>
+      <definition value="Their anchor and input links may be external (ecg-rdoc-1)."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGResultDocument.body.result"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGDerivedResult"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="EHDSECGResultDocument">
+      <path value="EHDSECGResultDocument"/>
+      <short value="ECG result document model"/>
+      <definition value="Transports annotations and derived results produced after the ECG was first exchanged (for example an AI analysis of an archived ECG or a later re-reading), without rebuilding the original report. The objects it carries link to the examination and recordings by their durable identifiers (external links)."/>
+      <constraint>
+        <key value="ecg-rep-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rep-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rep-2"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rep-2, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rep-3"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rep-3, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rdoc-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rdoc-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rdoc-2"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rdoc-2, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-rdoc-3"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-rdoc-3, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"/>
+      </constraint>
+    </element>
+    <element id="EHDSECGResultDocument.header.documentType">
+      <path value="EHDSECGResultDocument.header.documentType"/>
+      <short value="[A] Draft code ecg-result-document"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGDocumentTypeVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGResultDocument.presentedForm">
+      <path value="EHDSECGResultDocument.presentedForm"/>
+      <short value="[A] Optional human-readable rendering of the new results"/>
+    </element>
+    <element id="EHDSECGResultDocument.body">
+      <path value="EHDSECGResultDocument.body"/>
+      <short value="[A] Structured content"/>
+      <definition value="Structured content of the result document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.orderInformation">
+      <path value="EHDSECGResultDocument.body.orderInformation"/>
+      <short value="[A] Request for the later analysis or re-reading"/>
+      <definition value="Identifies who requested it. Same structure as EHDSECGReport.body.orderInformation."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.orderInformation.orderId">
+      <path value="EHDSECGResultDocument.body.orderInformation.orderId"/>
+      <short value="Order identifier"/>
+      <definition value="Identifier of the order."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.orderInformation.orderDateAndTime">
+      <path value="EHDSECGResultDocument.body.orderInformation.orderDateAndTime"/>
+      <short value="Order date and time"/>
+      <definition value="Date and time of the order."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.orderInformation.orderPlacer[x]">
+      <path value="EHDSECGResultDocument.body.orderInformation.orderPlacer[x]"/>
+      <short value="Order placer"/>
+      <definition value="Who placed the order."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.orderInformation.orderReason[x]">
+      <path value="EHDSECGResultDocument.body.orderInformation.orderReason[x]"/>
+      <short value="Order reason"/>
+      <definition value="Reason for the order."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSCondition"/>
+      </type>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.orderInformation.clinicalQuestion">
+      <path value="EHDSECGResultDocument.body.orderInformation.clinicalQuestion"/>
+      <short value="Clinical question"/>
+      <definition value="Clinical question of the requester."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.basedOn">
+      <path value="EHDSECGResultDocument.body.basedOn"/>
+      <short value="[A] Examination(s) the results refer to"/>
+      <definition value="The examination(s) the results refer to."/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.basedOn.examination">
+      <path value="EHDSECGResultDocument.body.basedOn.examination"/>
+      <short value="[A] Durable identifier of the examination"/>
+      <definition value="External link to the examination."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.basedOn.sourceDocument">
+      <path value="EHDSECGResultDocument.body.basedOn.sourceDocument"/>
+      <short value="[A] Document where the examination can be retrieved"/>
+      <definition value="Identifier of a document where the examination can be retrieved."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.annotationSet">
+      <path value="EHDSECGResultDocument.body.annotationSet"/>
+      <short value="[A] New annotation sets"/>
+      <definition value="Their recording links are external."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"/>
+      </type>
+    </element>
+    <element id="EHDSECGResultDocument.body.result">
+      <path value="EHDSECGResultDocument.body.result"/>
+      <short value="[A] New derived results"/>
+      <definition value="Their anchor and input links may be external (ecg-rdoc-1)."/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGDerivedResult"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,1370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="EHDSECGBiomarkerDefinition"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition EHDSECGBiomarkerDefinition</b></p><table border="0" cellpadding="0" cellspacing="0" class="xhtTableBorder0"><tr class="xhtRowBorder1"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition" title="Registry entry for a derived or AI biomarker, equivalent to FHIR R5 ObservationDefinition. Describes what the biomarker is; the algorithms that compute it and their performance are described in EHDSECGAlgorithm.">EHDSECGBiomarkerDefinition</a><a name="EHDSECGBiomarkerDefinition"> </a></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( ecg-def-1, ecg-def-2, ecg-def-3 )" class="xhtConstraintStyle">C</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="" class="hierarchy xhtCellBorder0">ECG biomarker definition model<br/><span class="xhtPieceBold">Instances of this type can be the target of a Reference</span><br class="constraint"/><span class="constraint">Constraints: </span><span title="TODO: placeholder for invariant ecg-def-1, to be defined." class="xhtPieceBold constraint">ecg-def-1</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-def-2, to be defined." class="xhtPieceBold constraint">ecg-def-2</span><span class="constraint">, </span><span title="TODO: placeholder for invariant ecg-def-3, to be defined." class="xhtPieceBold constraint">ecg-def-3</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.url" title="Canonical URL.">url</a><a name="EHDSECGBiomarkerDefinition.url"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td><td style="" class="hierarchy xhtCellBorder0">Canonical URL</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.version" title="Version.">version</a><a name="EHDSECGBiomarkerDefinition.version"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Version</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.status" title="draft, active, retired.">status</a><a name="EHDSECGBiomarkerDefinition.status"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="" class="hierarchy xhtCellBorder0">Status<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-publication-status.html" title="http://hl7.org/fhir/ValueSet/publication-status" class="binding">PublicationStatus</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.governanceTier" title="Who vouches for its meaning: local, accredited-centre, esc-registry, other-recognised-authority. Only local restricts the use of the results, to research (ecg-dr-9).">governanceTier</a><a name="EHDSECGBiomarkerDefinition.governanceTier"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Recognition of the definition<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGDefinitionTierVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGDefinitionTierVS" class="binding">ECG Definition Tier (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.recognisedBy" title="Required for other-recognised-authority (ecg-def-3).">recognisedBy</a><a name="EHDSECGBiomarkerDefinition.recognisedBy"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSOrganisation.html">EHDSOrganisation</a></td><td style="" class="hierarchy xhtCellBorder0">Body that reviewed the definition</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.code" title="Registry code, plus LOINC / SNOMED CT / MDC equivalents once available.">code</a><a name="EHDSECGBiomarkerDefinition.code"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Registry code</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.title" title="Title.">title</a><a name="EHDSECGBiomarkerDefinition.title"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Title</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.description" title="Clinical definition.">description</a><a name="EHDSECGBiomarkerDefinition.description"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#markdown">markdown</a></td><td style="" class="hierarchy xhtCellBorder0">Clinical definition</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.outputKind" title="detection-probability, risk-at-horizon, continuous-estimate, classification, measurement, annotation, signal, embedding, text.">outputKind</a><a name="EHDSECGBiomarkerDefinition.outputKind"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Output kind<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGOutputKindVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGOutputKindVS" class="binding">ECG Output Kind (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.targetCondition" title="SNOMED CT condition targeted.">targetCondition</a><a name="EHDSECGBiomarkerDefinition.targetCondition"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Target condition</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.referenceStandard" title="Ground truth, e.g. LVEF &lt;= 40 % by echocardiography within 30 days.">referenceStandard</a><a name="EHDSECGBiomarkerDefinition.referenceStandard"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Reference standard</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.horizon" title="Required when outputKind = risk-at-horizon, absent otherwise (ecg-def-1).">horizon</a><a name="EHDSECGBiomarkerDefinition.horizon"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Duration">Duration</a></td><td style="" class="hierarchy xhtCellBorder0">Horizon</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.horizon.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.horizon.code">code</a><a name="EHDSECGBiomarkerDefinition.horizon.code"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#code" class="xhtPieceDeEmphasized">code</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Coded form of the unit</span><br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGDurationUnitVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGDurationUnitVS" class="binding">ECG Duration Unit (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.representation" title="For embeddings: what the vector means. Required when outputKind = embedding (ecg-def-2).">representation</a><a name="EHDSECGBiomarkerDefinition.representation"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">Representation</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.representation.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.representation.sourceModel" title="Model that produces the representation, with its version.">sourceModel</a><a name="EHDSECGBiomarkerDefinition.representation.sourceModel"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Source model</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.representation.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.representation.dimension" title="Number of values.">dimension</a><a name="EHDSECGBiomarkerDefinition.representation.dimension"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td style="" class="hierarchy xhtCellBorder0">Dimension</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.representation.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.representation.encoding" title="Encoding of the values, e.g. little-endian float32.">encoding</a><a name="EHDSECGBiomarkerDefinition.representation.encoding"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Encoding</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.representation.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.representation.space" title="Description of the representation space and of how it may be used (distance, normalisation).">space</a><a name="EHDSECGBiomarkerDefinition.representation.space"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Representation space</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.permittedDataType" title="FHIR data type names, e.g. Quantity, CodeableConcept, SampledData. Value set to be defined.">permittedDataType</a><a name="EHDSECGBiomarkerDefinition.permittedDataType"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="" class="hierarchy xhtCellBorder0">Allowed result types<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.unit" title="UCUM unit.">unit</a><a name="EHDSECGBiomarkerDefinition.unit"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="" class="hierarchy xhtCellBorder0">Unit</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.plausibleRange" title="Physically possible range.">plausibleRange</a><a name="EHDSECGBiomarkerDefinition.plausibleRange"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a></td><td style="" class="hierarchy xhtCellBorder0">Plausible range</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.answerValueSet" title="Allowed values for classifications.">answerValueSet</a><a name="EHDSECGBiomarkerDefinition.answerValueSet"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">canonical</a>(<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a>)</td><td style="" class="hierarchy xhtCellBorder0">Answer value set</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.threshold" title="Cut-offs that define the categories of the biomarker. Operating points and performance of a given algorithm are described with the algorithm.">threshold</a><a name="EHDSECGBiomarkerDefinition.threshold"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">Clinically meaningful cut-offs<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.threshold.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.threshold.operatingPoint" title="Name of the cut-off.">operatingPoint</a><a name="EHDSECGBiomarkerDefinition.threshold.operatingPoint"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Name of the cut-off</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.threshold.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.threshold.value" title="Cut-off value.">value</a><a name="EHDSECGBiomarkerDefinition.threshold.value"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">Cut-off value</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.inputRequirement" title="Inputs the biomarker needs. Shared structure with EHDSECGAlgorithm.">inputRequirement</a><a name="EHDSECGBiomarkerDefinition.inputRequirement"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">Input requirements<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.inputRequirement.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.inputRequirement.role" title="index-ecg, comparison-ecg, clinical-covariate...">role</a><a name="EHDSECGBiomarkerDefinition.inputRequirement.role"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Role<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGInputRoleVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGInputRoleVS" class="binding">ECG Input Role (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.inputRequirement.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.inputRequirement.leadSystem" title="E.g. standard 12-lead, single lead.">leadSystem</a><a name="EHDSECGBiomarkerDefinition.inputRequirement.leadSystem"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Lead system<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGLeadSystemVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS" class="binding">ECG Lead System (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.inputRequirement.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.inputRequirement.requiredLead" title="Leads that must be present.">requiredLead</a><a name="EHDSECGBiomarkerDefinition.inputRequirement.requiredLead"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Required leads<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGLeadVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS" class="binding">ECG Lead (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span><br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.inputRequirement.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.inputRequirement.minimumSamplingFrequency" title="UCUM Hz.">minimumSamplingFrequency</a><a name="EHDSECGBiomarkerDefinition.inputRequirement.minimumSamplingFrequency"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">Minimum sampling frequency</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.inputRequirement.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.inputRequirement.minimumDuration" title="UCUM s.">minimumDuration</a><a name="EHDSECGBiomarkerDefinition.inputRequirement.minimumDuration"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">Minimum duration</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.inputRequirement.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.inputRequirement.covariate" title="For a clinical covariate: what it is (age, sex...).">covariate</a><a name="EHDSECGBiomarkerDefinition.inputRequirement.covariate"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Covariate</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.inputRequirement.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.inputRequirement.note" title="E.g. excluded populations.">note</a><a name="EHDSECGBiomarkerDefinition.inputRequirement.note"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Other requirements</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.comparability" title="algorithm-specific, harmonised.">comparability</a><a name="EHDSECGBiomarkerDefinition.comparability"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="" class="hierarchy xhtCellBorder0">Comparability<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGComparabilityVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGComparabilityVS" class="binding">ECG Comparability (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.evidence" title="Validation publications (DOI).">evidence</a><a name="EHDSECGBiomarkerDefinition.evidence"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td><td style="" class="hierarchy xhtCellBorder0">Evidence<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck00.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGBiomarkerDefinition.</span><a href="StructureDefinition-EHDSECGBiomarkerDefinition-definitions.html#EHDSECGBiomarkerDefinition.steward" title="Responsible organisation: the research team, the accredited centre or the ESC.">steward</a><a name="EHDSECGBiomarkerDefinition.steward"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSOrganisation.html">EHDSOrganisation</a></td><td style="" class="hierarchy xhtCellBorder0">Steward</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
+    <valueCode value="can-be-target"/>
+  </extension>
+  <url value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGBiomarkerDefinition"/>
+  <version value="0.1.0-ci-build"/>
+  <name value="EHDSECGBiomarkerDefinition"/>
+  <title value="ECG biomarker definition model"/>
+  <status value="draft"/>
+  <date value="2026-11-06T23:02:43+01:00"/>
+  <publisher value="HL7 Europe"/>
+  <contact>
+    <name value="HL7 Europe"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.eu"/>
+    </telecom>
+  </contact>
+  <description value="Registry entry for a derived or AI biomarker, equivalent to FHIR R5 ObservationDefinition. Describes what the biomarker is; the algorithms that compute it and their performance are described in EHDSECGAlgorithm."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="150"/>
+      <display value="Europe"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright HL7 Europe. Licensed under creative commons public domain (CC0 1.0)."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGBiomarkerDefinition"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.0.1"/>
+    </extension>
+    <element id="EHDSECGBiomarkerDefinition">
+      <path value="EHDSECGBiomarkerDefinition"/>
+      <short value="ECG biomarker definition model"/>
+      <definition value="Registry entry for a derived or AI biomarker, equivalent to FHIR R5 ObservationDefinition. Describes what the biomarker is; the algorithms that compute it and their performance are described in EHDSECGAlgorithm."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <constraint>
+        <key value="ecg-def-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-def-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGBiomarkerDefinition"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-def-2"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-def-2, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGBiomarkerDefinition"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-def-3"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-def-3, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGBiomarkerDefinition"/>
+      </constraint>
+      <isModifier value="false"/>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.url">
+      <path value="EHDSECGBiomarkerDefinition.url"/>
+      <short value="Canonical URL"/>
+      <definition value="Canonical URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.version">
+      <path value="EHDSECGBiomarkerDefinition.version"/>
+      <short value="Version"/>
+      <definition value="Version."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.version"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.status">
+      <path value="EHDSECGBiomarkerDefinition.status"/>
+      <short value="Status"/>
+      <definition value="draft, active, retired."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/publication-status"/>
+      </binding>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.governanceTier">
+      <path value="EHDSECGBiomarkerDefinition.governanceTier"/>
+      <short value="Recognition of the definition"/>
+      <definition value="Who vouches for its meaning: local, accredited-centre, esc-registry, other-recognised-authority. Only local restricts the use of the results, to research (ecg-dr-9)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.governanceTier"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGDefinitionTierVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.recognisedBy">
+      <path value="EHDSECGBiomarkerDefinition.recognisedBy"/>
+      <short value="Body that reviewed the definition"/>
+      <definition value="Required for other-recognised-authority (ecg-def-3)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.recognisedBy"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.code">
+      <path value="EHDSECGBiomarkerDefinition.code"/>
+      <short value="Registry code"/>
+      <definition value="Registry code, plus LOINC / SNOMED CT / MDC equivalents once available."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.code"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.title">
+      <path value="EHDSECGBiomarkerDefinition.title"/>
+      <short value="Title"/>
+      <definition value="Title."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.title"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.description">
+      <path value="EHDSECGBiomarkerDefinition.description"/>
+      <short value="Clinical definition"/>
+      <definition value="Clinical definition."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.description"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="markdown"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.outputKind">
+      <path value="EHDSECGBiomarkerDefinition.outputKind"/>
+      <short value="Output kind"/>
+      <definition value="detection-probability, risk-at-horizon, continuous-estimate, classification, measurement, annotation, signal, embedding, text."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.outputKind"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGOutputKindVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.targetCondition">
+      <path value="EHDSECGBiomarkerDefinition.targetCondition"/>
+      <short value="Target condition"/>
+      <definition value="SNOMED CT condition targeted."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.targetCondition"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.referenceStandard">
+      <path value="EHDSECGBiomarkerDefinition.referenceStandard"/>
+      <short value="Reference standard"/>
+      <definition value="Ground truth, e.g. LVEF &lt;= 40 % by echocardiography within 30 days."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.referenceStandard"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.horizon">
+      <path value="EHDSECGBiomarkerDefinition.horizon"/>
+      <short value="Horizon"/>
+      <definition value="Required when outputKind = risk-at-horizon, absent otherwise (ecg-def-1)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.horizon"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Duration"/>
+      </type>
+      <constraint>
+        <key value="drt-1"/>
+        <severity value="error"/>
+        <human value="There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM."/>
+        <expression value="code.exists() implies ((system = %ucum) and value.exists())"/>
+        <xpath value="(f:code or not(f:value)) and (not(exists(f:system)) or f:system/@value='http://unitsofmeasure.org')"/>
+      </constraint>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="qty-3"/>
+        <severity value="error"/>
+        <human value="If a code for the unit is present, the system SHALL also be present"/>
+        <expression value="code.empty() or system.exists()"/>
+        <xpath value="not(exists(f:code)) or exists(f:system)"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Quantity"/>
+      </constraint>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.horizon.id">
+      <path value="EHDSECGBiomarkerDefinition.horizon.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.horizon.extension">
+      <path value="EHDSECGBiomarkerDefinition.horizon.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.horizon.value">
+      <path value="EHDSECGBiomarkerDefinition.horizon.value"/>
+      <short value="Numerical value (with implicit precision)"/>
+      <definition value="The value of the measured amount. The value includes an implicit precision in the presentation of the value."/>
+      <comment value="The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books)."/>
+      <requirements value="Precision is handled implicitly in almost all cases of measurement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Quantity.value"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="SN.2  / CQ - N/A"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value"/>
+      </mapping>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.horizon.comparator">
+      <path value="EHDSECGBiomarkerDefinition.horizon.comparator"/>
+      <short value="&lt; | &lt;= | &gt;= | &gt; - how to understand the value"/>
+      <definition value="How the value should be understood and represented - whether the actual value is greater or less than the stated value due to measurement issues; e.g. if the comparator is &quot;&lt;&quot; , then the real value is &lt; stated value."/>
+      <requirements value="Need a framework for handling measures where the value is &lt;5ug/L or &gt;400mg/L due to the limitations of measuring methodology."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Quantity.comparator"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <meaningWhenMissing value="If there is no comparator, then there is no modification of the value"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="This is labeled as &quot;Is Modifier&quot; because the comparator modifies the interpretation of the value significantly. If there is no comparator, then there is no modification of the value"/>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="QuantityComparator"/>
+        </extension>
+        <strength value="required"/>
+        <description value="How the Quantity should be understood and represented."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/quantity-comparator|4.0.1"/>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="SN.1  / CQ.1"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="IVL properties"/>
+      </mapping>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.horizon.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true"/>
+      </extension>
+      <path value="EHDSECGBiomarkerDefinition.horizon.unit"/>
+      <short value="Unit representation"/>
+      <definition value="A human-readable form of the unit."/>
+      <requirements value="There are many representations for units of measure and in many contexts, particular representations are fixed and required. I.e. mcg for micrograms."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Quantity.unit"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="(see OBX.6 etc.) / CQ.2"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="PQ.unit"/>
+      </mapping>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.horizon.system">
+      <path value="EHDSECGBiomarkerDefinition.horizon.system"/>
+      <short value="System that defines coded unit form"/>
+      <definition value="The identification of the system that provides the coded form of the unit."/>
+      <requirements value="Need to know the system that defines the coded form of the unit."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Quantity.system"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <condition value="qty-3"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="(see OBX.6 etc.) / CQ.2"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="CO.codeSystem, PQ.translation.codeSystem"/>
+      </mapping>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.horizon.code">
+      <path value="EHDSECGBiomarkerDefinition.horizon.code"/>
+      <short value="Coded form of the unit"/>
+      <definition value="A computer processable form of the unit in some unit representation system."/>
+      <comment value="The preferred system is UCUM, but SNOMED CT can also be used (for customary units) or ISO 4217 for currency.  The context of use may additionally require a code from a particular system."/>
+      <requirements value="Need a computable form of the unit that is fixed across all forms. UCUM provides this for quantities, but SNOMED CT provides many units of interest."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Quantity.code"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGDurationUnitVS"/>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="(see OBX.6 etc.) / CQ.2"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="PQ.code, MO.currency, PQ.translation.code"/>
+      </mapping>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.representation">
+      <path value="EHDSECGBiomarkerDefinition.representation"/>
+      <short value="Representation"/>
+      <definition value="For embeddings: what the vector means. Required when outputKind = embedding (ecg-def-2)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.representation"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.representation.sourceModel">
+      <path value="EHDSECGBiomarkerDefinition.representation.sourceModel"/>
+      <short value="Source model"/>
+      <definition value="Model that produces the representation, with its version."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.representation.sourceModel"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.representation.dimension">
+      <path value="EHDSECGBiomarkerDefinition.representation.dimension"/>
+      <short value="Dimension"/>
+      <definition value="Number of values."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.representation.dimension"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="integer"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.representation.encoding">
+      <path value="EHDSECGBiomarkerDefinition.representation.encoding"/>
+      <short value="Encoding"/>
+      <definition value="Encoding of the values, e.g. little-endian float32."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.representation.encoding"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.representation.space">
+      <path value="EHDSECGBiomarkerDefinition.representation.space"/>
+      <short value="Representation space"/>
+      <definition value="Description of the representation space and of how it may be used (distance, normalisation)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.representation.space"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.permittedDataType">
+      <path value="EHDSECGBiomarkerDefinition.permittedDataType"/>
+      <short value="Allowed result types"/>
+      <definition value="FHIR data type names, e.g. Quantity, CodeableConcept, SampledData. Value set to be defined."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.permittedDataType"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.unit">
+      <path value="EHDSECGBiomarkerDefinition.unit"/>
+      <short value="Unit"/>
+      <definition value="UCUM unit."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.unit"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.plausibleRange">
+      <path value="EHDSECGBiomarkerDefinition.plausibleRange"/>
+      <short value="Plausible range"/>
+      <definition value="Physically possible range."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.plausibleRange"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Range"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.answerValueSet">
+      <path value="EHDSECGBiomarkerDefinition.answerValueSet"/>
+      <short value="Answer value set"/>
+      <definition value="Allowed values for classifications."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.answerValueSet"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="canonical"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ValueSet"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.threshold">
+      <path value="EHDSECGBiomarkerDefinition.threshold"/>
+      <short value="Clinically meaningful cut-offs"/>
+      <definition value="Cut-offs that define the categories of the biomarker. Operating points and performance of a given algorithm are described with the algorithm."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.threshold"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.threshold.operatingPoint">
+      <path value="EHDSECGBiomarkerDefinition.threshold.operatingPoint"/>
+      <short value="Name of the cut-off"/>
+      <definition value="Name of the cut-off."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.threshold.operatingPoint"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.threshold.value">
+      <path value="EHDSECGBiomarkerDefinition.threshold.value"/>
+      <short value="Cut-off value"/>
+      <definition value="Cut-off value."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.threshold.value"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.inputRequirement">
+      <path value="EHDSECGBiomarkerDefinition.inputRequirement"/>
+      <short value="Input requirements"/>
+      <definition value="Inputs the biomarker needs. Shared structure with EHDSECGAlgorithm."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.inputRequirement"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.inputRequirement.role">
+      <path value="EHDSECGBiomarkerDefinition.inputRequirement.role"/>
+      <short value="Role"/>
+      <definition value="index-ecg, comparison-ecg, clinical-covariate..."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.inputRequirement.role"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGInputRoleVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.inputRequirement.leadSystem">
+      <path value="EHDSECGBiomarkerDefinition.inputRequirement.leadSystem"/>
+      <short value="Lead system"/>
+      <definition value="E.g. standard 12-lead, single lead."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.inputRequirement.leadSystem"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.inputRequirement.requiredLead">
+      <path value="EHDSECGBiomarkerDefinition.inputRequirement.requiredLead"/>
+      <short value="Required leads"/>
+      <definition value="Leads that must be present."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.inputRequirement.requiredLead"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.inputRequirement.minimumSamplingFrequency">
+      <path value="EHDSECGBiomarkerDefinition.inputRequirement.minimumSamplingFrequency"/>
+      <short value="Minimum sampling frequency"/>
+      <definition value="UCUM Hz."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.inputRequirement.minimumSamplingFrequency"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.inputRequirement.minimumDuration">
+      <path value="EHDSECGBiomarkerDefinition.inputRequirement.minimumDuration"/>
+      <short value="Minimum duration"/>
+      <definition value="UCUM s."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.inputRequirement.minimumDuration"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.inputRequirement.covariate">
+      <path value="EHDSECGBiomarkerDefinition.inputRequirement.covariate"/>
+      <short value="Covariate"/>
+      <definition value="For a clinical covariate: what it is (age, sex...)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.inputRequirement.covariate"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.inputRequirement.note">
+      <path value="EHDSECGBiomarkerDefinition.inputRequirement.note"/>
+      <short value="Other requirements"/>
+      <definition value="E.g. excluded populations."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.inputRequirement.note"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.comparability">
+      <path value="EHDSECGBiomarkerDefinition.comparability"/>
+      <short value="Comparability"/>
+      <definition value="algorithm-specific, harmonised."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.comparability"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGComparabilityVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.evidence">
+      <path value="EHDSECGBiomarkerDefinition.evidence"/>
+      <short value="Evidence"/>
+      <definition value="Validation publications (DOI)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.evidence"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.steward">
+      <path value="EHDSECGBiomarkerDefinition.steward"/>
+      <short value="Steward"/>
+      <definition value="Responsible organisation: the research team, the accredited centre or the ESC."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGBiomarkerDefinition.steward"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="EHDSECGBiomarkerDefinition">
+      <path value="EHDSECGBiomarkerDefinition"/>
+      <short value="ECG biomarker definition model"/>
+      <definition value="Registry entry for a derived or AI biomarker, equivalent to FHIR R5 ObservationDefinition. Describes what the biomarker is; the algorithms that compute it and their performance are described in EHDSECGAlgorithm."/>
+      <constraint>
+        <key value="ecg-def-1"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-def-1, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGBiomarkerDefinition"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-def-2"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-def-2, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGBiomarkerDefinition"/>
+      </constraint>
+      <constraint>
+        <key value="ecg-def-3"/>
+        <severity value="warning"/>
+        <human value="TODO: placeholder for invariant ecg-def-3, to be defined."/>
+        <expression value="true"/>
+        <source value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGBiomarkerDefinition"/>
+      </constraint>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.url">
+      <path value="EHDSECGBiomarkerDefinition.url"/>
+      <short value="Canonical URL"/>
+      <definition value="Canonical URL."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.version">
+      <path value="EHDSECGBiomarkerDefinition.version"/>
+      <short value="Version"/>
+      <definition value="Version."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.status">
+      <path value="EHDSECGBiomarkerDefinition.status"/>
+      <short value="Status"/>
+      <definition value="draft, active, retired."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/publication-status"/>
+      </binding>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.governanceTier">
+      <path value="EHDSECGBiomarkerDefinition.governanceTier"/>
+      <short value="Recognition of the definition"/>
+      <definition value="Who vouches for its meaning: local, accredited-centre, esc-registry, other-recognised-authority. Only local restricts the use of the results, to research (ecg-dr-9)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGDefinitionTierVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.recognisedBy">
+      <path value="EHDSECGBiomarkerDefinition.recognisedBy"/>
+      <short value="Body that reviewed the definition"/>
+      <definition value="Required for other-recognised-authority (ecg-def-3)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.code">
+      <path value="EHDSECGBiomarkerDefinition.code"/>
+      <short value="Registry code"/>
+      <definition value="Registry code, plus LOINC / SNOMED CT / MDC equivalents once available."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.title">
+      <path value="EHDSECGBiomarkerDefinition.title"/>
+      <short value="Title"/>
+      <definition value="Title."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.description">
+      <path value="EHDSECGBiomarkerDefinition.description"/>
+      <short value="Clinical definition"/>
+      <definition value="Clinical definition."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="markdown"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.outputKind">
+      <path value="EHDSECGBiomarkerDefinition.outputKind"/>
+      <short value="Output kind"/>
+      <definition value="detection-probability, risk-at-horizon, continuous-estimate, classification, measurement, annotation, signal, embedding, text."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGOutputKindVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.targetCondition">
+      <path value="EHDSECGBiomarkerDefinition.targetCondition"/>
+      <short value="Target condition"/>
+      <definition value="SNOMED CT condition targeted."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.referenceStandard">
+      <path value="EHDSECGBiomarkerDefinition.referenceStandard"/>
+      <short value="Reference standard"/>
+      <definition value="Ground truth, e.g. LVEF &lt;= 40 % by echocardiography within 30 days."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.horizon">
+      <path value="EHDSECGBiomarkerDefinition.horizon"/>
+      <short value="Horizon"/>
+      <definition value="Required when outputKind = risk-at-horizon, absent otherwise (ecg-def-1)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Duration"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.horizon.code">
+      <path value="EHDSECGBiomarkerDefinition.horizon.code"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGDurationUnitVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.representation">
+      <path value="EHDSECGBiomarkerDefinition.representation"/>
+      <short value="Representation"/>
+      <definition value="For embeddings: what the vector means. Required when outputKind = embedding (ecg-def-2)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.representation.sourceModel">
+      <path value="EHDSECGBiomarkerDefinition.representation.sourceModel"/>
+      <short value="Source model"/>
+      <definition value="Model that produces the representation, with its version."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.representation.dimension">
+      <path value="EHDSECGBiomarkerDefinition.representation.dimension"/>
+      <short value="Dimension"/>
+      <definition value="Number of values."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="integer"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.representation.encoding">
+      <path value="EHDSECGBiomarkerDefinition.representation.encoding"/>
+      <short value="Encoding"/>
+      <definition value="Encoding of the values, e.g. little-endian float32."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.representation.space">
+      <path value="EHDSECGBiomarkerDefinition.representation.space"/>
+      <short value="Representation space"/>
+      <definition value="Description of the representation space and of how it may be used (distance, normalisation)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.permittedDataType">
+      <path value="EHDSECGBiomarkerDefinition.permittedDataType"/>
+      <short value="Allowed result types"/>
+      <definition value="FHIR data type names, e.g. Quantity, CodeableConcept, SampledData. Value set to be defined."/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.unit">
+      <path value="EHDSECGBiomarkerDefinition.unit"/>
+      <short value="Unit"/>
+      <definition value="UCUM unit."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.plausibleRange">
+      <path value="EHDSECGBiomarkerDefinition.plausibleRange"/>
+      <short value="Plausible range"/>
+      <definition value="Physically possible range."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Range"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.answerValueSet">
+      <path value="EHDSECGBiomarkerDefinition.answerValueSet"/>
+      <short value="Answer value set"/>
+      <definition value="Allowed values for classifications."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="canonical"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ValueSet"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.threshold">
+      <path value="EHDSECGBiomarkerDefinition.threshold"/>
+      <short value="Clinically meaningful cut-offs"/>
+      <definition value="Cut-offs that define the categories of the biomarker. Operating points and performance of a given algorithm are described with the algorithm."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.threshold.operatingPoint">
+      <path value="EHDSECGBiomarkerDefinition.threshold.operatingPoint"/>
+      <short value="Name of the cut-off"/>
+      <definition value="Name of the cut-off."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.threshold.value">
+      <path value="EHDSECGBiomarkerDefinition.threshold.value"/>
+      <short value="Cut-off value"/>
+      <definition value="Cut-off value."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.inputRequirement">
+      <path value="EHDSECGBiomarkerDefinition.inputRequirement"/>
+      <short value="Input requirements"/>
+      <definition value="Inputs the biomarker needs. Shared structure with EHDSECGAlgorithm."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.inputRequirement.role">
+      <path value="EHDSECGBiomarkerDefinition.inputRequirement.role"/>
+      <short value="Role"/>
+      <definition value="index-ecg, comparison-ecg, clinical-covariate..."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGInputRoleVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.inputRequirement.leadSystem">
+      <path value="EHDSECGBiomarkerDefinition.inputRequirement.leadSystem"/>
+      <short value="Lead system"/>
+      <definition value="E.g. standard 12-lead, single lead."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.inputRequirement.requiredLead">
+      <path value="EHDSECGBiomarkerDefinition.inputRequirement.requiredLead"/>
+      <short value="Required leads"/>
+      <definition value="Leads that must be present."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.inputRequirement.minimumSamplingFrequency">
+      <path value="EHDSECGBiomarkerDefinition.inputRequirement.minimumSamplingFrequency"/>
+      <short value="Minimum sampling frequency"/>
+      <definition value="UCUM Hz."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.inputRequirement.minimumDuration">
+      <path value="EHDSECGBiomarkerDefinition.inputRequirement.minimumDuration"/>
+      <short value="Minimum duration"/>
+      <definition value="UCUM s."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.inputRequirement.covariate">
+      <path value="EHDSECGBiomarkerDefinition.inputRequirement.covariate"/>
+      <short value="Covariate"/>
+      <definition value="For a clinical covariate: what it is (age, sex...)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.inputRequirement.note">
+      <path value="EHDSECGBiomarkerDefinition.inputRequirement.note"/>
+      <short value="Other requirements"/>
+      <definition value="E.g. excluded populations."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.comparability">
+      <path value="EHDSECGBiomarkerDefinition.comparability"/>
+      <short value="Comparability"/>
+      <definition value="algorithm-specific, harmonised."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGComparabilityVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.evidence">
+      <path value="EHDSECGBiomarkerDefinition.evidence"/>
+      <short value="Evidence"/>
+      <definition value="Validation publications (DOI)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="uri"/>
+      </type>
+    </element>
+    <element id="EHDSECGBiomarkerDefinition.steward">
+      <path value="EHDSECGBiomarkerDefinition.steward"/>
+      <short value="Steward"/>
+      <definition value="Responsible organisation: the research team, the accredited centre or the ESC."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

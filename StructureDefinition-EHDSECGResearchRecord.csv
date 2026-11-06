@@ -1,0 +1,34 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"EHDSECGResearchRecord","EHDSECGResearchRecord","","","",0,*,"","","","null {[]} {[]}
+","ECG research record model","Research extraction profile for EHDS secondary use (chapter IV of the Regulation): one record per pseudonymised subject. Shares the semantic core of the care profile, does not require a PDF rendering, and documents what a training or evaluation set needs.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","ecg-rep-1:TODO: placeholder for invariant ecg-rep-1, to be defined. {true}
+ecg-rep-2:TODO: placeholder for invariant ecg-rep-2, to be defined. {true}ecg-res-1:TODO: placeholder for invariant ecg-res-1, to be defined. {true}"
+"EHDSECGResearchRecord.dataset","EHDSECGResearchRecord.dataset","","","",1,1,"","","","Identifier {[]} {[]}
+","Research dataset","The research dataset the record belongs to.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchRecord.dataset",1,1,"",""
+"EHDSECGResearchRecord.subjectPseudonym","EHDSECGResearchRecord.subjectPseudonym","","","",1,1,"","","","Identifier {[]} {[]}
+","Pseudonym of the subject","Stable within the scope of the data permit, so that successive ECGs of the same person stay linked; the system is specific to that scope.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchRecord.subjectPseudonym",1,1,"",""
+"EHDSECGResearchRecord.sex","EHDSECGResearchRecord.sex","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Sex","Sex, when part of the permitted data.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchRecord.sex",0,1,"",""
+"EHDSECGResearchRecord.ageAtFirstExamination","EHDSECGResearchRecord.ageAtFirstExamination","","","",0,1,"","","","Quantity {[]} {[]}
+","Age at first examination","UCUM a.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchRecord.ageAtFirstExamination",0,1,"",""
+"EHDSECGResearchRecord.examination","EHDSECGResearchRecord.examination","","","",1,*,"","","","http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGExamination {[]} {[]}
+","Examinations of the subject","With recordings, annotations and results. presentedForm is not required. header.subject carries the pseudonym (ecg-res-1).","","","","","","","","","",,,,,"",,,,"EHDSECGResearchRecord.examination",1,*,"",""
+"EHDSECGResearchRecord.covariate","EHDSECGResearchRecord.covariate","","","",0,*,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSObservation {[]} {[]}
+","Clinical covariates","Height, weight, blood pressure, conditions, each with a header.identifier so that results can reference them as inputs.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchRecord.covariate",0,*,"",""
+"EHDSECGResearchRecord.linkedData","EHDSECGResearchRecord.linkedData","","","",0,*,"","","","Base {[]} {[]}
+","Other linked data","Other data linked for the analysis (echocardiography, laboratory, outcome events), published elsewhere.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchRecord.linkedData",0,*,"",""
+"EHDSECGResearchRecord.linkedData.type","EHDSECGResearchRecord.linkedData.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","What the linked datum is","A linked datum may be cited as a clinical covariate or an upstream result, and as a comparison ECG when it is an ECG.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGLinkedDataTypeVS","",,,,"EHDSECGResearchRecord.linkedData.type",1,1,"",""
+"EHDSECGResearchRecord.linkedData.reference","EHDSECGResearchRecord.linkedData.reference","","","",1,1,"","","","Identifier {[]} {[]}
+","External identifier of the linked object","Global system. Results of the record may cite it as an input. When resolved, its target suits linkedData.type (ecg-rep-2).","","","","","","","","","",,,,,"",,,,"EHDSECGResearchRecord.linkedData.reference",1,1,"",""
+"EHDSECGResearchRecord.linkedData.relativeTime","EHDSECGResearchRecord.linkedData.relativeTime","","","",0,1,"","","","Quantity {[]} {[]}
+","Time from the first examination","Time from the first examination of the record, UCUM time unit.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchRecord.linkedData.relativeTime",0,1,"",""
+"EHDSECGResearchRecord.transformation","EHDSECGResearchRecord.transformation","","","",0,*,"","","","Base {[]} {[]}
+","Record-level transformations","Transformations applied to this record beyond the dataset-level ones.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchRecord.transformation",0,*,"",""
+"EHDSECGResearchRecord.transformation.type","EHDSECGResearchRecord.transformation.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Transformation type","Type of transformation.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGTransformationTypeVS","",,,,"EHDSECGResearchRecord.transformation.type",1,1,"",""
+"EHDSECGResearchRecord.transformation.description","EHDSECGResearchRecord.transformation.description","","","",0,1,"","","","string {[]} {[]}
+","What was done","What was done.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchRecord.transformation.description",0,1,"",""
+"EHDSECGResearchRecord.transformation.tool","EHDSECGResearchRecord.transformation.tool","","","",0,1,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}
+","Tool and version","Tool and version.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchRecord.transformation.tool",0,1,"",""
+"EHDSECGResearchRecord.transformation.parameters","EHDSECGResearchRecord.transformation.parameters","","","",0,1,"","","","string {[]} {[]}
+","Parameters","Parameters, when they do not compromise pseudonymisation.","","","","","","","","","",,,,,"",,,,"EHDSECGResearchRecord.transformation.parameters",0,1,"",""

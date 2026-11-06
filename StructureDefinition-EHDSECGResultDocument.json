@@ -1,0 +1,892 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "EHDSECGResultDocument",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition EHDSECGResultDocument</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder0\"><tr class=\"xhtRowBorder1\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th scope=\"col\" style=\"; width: 100px\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument\" title=\"Transports annotations and derived results produced after the ECG was first exchanged (for example an AI analysis of an archived ECG or a later re-reading), without rebuilding the original report. The objects it carries link to the examination and recordings by their durable identifiers (external links).\">EHDSECGResultDocument</a><a name=\"EHDSECGResultDocument\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/conformance-rules.html#constraints\" title=\"This element has or is affected by constraints ( ecg-rep-1, ecg-rep-2, ecg-rep-3, ecg-rdoc-1, ecg-rdoc-2, ecg-rdoc-3 )\" class=\"xhtConstraintStyle\">C</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDocument.html\">EHDSDocument</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">ECG result document model<br/><br/>Elements defined in Ancestors:<a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDataSet.html\" title=\"Basic metadata for this information\">header</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDocument.html\">header</a>, <a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDocument.html\" title=\"A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document\">presentedForm</a><br/><span class=\"xhtPieceBold\">Instances of this type can be the target of a Reference</span><br class=\"constraint\"/><span class=\"constraint\">Constraints: </span><span title=\"TODO: placeholder for invariant ecg-rep-1, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rep-1</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-rep-2, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rep-2</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-rep-3, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rep-3</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-rdoc-1, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rdoc-1</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-rdoc-2, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rdoc-2</span><span class=\"constraint\">, </span><span title=\"TODO: placeholder for invariant ecg-rdoc-3, to be defined.\" class=\"xhtPieceBold constraint\">ecg-rdoc-3</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGResultDocument.</span><a href=\"StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.header\">header</a><a name=\"EHDSECGResultDocument.header\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGResultDocument.header.</span><a href=\"StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.header.documentType\">documentType</a><a name=\"EHDSECGResultDocument.header.documentType\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">1</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\" class=\"xhtPieceDeEmphasized\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[A] Draft code ecg-result-document<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ECGDocumentTypeVS.html\" title=\"http://hl7.eu/fhir/ecg/ValueSet/ECGDocumentTypeVS\" class=\"binding\">ECG Document Type (placeholder)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGResultDocument.</span><a href=\"StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.presentedForm\">presentedForm</a><a name=\"EHDSECGResultDocument.presentedForm\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSAttachment.html\" class=\"xhtPieceDeEmphasized\">EHDSAttachment</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[A] Optional human-readable rendering of the new results</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck01.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGResultDocument.</span><a href=\"StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body\" title=\"Structured content of the result document.\">body</a><a name=\"EHDSECGResultDocument.body\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[A] Structured content</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck011.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGResultDocument.body.</span><a href=\"StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.orderInformation\" title=\"Identifies who requested it. Same structure as EHDSECGReport.body.orderInformation.\">orderInformation</a><a name=\"EHDSECGResultDocument.body.orderInformation\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[A] Request for the later analysis or re-reading<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck0110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGResultDocument.body.orderInformation.</span><a href=\"StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.orderInformation.orderId\" title=\"Identifier of the order.\">orderId</a><a name=\"EHDSECGResultDocument.body.orderInformation.orderId\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Order identifier<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck0110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGResultDocument.body.orderInformation.</span><a href=\"StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.orderInformation.orderDateAndTime\" title=\"Date and time of the order.\">orderDateAndTime</a><a name=\"EHDSECGResultDocument.body.orderInformation.orderDateAndTime\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Order date and time</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck0111.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_choice.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Choice of Types\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGResultDocument.body.orderInformation.</span><a href=\"StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.orderInformation.orderPlacer[x]\" title=\"Who placed the order.\">orderPlacer[x]</a><a name=\"EHDSECGResultDocument.body.orderInformation.orderPlacer_x_\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">Order placer</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck01110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGResultDocument.body.orderInformation.orderPlacer[x].</span><span title=\"Model for information about a health professional.\">orderPlacerEHDSHealthProfessional</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSHealthProfessional.html\">EHDSHealthProfessional</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck01100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGResultDocument.body.orderInformation.orderPlacer[x].</span><span title=\"Model for information about an organisation\">orderPlacerEHDSOrganisation</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSOrganisation.html\">EHDSOrganisation</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck0111.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_choice.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Choice of Types\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGResultDocument.body.orderInformation.</span><a href=\"StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.orderInformation.orderReason[x]\" title=\"Reason for the order.\">orderReason[x]</a><a name=\"EHDSECGResultDocument.body.orderInformation.orderReason_x_\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">Order reason<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck01110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGResultDocument.body.orderInformation.orderReason[x].</span><span title=\"Model for a clinical condition, problem, diagnosis, or other event, situation, or issue that has risen to a level of concern.\">orderReasonEHDSCondition</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSCondition.html\">EHDSCondition</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck01100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGResultDocument.body.orderInformation.orderReason[x].</span><span title=\"Base StructureDefinition for CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.\">orderReasonCodeableConcept</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck0100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGResultDocument.body.orderInformation.</span><a href=\"StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.orderInformation.clinicalQuestion\" title=\"Clinical question of the requester.\">clinicalQuestion</a><a name=\"EHDSECGResultDocument.body.orderInformation.clinicalQuestion\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Clinical question</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck011.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGResultDocument.body.</span><a href=\"StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.basedOn\" title=\"The examination(s) the results refer to.\">basedOn</a><a name=\"EHDSECGResultDocument.body.basedOn\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[A] Examination(s) the results refer to<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck0110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGResultDocument.body.basedOn.</span><a href=\"StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.basedOn.examination\" title=\"External link to the examination.\">examination</a><a name=\"EHDSECGResultDocument.body.basedOn.examination\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[A] Durable identifier of the examination</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck0100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGResultDocument.body.basedOn.</span><a href=\"StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.basedOn.sourceDocument\" title=\"Identifier of a document where the examination can be retrieved.\">sourceDocument</a><a name=\"EHDSECGResultDocument.body.basedOn.sourceDocument\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[A] Document where the examination can be retrieved</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck010.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGResultDocument.body.</span><a href=\"StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.annotationSet\" title=\"Their recording links are external.\">annotationSet</a><a name=\"EHDSECGResultDocument.body.annotationSet\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSECGAnnotationSet.html\">EHDSECGAnnotationSet</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[A] New annotation sets<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck000.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSECGResultDocument.body.</span><a href=\"StructureDefinition-EHDSECGResultDocument-definitions.html#EHDSECGResultDocument.body.result\" title=\"Their anchor and input links may be external (ecg-rdoc-1).\">result</a><a name=\"EHDSECGResultDocument.body.result\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSECGDerivedResult.html\">EHDSECGDerivedResult</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">[A] New derived results<br/></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+    "valueCode" : "can-be-target"
+  }],
+  "url" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument",
+  "version" : "0.1.0-ci-build",
+  "name" : "EHDSECGResultDocument",
+  "title" : "ECG result document model",
+  "status" : "draft",
+  "date" : "2026-11-06T23:02:43+01:00",
+  "publisher" : "HL7 Europe",
+  "contact" : [{
+    "name" : "HL7 Europe",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.eu"
+    }]
+  }],
+  "description" : "Transports annotations and derived results produced after the ECG was first exchanged (for example an AI analysis of an archived ECG or a later re-reading), without rebuilding the original report. The objects it carries link to the examination and recordings by their durable identifiers (external links).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "150",
+      "display" : "Europe"
+    }]
+  }],
+  "copyright" : "Copyright HL7 Europe. Licensed under creative commons public domain (CC0 1.0).",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument",
+  "baseDefinition" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDocument",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "1.0.0"
+    }],
+    "element" : [{
+      "id" : "EHDSECGResultDocument",
+      "path" : "EHDSECGResultDocument",
+      "short" : "ECG result document model",
+      "definition" : "Transports annotations and derived results produced after the ECG was first exchanged (for example an AI analysis of an archived ECG or a later re-reading), without rebuilding the original report. The objects it carries link to the examination and recordings by their durable identifiers (external links).",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "constraint" : [{
+        "key" : "ecg-rep-1",
+        "severity" : "warning",
+        "human" : "TODO: placeholder for invariant ecg-rep-1, to be defined.",
+        "expression" : "true",
+        "source" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"
+      },
+      {
+        "key" : "ecg-rep-2",
+        "severity" : "warning",
+        "human" : "TODO: placeholder for invariant ecg-rep-2, to be defined.",
+        "expression" : "true",
+        "source" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"
+      },
+      {
+        "key" : "ecg-rep-3",
+        "severity" : "warning",
+        "human" : "TODO: placeholder for invariant ecg-rep-3, to be defined.",
+        "expression" : "true",
+        "source" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"
+      },
+      {
+        "key" : "ecg-rdoc-1",
+        "severity" : "warning",
+        "human" : "TODO: placeholder for invariant ecg-rdoc-1, to be defined.",
+        "expression" : "true",
+        "source" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"
+      },
+      {
+        "key" : "ecg-rdoc-2",
+        "severity" : "warning",
+        "human" : "TODO: placeholder for invariant ecg-rdoc-2, to be defined.",
+        "expression" : "true",
+        "source" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"
+      },
+      {
+        "key" : "ecg-rdoc-3",
+        "severity" : "warning",
+        "human" : "TODO: placeholder for invariant ecg-rdoc-3, to be defined.",
+        "expression" : "true",
+        "source" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"
+      }],
+      "isModifier" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.header",
+      "path" : "EHDSECGResultDocument.header",
+      "short" : "Document header",
+      "definition" : "Basic metadata for this information",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDataSet.header",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.header.subject",
+      "path" : "EHDSECGResultDocument.header.subject",
+      "short" : "Patient/subject information",
+      "definition" : "Patient/subject information",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDataSet.header.subject",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSPatient"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.header.identifier",
+      "path" : "EHDSECGResultDocument.header.identifier",
+      "short" : "Unique identifier of the document",
+      "definition" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).",
+      "min" : 1,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDataSet.header.identifier",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.header.author[x]",
+      "path" : "EHDSECGResultDocument.header.author[x]",
+      "short" : "Author(s) of the document",
+      "definition" : "Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models.",
+      "min" : 1,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDataSet.header.author[x]",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
+      },
+      {
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"
+      },
+      {
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.header.date",
+      "path" : "EHDSECGResultDocument.header.date",
+      "short" : "Date of finalising/issuing the document",
+      "definition" : "Date and optionally time of authoring/issuing",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDataSet.header.date",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.header.status",
+      "path" : "EHDSECGResultDocument.header.status",
+      "short" : "Status of the document",
+      "definition" : "Status of the resource or document",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDataSet.header.status",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.header.source",
+      "path" : "EHDSECGResultDocument.header.source",
+      "short" : "Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information.",
+      "definition" : "Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information.",
+      "min" : 0,
+      "max" : "0",
+      "base" : {
+        "path" : "EHDSDataSet.header.source",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.header.language",
+      "path" : "EHDSECGResultDocument.header.language",
+      "short" : "Language in which the resource is written. Language is expressed by the IETF language tag.",
+      "definition" : "Language in which the resource is written. Language is expressed by the IETF language tag.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDataSet.header.language",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "description" : "BCP 47"
+      }
+    },
+    {
+      "id" : "EHDSECGResultDocument.header.documentType",
+      "path" : "EHDSECGResultDocument.header.documentType",
+      "short" : "[A] Draft code ecg-result-document",
+      "definition" : "Type of document at hand, e.g. 60591-5 Patient summary document.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDocument.header.documentType",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.eu/fhir/ecg/ValueSet/ECGDocumentTypeVS"
+      }
+    },
+    {
+      "id" : "EHDSECGResultDocument.header.documentTitle",
+      "path" : "EHDSECGResultDocument.header.documentTitle",
+      "short" : "Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: 'Laboratory Result Report', 'Patient Summary of Jane Green 10.12.2024'",
+      "definition" : "Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: 'Laboratory Result Report', 'Patient Summary of Jane Green 10.12.2024'",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDocument.header.documentTitle",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.header.period",
+      "path" : "EHDSECGResultDocument.header.period",
+      "short" : "Time of service that is being documented",
+      "definition" : "Time of service that is being documented",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDocument.header.period",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Period"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.header.version",
+      "path" : "EHDSECGResultDocument.header.version",
+      "short" : "Business version of the document. The exact algorithm for versioning is decided by the producer/custodian",
+      "definition" : "Business version of the document. The exact algorithm for versioning is decided by the producer/custodian",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDocument.header.version",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.header.attestation",
+      "path" : "EHDSECGResultDocument.header.attestation",
+      "short" : "Document attestation details",
+      "definition" : "Document attestation details",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDocument.header.attestation",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.header.attestation.attester[x]",
+      "path" : "EHDSECGResultDocument.header.attestation.attester[x]",
+      "short" : "Attester who validated the document",
+      "definition" : "Attester who validated the document",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDocument.header.attestation.attester[x]",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
+      },
+      {
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.header.attestation.datetime",
+      "path" : "EHDSECGResultDocument.header.attestation.datetime",
+      "short" : "Date and time of the approval of the document by Attester",
+      "definition" : "Date and time of the approval of the document by Attester",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDocument.header.attestation.datetime",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.header.legalAuthentication",
+      "path" : "EHDSECGResultDocument.header.legalAuthentication",
+      "short" : "Document legal authentication details",
+      "definition" : "Document legal authentication details",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDocument.header.legalAuthentication",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.header.legalAuthentication.legalAuthenticator[x]",
+      "path" : "EHDSECGResultDocument.header.legalAuthentication.legalAuthenticator[x]",
+      "short" : "The person or organisation taking responsibility for the content of the document.",
+      "definition" : "The person or organisation taking responsibility for the content of the document.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDocument.header.legalAuthentication.legalAuthenticator[x]",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
+      },
+      {
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.header.legalAuthentication.datetime",
+      "path" : "EHDSECGResultDocument.header.legalAuthentication.datetime",
+      "short" : "Date and time when the document was authorised",
+      "definition" : "Date and time when the document was authorised",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDocument.header.legalAuthentication.datetime",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.header.eventType",
+      "path" : "EHDSECGResultDocument.header.eventType",
+      "short" : "Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes.",
+      "definition" : "Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDocument.header.eventType",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "description" : "LOINC, SNOMED CT, dicom-cid-33-Modality"
+      }
+    },
+    {
+      "id" : "EHDSECGResultDocument.header.serviceSpecialty",
+      "path" : "EHDSECGResultDocument.header.serviceSpecialty",
+      "short" : "Additional details about where the content was created (e.g. clinical specialty)",
+      "definition" : "Additional details about where the content was created (e.g. clinical specialty)",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDocument.header.serviceSpecialty",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "description" : "SNOMED CT"
+      }
+    },
+    {
+      "id" : "EHDSECGResultDocument.header.custodian",
+      "path" : "EHDSECGResultDocument.header.custodian",
+      "short" : "Organisation that is in charge of maintaining the document/report.",
+      "definition" : "Organisation that is in charge of maintaining the document/report.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDocument.header.custodian",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.presentedForm",
+      "path" : "EHDSECGResultDocument.presentedForm",
+      "short" : "[A] Optional human-readable rendering of the new results",
+      "definition" : "A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDocument.presentedForm",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body",
+      "path" : "EHDSECGResultDocument.body",
+      "short" : "[A] Structured content",
+      "definition" : "Structured content of the result document.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSECGResultDocument.body",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.orderInformation",
+      "path" : "EHDSECGResultDocument.body.orderInformation",
+      "short" : "[A] Request for the later analysis or re-reading",
+      "definition" : "Identifies who requested it. Same structure as EHDSECGReport.body.orderInformation.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSECGResultDocument.body.orderInformation",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.orderInformation.orderId",
+      "path" : "EHDSECGResultDocument.body.orderInformation.orderId",
+      "short" : "Order identifier",
+      "definition" : "Identifier of the order.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSECGResultDocument.body.orderInformation.orderId",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.orderInformation.orderDateAndTime",
+      "path" : "EHDSECGResultDocument.body.orderInformation.orderDateAndTime",
+      "short" : "Order date and time",
+      "definition" : "Date and time of the order.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSECGResultDocument.body.orderInformation.orderDateAndTime",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.orderInformation.orderPlacer[x]",
+      "path" : "EHDSECGResultDocument.body.orderInformation.orderPlacer[x]",
+      "short" : "Order placer",
+      "definition" : "Who placed the order.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSECGResultDocument.body.orderInformation.orderPlacer[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
+      },
+      {
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.orderInformation.orderReason[x]",
+      "path" : "EHDSECGResultDocument.body.orderInformation.orderReason[x]",
+      "short" : "Order reason",
+      "definition" : "Reason for the order.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSECGResultDocument.body.orderInformation.orderReason[x]",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSCondition"
+      },
+      {
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.orderInformation.clinicalQuestion",
+      "path" : "EHDSECGResultDocument.body.orderInformation.clinicalQuestion",
+      "short" : "Clinical question",
+      "definition" : "Clinical question of the requester.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSECGResultDocument.body.orderInformation.clinicalQuestion",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.basedOn",
+      "path" : "EHDSECGResultDocument.body.basedOn",
+      "short" : "[A] Examination(s) the results refer to",
+      "definition" : "The examination(s) the results refer to.",
+      "min" : 1,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSECGResultDocument.body.basedOn",
+        "min" : 1,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.basedOn.examination",
+      "path" : "EHDSECGResultDocument.body.basedOn.examination",
+      "short" : "[A] Durable identifier of the examination",
+      "definition" : "External link to the examination.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSECGResultDocument.body.basedOn.examination",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.basedOn.sourceDocument",
+      "path" : "EHDSECGResultDocument.body.basedOn.sourceDocument",
+      "short" : "[A] Document where the examination can be retrieved",
+      "definition" : "Identifier of a document where the examination can be retrieved.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSECGResultDocument.body.basedOn.sourceDocument",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.annotationSet",
+      "path" : "EHDSECGResultDocument.body.annotationSet",
+      "short" : "[A] New annotation sets",
+      "definition" : "Their recording links are external.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSECGResultDocument.body.annotationSet",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.result",
+      "path" : "EHDSECGResultDocument.body.result",
+      "short" : "[A] New derived results",
+      "definition" : "Their anchor and input links may be external (ecg-rdoc-1).",
+      "min" : 1,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSECGResultDocument.body.result",
+        "min" : 1,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGDerivedResult"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "EHDSECGResultDocument",
+      "path" : "EHDSECGResultDocument",
+      "short" : "ECG result document model",
+      "definition" : "Transports annotations and derived results produced after the ECG was first exchanged (for example an AI analysis of an archived ECG or a later re-reading), without rebuilding the original report. The objects it carries link to the examination and recordings by their durable identifiers (external links).",
+      "constraint" : [{
+        "key" : "ecg-rep-1",
+        "severity" : "warning",
+        "human" : "TODO: placeholder for invariant ecg-rep-1, to be defined.",
+        "expression" : "true",
+        "source" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"
+      },
+      {
+        "key" : "ecg-rep-2",
+        "severity" : "warning",
+        "human" : "TODO: placeholder for invariant ecg-rep-2, to be defined.",
+        "expression" : "true",
+        "source" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"
+      },
+      {
+        "key" : "ecg-rep-3",
+        "severity" : "warning",
+        "human" : "TODO: placeholder for invariant ecg-rep-3, to be defined.",
+        "expression" : "true",
+        "source" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"
+      },
+      {
+        "key" : "ecg-rdoc-1",
+        "severity" : "warning",
+        "human" : "TODO: placeholder for invariant ecg-rdoc-1, to be defined.",
+        "expression" : "true",
+        "source" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"
+      },
+      {
+        "key" : "ecg-rdoc-2",
+        "severity" : "warning",
+        "human" : "TODO: placeholder for invariant ecg-rdoc-2, to be defined.",
+        "expression" : "true",
+        "source" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"
+      },
+      {
+        "key" : "ecg-rdoc-3",
+        "severity" : "warning",
+        "human" : "TODO: placeholder for invariant ecg-rdoc-3, to be defined.",
+        "expression" : "true",
+        "source" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGResultDocument"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.header.documentType",
+      "path" : "EHDSECGResultDocument.header.documentType",
+      "short" : "[A] Draft code ecg-result-document",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.eu/fhir/ecg/ValueSet/ECGDocumentTypeVS"
+      }
+    },
+    {
+      "id" : "EHDSECGResultDocument.presentedForm",
+      "path" : "EHDSECGResultDocument.presentedForm",
+      "short" : "[A] Optional human-readable rendering of the new results"
+    },
+    {
+      "id" : "EHDSECGResultDocument.body",
+      "path" : "EHDSECGResultDocument.body",
+      "short" : "[A] Structured content",
+      "definition" : "Structured content of the result document.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.orderInformation",
+      "path" : "EHDSECGResultDocument.body.orderInformation",
+      "short" : "[A] Request for the later analysis or re-reading",
+      "definition" : "Identifies who requested it. Same structure as EHDSECGReport.body.orderInformation.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.orderInformation.orderId",
+      "path" : "EHDSECGResultDocument.body.orderInformation.orderId",
+      "short" : "Order identifier",
+      "definition" : "Identifier of the order.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.orderInformation.orderDateAndTime",
+      "path" : "EHDSECGResultDocument.body.orderInformation.orderDateAndTime",
+      "short" : "Order date and time",
+      "definition" : "Date and time of the order.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.orderInformation.orderPlacer[x]",
+      "path" : "EHDSECGResultDocument.body.orderInformation.orderPlacer[x]",
+      "short" : "Order placer",
+      "definition" : "Who placed the order.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
+      },
+      {
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.orderInformation.orderReason[x]",
+      "path" : "EHDSECGResultDocument.body.orderInformation.orderReason[x]",
+      "short" : "Order reason",
+      "definition" : "Reason for the order.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSCondition"
+      },
+      {
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.orderInformation.clinicalQuestion",
+      "path" : "EHDSECGResultDocument.body.orderInformation.clinicalQuestion",
+      "short" : "Clinical question",
+      "definition" : "Clinical question of the requester.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.basedOn",
+      "path" : "EHDSECGResultDocument.body.basedOn",
+      "short" : "[A] Examination(s) the results refer to",
+      "definition" : "The examination(s) the results refer to.",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.basedOn.examination",
+      "path" : "EHDSECGResultDocument.body.basedOn.examination",
+      "short" : "[A] Durable identifier of the examination",
+      "definition" : "External link to the examination.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.basedOn.sourceDocument",
+      "path" : "EHDSECGResultDocument.body.basedOn.sourceDocument",
+      "short" : "[A] Document where the examination can be retrieved",
+      "definition" : "Identifier of a document where the examination can be retrieved.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.annotationSet",
+      "path" : "EHDSECGResultDocument.body.annotationSet",
+      "short" : "[A] New annotation sets",
+      "definition" : "Their recording links are external.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAnnotationSet"
+      }]
+    },
+    {
+      "id" : "EHDSECGResultDocument.body.result",
+      "path" : "EHDSECGResultDocument.body.result",
+      "short" : "[A] New derived results",
+      "definition" : "Their anchor and input links may be external (ecg-rdoc-1).",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGDerivedResult"
+      }]
+    }]
+  }
+}

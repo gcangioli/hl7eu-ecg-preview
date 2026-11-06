@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.eu/fhir/ecg/DiagnosticReport/diagnosticreport-example-ecg> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "diagnosticreport-example-ecg"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.eu/fhir/ecg/StructureDefinition/diagnosticreport-eu-ecg" ;
+       fhir:index -1 ;
+       fhir:link <http://hl7.eu/fhir/ecg/StructureDefinition/diagnosticreport-eu-ecg>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport diagnosticreport-example-ecg</b></p><a name=\"diagnosticreport-example-ecg\"> </a><a name=\"hcdiagnosticreport-example-ecg\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-diagnosticreport-eu-ecg.html\">DiagnosticReport: ECG Report (EU)</a></p></div><h2><span title=\"Codes:{http://loinc.org 11524-6}\">EKG study</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Maria Rossi  Female, DoB: 1965-04-12 ( http://example.org/fhir/sid/patient-id#ECG-PAT-0001)</td></tr><tr><td>Relevant Time</td><td>2026-10-20 09:30:00+0100</td></tr><tr><td>Reported</td><td>2026-10-20 10:15:00+0100</td></tr></table><p><b>Report Details</b></p><p>Normal sinus rhythm. Normal ECG.</p></div>"
+  ] ;
+  fhir:DiagnosticReport.status [ fhir:value "final"] ;
+  fhir:DiagnosticReport.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a loinc:11524-6 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "11524-6" ] ;
+       fhir:Coding.display [ fhir:value "EKG study" ]
+     ]
+  ] ;
+  fhir:DiagnosticReport.subject [
+     fhir:link <http://hl7.eu/fhir/ecg/Patient/patient-example-ecg> ;
+     fhir:Reference.reference [ fhir:value "Patient/patient-example-ecg" ]
+  ] ;
+  fhir:DiagnosticReport.effectiveDateTime [ fhir:value "2026-10-20T09:30:00+01:00"^^xsd:dateTime] ;
+  fhir:DiagnosticReport.issued [ fhir:value "2026-10-20T10:15:00+01:00"^^xsd:dateTime] ;
+  fhir:DiagnosticReport.conclusion [ fhir:value "Normal sinus rhythm. Normal ECG."] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.eu/fhir/ecg/DiagnosticReport/diagnosticreport-example-ecg.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

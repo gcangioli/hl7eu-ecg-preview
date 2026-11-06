@@ -1,0 +1,110 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"EHDSECGRecording","EHDSECGRecording","","","",0,*,"","","","null {[]} {[]}
+","ECG recording model","The waveform and its acquisition metadata, which the Xt-EHR models do not provide. The metadata are always structured; the samples are carried inline (FHIR SampledData, required for short recordings) or by reference to a native object (long recordings). The time of sample i of a channel, from acquisitionStart, is startOffset + skew + i / samplingFrequency.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","ecg-id-1:TODO: placeholder for invariant ecg-id-1, to be defined. {true}
+ecg-rec-1:TODO: placeholder for invariant ecg-rec-1, to be defined. {true}ecg-rec-2:TODO: placeholder for invariant ecg-rec-2, to be defined. {true}ecg-rec-3:TODO: placeholder for invariant ecg-rec-3, to be defined. {true}ecg-rec-4:TODO: placeholder for invariant ecg-rec-4, to be defined. {true}ecg-rec-5:TODO: placeholder for invariant ecg-rec-5, to be defined. {true}ecg-rec-6:TODO: placeholder for invariant ecg-rec-6, to be defined. {true}ecg-rec-7:TODO: placeholder for invariant ecg-rec-7, to be defined. {true}ecg-rec-8:TODO: placeholder for invariant ecg-rec-8, to be defined. {true}ecg-rec-9:TODO: placeholder for invariant ecg-rec-9, to be defined. {true}ecg-rec-10:TODO: placeholder for invariant ecg-rec-10, to be defined. {true}ecg-rec-11:TODO: placeholder for invariant ecg-rec-11, to be defined. {true}ecg-rec-12:TODO: placeholder for invariant ecg-rec-12, to be defined. {true}","n/a"
+"EHDSECGRecording.header","EHDSECGRecording.header","","","",1,1,"","","","Base {[]} {[]}
+","Basic metadata for this information","Basic metadata for this information","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header",1,1,"",""
+"EHDSECGRecording.header.subject","EHDSECGRecording.header.subject","","","",1,1,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSPatient {[]} {[]}
+","Patient/subject information","Patient/subject information","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.subject",1,1,"",""
+"EHDSECGRecording.header.identifier","EHDSECGRecording.header.identifier","","","",1,*,"","","","Identifier {[]} {[]}
+","[C] E.g. DICOM SOP Instance UID, vendor recording id","Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.identifier",0,*,"",""
+"EHDSECGRecording.header.author[x]","EHDSECGRecording.header.author[x]","","","",0,*,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
+http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Author(s) responsible for the provided information.","Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.author[x]",0,*,"",""
+"EHDSECGRecording.header.date","EHDSECGRecording.header.date","","","",0,1,"","","","dateTime {[]} {[]}
+","Date and optionally time of authoring/issuing","Date and optionally time of authoring/issuing","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.date",0,1,"",""
+"EHDSECGRecording.header.status","EHDSECGRecording.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Status of the resource or document","Status of the resource or document","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.status",1,1,"",""
+"EHDSECGRecording.header.source","EHDSECGRecording.header.source","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information.","Source of information (e.g. patient, patient's proxy). Used in case the patient has authored the information or the author has submitted patient-stated information.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.source",0,1,"",""
+"EHDSECGRecording.header.language","EHDSECGRecording.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Language in which the resource is written. Language is expressed by the IETF language tag.","Language in which the resource is written. Language is expressed by the IETF language tag.","","","","","","","","","",,"preferred","BCP 47","","",,,,"EHDSDataSet.header.language",0,1,"",""
+"EHDSECGRecording.recordingKind","EHDSECGRecording.recordingKind","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","[C] Recording kind","rhythm (continuous strip), representative (median) beat, selected episode, reconstructed signal.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGRecordingKindVS","",,,,"EHDSECGRecording.recordingKind",1,1,"",""
+"EHDSECGRecording.acquisitionStart","EHDSECGRecording.acquisitionStart","","","",1,1,"","","","dateTime {[]} {[]}
+","[C] Start of the recording","Time-zone offset required.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.acquisitionStart",1,1,"",""
+"EHDSECGRecording.duration","EHDSECGRecording.duration","","","",1,1,"","","","Quantity {[]} {[]}
+","[C] Duration","UCUM s.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.duration",1,1,"",""
+"EHDSECGRecording.acquisitionDevice","EHDSECGRecording.acquisitionDevice","","","",0,1,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}
+","[C] Acquisition device","Device that acquired this signal, if different from the examination's device.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.acquisitionDevice",0,1,"",""
+"EHDSECGRecording.signalProvenance","EHDSECGRecording.signalProvenance","","","",1,*,"","","","Base {[]} {[]}
+","[C] How this signal came to exist","Ordered chain of steps, from the acquisition to this representation (e.g. vendor format -> WFDB -> EHDS).","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.signalProvenance",1,*,"",""
+"EHDSECGRecording.signalProvenance.origin","EHDSECGRecording.signalProvenance.origin","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","[C] Origin","native-digital, converted-lossless, converted-lossy, losslessness-not-documented, computed-from-recording, reconstructed-from-image, reconstructed-from-reduced-leads, synthetic.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGSignalOriginVS","",,,,"EHDSECGRecording.signalProvenance.origin",1,1,"",""
+"EHDSECGRecording.signalProvenance.sourceFormat","EHDSECGRecording.signalProvenance.sourceFormat","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","[C] Source format","Format the signal was converted from.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGFileFormatVS","",,,,"EHDSECGRecording.signalProvenance.sourceFormat",0,1,"",""
+"EHDSECGRecording.signalProvenance.conversionTool","EHDSECGRecording.signalProvenance.conversionTool","","","",0,1,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}
+","[C] Conversion tool","Converter, digitiser or signal-processing algorithm, and its version.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.signalProvenance.conversionTool",0,1,"",""
+"EHDSECGRecording.signalProvenance.derivedFrom","EHDSECGRecording.signalProvenance.derivedFrom","","","",0,*,"","","","Identifier {[]} {[]}
+","[C] Source recording(s)","Link to the source recording(s), e.g. the rhythm strip a median beat was computed from.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.signalProvenance.derivedFrom",0,*,"",""
+"EHDSECGRecording.powerlineFrequency","EHDSECGRecording.powerlineFrequency","","","",0,1,"","","","Quantity {[]} {[]}
+","[C] Powerline frequency","50 or 60 Hz.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.powerlineFrequency",0,1,"",""
+"EHDSECGRecording.display","EHDSECGRecording.display","","","",0,1,"","","","Base {[]} {[]}
+","[C] Display recommended by the source","Does not change the samples; the PDF rendering remains the reference display.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.display",0,1,"",""
+"EHDSECGRecording.display.speed","EHDSECGRecording.display.speed","","","",0,1,"","","","Quantity {[]} {[]}
+","[C] Paper speed","UCUM mm/s (DICOM Waveform Data Display Scale).","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.display.speed",0,1,"",""
+"EHDSECGRecording.display.gain","EHDSECGRecording.display.gain","","","",0,1,"","","","Quantity {[]} {[]}
+","[C] Gain","UCUM mm/mV, stated only when the displayed channels share the same gain. From DICOM: Absolute Channel Display Scale (003A,0248) divided by Channel Sensitivity (003A,0210).","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.display.gain",0,1,"",""
+"EHDSECGRecording.display.layout","EHDSECGRecording.display.layout","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","[C] Layout","3 x 4, 3 x 4 with rhythm strip, 6 x 2, 12 x 1, other.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGDisplayLayoutVS","",,,,"EHDSECGRecording.display.layout",0,1,"",""
+"EHDSECGRecording.channelGroup","EHDSECGRecording.channelGroup","","","",1,*,"","","","Base {[]} {[]}
+","[C] Channels sharing one time base","DICOM multiplex group, aECG sequenceSet.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.channelGroup",1,*,"",""
+"EHDSECGRecording.channelGroup.label","EHDSECGRecording.channelGroup.label","","","",0,1,"","","","string {[]} {[]}
+","[C] Label","E.g. rhythm, median beat.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.channelGroup.label",0,1,"",""
+"EHDSECGRecording.channelGroup.samplingFrequency","EHDSECGRecording.channelGroup.samplingFrequency","","","",1,1,"","","","Quantity {[]} {[]}
+","[C] Sampling frequency","UCUM Hz; > 0 (ecg-rec-9).","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.channelGroup.samplingFrequency",1,1,"",""
+"EHDSECGRecording.channelGroup.numberOfSamples","EHDSECGRecording.channelGroup.numberOfSamples","","","",1,1,"","","","integer {[]} {[]}
+","[C] Samples per channel",">= 1. Equals the number of values in each channel's samples.data (ecg-rec-6).","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.channelGroup.numberOfSamples",1,1,"",""
+"EHDSECGRecording.channelGroup.startOffset","EHDSECGRecording.channelGroup.startOffset","","","",0,1,"","","","Quantity {[]} {[]}
+","[C] Offset from acquisitionStart","UCUM ms; >= 0; absent means 0. Supports non-simultaneous acquisition (e.g. 3 x 4 leads). The group ends within the recording (ecg-rec-2).","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.channelGroup.startOffset",0,1,"",""
+"EHDSECGRecording.channelGroup.bitsPerSample","EHDSECGRecording.channelGroup.bitsPerSample","","","",0,1,"","","","integer {[]} {[]}
+","[C] ADC resolution","ADC resolution.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.channelGroup.bitsPerSample",0,1,"",""
+"EHDSECGRecording.channelGroup.filter","EHDSECGRecording.channelGroup.filter","","","",0,*,"","","","Base {[]} {[]}
+","[C] Filters applied before storage","Applied to every channel of the group that does not state its own.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.channelGroup.filter",0,*,"",""
+"EHDSECGRecording.channelGroup.filter.type","EHDSECGRecording.channelGroup.filter.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","[C] Filter type","high-pass, low-pass, notch, other.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGFilterTypeVS","",,,,"EHDSECGRecording.channelGroup.filter.type",1,1,"",""
+"EHDSECGRecording.channelGroup.filter.frequency","EHDSECGRecording.channelGroup.filter.frequency","","","",1,1,"","","","Quantity {[]} {[]}
+","[C] Cut-off or notch frequency","UCUM Hz.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.channelGroup.filter.frequency",1,1,"",""
+"EHDSECGRecording.channelGroup.filter.description","EHDSECGRecording.channelGroup.filter.description","","","",0,1,"","","","string {[]} {[]}
+","[C] Filter description","Order, slope, bandwidth, algorithm.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.channelGroup.filter.description",0,1,"",""
+"EHDSECGRecording.channelGroup.channel","EHDSECGRecording.channelGroup.channel","","","",1,*,"","","","Base {[]} {[]}
+","[C] One lead","One lead.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.channelGroup.channel",1,*,"",""
+"EHDSECGRecording.channelGroup.channel.lead","EHDSECGRecording.channelGroup.channel.lead","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","[C] Lead","MDC MDC_ECG_ELEC_POTL_* codes; required within the set it covers, extensible for non-standard leads.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS","",,,,"EHDSECGRecording.channelGroup.channel.lead",1,1,"",""
+"EHDSECGRecording.channelGroup.channel.derived","EHDSECGRecording.channelGroup.channel.derived","","","",0,1,"","","","boolean {[]} {[]}
+","[C] Derived lead","True if computed from other leads (III, aVR, aVL, aVF usually are).","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.channelGroup.channel.derived",0,1,"",""
+"EHDSECGRecording.channelGroup.channel.derivation","EHDSECGRecording.channelGroup.channel.derivation","","","",0,1,"","","","string {[]} {[]}
+","[C] Derivation","Formula or method of derivation.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.channelGroup.channel.derivation",0,1,"",""
+"EHDSECGRecording.channelGroup.channel.unit","EHDSECGRecording.channelGroup.channel.unit","","","",1,1,"","","","Coding {[]} {[]}
+","[C] UCUM unit of the physical values","channel.origin and samples.origin use the same unit (ecg-rec-8).","","","","","","","","","",,"required","","http://hl7.eu/fhir/ecg/ValueSet/ECGAmplitudeUnitVS","",,,,"EHDSECGRecording.channelGroup.channel.unit",1,1,"",""
+"EHDSECGRecording.channelGroup.channel.origin","EHDSECGRecording.channelGroup.channel.origin","","","",1,1,"","","","Quantity {[]} {[]}
+","[C] Baseline offset","In unit. Always present, also when samples are carried by reference.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.channelGroup.channel.origin",1,1,"",""
+"EHDSECGRecording.channelGroup.channel.factor","EHDSECGRecording.channelGroup.channel.factor","","","",1,1,"","","","decimal {[]} {[]}
+","[C] Amplitude resolution","Multiplier from stored integer to physical value in unit (e.g. 4.88 uV per LSB). Always present.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.channelGroup.channel.factor",1,1,"",""
+"EHDSECGRecording.channelGroup.channel.status","EHDSECGRecording.channelGroup.channel.status","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","[C] Channel status","ok, disconnected, noisy, saturated, lead-reversal-suspected, questionable, invalid, uncalibrated, unzeroed, test-data.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGChannelStatusVS","",,,,"EHDSECGRecording.channelGroup.channel.status",0,*,"",""
+"EHDSECGRecording.channelGroup.channel.skew","EHDSECGRecording.channelGroup.channel.skew","","","",0,1,"","","","Quantity {[]} {[]}
+","[C] Channel skew","Offset of the first sample of this channel from the start of the channel group, UCUM ms (DICOM Channel Time Skew or Channel Sample Skew). 0 = simultaneous; absent = not documented, counted as 0.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.channelGroup.channel.skew",0,1,"",""
+"EHDSECGRecording.channelGroup.channel.filter","EHDSECGRecording.channelGroup.channel.filter","","","",0,*,"","","","Base {[]} {[]}
+","[C] Channel filters","Filters of this channel, when they differ from those of the group; they replace channelGroup.filter for this channel.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.channelGroup.channel.filter",0,*,"",""
+"EHDSECGRecording.channelGroup.channel.filter.type","EHDSECGRecording.channelGroup.channel.filter.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","[C] Filter type","high-pass, low-pass, notch, other.","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGFilterTypeVS","",,,,"EHDSECGRecording.channelGroup.channel.filter.type",1,1,"",""
+"EHDSECGRecording.channelGroup.channel.filter.frequency","EHDSECGRecording.channelGroup.channel.filter.frequency","","","",1,1,"","","","Quantity {[]} {[]}
+","[C] Cut-off or notch frequency","UCUM Hz.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.channelGroup.channel.filter.frequency",1,1,"",""
+"EHDSECGRecording.channelGroup.channel.filter.description","EHDSECGRecording.channelGroup.channel.filter.description","","","",0,1,"","","","string {[]} {[]}
+","[C] Filter description","Order, slope, bandwidth, algorithm.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.channelGroup.channel.filter.description",0,1,"",""
+"EHDSECGRecording.channelGroup.channel.samples","EHDSECGRecording.channelGroup.channel.samples","","","",0,1,"","","","SampledData {[]} {[]}
+","[C] Inline samples","FHIR R5 SampledData. Required for short recordings (ecg-rec-3). data present with numberOfSamples values; dimensions = 1; interval equals 1 / samplingFrequency; origin and factor equal the channel's (ecg-rec-4 to ecg-rec-7).","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.channelGroup.channel.samples",0,1,"",""
+"EHDSECGRecording.nativeObject","EHDSECGRecording.nativeObject","","","",0,*,"","","","Base {[]} {[]}
+","[C] Original object in its native format","Optional, in addition to the inline samples for short recordings; the way to carry the samples of long recordings.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.nativeObject",0,*,"",""
+"EHDSECGRecording.nativeObject.format","EHDSECGRecording.nativeObject.format","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","[C] Format","The object must be retrievable (ecg-rec-10).","","","","","","","","","",,"extensible","","http://hl7.eu/fhir/ecg/ValueSet/ECGFileFormatVS","",,,,"EHDSECGRecording.nativeObject.format",1,1,"",""
+"EHDSECGRecording.nativeObject.file","EHDSECGRecording.nativeObject.file","","","",0,*,"","","","Base {[]} {[]}
+","[C] File(s) making up the object","E.g. WFDB .hea + .dat.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.nativeObject.file",0,*,"",""
+"EHDSECGRecording.nativeObject.file.attachment","EHDSECGRecording.nativeObject.file.attachment","","","",1,1,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment {[]} {[]}
+","[C] The file or its URL","The file itself or its URL.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.nativeObject.file.attachment",1,1,"",""
+"EHDSECGRecording.nativeObject.file.contentHash","EHDSECGRecording.nativeObject.file.contentHash","","","",0,1,"","","","string {[]} {[]}
+","[C] SHA-256 of the file","SHA-256 of the file.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.nativeObject.file.contentHash",0,1,"",""
+"EHDSECGRecording.nativeObject.imagingStudy","EHDSECGRecording.nativeObject.imagingStudy","","","",0,1,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSImagingStudy {[]} {[]}
+","[C] DICOM study holding the ECG","12-Lead ECG, General ECG, General 32-bit ECG or Ambulatory ECG SOP instance, retrievable through the imaging infrastructure (IHE MADO).","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.nativeObject.imagingStudy",0,1,"",""
+"EHDSECGRecording.nativeObject.endpoint","EHDSECGRecording.nativeObject.endpoint","","","",0,1,"","","","http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSEndpoint {[]} {[]}
+","[C] Endpoint","Where the object can be retrieved, e.g. for long-term recordings.","","","","","","","","","",,,,,"",,,,"EHDSECGRecording.nativeObject.endpoint",0,1,"",""

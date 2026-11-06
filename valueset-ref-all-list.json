@@ -1,0 +1,493 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGAgeUnitVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGAgeUnitVS",
+    "title" : "ECG Age Unit (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGExamination.html" : "ECG examination model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGAmplitudeUnitVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGAmplitudeUnitVS",
+    "title" : "ECG Amplitude Unit (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGRecording.html" : "ECG recording model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGAnnotationVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGAnnotationVS",
+    "title" : "ECG Annotation (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGAnnotationSet.html" : "ECG annotation set model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGApplicabilityStatusVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGApplicabilityStatusVS",
+    "title" : "ECG Applicability Status (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGDerivedResult.html" : "ECG derived result model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGChannelStatusVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGChannelStatusVS",
+    "title" : "ECG Channel Status (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGRecording.html" : "ECG recording model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGComparabilityVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGComparabilityVS",
+    "title" : "ECG Comparability (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGBiomarkerDefinition.html" : "ECG biomarker definition model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGDataAbsentReasonVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGDataAbsentReasonVS",
+    "title" : "ECG Data Absent Reason (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGDerivedResult.html" : "ECG derived result model",
+    "StructureDefinition-EHDSECGAnnotationSet.html" : "ECG annotation set model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGDefinitionTierVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGDefinitionTierVS",
+    "title" : "ECG Definition Tier (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGBiomarkerDefinition.html" : "ECG biomarker definition model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGDerivedResultCategoryVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGDerivedResultCategoryVS",
+    "title" : "ECG Derived Result Category (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGDerivedResult.html" : "ECG derived result model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGDerivedResultTypeVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGDerivedResultTypeVS",
+    "title" : "ECG Derived Result Type (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGDerivedResult.html" : "ECG derived result model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGDisplayLayoutVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGDisplayLayoutVS",
+    "title" : "ECG Display Layout (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGRecording.html" : "ECG recording model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGDocumentTypeVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGDocumentTypeVS",
+    "title" : "ECG Document Type (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGResultDocument.html" : "ECG result document model",
+    "StructureDefinition-EHDSECGReport.html" : "ECG report model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGDurationUnitVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGDurationUnitVS",
+    "title" : "ECG Duration Unit (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGBiomarkerDefinition.html" : "ECG biomarker definition model",
+    "StructureDefinition-EHDSECGDerivedResult.html" : "ECG derived result model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGExaminationKindVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGExaminationKindVS",
+    "title" : "ECG Examination Kind (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGExamination.html" : "ECG examination model",
+    "StructureDefinition-EHDSECGReport.html" : "ECG report model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGExecutionContextVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGExecutionContextVS",
+    "title" : "ECG Execution Context (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGDerivedResult.html" : "ECG derived result model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGFileFormatVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGFileFormatVS",
+    "title" : "ECG File Format (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGRecording.html" : "ECG recording model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGFilterTypeVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGFilterTypeVS",
+    "title" : "ECG Filter Type (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGRecording.html" : "ECG recording model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGFindingVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGFindingVS",
+    "title" : "ECG Finding (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGReport.html" : "ECG report model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGInputRoleVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGInputRoleVS",
+    "title" : "ECG Input Role (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGBiomarkerDefinition.html" : "ECG biomarker definition model",
+    "StructureDefinition-EHDSECGDerivedResult.html" : "ECG derived result model",
+    "StructureDefinition-EHDSECGAlgorithm.html" : "ECG algorithm model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGLabelProvenanceVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGLabelProvenanceVS",
+    "title" : "ECG Label Provenance (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGDerivedResult.html" : "ECG derived result model",
+    "StructureDefinition-EHDSECGResearchDataset.html" : "ECG research dataset model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGLeadSystemVS",
+    "title" : "ECG Lead System (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGBiomarkerDefinition.html" : "ECG biomarker definition model",
+    "StructureDefinition-EHDSECGExamination.html" : "ECG examination model",
+    "StructureDefinition-EHDSECGAlgorithm.html" : "ECG algorithm model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGLeadVS",
+    "title" : "ECG Lead (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGBiomarkerDefinition.html" : "ECG biomarker definition model",
+    "StructureDefinition-EHDSECGDerivedResult.html" : "ECG derived result model",
+    "StructureDefinition-EHDSECGAlgorithm.html" : "ECG algorithm model",
+    "StructureDefinition-EHDSECGAnnotationSet.html" : "ECG annotation set model",
+    "StructureDefinition-EHDSECGRecording.html" : "ECG recording model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGLegacyReasonVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGLegacyReasonVS",
+    "title" : "ECG Legacy Reason (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGExamination.html" : "ECG examination model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGLinkedDataTypeVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGLinkedDataTypeVS",
+    "title" : "ECG Linked Data Type (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGResearchRecord.html" : "ECG research record model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGMeasurementBasisVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGMeasurementBasisVS",
+    "title" : "ECG Measurement Basis (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGDerivedResult.html" : "ECG derived result model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGOutputKindVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGOutputKindVS",
+    "title" : "ECG Output Kind (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGBiomarkerDefinition.html" : "ECG biomarker definition model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGOverallConclusionVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGOverallConclusionVS",
+    "title" : "ECG Overall Conclusion (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGExamination.html" : "ECG examination model",
+    "StructureDefinition-EHDSECGReport.html" : "ECG report model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGPerformanceMetricVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGPerformanceMetricVS",
+    "title" : "ECG Performance Metric (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGAlgorithm.html" : "ECG algorithm model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGQTcFormulaVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGQTcFormulaVS",
+    "title" : "ECG Q Tc Formula (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGDerivedResult.html" : "ECG derived result model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGRecordingKindVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGRecordingKindVS",
+    "title" : "ECG Recording Kind (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGRecording.html" : "ECG recording model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGReviewStatusVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGReviewStatusVS",
+    "title" : "ECG Review Status (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGDerivedResult.html" : "ECG derived result model",
+    "StructureDefinition-EHDSECGAnnotationSet.html" : "ECG annotation set model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGSignalOriginVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGSignalOriginVS",
+    "title" : "ECG Signal Origin (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGRecording.html" : "ECG recording model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGTransformationTypeVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGTransformationTypeVS",
+    "title" : "ECG Transformation Type (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGResearchDataset.html" : "ECG research dataset model",
+    "StructureDefinition-EHDSECGResearchRecord.html" : "ECG research record model"
+  },
+  {
+    "url" : "http://hl7.eu/fhir/ecg/ValueSet/ECGUseTierVS",
+    "version" : "0.1.0-ci-build",
+    "status" : "draft",
+    "name" : "ECGUseTierVS",
+    "title" : "ECG Use Tier (placeholder)",
+    "description" : "TODO: placeholder value set, to be defined.",
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGDerivedResult.html" : "ECG derived result model",
+    "StructureDefinition-EHDSECGAnnotationSet.html" : "ECG annotation set model"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SNOMEDCTClinicalFindings",
+    "title" : "SNOMED CT Clinical Findings",
+    "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.232"],
+    "sources" : ["2.16.840.1.113883.4.642.3.232"],
+    "uses" : {
+    },
+    "StructureDefinition-diagnosticreport-eu-ecg.html" : "DiagnosticReport: ECG Report (EU)"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/diagnostic-report-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DiagnosticReportStatus",
+    "title" : "DiagnosticReportStatus",
+    "description" : "The status of the diagnostic report.",
+    "systems" : ["http://hl7.org/fhir/diagnostic-report-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.235"],
+    "sources" : ["2.16.840.1.113883.4.642.3.235"],
+    "uses" : {
+    },
+    "StructureDefinition-diagnosticreport-eu-ecg.html" : "DiagnosticReport: ECG Report (EU)"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/diagnostic-service-sections",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DiagnosticServiceSectionCodes",
+    "title" : "Diagnostic Service Section Codes",
+    "description" : "This value set includes all the codes in HL7 V2 table 0074.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0074"],
+    "oids" : ["2.16.840.1.113883.4.642.3.234"],
+    "sources" : ["2.16.840.1.113883.4.642.3.234"],
+    "uses" : {
+    },
+    "StructureDefinition-diagnosticreport-eu-ecg.html" : "DiagnosticReport: ECG Report (EU)"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/languages",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CommonLanguages",
+    "title" : "Common Languages",
+    "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+    "systems" : ["urn:ietf:bcp:47"],
+    "oids" : ["2.16.840.1.113883.4.642.3.20"],
+    "sources" : ["2.16.840.1.113883.4.642.3.20"],
+    "uses" : {
+    },
+    "StructureDefinition-diagnosticreport-eu-ecg.html" : "DiagnosticReport: ECG Report (EU)"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/publication-status",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "PublicationStatus",
+    "title" : "PublicationStatus",
+    "description" : "The lifecycle status of an artifact.",
+    "systems" : ["http://hl7.org/fhir/publication-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.3"],
+    "sources" : ["2.16.840.1.113883.4.642.3.3"],
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGBiomarkerDefinition.html" : "ECG biomarker definition model"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "QuantityComparator",
+    "title" : "QuantityComparator",
+    "description" : "How the Quantity should be understood and represented.",
+    "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+    "oids" : ["2.16.840.1.113883.4.642.3.59"],
+    "sources" : ["2.16.840.1.113883.4.642.3.59"],
+    "uses" : {
+    },
+    "StructureDefinition-EHDSECGBiomarkerDefinition.html" : "ECG biomarker definition model",
+    "StructureDefinition-EHDSECGDerivedResult.html" : "ECG derived result model",
+    "StructureDefinition-EHDSECGExamination.html" : "ECG examination model"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/report-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "LOINCDiagnosticReportCodes",
+    "title" : "LOINC Diagnostic Report Codes",
+    "description" : "This value set includes LOINC codes that relate to Diagnostic Observations.",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.4.642.3.233"],
+    "sources" : ["2.16.840.1.113883.4.642.3.233"],
+    "uses" : {
+    },
+    "StructureDefinition-diagnosticreport-eu-ecg.html" : "DiagnosticReport: ECG Report (EU)"
+  }]
+}

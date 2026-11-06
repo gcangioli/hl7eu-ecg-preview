@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="EHDSECGAlgorithm"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition EHDSECGAlgorithm</b></p><table border="0" cellpadding="0" cellspacing="0" class="xhtTableBorder0"><tr class="xhtRowBorder1"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm" title="An algorithm that produces ECG derived results, with the performance of this version of the algorithm.">EHDSECGAlgorithm</a><a name="EHDSECGAlgorithm"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html">EHDSDevice</a></td><td style="" class="hierarchy xhtCellBorder0">ECG algorithm model<br/><br/>Elements defined in Ancestors:<a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html" title="Identifier of the device instance">instanceIdentifier</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html" title="Unique Device Identifier (UDI) value">udi</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html" title="Name of device manufacturer. If the manufacturer code is included in an identifier, manufacturer must correspond to that code.">manufacturer</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html" title="The date and time when the device was manufactured">manufactureDate</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html" title="The date and time beyond which this device is no longer valid or should not be used (if applicable)">expiryDate</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html" title="Lot number of device. May be omitted if included in an identifier.">lotNumber</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html" title="Serial number assigned by the manufacturer. May be omitted if included in an identifier.">serialNumber</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html" title="The name and name type of the device.">name</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html" title="The manufacturer's model number for the device">modelNumber</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html" title="The actual design of the device and/or software version running on the device">version</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html" title="Device type">type</a>, <a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSDevice.html" title="Device note and/or comment">note</a><br/><span class="xhtPieceBold">Instances of this type can be the target of a Reference</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.udi">udi</a><a name="EHDSECGAlgorithm.udi"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier" class="xhtPieceDeEmphasized">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">MDR UDI-DI when the software is a medical device</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.manufacturer">manufacturer</a><a name="EHDSECGAlgorithm.manufacturer"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..<span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string" class="xhtPieceDeEmphasized">string</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Name of device manufacturer. If the manufacturer code is included in an identifier, manufacturer must correspond to that code.</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.name">name</a><a name="EHDSECGAlgorithm.name"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..<span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Base</span></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">The name and name type of the device.</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.version">version</a><a name="EHDSECGAlgorithm.version"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string" class="xhtPieceDeEmphasized">string</a></td><td style="" class="hierarchy xhtCellBorder0">SHALL be populated when known; when absent, consumers SHALL display 'version not stated'</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.regulatoryStatus" title="Regulatory status per jurisdiction.">regulatoryStatus</a><a name="EHDSECGAlgorithm.regulatoryStatus"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">Regulatory status per jurisdiction<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.regulatoryStatus.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.regulatoryStatus.framework" title="EU MDR, EU IVDR, EU AI Act, FDA, other.">framework</a><a name="EHDSECGAlgorithm.regulatoryStatus.framework"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Framework</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.regulatoryStatus.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.regulatoryStatus.classification[x]" title="E.g. MDR class IIa; AI Act high-risk.">classification[x]</a><a name="EHDSECGAlgorithm.regulatoryStatus.classification_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">Classification</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.regulatoryStatus.classification[x].</span><span title="Base StructureDefinition for CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.">classificationCodeableConcept</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.regulatoryStatus.classification[x].</span><span title="Base StructureDefinition for string Type: A sequence of Unicode characters">classificationString</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.regulatoryStatus.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.regulatoryStatus.certificate" title="Certificate or registration number.">certificate</a><a name="EHDSECGAlgorithm.regulatoryStatus.certificate"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">Certificate or registration number</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.regulatoryStatus.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.regulatoryStatus.intendedUse" title="Declared intended use.">intendedUse</a><a name="EHDSECGAlgorithm.regulatoryStatus.intendedUse"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Declared intended use</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.method" title="rule-based, classical machine learning, deep learning, foundation model, large language model.">method</a><a name="EHDSECGAlgorithm.method"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Method</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.modelCard" title="Training data, performance, limitations.">modelCard</a><a name="EHDSECGAlgorithm.modelCard"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://www.xt-ehr.eu/fhir/models/1.0.0/StructureDefinition-EHDSAttachment.html">EHDSAttachment</a></td><td style="" class="hierarchy xhtCellBorder0">Model card</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.implementsDefinition" title="Results this algorithm can produce (versioned canonical).">implementsDefinition</a><a name="EHDSECGAlgorithm.implementsDefinition"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">canonical</a>()</td><td style="" class="hierarchy xhtCellBorder0">Definitions implemented<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.inputRequirement" title="What the algorithm needs as input. Same structure as in EHDSECGBiomarkerDefinition.">inputRequirement</a><a name="EHDSECGAlgorithm.inputRequirement"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">Input requirements<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.inputRequirement.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.inputRequirement.role" title="index-ecg, comparison-ecg, clinical-covariate...">role</a><a name="EHDSECGAlgorithm.inputRequirement.role"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Role<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGInputRoleVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGInputRoleVS" class="binding">ECG Input Role (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.inputRequirement.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.inputRequirement.leadSystem" title="E.g. standard 12-lead, single lead.">leadSystem</a><a name="EHDSECGAlgorithm.inputRequirement.leadSystem"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Lead system<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGLeadSystemVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS" class="binding">ECG Lead System (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.inputRequirement.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.inputRequirement.requiredLead" title="Leads that must be present.">requiredLead</a><a name="EHDSECGAlgorithm.inputRequirement.requiredLead"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Required leads<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGLeadVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS" class="binding">ECG Lead (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span><br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.inputRequirement.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.inputRequirement.minimumSamplingFrequency" title="UCUM Hz.">minimumSamplingFrequency</a><a name="EHDSECGAlgorithm.inputRequirement.minimumSamplingFrequency"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">Minimum sampling frequency</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.inputRequirement.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.inputRequirement.minimumDuration" title="UCUM s.">minimumDuration</a><a name="EHDSECGAlgorithm.inputRequirement.minimumDuration"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">Minimum duration</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.inputRequirement.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.inputRequirement.covariate" title="For a clinical covariate: what it is (age, sex...).">covariate</a><a name="EHDSECGAlgorithm.inputRequirement.covariate"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Covariate</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.inputRequirement.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.inputRequirement.note" title="E.g. excluded populations.">note</a><a name="EHDSECGAlgorithm.inputRequirement.note"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Other requirements</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck01.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.performance" title="Performance of this version of the algorithm for one definition. Operating points and calibration depend on the algorithm version, so they are described here rather than in the shared definition.">performance</a><a name="EHDSECGAlgorithm.performance"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">Performance of this version<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.performance.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.performance.definition" title="Definition the performance refers to.">definition</a><a name="EHDSECGAlgorithm.performance.definition"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">canonical</a>()</td><td style="" class="hierarchy xhtCellBorder0">Definition (versioned)</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.performance.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.performance.operatingPoint" title="E.g. high-sensitivity.">operatingPoint</a><a name="EHDSECGAlgorithm.performance.operatingPoint"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Operating point</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.performance.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.performance.threshold" title="Threshold used by this algorithm version at that operating point.">threshold</a><a name="EHDSECGAlgorithm.performance.threshold"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="" class="hierarchy xhtCellBorder0">Threshold</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck011.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.performance.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.performance.metric" title="One performance metric.">metric</a><a name="EHDSECGAlgorithm.performance.metric"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">Performance metric<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck0110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.performance.metric.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.performance.metric.type" title="sensitivity, specificity, PPV, NPV, AUC, calibration slope, calibration intercept, Brier score...">type</a><a name="EHDSECGAlgorithm.performance.metric.type"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Metric type<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-ECGPerformanceMetricVS.html" title="http://hl7.eu/fhir/ecg/ValueSet/ECGPerformanceMetricVS" class="binding">ECG Performance Metric (placeholder)</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck0110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.performance.metric.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.performance.metric.value" title="Value.">value</a><a name="EHDSECGAlgorithm.performance.metric.value"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="" class="hierarchy xhtCellBorder0">Value</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck0100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.performance.metric.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.performance.metric.interval" title="Confidence interval.">interval</a><a name="EHDSECGAlgorithm.performance.metric.interval"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a></td><td style="" class="hierarchy xhtCellBorder0">Confidence interval</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.performance.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.performance.validationPopulation" title="Population and setting of the validation.">validationPopulation</a><a name="EHDSECGAlgorithm.performance.validationPopulation"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Validation population</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck000.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSECGAlgorithm.performance.</span><a href="StructureDefinition-EHDSECGAlgorithm-definitions.html#EHDSECGAlgorithm.performance.evidence" title="Publications or reports (DOI).">evidence</a><a name="EHDSECGAlgorithm.performance.evidence"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td><td style="" class="hierarchy xhtCellBorder0">Evidence<br/></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
+    <valueCode value="can-be-target"/>
+  </extension>
+  <url value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAlgorithm"/>
+  <version value="0.1.0-ci-build"/>
+  <name value="EHDSECGAlgorithm"/>
+  <title value="ECG algorithm model"/>
+  <status value="draft"/>
+  <date value="2026-11-06T23:02:43+01:00"/>
+  <publisher value="HL7 Europe"/>
+  <contact>
+    <name value="HL7 Europe"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.eu"/>
+    </telecom>
+  </contact>
+  <description value="An algorithm that produces ECG derived results, with the performance of this version of the algorithm."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="150"/>
+      <display value="Europe"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright HL7 Europe. Licensed under creative commons public domain (CC0 1.0)."/>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://hl7.eu/fhir/ecg/StructureDefinition/EHDSECGAlgorithm"/>
+  <baseDefinition value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="1.0.0"/>
+    </extension>
+    <element id="EHDSECGAlgorithm">
+      <path value="EHDSECGAlgorithm"/>
+      <short value="ECG algorithm model"/>
+      <definition value="An algorithm that produces ECG derived results, with the performance of this version of the algorithm."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="EHDSECGAlgorithm.instanceIdentifier">
+      <path value="EHDSECGAlgorithm.instanceIdentifier"/>
+      <short value="Identifier of the device instance"/>
+      <definition value="Identifier of the device instance"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDevice.instanceIdentifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.udi">
+      <path value="EHDSECGAlgorithm.udi"/>
+      <short value="MDR UDI-DI when the software is a medical device"/>
+      <definition value="Unique Device Identifier (UDI) value"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDevice.udi"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.manufacturer">
+      <path value="EHDSECGAlgorithm.manufacturer"/>
+      <short value="Name of device manufacturer. If the manufacturer code is included in an identifier, manufacturer must correspond to that code."/>
+      <definition value="Name of device manufacturer. If the manufacturer code is included in an identifier, manufacturer must correspond to that code."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDevice.manufacturer"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.manufactureDate">
+      <path value="EHDSECGAlgorithm.manufactureDate"/>
+      <short value="The date and time when the device was manufactured"/>
+      <definition value="The date and time when the device was manufactured"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDevice.manufactureDate"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.expiryDate">
+      <path value="EHDSECGAlgorithm.expiryDate"/>
+      <short value="The date and time beyond which this device is no longer valid or should not be used (if applicable)"/>
+      <definition value="The date and time beyond which this device is no longer valid or should not be used (if applicable)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDevice.expiryDate"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.lotNumber">
+      <path value="EHDSECGAlgorithm.lotNumber"/>
+      <short value="Lot number of device. May be omitted if included in an identifier."/>
+      <definition value="Lot number of device. May be omitted if included in an identifier."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDevice.lotNumber"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.serialNumber">
+      <path value="EHDSECGAlgorithm.serialNumber"/>
+      <short value="Serial number assigned by the manufacturer. May be omitted if included in an identifier."/>
+      <definition value="Serial number assigned by the manufacturer. May be omitted if included in an identifier."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDevice.serialNumber"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.name">
+      <path value="EHDSECGAlgorithm.name"/>
+      <short value="The name and name type of the device."/>
+      <definition value="The name and name type of the device."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDevice.name"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.name.value">
+      <path value="EHDSECGAlgorithm.name.value"/>
+      <short value="The name of the device as known to e.g. the manufacturer and/or patient"/>
+      <definition value="The name of the device as known to e.g. the manufacturer and/or patient"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDevice.name.value"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.name.type">
+      <path value="EHDSECGAlgorithm.name.type"/>
+      <short value="The type of name, e.g. UDI Label name, user friendly name"/>
+      <definition value="The type of name, e.g. UDI Label name, user friendly name"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDevice.name.type"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.modelNumber">
+      <path value="EHDSECGAlgorithm.modelNumber"/>
+      <short value="The manufacturer's model number for the device"/>
+      <definition value="The manufacturer's model number for the device"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDevice.modelNumber"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.version">
+      <path value="EHDSECGAlgorithm.version"/>
+      <short value="SHALL be populated when known; when absent, consumers SHALL display 'version not stated'"/>
+      <definition value="The actual design of the device and/or software version running on the device"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDevice.version"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.type">
+      <path value="EHDSECGAlgorithm.type"/>
+      <short value="Device type"/>
+      <definition value="Device type"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDevice.type"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <description value="SNOMED CT, EMDN"/>
+      </binding>
+    </element>
+    <element id="EHDSECGAlgorithm.note">
+      <path value="EHDSECGAlgorithm.note"/>
+      <short value="Device note and/or comment"/>
+      <definition value="Device note and/or comment"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDevice.note"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.regulatoryStatus">
+      <path value="EHDSECGAlgorithm.regulatoryStatus"/>
+      <short value="Regulatory status per jurisdiction"/>
+      <definition value="Regulatory status per jurisdiction."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGAlgorithm.regulatoryStatus"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.regulatoryStatus.framework">
+      <path value="EHDSECGAlgorithm.regulatoryStatus.framework"/>
+      <short value="Framework"/>
+      <definition value="EU MDR, EU IVDR, EU AI Act, FDA, other."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAlgorithm.regulatoryStatus.framework"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.regulatoryStatus.classification[x]">
+      <path value="EHDSECGAlgorithm.regulatoryStatus.classification[x]"/>
+      <short value="Classification"/>
+      <definition value="E.g. MDR class IIa; AI Act high-risk."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAlgorithm.regulatoryStatus.classification[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.regulatoryStatus.certificate">
+      <path value="EHDSECGAlgorithm.regulatoryStatus.certificate"/>
+      <short value="Certificate or registration number"/>
+      <definition value="Certificate or registration number."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAlgorithm.regulatoryStatus.certificate"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.regulatoryStatus.intendedUse">
+      <path value="EHDSECGAlgorithm.regulatoryStatus.intendedUse"/>
+      <short value="Declared intended use"/>
+      <definition value="Declared intended use."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAlgorithm.regulatoryStatus.intendedUse"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.method">
+      <path value="EHDSECGAlgorithm.method"/>
+      <short value="Method"/>
+      <definition value="rule-based, classical machine learning, deep learning, foundation model, large language model."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAlgorithm.method"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.modelCard">
+      <path value="EHDSECGAlgorithm.modelCard"/>
+      <short value="Model card"/>
+      <definition value="Training data, performance, limitations."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAlgorithm.modelCard"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.implementsDefinition">
+      <path value="EHDSECGAlgorithm.implementsDefinition"/>
+      <short value="Definitions implemented"/>
+      <definition value="Results this algorithm can produce (versioned canonical)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGAlgorithm.implementsDefinition"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="canonical"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.inputRequirement">
+      <path value="EHDSECGAlgorithm.inputRequirement"/>
+      <short value="Input requirements"/>
+      <definition value="What the algorithm needs as input. Same structure as in EHDSECGBiomarkerDefinition."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGAlgorithm.inputRequirement"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.inputRequirement.role">
+      <path value="EHDSECGAlgorithm.inputRequirement.role"/>
+      <short value="Role"/>
+      <definition value="index-ecg, comparison-ecg, clinical-covariate..."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAlgorithm.inputRequirement.role"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGInputRoleVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGAlgorithm.inputRequirement.leadSystem">
+      <path value="EHDSECGAlgorithm.inputRequirement.leadSystem"/>
+      <short value="Lead system"/>
+      <definition value="E.g. standard 12-lead, single lead."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAlgorithm.inputRequirement.leadSystem"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGAlgorithm.inputRequirement.requiredLead">
+      <path value="EHDSECGAlgorithm.inputRequirement.requiredLead"/>
+      <short value="Required leads"/>
+      <definition value="Leads that must be present."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGAlgorithm.inputRequirement.requiredLead"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGAlgorithm.inputRequirement.minimumSamplingFrequency">
+      <path value="EHDSECGAlgorithm.inputRequirement.minimumSamplingFrequency"/>
+      <short value="Minimum sampling frequency"/>
+      <definition value="UCUM Hz."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAlgorithm.inputRequirement.minimumSamplingFrequency"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.inputRequirement.minimumDuration">
+      <path value="EHDSECGAlgorithm.inputRequirement.minimumDuration"/>
+      <short value="Minimum duration"/>
+      <definition value="UCUM s."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAlgorithm.inputRequirement.minimumDuration"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.inputRequirement.covariate">
+      <path value="EHDSECGAlgorithm.inputRequirement.covariate"/>
+      <short value="Covariate"/>
+      <definition value="For a clinical covariate: what it is (age, sex...)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAlgorithm.inputRequirement.covariate"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.inputRequirement.note">
+      <path value="EHDSECGAlgorithm.inputRequirement.note"/>
+      <short value="Other requirements"/>
+      <definition value="E.g. excluded populations."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAlgorithm.inputRequirement.note"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.performance">
+      <path value="EHDSECGAlgorithm.performance"/>
+      <short value="Performance of this version"/>
+      <definition value="Performance of this version of the algorithm for one definition. Operating points and calibration depend on the algorithm version, so they are described here rather than in the shared definition."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGAlgorithm.performance"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.performance.definition">
+      <path value="EHDSECGAlgorithm.performance.definition"/>
+      <short value="Definition (versioned)"/>
+      <definition value="Definition the performance refers to."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAlgorithm.performance.definition"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="canonical"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.performance.operatingPoint">
+      <path value="EHDSECGAlgorithm.performance.operatingPoint"/>
+      <short value="Operating point"/>
+      <definition value="E.g. high-sensitivity."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAlgorithm.performance.operatingPoint"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.performance.threshold">
+      <path value="EHDSECGAlgorithm.performance.threshold"/>
+      <short value="Threshold"/>
+      <definition value="Threshold used by this algorithm version at that operating point."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAlgorithm.performance.threshold"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.performance.metric">
+      <path value="EHDSECGAlgorithm.performance.metric"/>
+      <short value="Performance metric"/>
+      <definition value="One performance metric."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGAlgorithm.performance.metric"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.performance.metric.type">
+      <path value="EHDSECGAlgorithm.performance.metric.type"/>
+      <short value="Metric type"/>
+      <definition value="sensitivity, specificity, PPV, NPV, AUC, calibration slope, calibration intercept, Brier score..."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAlgorithm.performance.metric.type"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGPerformanceMetricVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGAlgorithm.performance.metric.value">
+      <path value="EHDSECGAlgorithm.performance.metric.value"/>
+      <short value="Value"/>
+      <definition value="Value."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAlgorithm.performance.metric.value"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.performance.metric.interval">
+      <path value="EHDSECGAlgorithm.performance.metric.interval"/>
+      <short value="Confidence interval"/>
+      <definition value="Confidence interval."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAlgorithm.performance.metric.interval"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Range"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.performance.validationPopulation">
+      <path value="EHDSECGAlgorithm.performance.validationPopulation"/>
+      <short value="Validation population"/>
+      <definition value="Population and setting of the validation."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSECGAlgorithm.performance.validationPopulation"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.performance.evidence">
+      <path value="EHDSECGAlgorithm.performance.evidence"/>
+      <short value="Evidence"/>
+      <definition value="Publications or reports (DOI)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSECGAlgorithm.performance.evidence"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="EHDSECGAlgorithm">
+      <path value="EHDSECGAlgorithm"/>
+      <short value="ECG algorithm model"/>
+      <definition value="An algorithm that produces ECG derived results, with the performance of this version of the algorithm."/>
+    </element>
+    <element id="EHDSECGAlgorithm.udi">
+      <path value="EHDSECGAlgorithm.udi"/>
+      <short value="MDR UDI-DI when the software is a medical device"/>
+    </element>
+    <element id="EHDSECGAlgorithm.manufacturer">
+      <path value="EHDSECGAlgorithm.manufacturer"/>
+      <min value="1"/>
+    </element>
+    <element id="EHDSECGAlgorithm.name">
+      <path value="EHDSECGAlgorithm.name"/>
+      <min value="1"/>
+    </element>
+    <element id="EHDSECGAlgorithm.version">
+      <path value="EHDSECGAlgorithm.version"/>
+      <short value="SHALL be populated when known; when absent, consumers SHALL display 'version not stated'"/>
+    </element>
+    <element id="EHDSECGAlgorithm.regulatoryStatus">
+      <path value="EHDSECGAlgorithm.regulatoryStatus"/>
+      <short value="Regulatory status per jurisdiction"/>
+      <definition value="Regulatory status per jurisdiction."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.regulatoryStatus.framework">
+      <path value="EHDSECGAlgorithm.regulatoryStatus.framework"/>
+      <short value="Framework"/>
+      <definition value="EU MDR, EU IVDR, EU AI Act, FDA, other."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.regulatoryStatus.classification[x]">
+      <path value="EHDSECGAlgorithm.regulatoryStatus.classification[x]"/>
+      <short value="Classification"/>
+      <definition value="E.g. MDR class IIa; AI Act high-risk."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.regulatoryStatus.certificate">
+      <path value="EHDSECGAlgorithm.regulatoryStatus.certificate"/>
+      <short value="Certificate or registration number"/>
+      <definition value="Certificate or registration number."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.regulatoryStatus.intendedUse">
+      <path value="EHDSECGAlgorithm.regulatoryStatus.intendedUse"/>
+      <short value="Declared intended use"/>
+      <definition value="Declared intended use."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.method">
+      <path value="EHDSECGAlgorithm.method"/>
+      <short value="Method"/>
+      <definition value="rule-based, classical machine learning, deep learning, foundation model, large language model."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.modelCard">
+      <path value="EHDSECGAlgorithm.modelCard"/>
+      <short value="Model card"/>
+      <definition value="Training data, performance, limitations."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://www.xt-ehr.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.implementsDefinition">
+      <path value="EHDSECGAlgorithm.implementsDefinition"/>
+      <short value="Definitions implemented"/>
+      <definition value="Results this algorithm can produce (versioned canonical)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="canonical"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.inputRequirement">
+      <path value="EHDSECGAlgorithm.inputRequirement"/>
+      <short value="Input requirements"/>
+      <definition value="What the algorithm needs as input. Same structure as in EHDSECGBiomarkerDefinition."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.inputRequirement.role">
+      <path value="EHDSECGAlgorithm.inputRequirement.role"/>
+      <short value="Role"/>
+      <definition value="index-ecg, comparison-ecg, clinical-covariate..."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGInputRoleVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGAlgorithm.inputRequirement.leadSystem">
+      <path value="EHDSECGAlgorithm.inputRequirement.leadSystem"/>
+      <short value="Lead system"/>
+      <definition value="E.g. standard 12-lead, single lead."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGLeadSystemVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGAlgorithm.inputRequirement.requiredLead">
+      <path value="EHDSECGAlgorithm.inputRequirement.requiredLead"/>
+      <short value="Required leads"/>
+      <definition value="Leads that must be present."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGLeadVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGAlgorithm.inputRequirement.minimumSamplingFrequency">
+      <path value="EHDSECGAlgorithm.inputRequirement.minimumSamplingFrequency"/>
+      <short value="Minimum sampling frequency"/>
+      <definition value="UCUM Hz."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.inputRequirement.minimumDuration">
+      <path value="EHDSECGAlgorithm.inputRequirement.minimumDuration"/>
+      <short value="Minimum duration"/>
+      <definition value="UCUM s."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.inputRequirement.covariate">
+      <path value="EHDSECGAlgorithm.inputRequirement.covariate"/>
+      <short value="Covariate"/>
+      <definition value="For a clinical covariate: what it is (age, sex...)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.inputRequirement.note">
+      <path value="EHDSECGAlgorithm.inputRequirement.note"/>
+      <short value="Other requirements"/>
+      <definition value="E.g. excluded populations."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.performance">
+      <path value="EHDSECGAlgorithm.performance"/>
+      <short value="Performance of this version"/>
+      <definition value="Performance of this version of the algorithm for one definition. Operating points and calibration depend on the algorithm version, so they are described here rather than in the shared definition."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.performance.definition">
+      <path value="EHDSECGAlgorithm.performance.definition"/>
+      <short value="Definition (versioned)"/>
+      <definition value="Definition the performance refers to."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="canonical"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.performance.operatingPoint">
+      <path value="EHDSECGAlgorithm.performance.operatingPoint"/>
+      <short value="Operating point"/>
+      <definition value="E.g. high-sensitivity."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.performance.threshold">
+      <path value="EHDSECGAlgorithm.performance.threshold"/>
+      <short value="Threshold"/>
+      <definition value="Threshold used by this algorithm version at that operating point."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.performance.metric">
+      <path value="EHDSECGAlgorithm.performance.metric"/>
+      <short value="Performance metric"/>
+      <definition value="One performance metric."/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.performance.metric.type">
+      <path value="EHDSECGAlgorithm.performance.metric.type"/>
+      <short value="Metric type"/>
+      <definition value="sensitivity, specificity, PPV, NPV, AUC, calibration slope, calibration intercept, Brier score..."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.eu/fhir/ecg/ValueSet/ECGPerformanceMetricVS"/>
+      </binding>
+    </element>
+    <element id="EHDSECGAlgorithm.performance.metric.value">
+      <path value="EHDSECGAlgorithm.performance.metric.value"/>
+      <short value="Value"/>
+      <definition value="Value."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.performance.metric.interval">
+      <path value="EHDSECGAlgorithm.performance.metric.interval"/>
+      <short value="Confidence interval"/>
+      <definition value="Confidence interval."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Range"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.performance.validationPopulation">
+      <path value="EHDSECGAlgorithm.performance.validationPopulation"/>
+      <short value="Validation population"/>
+      <definition value="Population and setting of the validation."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSECGAlgorithm.performance.evidence">
+      <path value="EHDSECGAlgorithm.performance.evidence"/>
+      <short value="Evidence"/>
+      <definition value="Publications or reports (DOI)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="uri"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

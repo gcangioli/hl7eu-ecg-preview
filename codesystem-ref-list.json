@@ -1,0 +1,14 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/publication-status",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "PublicationStatus",
+    "title" : "PublicationStatus",
+    "description" : "The lifecycle status of an artifact.",
+    "oids" : ["2.16.840.1.113883.4.642.4.4"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-publication-status.html" : "PublicationStatus"
+  }]
+}
